@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/hcao
+
+idspace: HCAO
+base_url: /obo/hcao
+
+products:
+- hcao.owl: https://raw.githubusercontent.com/obophenotype/hcao/master/hcao.owl
+- hcao.obo: https://raw.githubusercontent.com/obophenotype/hcao/master/hcao.obo
+
+term_browser: ontobee
+example_terms:
+- HCAO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/hcao/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/hcao/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/HCAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/hcao/master/
