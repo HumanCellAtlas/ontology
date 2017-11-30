@@ -29,6 +29,8 @@ branches:
     - test-travis
 
 ### UNCOMMENT THIS AND ADD YOUR DETAILS:
-#notifications:
-#  email:
-#    - YOURNAME@YOU.ORG
+notifications:
+  email:
+    - jupp@ebi.ac.uk                                                                                                   |
+    - dwelter@ebi.ac.uk                                                                                                |
+    - dosumis@gmail.com
