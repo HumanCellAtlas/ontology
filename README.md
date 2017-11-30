@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/obophenotype/hcao.svg?branch=master)](https://travis-ci.org/obophenotype/hcao)
-[![DOI](https://zenodo.org/badge/13996/obophenotype/hcao.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/hcao)
+[![Build Status](https://travis-ci.org/HumanCellAtlas/ontology.svg?branch=master)](https://travis-ci.org/HumanCellAtlas/ontology)
 
 # hcao
 
@@ -21,7 +20,7 @@ Editors of this ontology should use the edit version, [src/ontology/hcao-edit.ow
 
 ## Contact
 
-Please use this GitHub repository's [Issue tracker](https://github.com/obophenotype/hcao/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+Please use this GitHub repository's [Issue tracker](https://github.com/HumanCellAtlas/ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
 ## Acknowledgements
 
