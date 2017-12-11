@@ -1,3 +1,4 @@
+Prefix(:=<http://purl.obolibrary.org/obo/hcao.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,8 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/hcao.owl>
-Annotation(rdfs:comment "hcao")
+Annotation(rdfs:comment "Human Cell Atlas Ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/HCAO_00000000>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HCAO_00000000> "hcao"@en)
+
 )

@@ -12,12 +12,13 @@ ROBOT= ../../bin/robot
 OWLTOOLS= ../../owltools
 USECAT= --use-catalog
 SPARQLDIR = ../sparql
+UBERON_IMPORT=../imports/euarchontoglires-basic.obo
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo
+all: sparql_test all_imports $(ONT).owl $(ONT).obo all_anatomy all_cells
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -33,10 +34,39 @@ prepare_release: all
 
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
-$(ONT).owl: $(SRC)
-	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
-$(ONT).obo: $(ONT).owl
-	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+$(ONT).owl: $(SRC) uberon_human.owl cl_human.owl
+	$(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+#$(ONT).obo: $(ONT).owl
+#	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
+
+# ----------------------------------------
+# Extract modules
+# ----------------------------------------
+
+all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl
+
+# extract human uberon terms (which FMA xref) with FMA label
+uberon_import.txt: $(UBERON_IMPORT)
+	$(ROBOT) query --input $(UBERON_IMPORT) query --select ../sparql/select_human_anatomy_subset.sparql uberon_import.txt
+
+# generate huamn uberon with FMA prefLabels
+
+uberon_with_fma_labels.ttl: ../imports/fma.owl $(UBERON_IMPORT)
+	$(ROBOT) merge --input ../imports/fma.owl --input $(UBERON_IMPORT) query --format ttl --construct ../sparql/construct_fma_labels.sparql uberon_with_fma_labels.ttl
+
+uberon_human.owl: $(UBERON_IMPORT) uberon_with_fma_labels.ttl uberon_import.txt
+	$(ROBOT) extract --method BOT --input $(UBERON_IMPORT) --term-file uberon_import.txt merge --input uberon_with_fma_labels.ttl --output uberon_human.owl
+
+# extract human cells from CTO ontology (based on FMA xref)
+
+all_cells: cell_import.txt cl_human.owl
+
+cell_import.txt: ../imports/cl.owl
+	$(ROBOT) query --input ../imports/cl.owl --select ../sparql/select_human_cell_subset.sparql cell_import.txt
+
+cl_human.owl: cell_import.txt
+	$(ROBOT) extract --method BOT --input ../imports/cl.owl --term-file cell_import.txt --output cl_human.owl
+
 
 # ----------------------------------------
 # Import modules

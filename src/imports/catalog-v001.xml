@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/cl/releases/2017-07-29/cl.owl" uri="cl.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1512054732371" name="http://purl.obolibrary.org/obo/fma.owl" uri="fma.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1512054732371" name="http://purl.obolibrary.org/obo/uberon/subsets/uberon-taxmod-314146.owl" uri="euarchontoglires-basic.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513021829562" name="http://purl.obolibrary.org/obo/cl.owl" uri="cl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1513021829562" name="http://purl.obolibrary.org/obo/cl/imports/uberon_import.owl" uri="euarchontoglires-basic.obo"/>
+        <uri id="Automatically generated entry, Timestamp=1513021829562" name="http://purl.obolibrary.org/obo/fma.owl" uri="fma.owl"/>
     </group>
 </catalog>
