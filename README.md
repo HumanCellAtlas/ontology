@@ -2,7 +2,13 @@
 
 # hcao
 
-This ontology... YOUR DESCRIPTION HERE
+An application ontology for the Human Cell Atlas.  
+
+## Components: 
+
+### Anatomy:
+
+Mamalian anatomy and cell type terms from Uberon and the cell ontology;  Human-specific labels from the Foundational Model of Anatomy
 
 ## Versions
 
