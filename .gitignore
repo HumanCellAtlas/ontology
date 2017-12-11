@@ -4,3 +4,5 @@ src/ontology/mirror/*
 src/ontology/hcao.obo
 src/ontology/hcao.owl
 semantic.cache
+.DS_Store
+*~
