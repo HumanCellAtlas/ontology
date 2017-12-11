@@ -1,0 +1,26 @@
+PREFIX scdo: <http://scdontology.h3abionet.org/ontology/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?uri WHERE {
+
+{
+ {
+  ?uri oboInOwl:hasDbXref ?xref .
+ }
+UNION
+ {
+  ?axiom a owl:Axiom;
+  	owl:annotatedSource ?uri;
+        oboInOwl:hasDbXref ?xref .
+ }
+}
+
+?uri a owl:Class
+
+FILTER isLiteral(?xref)
+FILTER regex( ?xref, "^FMA", "i") 
+
+}

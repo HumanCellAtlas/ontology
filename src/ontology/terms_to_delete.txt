@@ -1,0 +1,8 @@
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000003 # occurent
+http://purl.obolibrary.org/obo/GO_0005623 # cell
+http://purl.obolibrary.org/obo/BFO_0000002 # continuant
+http://purl.obolibrary.org/obo/BFO_0000020 # specifically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000004 # independant continuant
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/CARO_0000006 # material anatomical entity
