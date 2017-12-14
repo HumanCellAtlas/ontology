@@ -43,7 +43,10 @@ $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl
 # Extract modules
 # ----------------------------------------
 
-all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl
+all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl ../imports/euarchontoglires-basic.obo
+
+../imports/euarchontoglires-basic.obo:
+	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
 
 # extract human uberon terms (which FMA xref) with FMA label
 uberon_import.txt: $(UBERON_IMPORT)
