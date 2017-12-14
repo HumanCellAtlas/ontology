@@ -18,7 +18,7 @@ UBERON_IMPORT=../imports/euarchontoglires-basic.obo
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl $(ONT).obo all_anatomy all_cells
+all: sparql_test all_imports $(ONT).owl all_anatomy all_cells
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
