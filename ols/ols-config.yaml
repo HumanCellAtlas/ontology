@@ -1,0 +1,16 @@
+
+"@context":
+
+ontologies:
+
+## HCAO
+
+  - id: hcao
+    preferredPrefix: HCA
+    title: Human Cell Atlas Ontology
+    uri: http://schema.humancellatlas.org/ontology/hcao.owl
+    base_uri:
+      - http://schema.humancellatlas.org/ontology/HCA_
+    reasoner: EL
+    oboSlims: false
+    ontology_purl : file:///opt/ols/ontologies/hcao.owl
