@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/hcao.owl>
+Ontology(<http://ontology.data.humancellatlas.org/ontologies/hcao>
 Import(<http://purl.obolibrary.org/obo/hsapdv/releases/2018-01-08/hsapdv.owl>)
 Annotation(rdfs:comment "Human Cell Atlas Ontology")
 
