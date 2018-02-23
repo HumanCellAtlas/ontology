@@ -1,8 +1,16 @@
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/BFO_0000141 #  immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000003 # occurent
 http://purl.obolibrary.org/obo/GO_0005623 # cell
+http://purl.obolibrary.org/obo/GO_0048018 # receptor ligand activity
 http://purl.obolibrary.org/obo/BFO_0000002 # continuant
 http://purl.obolibrary.org/obo/BFO_0000020 # specifically dependent continuant
 http://purl.obolibrary.org/obo/BFO_0000004 # independant continuant
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/CARO_0000006 # material anatomical entity
+http://purl.obolibrary.org/obo/CARO_0001001 #  neuron projection bundle
+http://purl.obolibrary.org/obo/CARO_0010000 #  multicellular anatomical structure
+http://purl.obolibrary.org/obo/UBERON_0000000 # processual entity
+http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
+http://purl.obolibrary.org/obo/RO_0002577 # system
+http://purl.obolibrary.org/obo/CARO_0000014 # cell part
