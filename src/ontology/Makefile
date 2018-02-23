@@ -25,10 +25,6 @@ all: sparql_test all_imports $(ONT).owl all_anatomy all_cells  go_cell_cycle.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo efo_slim.owl $(RELEASEDIR) &&\
-	mkdir -p $(RELEASEDIR)/imports &&\
-	cp imports/*{owl,obo} $(RELEASEDIR)/imports &&\
-	git add $(RELEASEDIR)/imports/*{obo,owl} &&\
-	(test -f subsets/*owl && cp subsets/*{owl,obo} $(RELEASEDIR)/subsets && git add $(RELEASEDIR)/subsets/* || echo "no subsets") &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
@@ -81,7 +77,7 @@ go_cell_cycle.owl: ../imports/go-basic.obo
 	$(ROBOT) extract -i ../imports/go-basic.obo -b 'http://purl.obolibrary.org/obo/GO_0022403' -o go_cell_cycle.owl
 
 efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
-	$(ROBOT) extract -i ../imports/efo_inferred.owl -B efo_slim.txt -o efo_slim.owl
+	$(ROBOT) extract -i ../imports/efo_inferred.owl -B efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
 
 
 
