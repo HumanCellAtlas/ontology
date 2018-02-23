@@ -8,9 +8,10 @@ ontologies:
   - id: hcao
     preferredPrefix: HCA
     title: Human Cell Atlas Ontology
-    uri: http://schema.humancellatlas.org/ontology/hcao.owl
+    description: Application ontology for human cell types, anatomy and development stages for the Human Cell Atlas
+    uri: http://ontology.data.humancellatlas.org/ontologies/hcao
     base_uri:
-      - http://schema.humancellatlas.org/ontology/HCA_
+      - http://ontology.data.humancellatlas.org/ontologies/HCA_
     reasoner: EL
     oboSlims: false
     ontology_purl : file:///opt/ols/ontologies/hcao.owl
@@ -19,12 +20,9 @@ ontologies:
 
   - id: efo
     preferredPrefix: EFO
-    title: Experimental Factor Ontology
-    uri: http://www.ebi.ac.uk/efo
-    description: "The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databa\
-ses, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and\
- chemical compounds. The scope of EFO is to support the annotation, analysis and visualization of data handled by many groups at the EBI and as t\
-he core ontology for the Centre for Therapeutic Validation (CTTV)"
+    title: Experimental Factor Ontology (HCA subset)
+    uri: http://ontology.data.humancellatlas.org/ontologies/efo
+    description: "Subset of the EMBL-EBI Experimental Factor Ontology covering experimental processes, instruments, biological macromolecules, organisms/strains, protocols and units built for the HCA project."
     homepage: http://www.ebi.ac.uk/efo
     mailing_list: efo-users@lists.sourceforge.net
     definition_property:
@@ -40,7 +38,7 @@ he core ontology for the Centre for Therapeutic Validation (CTTV)"
       - http://www.ebi.ac.uk/efo/EFO_
     reasoner: OWL2
     oboSlims: false
-    ontology_purl: http://www.ebi.ac.uk/efo/efo.owl
+    ontology_purl: file:///opt/ols/ontologies/efo_slim.owl
 
 ## MONDO
 
@@ -52,38 +50,29 @@ he core ontology for the Centre for Therapeutic Validation (CTTV)"
     homepage: https://monarchinitiative.org
     mailing_list: https://github.com/monarch-initiative/monarch-disease-ontology/issues
     base_uri:
-      - http://www.ebi.ac.uk/efo/EFO_
-    reasoner: OWL2
+      - hhttp://purl.obolibrary.org/obo/MONDO_
+    reasoner: None
     oboSlims: false
-    ontology_purl: http://www.ebi.ac.uk/efo/efo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
-- browsers:
-  - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/DOID:14330'}
-  canonical: mondo.owl
-  description: An ontology that harmonizes multiple disease resources.
-  domain: disease
-  id: mondo
-  label: MonDO
-  layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
-  mailing_list: https://groups.google.com/group/mondo-users
-  ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
-  products:
-  - {description: 'Complete ontology, plus inter-ontology equivalence axioms. Uses
-      MONDO IDs.', format: owl-rdf/xml, id: mondo.owl, is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.owl',
-    title: Main OWL edition}
-  - {derived_from: mondo.owl, description: 'As OWL, but omits equivalence axioms.
-      xrefs can be used as proxy for equivalence. Uses MONDO IDs', format: obo, id: mondo.obo,
-    ontology_purl: 'http://purl.obolibrary.org/obo/mondo.obo', title: obo-format edition}
-  - {derived_from: mondo.owl, description: Equivalent to the OWL edition, format: obo,
-    id: mondo.json, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.json', title: json
-      edition}
-  - {description: Now identical to main release, format: owl-rdf/xml, id: pre/mondo.owl,
-    ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.owl', title: (DEPRECATED)
-      Preview of new OWL edition}
-  - {description: Now identical to main release, format: obo, id: pre/mondo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.obo',
-    title: (DEPRECATED) Preview of new OBO edition}
-  taxon: {id: 'NCBITaxon:33208', label: Metazoa}
-  title: Monarch Disease Ontology
-  tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
+## AncestrO
+
+  - id: ancestro
+    preferredPrefix: ancestro
+    title: Ancestry Ontology
+    uri: http://www.ebi.ac.uk/ancestro
+    description: "The Ancestry Ontology (Ancestro) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome
+wide association studies. It includes a list of countries, regions and major areas (essentially continents), as well as a fairly exhaustive list of country or region-specific ancestral groups, uncategorised ancestral groups and population isolates."
+    homepage: https://github.com/EBISPOT/ancestro/
+    mailing_list:
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
+    synonym_property:
+      - http://purl.obolibrary.org/obo/IAO_0000118
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://www.ebi.ac.uk/ancestro/ancestro_
+    oboSlims: false
+    reasoner: OWL2
+    ontology_purl : https://raw.githubusercontent.com/EBISPOT/ancestro/master/ancestro.owl
