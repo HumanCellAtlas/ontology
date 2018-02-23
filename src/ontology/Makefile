@@ -3,7 +3,7 @@
 # ----------------------------------------
 # these can be overwritten on the command line
 
-OBO=http://purl.obolibrary.org/obo
+OBO=http://ontology.data.humancellatlas.org/ontologies
 ONT=hcao
 BASE=$(OBO)/$(ONT)
 SRC=$(ONT)-edit.owl
