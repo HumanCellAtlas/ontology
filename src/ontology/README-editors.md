@@ -6,37 +6,24 @@ For more details on ontology management, please see the [OBO tutorial](https://g
 
 ## Editors Version
 
-Make sure you have an ID range in the [idranges file](hcao-idranges.owl)
-
-If you do not have one, get one from the head curator.
-
 The editors version is [hcao-edit.owl](hcao-edit.owl)
 
 ** DO NOT EDIT hcao.obo OR hcao.owl in the top level directory **
 
 [../../hcao.owl](../../hcao.owl) is the release version
 
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/obophenotype/hcao) for details.
+## HCAO build process
 
-## ID Ranges
+HCAO conatin ontology terms for human cell types, anatomy and life stages. These are imported from a human subset of CL and UBERON and the HSAPDV ontology.
 
-These are stored in the file
+### How the modules are generated
 
- * [hcao-idranges.owl](hcao-idranges.owl)
+*uberon_human.owl* -  We use the [../imports/euarchontoglires-basic.obo](../imports/euarchontoglires-basic.obo) file as the base import for human antatomy. To extract the human subset we create a module from all UBERON terms that have an xref to FMA. To select this subset we use a sparql query in
+[../sparql/select_human_anatomy_subset.sparql](../sparql/select_human_anatomy_subset.sparql). For this list of terms we do a standard BOT module extarction from [../imports/euarchontoglires-basic.obo](../imports/euarchontoglires-basic.obo)
 
-** ONLY USE IDs WITHIN YOUR RANGE!! **
+To provide more human friendly labels for the antomy we add the labels from FMA [../imports/fma.owl](../imports/fma.owl) using skos:prefLabel property. The labels are extracted from [../imports/fma.owl](../imports/fma.owl) using the query in [../sparql/construct_fma_labels.sparql](../sparql/construct_fma_labels.sparql) and merged into the [uberon_human.owl](uberon_human.owl) file.
 
-If you have only just set up this repository, modify the idranges file
-and add yourself or other editors. Note Protege does not read the file
-- it is up to you to ensure correct Protege configuration.
-
-
-### Setting ID ranges in Protege
-
-We aim to put this up on the technical docs for OBO on http://obofoundry.org/
-
-For now, consult the [GO Tutorial on configuring Protege](http://go-protege-tutorial.readthedocs.io/en/latest/Entities.html#new-entities)
-
+*cl_human.owl* -  In addition to the cell types referenced by the human anatomy moduel we get additional cell types from CL again by looking for FMA xrefs for cell types. These are extracted using the SPARQL query in [../sparql/select_human_cell_subset.sparql](../sparql/select_human_cell_subset.sparql). A module of CL is extracted from these terms and merged into [hcao.owl](hcao.owl). 
 
 ## Release Manager notes
 
