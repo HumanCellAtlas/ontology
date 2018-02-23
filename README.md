@@ -24,6 +24,13 @@ http://purl.obolibrary.org/obo/hcao.owl
 
 Editors of this ontology should use the edit version, [src/ontology/hcao-edit.owl](src/ontology/hcao-edit.owl)
 
+## Build a OLS docker instance with ontologies in
+
+```
+docker build . -t hcao-ols
+docker run -t hcao-ols -p 8080:8080
+``` 
+
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/HumanCellAtlas/ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
