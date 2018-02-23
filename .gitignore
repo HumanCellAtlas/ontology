@@ -13,6 +13,8 @@ src/ontology/cl_human.owl
 src/ontology/output
 
 src/ontology/uberon_human.owl
+src/ontology/efo_slim.owl
+src/ontology/go_cell_cycle.owl
 src/ontology/uberon_import.txt
 src/ontology/uberon_with_fma_labels.ttl
 src/ontology/reports

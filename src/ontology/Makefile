@@ -21,10 +21,10 @@ CL_IMPORT=../imports/cl.owl
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl all_anatomy all_cells
+all: sparql_test all_imports $(ONT).owl all_anatomy all_cells  go_cell_cycle.owl  efo_slim.owl
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
+	cp $(ONT).owl $(ONT).obo efo_slim.owl $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
 	cp imports/*{owl,obo} $(RELEASEDIR)/imports &&\
 	git add $(RELEASEDIR)/imports/*{obo,owl} &&\
@@ -38,8 +38,8 @@ prepare_release: all
 # remove -T terms_to_delete.txt
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
-$(ONT).owl: $(SRC) uberon_human.owl cl_human.owl terms_to_delete.txt
-	$(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl remove -T terms_to_delete.txt reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+$(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
+	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl remove -T terms_to_delete.txt reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 #$(ONT).obo: $(ONT).owl
 #	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
@@ -50,10 +50,10 @@ $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl terms_to_delete.txt
 #top_module_to_remote.owl:
 #	 $(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
 
-all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl ../imports/euarchontoglires-basic.obo
+all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT)
 
-../imports/euarchontoglires-basic.obo:
-	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
+#../imports/euarchontoglires-basic.obo:
+#	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
 
 # extract human uberon terms (which FMA xref) with FMA label
 uberon_import.txt: $(UBERON_IMPORT)
@@ -76,6 +76,13 @@ cell_import.txt: $(CL_IMPORT)
 
 cl_human.owl: cell_import.txt
 	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
+
+go_cell_cycle.owl: ../imports/go-basic.obo
+	$(ROBOT) extract -i ../imports/go-basic.obo -b 'http://purl.obolibrary.org/obo/GO_0022403' -o go_cell_cycle.owl
+
+efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
+	$(ROBOT) extract -i ../imports/efo_inferred.owl -B efo_slim.txt -o efo_slim.owl
+
 
 
 # ----------------------------------------
@@ -109,7 +116,7 @@ mirror/%.owl: $(SRC)
 # Release
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
-release: $(ONT).owl $(ONT).obo
+release: $(ONT).owl $(ONT).obo efo_slim.owl
 	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
 # ----------------------------------------
