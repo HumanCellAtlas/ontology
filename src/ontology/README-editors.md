@@ -25,6 +25,12 @@ To provide more human friendly labels for the antomy we add the labels from FMA 
 
 *cl_human.owl* -  In addition to the cell types referenced by the human anatomy moduel we get additional cell types from CL again by looking for FMA xrefs for cell types. These are extracted using the SPARQL query in [../sparql/select_human_cell_subset.sparql](../sparql/select_human_cell_subset.sparql). A module of CL is extracted from these terms and merged into [hcao.owl](hcao.owl). 
 
+*go_cell_cycle.owl* - cell cycle phases are taken from GO http://purl.obolibrary.org/obo/GO_0022403
+
+### EFO slim
+
+We also build a slim of EFO for experimental processes, instruments, biological macromolecules, organisms/strains, protocols and units. The lsit of branches to extract from EFO are stored in [../imports/efo_slim.txt](../imports/efo_slim.txt)
+
 ## Release Manager notes
 
 You should only attempt to make a release AFTER the edit version is
