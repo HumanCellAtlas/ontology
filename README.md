@@ -28,7 +28,7 @@ Editors of this ontology should use the edit version, [src/ontology/hcao-edit.ow
 
 ```
 docker build . -t hcao-ols
-docker run -t hcao-ols -p 8080:8080
+docker run -p 8080:8080 -t hcao-ols 
 ``` 
 
 ## Contact
