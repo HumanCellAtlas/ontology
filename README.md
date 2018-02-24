@@ -31,6 +31,8 @@ docker build . -t hcao-ols
 docker run -p 8080:8080 -t hcao-ols 
 ``` 
 
+OLS should now be running at http://localhost:8080
+
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/HumanCellAtlas/ontology/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
