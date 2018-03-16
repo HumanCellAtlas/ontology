@@ -24,7 +24,7 @@ CL_IMPORT=../imports/cl.owl
 all: sparql_test all_imports $(ONT).owl all_anatomy all_cells  go_cell_cycle.owl  efo_slim.owl
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl $(ONT).obo efo_slim.owl $(RELEASEDIR) &&\
+	cp $(ONT).owl efo_slim.owl $(RELEASEDIR) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
