@@ -4,3 +4,4 @@ http://purl.obolibrary.org/obo/OBI_0000272 # protocol
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
 http://purl.obolibrary.org/obo/UO_0000000 # unit
 http://www.ebi.ac.uk/efo/EFO_0004446 # biological macromolecule
+http://www.ebi.ac.uk/efo/EFO_0000399 # developmental stage
