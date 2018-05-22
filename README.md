@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/HumanCellAtlas/ontology.svg?branch=master)](https://travis-ci.org/HumanCellAtlas/ontology)
+[![Docker Repository on Quay](https://quay.io/repository/humancellatlas/ontology/status "Docker Repository on Quay")](https://quay.io/repository/humancellatlas/ontology)
 
 # hcao
 
