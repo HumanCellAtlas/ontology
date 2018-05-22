@@ -22,10 +22,10 @@ RUN mongod --smallfiles --fork --logpath /var/log/mongodb.log \
     && sleep 10
 
 ## Start MongoDB and SOLR
-## Then start the indexation process cd /etc/init.d/
+## Build/update the indexes
 RUN mongod --smallfiles --fork --logpath /var/log/mongodb.log \
   && /opt/solr-${SOLR_VERSION}/bin/solr -Dsolr.solr.home=${OLS_HOME}/solr-5-config/ -Dsolr.data.dir=${OLS_HOME} \  
-  && java ${JAVA_OPTS} -Dols.home=${OLS_HOME} -jar ${OLS_HOME}/ols-indexer.jar  
+  && java ${JAVA_OPTS} -Dobo.db.xrefs=https://raw.githubusercontent.com/geneontology/go-site/a94d68f4e57264db2ff3692866a680c3fb9dda9d/metadata/db-xrefs.yaml -Dols.home=${OLS_HOME} -jar ${OLS_HOME}/ols-indexer.jar  
 
 ## Expose the tomcat port 
 EXPOSE 8080
