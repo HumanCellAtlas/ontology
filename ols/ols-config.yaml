@@ -16,6 +16,10 @@ ontologies:
       - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     definition_property:
       - http://purl.obolibrary.org/obo/IAO_0000115
+    base_uri:
+      - http://purl.obolibrary.org/obo/UBERON_
+      - http://purl.obolibrary.org/obo/CL_
+      - http://purl.obolibrary.org/obo/HsapDv_
     reasoner: EL
     oboSlims: false
     ontology_purl : file:///opt/ols/ontologies/hcao.owl
