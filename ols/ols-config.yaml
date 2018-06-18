@@ -6,7 +6,7 @@ ontologies:
 ## HCAO
 
   - id: hcao
-    preferredPrefix: HCA
+    preferredPrefix: HCAO
     title: Human Cell Atlas Ontology
     description: Application ontology for human cell types, anatomy and development stages for the Human Cell Atlas
     uri: http://ontology.data.humancellatlas.org/ontologies/hcao
