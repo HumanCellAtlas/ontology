@@ -12,6 +12,10 @@ ontologies:
     uri: http://ontology.data.humancellatlas.org/ontologies/hcao
     base_uri:
       - http://ontology.data.humancellatlas.org/ontologies/HCA_
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    definition_property:
+      - http://purl.obolibrary.org/obo/IAO_0000115
     reasoner: EL
     oboSlims: false
     ontology_purl : file:///opt/ols/ontologies/hcao.owl
