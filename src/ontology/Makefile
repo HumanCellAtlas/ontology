@@ -65,14 +65,17 @@ uberon_human.owl: uberon_with_fma_labels.ttl uberon_import.txt
 
 # extract human cells from CTO ontology (based on FMA xref)
 
-all_cells: cell_import.txt cl_human.owl
+all_cells: cell_import_auto.txt cell_import.txt cl_human.owl
 
-cell_import.txt: $(CL_IMPORT)
-	$(ROBOT) query --input $(CL_IMPORT) --select ../sparql/select_human_cell_subset.sparql cell_import.txt
-
+cell_import_auto.txt: $(CL_IMPORT)
+	$(ROBOT) query --input $(CL_IMPORT) --select ../sparql/select_human_cell_subset.sparql cell_import_auto.txt
+	
+cell_import.txt: cell_import_auto.txt cell_import_manual.txt
+	cat cell_import_auto.txt cell_import_manual.txt > cell_import.txt
+	
 cl_human.owl: cell_import.txt
 	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
-
+	
 go_cell_cycle.owl: ../imports/go-basic.obo
 	$(ROBOT) extract -i ../imports/go-basic.obo -b 'http://purl.obolibrary.org/obo/GO_0022403' -o go_cell_cycle.owl
 
@@ -100,8 +103,8 @@ imports/%_import.owl: mirror/%.owl imports/%_terms.txt
 .PRECIOUS: imports/%_import.owl
 
 # we use owltools for making the obo file until: https://github.com/ontodev/robot/issues/64
-imports/%_import.obo: imports/%_import.owl
-	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
+#imports/%_import.obo: imports/%_import.owl
+#	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl: $(SRC)
@@ -112,8 +115,11 @@ mirror/%.owl: $(SRC)
 # Release
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
-release: $(ONT).owl $(ONT).obo efo_slim.owl
-	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
+# release: $(ONT).owl $(ONT).obo efo_slim.owl
+#	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
+
+release: $(ONT).owl  efo_slim.owl
+	cp $^ $(RELEASEDIR) 
 
 # ----------------------------------------
 # Sparql queries: Q/C

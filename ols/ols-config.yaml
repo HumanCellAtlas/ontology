@@ -63,13 +63,13 @@ ontologies:
     oboSlims: false
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
-## AncestrO
+## HAncestrO
 
-  - id: ancestro
-    preferredPrefix: ancestro
-    title: Ancestry Ontology
-    uri: http://www.ebi.ac.uk/ancestro
-    description: "The Ancestry Ontology (Ancestro) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome
+  - id: hancestro
+    preferredPrefix: hancestro
+    title: Human Ancestry Ontology
+    uri: http://purl.obolibrary.org/obo/hancestro.owl
+    description: "The Human Ancestry Ontology (Hancestro) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome
 wide association studies. It includes a list of countries, regions and major areas (essentially continents), as well as a fairly exhaustive list of country or region-specific ancestral groups, uncategorised ancestral groups and population isolates."
     homepage: https://github.com/EBISPOT/ancestro/
     mailing_list:
@@ -80,7 +80,7 @@ wide association studies. It includes a list of countries, regions and major are
     hierarchical_property:
       - http://purl.obolibrary.org/obo/BFO_0000050
     base_uri:
-      - http://www.ebi.ac.uk/ancestro/ancestro_
+      - http://purl.obolibrary.org/obo/HANCESTRO_
     oboSlims: false
     reasoner: OWL2
-    ontology_purl : https://raw.githubusercontent.com/EBISPOT/ancestro/master/ancestro.owl
+    ontology_purl : https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl
