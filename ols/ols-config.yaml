@@ -63,6 +63,23 @@ ontologies:
     oboSlims: false
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
 
+
+## FBBI
+
+  - id: fbbi
+    preferredPrefix: FBbi
+    title: Biological Imaging Methods Ontology - HCAO subset
+    uri: http://purl.obolibrary.org/obo/mondo.owl
+    description: "A structured controlled vocabulary of sample
+    preparation, visualization and imaging methods used in biomedical
+    research."
+    homepage: http://cellimagelibrary.org/home
+    base_uri:
+      - hhttp://purl.obolibrary.org/obo/FBbi_
+    reasoner: None
+    oboSlims: false
+    ontology_purl: file:///opt/ols/ontologies/fbbi_hcao.owl
+
 ## HAncestrO
 
   - id: hancestro
