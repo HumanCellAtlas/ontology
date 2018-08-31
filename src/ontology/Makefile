@@ -90,7 +90,7 @@ fbbi_terms.txt: microscopy_seed.txt
 	cat $+ > $@
 
 fbbi_hcao.owl: fbbi_terms.txt
-	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo --output $@
+	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
 
 
 
