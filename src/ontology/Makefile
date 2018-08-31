@@ -9,19 +9,20 @@ BASE=$(OBO)/$(ONT)
 SRC=$(ONT)-edit.owl
 RELEASEDIR=../..
 ROBOT= ../../bin/robot
-OWLTOOLS= ../../owltools
+OWLTOOLS= ../../bin/owltools
 USECAT= --use-catalog
 SPARQLDIR = ../sparql
 UBERON_IMPORT=../imports/euarchontoglires-basic.owl
 #UBERON_IMPORT="http://purl.obolibrary.org/obo/uberon/subsets/euarchontoglires-basic.owl"
 CL_IMPORT=../imports/cl.owl
+FBBI=../imports/fbbi.owl
 #CL_IMPORT="http://purl.obolibrary.org/obo/cl.owl"
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl all_anatomy all_cells  go_cell_cycle.owl  efo_slim.owl
+all: sparql_test all_imports $(ONT).owl all_anatomy all_cells  go_cell_cycle.owl  efo_slim.owl fbbi_hcao.owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl efo_slim.owl $(RELEASEDIR) &&\
@@ -69,18 +70,27 @@ all_cells: cell_import_auto.txt cell_import.txt cl_human.owl
 
 cell_import_auto.txt: $(CL_IMPORT)
 	$(ROBOT) query --input $(CL_IMPORT) --select ../sparql/select_human_cell_subset.sparql cell_import_auto.txt
-	
+
 cell_import.txt: cell_import_auto.txt cell_import_manual.txt
 	cat cell_import_auto.txt cell_import_manual.txt > cell_import.txt
-	
+
 cl_human.owl: cell_import.txt
 	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
-	
+
 go_cell_cycle.owl: ../imports/go-basic.obo
 	$(ROBOT) extract -i ../imports/go-basic.obo -b 'http://purl.obolibrary.org/obo/GO_0022403' -o go_cell_cycle.owl
 
 efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
 	$(ROBOT) extract -i ../imports/efo_inferred.owl -B efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
+
+microscopy_seed.txt: ../imports/fbbi.owl
+	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
+
+fbbi_terms.txt: microscopy_seed.txt
+	cat $+ > $@
+
+fbbi_hcao.owl: fbbi_terms.txt
+	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo --output $@
 
 
 
