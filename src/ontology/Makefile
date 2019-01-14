@@ -86,7 +86,10 @@ efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
 microscopy_seed.txt: ../imports/fbbi.owl
 	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
 
-fbbi_terms.txt: microscopy_seed.txt
+microscopy_label_seed.txt: ../imports/fbbi.owl
+	echo "'fluorescent label'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
+
+fbbi_terms.txt: microscopy_seed.txt microscopy_label_seed.txt
 	cat $+ > $@
 
 fbbi_hcao.owl: fbbi_terms.txt
