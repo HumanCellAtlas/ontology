@@ -16,6 +16,7 @@ UBERON_IMPORT=../imports/euarchontoglires-basic.owl
 #UBERON_IMPORT="http://purl.obolibrary.org/obo/uberon/subsets/euarchontoglires-basic.owl"
 CL_IMPORT=../imports/cl.owl
 FBBI=../imports/fbbi.owl
+FMA_IMPORT=../imports/fma.owl
 #CL_IMPORT="http://purl.obolibrary.org/obo/cl.owl"
 
 # ----------------------------------------
@@ -35,8 +36,10 @@ prepare_release: all
 # remove -T terms_to_delete.txt
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
-$(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
-	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl remove -T terms_to_delete.txt reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+
+# $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
+#	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl remove -T terms_to_delete.txt reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+
 #$(ONT).obo: $(ONT).owl
 #	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
@@ -47,7 +50,7 @@ $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_dele
 #top_module_to_remote.owl:
 #	 $(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
 
-all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT)
+all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT) fma_other.owl fma_uberon.owl
 
 #../imports/euarchontoglires-basic.obo:
 #	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
@@ -94,6 +97,16 @@ fbbi_terms.txt: microscopy_seed.txt microscopy_label_seed.txt
 
 fbbi_hcao.owl: fbbi_terms.txt
 	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
+
+
+fma_other.owl: fma_import_manual.txt
+	$(ROBOT) extract --method BOT --input $(FMA_IMPORT) --term-file fma_import_manual.txt --output fma_other.owl
+.PRECIOUS: fma_other.owl
+
+fma_uberon.owl:
+	 $(ROBOT) merge --input fma_other.owl --input uberon_human.owl relax reduce --output extended_uberon.owl
+#	 $(ROBOT) merge --input $fma_other.owl --input uberon_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
+
 
 
 
