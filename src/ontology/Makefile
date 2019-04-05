@@ -14,9 +14,11 @@ USECAT= --use-catalog
 SPARQLDIR = ../sparql
 UBERON_IMPORT=../imports/euarchontoglires-basic.owl
 #UBERON_IMPORT="http://purl.obolibrary.org/obo/uberon/subsets/euarchontoglires-basic.owl"
-CL_IMPORT=../imports/cl.owl
+#CL_IMPORT=../imports/cl.owl
+CL_IMPORT=mirror/cl.owl
 FBBI=../imports/fbbi.owl
 #CL_IMPORT="http://purl.obolibrary.org/obo/cl.owl"
+EFO_MIRROR=mirror/efo-edit.owl
 
 # ----------------------------------------
 # Top-level targets
@@ -105,24 +107,28 @@ fbbi_hcao.owl: fbbi_terms.txt
 # These can be regenerated with make all_imports
 
 IMPORTS = 
-IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
+IMPORTS_OWL = ../imports/efo_inferred.owl #$(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
 # Make this target to regenerate ALL
 all_imports: $(IMPORTS_OWL)
 
+#Build efo_inferred.owl
+../imports/efo_inferred.owl: $(EFO_MIRROR)
+	$(ROBOT) -v reason -s true -m true -r hermit -i $< -o $@
+
 # Use ROBOT, driven entirely by terms lists NOT from source ontology
-imports/%_import.owl: mirror/%.owl imports/%_terms.txt
-	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
-.PRECIOUS: imports/%_import.owl
+#imports/%_import.owl: mirror/%.owl imports/%_terms.txt
+#	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
+#.PRECIOUS: imports/%_import.owl
 
 # we use owltools for making the obo file until: https://github.com/ontodev/robot/issues/64
 #imports/%_import.obo: imports/%_import.owl
 #	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
-mirror/%.owl: $(SRC)
-	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
-.PRECIOUS: mirror/%.owl
+#mirror/%.owl: $(SRC)
+#	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
+#.PRECIOUS: mirror/%.owl
 
 # ----------------------------------------
 # Release
