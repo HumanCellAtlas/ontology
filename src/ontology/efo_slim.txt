@@ -6,4 +6,4 @@ http://purl.obolibrary.org/obo/UO_0000000 # unit
 http://www.ebi.ac.uk/efo/EFO_0004446 # biological macromolecule
 http://www.ebi.ac.uk/efo/EFO_0000399 # developmental stage
 http://purl.obolibrary.org/obo/PATO_0000461 # normal
-
+http://www.ebi.ac.uk/efo/EFO_0002012 # organization role
