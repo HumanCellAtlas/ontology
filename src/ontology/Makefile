@@ -19,13 +19,13 @@ CL_IMPORT=mirror/cl.owl
 FBBI=../imports/fbbi.owl
 FMA_IMPORT=../imports/fma.owl
 #CL_IMPORT="http://purl.obolibrary.org/obo/cl.owl"
-EFO_MIRROR=mirror/efo-edit.owl
+EFO_MIRROR=mirror/efo.owl
 
 # ----------------------------------------
 # Top-level targets
 # ----------------------------------------
 
-all: sparql_test all_imports $(ONT).owl all_anatomy all_cells  go_cell_cycle.owl  efo_slim.owl fbbi_hcao.owl
+all: sparql_test all_imports all_anatomy all_cells  go_cell_cycle.owl  efo_slim.owl fbbi_hcao.owl $(ONT).owl
 test: sparql_test all
 prepare_release: all
 	cp $(ONT).owl efo_slim.owl fbbi_hcao.owl $(RELEASEDIR) &&\
@@ -39,8 +39,8 @@ prepare_release: all
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
 
-# $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
-#	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl remove -T terms_to_delete.txt reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+$(ONT).owl: $(SRC) uberon_human_extended.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
+	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_human.owl remove -T terms_to_delete.txt reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
 #$(ONT).obo: $(ONT).owl
 #	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
@@ -52,7 +52,7 @@ prepare_release: all
 #top_module_to_remote.owl:
 #	 $(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
 
-all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT) fma_other.owl fma_uberon.owl
+all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT) fma_other.owl fma_uberon.owl uberon_human_extended.owl
 
 #../imports/euarchontoglires-basic.obo:
 #	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
@@ -61,7 +61,7 @@ all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBE
 uberon_import.txt: $(UBERON_IMPORT)
 	$(ROBOT) query --input $(UBERON_IMPORT) query --select ../sparql/select_human_anatomy_subset.sparql uberon_import.txt
 
-# generate huamn uberon with FMA prefLabels
+# generate human uberon with FMA prefLabels
 
 uberon_with_fma_labels.ttl: ../imports/fma.owl
 	$(ROBOT) merge --input ../imports/fma.owl --input $(UBERON_IMPORT) query --format ttl --construct ../sparql/construct_fma_labels.sparql uberon_with_fma_labels.ttl
@@ -83,10 +83,10 @@ cl_human.owl: cell_import.txt
 	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
 
 go_cell_cycle.owl: ../imports/go-basic.obo
-	$(ROBOT) extract -i ../imports/go-basic.obo -b 'http://purl.obolibrary.org/obo/GO_0022403' -o go_cell_cycle.owl
+	$(ROBOT) extract -i ../imports/go-basic.obo --method TOP --term GO:0022403 -o go_cell_cycle.owl
 
 efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
-	$(ROBOT) extract -i ../imports/efo_inferred.owl -B efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
+	$(ROBOT) extract -i ../imports/efo_inferred.owl --method TOP --term-file efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
 
 microscopy_seed.txt: ../imports/fbbi.owl
 	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
@@ -103,10 +103,13 @@ fbbi_hcao.owl: fbbi_terms.txt
 
 fma_other.owl: fma_import_manual.txt
 	$(ROBOT) extract --method BOT --input $(FMA_IMPORT) --term-file fma_import_manual.txt --output fma_other.owl
-.PRECIOUS: fma_other.owl
+#.PRECIOUS: fma_other.owl
 
-fma_uberon.owl:
-	 $(ROBOT) merge --input fma_other.owl --input uberon_human.owl relax reduce --output extended_uberon.owl
+fma_uberon.owl: fma_other.owl fma_uberon_mappings.csv
+	$(ROBOT) rename --input fma_other.owl --mappings fma_uberon_mappings.csv --output fma_uberon.owl
+
+uberon_human_extended.owl: fma_uberon.owl uberon_human.owl
+	$(ROBOT) merge --input fma_uberon.owl --input uberon_human.owl relax reduce --output uberon_human_extended.owl
 #	 $(ROBOT) merge --input $fma_other.owl --input uberon_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
 
 
