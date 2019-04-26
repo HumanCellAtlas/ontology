@@ -2,12 +2,17 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?uri WHERE {
 
 ?uri oboInOwl:hasDbXref ?xref .
 ?uri a owl:Class
 FILTER isLiteral(?xref)
-FILTER regex( ?xref, "^FMA", "i") 
-
+FILTER regex( ?xref, "^FMA", "i")
+FILTER(
+      isIRI(?uri) &&
+      regex(str(?uri), "C[LP]_") &&
+      !EXISTS { ?uri owl:deprecated "true"^^xsd:boolean }
+      )
 }
