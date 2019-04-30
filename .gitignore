@@ -25,4 +25,4 @@ src/ontology/fma_other.owl
 src/ontology/fma_uberon.owl
 src/ontology/microscopy*
 
-src/imports/efo_inferred.owl
+src/imports/*
