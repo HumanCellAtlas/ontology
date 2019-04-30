@@ -14,3 +14,8 @@ http://purl.obolibrary.org/obo/UBERON_0000000 # processual entity
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 http://purl.obolibrary.org/obo/RO_0002577 # system
 http://purl.obolibrary.org/obo/CARO_0000014 # cell part
+http://purl.obolibrary.org/obo/BFO_0000024 # fiat object part
+http://purl.obolibrary.org/obo/CARO_0000007 # immaterial anatomical entity
+http://purl.obolibrary.org/obo/BFO_0000030 # object
+http://purl.obolibrary.org/obo/NCBITaxon_1 # root
+http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
