@@ -42,11 +42,11 @@ prepare_release: all
 # remove -T terms_to_delete.txt
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
-
+# The main release target needs breaking into separate steps to avoid ROBOT exception
 $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
-	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl -o test_output.owl &&\
-	$(ROBOT) remove --input test_output.owl -T terms_to_delete.txt --axioms logical -p false -o test_output2.owl &&\
-	$(ROBOT) reason --input test_output2.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl -o hcao_merged.owl &&\
+	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt --axioms logical -p false -o hcao_cleaned.owl &&\
+	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
 
 #$(ONT).obo: $(ONT).owl
@@ -108,17 +108,21 @@ fbbi_hcao.owl: fbbi_terms.txt
 	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
 
 
-fma_other.owl: fma_import_manual.txt
-	$(ROBOT) extract --method BOT --input $(FMA_IMPORT) --term-file fma_import_manual.txt --output fma_other.owl
-#.PRECIOUS: fma_other.owl
+#generate a small MIREOT extract of FMA from leaf terms in fma_import_manual.txt and with FMA:82472 as upper, then rename the upper term to its UBERON equivalent
+fma_uberon.owl: fma_import_manual.txt
+	$(ROBOT) extract --input $(FMA_IMPORT) --method MiREOT -L fma_import_manual.txt -u FMA:82472 rename --mappings fma_uberon_mappings.csv --output fma_uberon.owl
 
-fma_uberon.owl: fma_other.owl fma_uberon_mappings.csv
-	$(ROBOT) rename --input fma_other.owl --mappings fma_uberon_mappings.csv --output fma_uberon.owl
+#extract the descendants of the UBERON term into a separate file
+fma_descendants.owl: fma_uberon.owl
+	$(ROBOT) filter --input fma_uberon.owl --term UBERON:0000064 --select "annotations descendants" --output fma_descendants.owl
 
-uberon_human_extended.owl: fma_uberon.owl uberon_human.owl
-	$(ROBOT) merge --input fma_uberon.owl --input uberon_human.owl relax reduce --output uberon_human_extended.owl
-#	 $(ROBOT) merge --input $fma_other.owl --input uberon_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
+#remove all annotations from the FMA-UBERON slim
+fma_uberon_no_annotations.owl: fma_uberon.owl
+	$(ROBOT) remove --input fma_uberon.owl --axioms annotation --output fma_uberon_no_annotations.owl
 
+#merge the annotation-less slim and the descendants with annotations into the uberon_human slim
+uberon_human_extended.owl: fma_uberon_no_annotations.owl fma_descendants uberon_human.owl
+	$(ROBOT) merge --input fma_uberon_no_annotations.owl --input fma_desendants --input uberon_human.owl relax reduce --output uberon_human_extended.owl
 
 
 
@@ -136,22 +140,9 @@ IMPORTS_OWL = ../imports/efo_inferred.owl #$(patsubst %, imports/%_import.owl,$(
 all_imports: $(IMPORTS_OWL)
 
 #Build efo_inferred.owl
-#../imports/efo_inferred.owl: $(EFO_MIRROR)
-#	$(ROBOT) -v reason -s true -m true -r hermit -i $< -o $@
+../imports/efo_inferred.owl: $(EFO_MIRROR)
+	$(ROBOT) -v reason -s true -m true -r hermit -i $< -o $@
 
-# Use ROBOT, driven entirely by terms lists NOT from source ontology
-#imports/%_import.owl: mirror/%.owl imports/%_terms.txt
-#	$(ROBOT) extract -i $< -T imports/$*_terms.txt --method BOT -O $(BASE)/$@ -o $@
-#.PRECIOUS: imports/%_import.owl
-
-# we use owltools for making the obo file until: https://github.com/ontodev/robot/issues/64
-#imports/%_import.obo: imports/%_import.owl
-#	$(OWLTOOLS) $(USECAT) $< -o -f obo $@
-
-# clone remote ontology locally, perfoming some excision of relations and annotations
-#mirror/%.owl: $(SRC)
-#	$(OWLTOOLS) $(OBO)/$*.owl --remove-annotation-assertions -l -s -d --remove-dangling-annotations  -o $@
-#.PRECIOUS: mirror/%.owl
 
 # ----------------------------------------
 # Release
@@ -160,8 +151,8 @@ all_imports: $(IMPORTS_OWL)
 # release: $(ONT).owl $(ONT).obo efo_slim.owl
 #	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
 
-release: $(ONT).owl  efo_slim.owl
-	cp $^ $(RELEASEDIR) 
+#release: $(ONT).owl  efo_slim.owl
+#	cp $^ $(RELEASEDIR)
 
 # ----------------------------------------
 # Sparql queries: Q/C
