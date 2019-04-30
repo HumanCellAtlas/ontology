@@ -59,7 +59,7 @@ $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_dele
 #top_module_to_remote.owl:
 #	 $(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
 
-all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT) fma_other.owl fma_uberon.owl uberon_human_extended.owl
+all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT) uberon_human_extended.owl
 
 #../imports/euarchontoglires-basic.obo:
 #	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
@@ -110,19 +110,19 @@ fbbi_hcao.owl: fbbi_terms.txt
 
 #generate a small MIREOT extract of FMA from leaf terms in fma_import_manual.txt and with FMA:82472 as upper, then rename the upper term to its UBERON equivalent
 fma_uberon.owl: fma_import_manual.txt
-	$(ROBOT) extract --input $(FMA_IMPORT) --method MiREOT -L fma_import_manual.txt -u FMA:82472 rename --mappings fma_uberon_mappings.csv --output fma_uberon.owl
+	$(ROBOT) extract --input $(FMA_IMPORT) --method MiREOT -L fma_import_manual.txt -u FMA:82472 rename --mappings fma_uberon_mappings.csv --output $@
 
 #extract the descendants of the UBERON term into a separate file
 fma_descendants.owl: fma_uberon.owl
-	$(ROBOT) filter --input fma_uberon.owl --term UBERON:0000064 --select "annotations descendants" --output fma_descendants.owl
+	$(ROBOT) filter --input $< --term UBERON:0000064 --select "annotations descendants" --output $@
 
 #remove all annotations from the FMA-UBERON slim
 fma_uberon_no_annotations.owl: fma_uberon.owl
-	$(ROBOT) remove --input fma_uberon.owl --axioms annotation --output fma_uberon_no_annotations.owl
+	$(ROBOT) remove --input $< --axioms annotation --output $@
 
 #merge the annotation-less slim and the descendants with annotations into the uberon_human slim
-uberon_human_extended.owl: fma_uberon_no_annotations.owl fma_descendants uberon_human.owl
-	$(ROBOT) merge --input fma_uberon_no_annotations.owl --input fma_desendants --input uberon_human.owl relax reduce --output uberon_human_extended.owl
+uberon_human_extended.owl: fma_uberon_no_annotations.owl fma_descendants.owl uberon_human.owl
+	$(ROBOT) merge --input fma_uberon_no_annotations.owl --input fma_descendants.owl --input uberon_human.owl relax reduce --output $@
 
 
 
