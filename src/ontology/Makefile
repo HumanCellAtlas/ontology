@@ -45,7 +45,7 @@ prepare_release: all
 # The main release target needs breaking into separate steps to avoid ROBOT exception
 $(ONT).owl: $(SRC) uberon_human.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
 	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human.owl --input cl_human.owl -o hcao_merged.owl &&\
-	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt --axioms logical -p false -o hcao_cleaned.owl &&\
+	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt -p false -o hcao_cleaned.owl &&\
 	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
 
