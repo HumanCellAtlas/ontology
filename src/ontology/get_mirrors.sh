@@ -2,6 +2,8 @@
 
 mkdir -p mirror
 
+mkdir -p ../imports
+
 curl -L https://www.ebi.ac.uk/ols/ontologies/mondo/download > mirror/mondo.owl
 
 curl -L https://www.ebi.ac.uk/ols/ontologies/uberon/download > mirror/uberon.owl
