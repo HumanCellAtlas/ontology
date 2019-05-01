@@ -11,7 +11,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:Wikipedia="http://purl.obolibrary.org/obo/Wikipedia#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/hsapdv.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/hsapdv/releases/2018-01-08/hsapdv.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/hsapdv/releases/2018-03-24/hsapdv.owl"/>
         <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 1.101</oboInOwl:auto-generated-by>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">03:05:2012 18:48</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_stages_ontology</oboInOwl:default-namespace>

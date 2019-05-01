@@ -12,7 +12,7 @@ curl -L https://www.ebi.ac.uk/ols/ontologies/fbbi/download > ../imports/fbbi.owl
 
 curl -L https://www.ebi.ac.uk/ols/ontologies/hsapdv/download > ../imports/hsapdv.owl
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/go/download > ../imports/go-basic.obo
+curl -L https://www.ebi.ac.uk/ols/ontologies/go/download > ../imports/go.owl
 
 curl -L curl https://www.ebi.ac.uk/ols/ontologies/cl/download > mirror/cl.owl
 
