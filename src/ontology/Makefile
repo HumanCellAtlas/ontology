@@ -92,8 +92,8 @@ cl_human.owl: cell_import.txt
 go_cell_cycle.owl: ../imports/go.owl
 	$(ROBOT) extract -i ../imports/go.owl --method MIREOT -b GO:0022403 -o go_cell_cycle.owl
 
-#efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
-#	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
+efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
+	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
 
 microscopy_seed.txt: ../imports/fbbi.owl
 	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
