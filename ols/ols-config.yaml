@@ -103,7 +103,7 @@ wide association studies. It includes a list of countries, regions and major are
 
 ## EDAM
 
-  - id: edam
+  - id: http://edamontology.org/
     preferredPrefix: EDAM
     title: Bioinformatics operations, data types, formats, identifiers and topics
     uri: https://www.ebi.ac.uk/ols/api/ontologies/edam
@@ -117,10 +117,10 @@ wide association studies. It includes a list of countries, regions and major are
     hierarchical_property:
       - http://purl.obolibrary.org/obo/BFO_0000050
     base_uri:
-      - "http://edamontology.org/data_",
-      - "http://edamontology.org/identifier_",
-      - "http://edamontology.org/topic_",
-      - "http://edamontology.org/format_"
+      - http://edamontology.org/data_
+      - http://edamontology.org/identifier_
+      - http://edamontology.org/topic_
+      - http://edamontology.org/format_
     oboSlims: false
     reasoner: NONE
     ontology_purl : http://edamontology.org/EDAM.owl
