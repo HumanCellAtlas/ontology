@@ -103,7 +103,7 @@ wide association studies. It includes a list of countries, regions and major are
 
 ## EDAM
 
-  - id: http://edamontology.org/
+  - id: edam
     preferredPrefix: EDAM
     title: Bioinformatics operations, data types, formats, identifiers and topics
     uri: https://www.ebi.ac.uk/ols/api/ontologies/edam
