@@ -20,6 +20,7 @@ curl -L curl https://www.ebi.ac.uk/ols/ontologies/cl/download > mirror/cl.owl
 
 curl -L https://www.ebi.ac.uk/ols/ontologies/efo/download  > mirror/efo.owl
 
+# curl -L https://www.ebi.ac.uk/ols/ontologies/edam/download  > ../imports/edam.owl
 
 
 

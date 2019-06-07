@@ -18,6 +18,7 @@ UBERON_IMPORT=mirror/uberon.owl
 #CL_IMPORT=../imports/cl.owl
 CL_IMPORT=mirror/cl.owl
 FBBI=../imports/fbbi.owl
+#EDAM=../imports/edam.owl
 FMA_IMPORT=../imports/fma.owl
 #CL_IMPORT="http://purl.obolibrary.org/obo/cl.owl"
 EFO_MIRROR=mirror/efo.owl
@@ -106,6 +107,13 @@ fbbi_terms.txt: microscopy_seed.txt microscopy_label_seed.txt
 
 fbbi_hcao.owl: fbbi_terms.txt
 	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
+
+#generate data branch slim from EDAM
+#data_terms.txt: ../imports/edam.owl
+#	echo "'Data'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
+
+#edam_hcao.owl: data_terms.txt
+#	$(ROBOT) extract --method BOT --input $(EDAM) --term-file data_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/edam --output $@
 
 
 #generate a small MIREOT extract of FMA from leaf terms in fma_import_manual.txt and with FMA:82472 as upper, then rename the upper term to its UBERON equivalent
