@@ -1,0 +1,47 @@
+http://purl.obolibrary.org/obo/FMA_7372 # Apicoposterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7374 # Superior lingular bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7375 # Inferior lingular bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7361 # Lateral bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7360 # Medial bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_11181 # Bronchopulmonary segment of left lung
+http://purl.obolibrary.org/obo/FMA_8743 # Bronchopulmonary segment of right lung
+http://purl.obolibrary.org/obo/FMA_13195 # Posterior basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7362 # Right posterior basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7380 # Left posterior basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13194 # Lateral basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7379 # Left lateral basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7363 # Right lateral basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13193 # Anterior basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7378 # Left anterior basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7364 # Right anterior basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13192 # Medial basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7377 # Left medial basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7365 # Right medial basal bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13191 # Superior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7376 # Left superior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7366 # Right superior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13190 # Anterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7359 # Right anterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7373 # Left anterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13189 # Posterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7339 # Right posterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7386 # Left posterior bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_13188 # Apical bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7338 # Right apical bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_7385 # Left apical bronchopulmonary segment
+http://purl.obolibrary.org/obo/FMA_15757 # Region of anterior sector of left liver (in-vivo)
+http://purl.obolibrary.org/obo/FMA_15741 # Hepatovenous segment III
+http://purl.obolibrary.org/obo/FMA_15742 # Hepatovenous segment IV
+http://purl.obolibrary.org/obo/FMA_15755 # Region of anterior sector of right liver (in-vivo)
+http://purl.obolibrary.org/obo/FMA_15746 # Hepatovenous segment VIII
+http://purl.obolibrary.org/obo/FMA_15743 # Hepatovenous segment V
+http://purl.obolibrary.org/obo/FMA_15756 # Region of posterior sector of right liver (in-vivo)
+http://purl.obolibrary.org/obo/FMA_15744 # Hepatovenous segment VI
+http://purl.obolibrary.org/obo/FMA_15745 # Hepatovenous segment VII
+http://purl.obolibrary.org/obo/FMA_15747 # Hepatovenous segment IX
+http://purl.obolibrary.org/obo/FMA_15739 # Hepatovenous segment II
+http://purl.obolibrary.org/obo/FMA_15805 # Hepatovenous segment IVa
+http://purl.obolibrary.org/obo/FMA_15806 # Hepatovenous segment IVb
+http://purl.obolibrary.org/obo/FMA_15816 # Hepatovenous segment IXb
+http://purl.obolibrary.org/obo/FMA_15817 # Hepatovenous segment IXc
+http://purl.obolibrary.org/obo/FMA_15818 # Hepatovenous segment IXd

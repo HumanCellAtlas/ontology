@@ -12,14 +12,13 @@ ontologies:
     uri: http://ontology.data.humancellatlas.org/ontologies/hcao
     base_uri:
       - http://ontology.data.humancellatlas.org/ontologies/HCA_
+      - http://purl.obolibrary.org/obo/UBERON_
+      - http://purl.obolibrary.org/obo/CL_
+      - http://purl.obolibrary.org/obo/HsapDv_    
     synonym_property:
       - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
     definition_property:
       - http://purl.obolibrary.org/obo/IAO_0000115
-    base_uri:
-      - http://purl.obolibrary.org/obo/UBERON_
-      - http://purl.obolibrary.org/obo/CL_
-      - http://purl.obolibrary.org/obo/HsapDv_
     reasoner: EL
     oboSlims: false
     ontology_purl : file:///opt/ols/ontologies/hcao.owl
@@ -85,7 +84,7 @@ ontologies:
   - id: hancestro
     preferredPrefix: hancestro
     title: Human Ancestry Ontology
-    uri: http://purl.obolibrary.org/obo/hancestro.owl
+    uri: http://edamontology.org/EDAM.owl
     description: "The Human Ancestry Ontology (Hancestro) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome
 wide association studies. It includes a list of countries, regions and major areas (essentially continents), as well as a fairly exhaustive list of country or region-specific ancestral groups, uncategorised ancestral groups and population isolates."
     homepage: https://github.com/EBISPOT/ancestro/
@@ -101,3 +100,29 @@ wide association studies. It includes a list of countries, regions and major are
     oboSlims: false
     reasoner: OWL2
     ontology_purl : https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl
+
+
+## EDAM
+
+  - id: edam
+    preferredPrefix: EDAM
+    title: Bioinformatics operations, data types, formats, identifiers and topics
+    uri: https://www.ebi.ac.uk/ols/api/ontologies/edam
+    description: "EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use."
+    homepage: http://edamontology.org/
+    definition_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasDefinition
+    synonym_property:
+      - http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+      - http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+    hierarchical_property:
+      - http://purl.obolibrary.org/obo/BFO_0000050
+    base_uri:
+      - http://edamontology.org/data_
+      - http://edamontology.org/identifier_
+      - http://edamontology.org/topic_
+      - http://edamontology.org/format_
+    oboSlims: false
+    reasoner: NONE
+    ontology_purl : http://edamontology.org/EDAM.owl
+
