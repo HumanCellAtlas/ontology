@@ -1,6 +1,7 @@
 ## REMEMBER TO SET UP YOUR GITHUB REPO FOR TRAVIS
 ## Go to: https://travis-ci.org/obophenotype for details
 language: java
+dist: trusty
 jdk:
   - oraclejdk8
 
