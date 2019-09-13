@@ -74,8 +74,11 @@ uberon_import.txt: $(UBERON_IMPORT)
 uberon_with_fma_labels.ttl: ../imports/fma.owl
 	$(ROBOT) merge --input ../imports/fma.owl --input $(UBERON_IMPORT) query --format ttl --construct ../sparql/construct_fma_labels.sparql uberon_with_fma_labels.ttl
 
-uberon_human.owl: uberon_with_fma_labels.ttl uberon_import.txt
-	$(ROBOT) extract --method BOT --input $(UBERON_IMPORT) --term-file uberon_import.txt merge --input uberon_with_fma_labels.ttl --output uberon_human.owl
+uberon_manual.owl: uberon_manual_import.txt
+	$(ROBOT) extract --method BOT --input $(UBERON_IMPORT) --term-file $< -o $@
+
+uberon_human.owl: uberon_with_fma_labels.ttl uberon_manual.owl uberon_import.txt
+	$(ROBOT) extract --method BOT --input $(UBERON_IMPORT) --term-file uberon_import.txt merge --input uberon_with_fma_labels.ttl --input uberon_manual.owl --output uberon_human.owl
 
 # extract human cells from CTO ontology (based on FMA xref)
 
