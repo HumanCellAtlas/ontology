@@ -27,9 +27,9 @@ EFO_MIRROR=mirror/efo.owl
 # Top-level targets
 # ----------------------------------------
 
-some: sparql_test $(ONT).owl
+some: $(ONT).owl sparql_test
 
-all: sparql_test all_imports all_anatomy all_cells  go_cell_cycle.owl efo_slim.owl fbbi_hcao.owl $(ONT).owl
+all: all_imports all_anatomy all_cells  go_cell_cycle.owl efo_slim.owl fbbi_hcao.owl $(ONT).owl
 
 test: sparql_test all
 prepare_release: all
@@ -47,7 +47,8 @@ prepare_release: all
 $(ONT).owl: $(SRC) uberon_human_extended.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
 	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_human.owl -o hcao_merged.owl &&\
 	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt -p false -o hcao_cleaned.owl &&\
-	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT) filter -i hcao_cleaned.owl -T organs.txt query -q $(SPARQLDIR)/HCAO_organs.sparql organs_tagged.owl &&\
+	$(ROBOT) merge -i hcao_cleaned.owl -i organs_tagged.owl reason -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
 
 #$(ONT).obo: $(ONT).owl
