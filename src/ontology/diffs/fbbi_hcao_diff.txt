@@ -1,5 +1,5 @@
 Ontology Diff Summary
-Diff date: 2019/11/29 09:35:01
+Diff date: 2019/12/17 09:31:24
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/fbbi_hcao.owl
 Second ontology URI: fbbi_hcao.owl
 Number of classes changed: 0

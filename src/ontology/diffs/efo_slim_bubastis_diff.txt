@@ -1,8 +1,24 @@
 Ontology Diff Summary
-Diff date: 2019/11/29 09:34:59
+Diff date: 2019/12/17 09:31:22
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 0
-Number of classes added: 0
+Number of classes changed: 1
+Number of classes added: 1
 Number of classes deleted: 0
  
+
+################
+@Classes modified from previous
+
+Class: http://www.ebi.ac.uk/efo/EFO_0008919
+Label(s): Seq-Well 
++ 'Seq-Well' SubClassOf 'library preparation'
+
+
+################
+@Classes new to this version
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010550
+Label(s): sci-RNA-seq 
++ 'sci-RNA-seq' SubClassOf 'library preparation'
+
