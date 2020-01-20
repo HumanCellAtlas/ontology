@@ -1,18 +1,8 @@
 Ontology Diff Summary
-Diff date: 2019/12/17 09:31:18
+Diff date: 2020/01/20 11:15:53
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/hcao.owl
 Second ontology URI: hcao.owl
 Number of classes changed: 0
-Number of classes added: 1
+Number of classes added: 0
 Number of classes deleted: 0
  
-
-################
-@Classes new to this version
-
-Class: http://purl.obolibrary.org/obo/UBERON_0013682
-Label(s): peripheral region of retina 
-+ 'peripheral region of retina' SubClassOf 'regional part of nervous system'
-+ 'peripheral region of retina' SubClassOf 'ectoderm-derived structure'
-+ 'peripheral region of retina' SubClassOf 'part of' some 'retina'
-
