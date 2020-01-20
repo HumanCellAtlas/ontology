@@ -128,12 +128,12 @@ fma_descendants.owl: fma_uberon.owl
 	$(ROBOT) filter --input $< --term UBERON:0000064 --select "annotations descendants" --output $@
 
 #remove all annotations from the FMA-UBERON slim
-fma_uberon_no_annotations.owl: fma_uberon.owl
-	$(ROBOT) remove --input $< --axioms annotation --output $@
+#fma_uberon_no_annotations.owl: fma_uberon.owl
+#	$(ROBOT) remove --input $< --axioms annotation --output $@
 
 #merge the annotation-less slim and the descendants with annotations into the uberon_human slim
-uberon_human_extended.owl: fma_uberon_no_annotations.owl fma_descendants.owl uberon_human.owl
-	$(ROBOT) merge --input fma_uberon_no_annotations.owl --input fma_descendants.owl --input uberon_human.owl relax reduce --output $@
+uberon_human_extended.owl: fma_descendants.owl uberon_human.owl
+	$(ROBOT) merge --input fma_descendants.owl --input uberon_human.owl relax reduce --output $@
 
 
 

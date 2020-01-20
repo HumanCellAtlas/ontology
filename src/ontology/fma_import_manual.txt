@@ -45,3 +45,12 @@ http://purl.obolibrary.org/obo/FMA_15806 # Hepatovenous segment IVb
 http://purl.obolibrary.org/obo/FMA_15816 # Hepatovenous segment IXb
 http://purl.obolibrary.org/obo/FMA_15817 # Hepatovenous segment IXc
 http://purl.obolibrary.org/obo/FMA_15818 # Hepatovenous segment IXd
+http://purl.obolibrary.org/obo/FMA_86310 # Zone of kidney
+http://purl.obolibrary.org/obo/FMA_14092 # Zone of small intestine
+http://purl.obolibrary.org/obo/FMA_86175 # Zone of large intestine
+http://purl.obolibrary.org/obo/FMA_17559 # Zone of uterus
+http://purl.obolibrary.org/obo/FMA_26659 # Segment of trachea
+http://purl.obolibrary.org/obo/FMA_15725 # Subsegment of liver
+http://purl.obolibrary.org/obo/FMA_33934 # Epiphyseal plate of tibia
+http://purl.obolibrary.org/obo/FMA_32792 # Epiphyseal plate of femur
+http://purl.obolibrary.org/obo/FMA_34074 # Epiphyseal plate of fibula
