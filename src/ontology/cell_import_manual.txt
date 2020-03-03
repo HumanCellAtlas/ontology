@@ -7,3 +7,11 @@ http://purl.obolibrary.org/obo/CL_0001050
 http://purl.obolibrary.org/obo/CL_2000001
 http://purl.obolibrary.org/obo/CL_2000095
 http://purl.obolibrary.org/obo/CL_1001213
+http://purl.obolibrary.org/obo/CL_0000113
+http://purl.obolibrary.org/obo/CL_1000691
+http://purl.obolibrary.org/obo/CL_0008033
+http://purl.obolibrary.org/obo/CL_2000002
+http://purl.obolibrary.org/obo/CL_0008036
+http://purl.obolibrary.org/obo/CL_0008033
+http://purl.obolibrary.org/obo/CL_0008029
+http://purl.obolibrary.org/obo/CL_0011020

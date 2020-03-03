@@ -1,8 +1,33 @@
 Ontology Diff Summary
-Diff date: 2020/01/20 11:15:56
+Diff date: 2020/03/03 10:15:01
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 0
+Number of classes changed: 3
 Number of classes added: 0
-Number of classes deleted: 0
+Number of classes deleted: 1
  
+
+################
+@Classes modified from previous
+
+Class: http://www.ebi.ac.uk/efo/EFO_0008769
+Label(s): HT-SELEX 
+- 'HT-SELEX' SubClassOf 'DNA assay'
++ 'HT-SELEX' SubClassOf 'SELEX-seq'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0008757
+Label(s): gSELEX-Seq 
++ 'gSELEX-Seq' SubClassOf 'SELEX-seq'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0008917
+Label(s): SELEX 
+- 'SELEX' SubClassOf 'DNA assay'
+
+
+################
+@Classes deleted from this version
+
+Class: http://www.ebi.ac.uk/efo/EFO_0008917
+Label(s): SELEX 
++ 'SELEX' SubClassOf 'DNA assay'
+
