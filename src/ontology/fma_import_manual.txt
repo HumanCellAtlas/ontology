@@ -54,3 +54,45 @@ http://purl.obolibrary.org/obo/FMA_15725 # Subsegment of liver
 http://purl.obolibrary.org/obo/FMA_33934 # Epiphyseal plate of tibia
 http://purl.obolibrary.org/obo/FMA_32792 # Epiphyseal plate of femur
 http://purl.obolibrary.org/obo/FMA_34074 # Epiphyseal plate of fibula
+http://purl.obolibrary.org/obo/FMA_15605 # Inferior pole of kidney
+http://purl.obolibrary.org/obo/FMA_15609 # Inferior pole of left kidney
+http://purl.obolibrary.org/obo/FMA_15608 # Inferior pole of right kidney
+http://purl.obolibrary.org/obo/FMA_258906 # Middle part of kidney
+http://purl.obolibrary.org/obo/FMA_258910 # Middle part of left kidney
+http://purl.obolibrary.org/obo/FMA_258908 # Middle part of right kidney
+http://purl.obolibrary.org/obo/FMA_15604 # Superior pole of kidney
+http://purl.obolibrary.org/obo/FMA_15607 # Superior pole of left kidney
+http://purl.obolibrary.org/obo/FMA_15606 # Superior pole of right kidney
+http://purl.obolibrary.org/obo/FMA_16981
+http://purl.obolibrary.org/obo/FMA_16982
+http://purl.obolibrary.org/obo/FMA_16983
+http://purl.obolibrary.org/obo/FMA_14964
+http://purl.obolibrary.org/obo/FMA_14965
+http://purl.obolibrary.org/obo/FMA_14966
+http://purl.obolibrary.org/obo/FMA_15955
+http://purl.obolibrary.org/obo/FMA_71133
+http://purl.obolibrary.org/obo/FMA_15956
+http://purl.obolibrary.org/obo/FMA_71134
+http://purl.obolibrary.org/obo/FMA_86726
+http://purl.obolibrary.org/obo/FMA_15719
+http://purl.obolibrary.org/obo/FMA_15721
+http://purl.obolibrary.org/obo/FMA_66305
+http://purl.obolibrary.org/obo/FMA_66306
+http://purl.obolibrary.org/obo/FMA_66307
+http://purl.obolibrary.org/obo/FMA_29335
+http://purl.obolibrary.org/obo/FMA_86031
+http://purl.obolibrary.org/obo/FMA_86182
+http://purl.obolibrary.org/obo/FMA_86180
+http://purl.obolibrary.org/obo/FMA_86178
+http://purl.obolibrary.org/obo/FMA_86176
+http://purl.obolibrary.org/obo/FMA_86183
+http://purl.obolibrary.org/obo/FMA_86181
+http://purl.obolibrary.org/obo/FMA_86179
+http://purl.obolibrary.org/obo/FMA_86177
+http://purl.obolibrary.org/obo/FMA_86032
+http://purl.obolibrary.org/obo/FMA_86030
+http://purl.obolibrary.org/obo/FMA_23182
+http://purl.obolibrary.org/obo/FMA_76838
+http://purl.obolibrary.org/obo/FMA_17752
+http://purl.obolibrary.org/obo/FMA_17561
+http://purl.obolibrary.org/obo/FMA_76837

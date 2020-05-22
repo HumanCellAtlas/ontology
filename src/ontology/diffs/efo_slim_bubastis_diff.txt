@@ -1,33 +1,52 @@
 Ontology Diff Summary
-Diff date: 2020/03/03 10:15:01
+Diff date: 2020/05/22 12:20:26
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 3
-Number of classes added: 0
-Number of classes deleted: 1
+Number of classes changed: 0
+Number of classes added: 10
+Number of classes deleted: 0
  
 
 ################
-@Classes modified from previous
+@Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008769
-Label(s): HT-SELEX 
-- 'HT-SELEX' SubClassOf 'DNA assay'
-+ 'HT-SELEX' SubClassOf 'SELEX-seq'
+Class: http://www.ebi.ac.uk/efo/EFO_0010715
+Label(s): 10X Ig enrichment 
++ '10X Ig enrichment' SubClassOf '10X Immune profiling'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008757
-Label(s): gSELEX-Seq 
-+ 'gSELEX-Seq' SubClassOf 'SELEX-seq'
+Class: http://www.ebi.ac.uk/efo/EFO_0010714
+Label(s): 10X TCR enrichment 
++ '10X TCR enrichment' SubClassOf '10X Immune profiling'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008917
-Label(s): SELEX 
-- 'SELEX' SubClassOf 'DNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0010713
+Label(s): 10X Immune profiling 
++ '10X Immune profiling' SubClassOf '10X 5' v2 sequencing'
 
+Class: http://www.ebi.ac.uk/efo/EFO_0010690
+Label(s): renal dialysis 
++ 'renal dialysis' SubClassOf 'medical procedure'
 
-################
-@Classes deleted from this version
+Class: http://www.ebi.ac.uk/efo/EFO_0010682
+Label(s): liver transplant 
++ 'liver transplant' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008917
-Label(s): SELEX 
-+ 'SELEX' SubClassOf 'DNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0010676
+Label(s): cornea transplantation 
++ 'cornea transplantation' SubClassOf 'medical procedure'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010674
+Label(s): cardioverter defibrillator 
++ 'cardioverter defibrillator' SubClassOf 'medical procedure'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010673
+Label(s): cardiac transplant 
++ 'cardiac transplant' SubClassOf 'medical procedure'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010672
+Label(s): blood vessel replacement 
++ 'blood vessel replacement' SubClassOf 'medical procedure'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010681
+Label(s): ileostomy 
++ 'ileostomy' SubClassOf 'medical procedure'
 
