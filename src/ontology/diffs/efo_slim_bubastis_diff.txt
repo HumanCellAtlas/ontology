@@ -1,52 +1,580 @@
 Ontology Diff Summary
-Diff date: 2020/05/22 12:20:26
+Diff date: 2020/10/26 14:51:56
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 0
+Number of classes changed: 65
 Number of classes added: 10
-Number of classes deleted: 0
+Number of classes deleted: 65
  
+
+################
+@Classes modified from previous
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000393
+Label(s): Robertsonian translocation 
+- 'Robertsonian translocation' SubClassOf 'translocation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000370
+Label(s): chemically induced mutation 
+- 'chemically induced mutation' SubClassOf 'induced mutation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000369
+Label(s): compound based treatment 
+- 'compound based treatment' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000336
+Label(s): chromosomal aberration 
+- 'chromosomal aberration' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004500
+Label(s): radiation induced mutation 
+- 'radiation induced mutation' SubClassOf 'induced mutation'
+
+Class: http://purl.obolibrary.org/obo/EO_0007241
+Label(s): plant nutrient treatment 
+- 'plant nutrient treatment' SubClassOf 'chemical treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004030
+Label(s): gene trap 
+- 'gene trap' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0007222
+Label(s): UV light regimen 
+- 'UV light regimen' SubClassOf 'light regimen'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004024
+Label(s): translocation 
+- 'translocation' SubClassOf 'chromosomal aberration'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004022
+Label(s): reciprocal translocation 
+- 'reciprocal translocation' SubClassOf 'translocation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004021
+Label(s): transposition 
+- 'transposition' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004020
+Label(s): transgenic 
+- 'transgenic' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004019
+Label(s): targeted mutation 
+- 'targeted mutation' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004018
+Label(s): spontaneous mutation 
+- 'spontaneous mutation' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004017
+Label(s): inversion 
+- 'inversion' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004016
+Label(s): insertion 
+- 'insertion' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004015
+Label(s): duplication 
+- 'duplication' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004013
+Label(s): balanced reciprocal translocation 
+- 'balanced reciprocal translocation' SubClassOf 'translocation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007056
+Label(s): clinical treatment 
+- 'clinical treatment' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004963
+Label(s): gene knock in 
+- 'gene knock in' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0001054
+Label(s): limited nitrate regimen 
+- 'limited nitrate regimen' SubClassOf 'plant nutrient treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007207
+Label(s): red light regimen 
+- 'red light regimen' SubClassOf 'radiation quality treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000727
+Label(s): treatment 
+- 'treatment' SubClassOf 'experimental process'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003961
+Label(s): hormone replacement therapy 
+- 'hormone replacement therapy' SubClassOf 'treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007191
+Label(s): abiotic plant treatment 
+- 'abiotic plant treatment' SubClassOf 'plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007105
+Label(s): abscisic acid treatment 
+- 'abscisic acid treatment' SubClassOf 'growth hormone treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007154
+Label(s): radiation quality treatment 
+- 'radiation quality treatment' SubClassOf 'plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007162
+Label(s): continuous light regimen 
+- 'continuous light regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007165
+Label(s): growth hormone treatment 
+- 'growth hormone treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007129
+Label(s): UV-C light regimen 
+- 'UV-C light regimen' SubClassOf 'UV light regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007174
+Label(s): cold temperature regimen 
+- 'cold temperature regimen' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007185
+Label(s): salt treatment 
+- 'salt treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007189
+Label(s): chemical treatment 
+- 'chemical treatment' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007196
+Label(s): light regimen 
+- 'light regimen' SubClassOf 'radiation quality treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007199
+Label(s): long day length regimen 
+- 'long day length regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0001047
+Label(s): limited iron regimen 
+- 'limited iron regimen' SubClassOf 'plant nutrient treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001046
+Label(s): limited phosphate treatment 
+- 'limited phosphate treatment' SubClassOf 'inorganic chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001020
+Label(s): carbon dioxide treatment 
+- 'carbon dioxide treatment' SubClassOf 'inorganic gas treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001004
+Label(s): inorganic chemical treatment 
+- 'inorganic chemical treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001001
+Label(s): plant treatment 
+- 'plant treatment' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007820
+Label(s): cognitive behavioural therapy 
+- 'cognitive behavioural therapy' SubClassOf 'treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007200
+Label(s): short day length regimen 
+- 'short day length regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007203
+Label(s): far red light regimen 
+- 'far red light regimen' SubClassOf 'radiation quality treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007078
+Label(s): light quantity regimen 
+- 'light quantity regimen' SubClassOf 'radiation quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007068
+Label(s): ethylene treatment 
+- 'ethylene treatment' SubClassOf 'growth hormone treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007067
+Label(s): hydroponic plant culture media 
+- 'hydroponic plant culture media' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007049
+Label(s): soil environment 
+- 'soil environment' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007048
+Label(s): sodium chloride regimen 
+- 'sodium chloride regimen' SubClassOf 'plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007270
+Label(s): continuous dark (no light) regimen 
+- 'continuous dark (no light) regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0001055
+Label(s): inorganic gas treatment 
+- 'inorganic gas treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007319
+Label(s): warm/hot air temperature regimen 
+- 'warm/hot air temperature regimen' SubClassOf 'warm/hot temperature regimen'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004293
+Label(s): recombination 
+- 'recombination' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000510
+Label(s): genetic modification 
+- 'genetic modification' SubClassOf 'experimental process'
+
+Class: http://purl.obolibrary.org/obo/EO_0007357
+Label(s): biotic plant treatment 
+- 'biotic plant treatment' SubClassOf 'plant treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000506
+Label(s): gene knock out 
+- 'gene knock out' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004014
+Label(s): deletion 
+- 'deletion' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0001056
+Label(s): elevated carbon dioxide treatment 
+- 'elevated carbon dioxide treatment' SubClassOf 'carbon dioxide treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007153
+Label(s): radiation quantity regimen 
+- 'radiation quantity regimen' SubClassOf 'plant treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000470
+Label(s): environmental stress 
+- 'environmental stress' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0005315
+Label(s): induced mutation 
+- 'induced mutation' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0007171
+Label(s): pH regimen 
+- 'pH regimen' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007173
+Label(s): warm/hot temperature regimen 
+- 'warm/hot temperature regimen' SubClassOf 'abiotic plant treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009600
+Label(s): thyroid radioablation therapy 
+- 'thyroid radioablation therapy' SubClassOf 'treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001038
+Label(s): osmotic stress treatment 
+- 'osmotic stress treatment' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007404
+Label(s): drought environment 
+- 'drought environment' SubClassOf 'plant treatment'
+
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010715
-Label(s): 10X Ig enrichment 
-+ '10X Ig enrichment' SubClassOf '10X Immune profiling'
+Class: http://www.ebi.ac.uk/efo/EFO_0010728
+Label(s): curettage 
++ 'curettage' SubClassOf 'collecting specimen from organism'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010714
-Label(s): 10X TCR enrichment 
-+ '10X TCR enrichment' SubClassOf '10X Immune profiling'
+Class: http://www.ebi.ac.uk/efo/EFO_0010727
+Label(s): vacuum aspiration 
++ 'vacuum aspiration' SubClassOf 'collecting specimen from organism'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010713
-Label(s): 10X Immune profiling 
-+ '10X Immune profiling' SubClassOf '10X 5' v2 sequencing'
+Class: http://www.ebi.ac.uk/efo/EFO_0010726
+Label(s): total joint arthroplasty 
++ 'total joint arthroplasty' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010690
-Label(s): renal dialysis 
-+ 'renal dialysis' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010719
+Label(s): continuous positive airway pressure 
++ 'continuous positive airway pressure' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010682
-Label(s): liver transplant 
-+ 'liver transplant' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010720
+Label(s): invasive mechanical ventilation 
++ 'invasive mechanical ventilation' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010676
-Label(s): cornea transplantation 
-+ 'cornea transplantation' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010721
+Label(s): lung transplantation 
++ 'lung transplantation' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010674
-Label(s): cardioverter defibrillator 
-+ 'cardioverter defibrillator' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010722
+Label(s): ophthalmic procedure 
++ 'ophthalmic procedure' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010673
-Label(s): cardiac transplant 
-+ 'cardiac transplant' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010741
+Label(s): nasal brush 
++ 'nasal brush' SubClassOf 'collecting specimen from organism'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010672
-Label(s): blood vessel replacement 
-+ 'blood vessel replacement' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010805
+Label(s): massively parallel signature sequencing 
++ 'massively parallel signature sequencing' SubClassOf 'DNA-seq'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010681
-Label(s): ileostomy 
-+ 'ileostomy' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0010806
+Label(s): enrichment of phosphorylated protein 
++ 'enrichment of phosphorylated protein' SubClassOf 'enrichment process'
+
+
+################
+@Classes deleted from this version
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000393
+Label(s): Robertsonian translocation 
++ 'Robertsonian translocation' SubClassOf 'translocation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000370
+Label(s): chemically induced mutation 
++ 'chemically induced mutation' SubClassOf 'induced mutation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000369
+Label(s): compound based treatment 
++ 'compound based treatment' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000336
+Label(s): chromosomal aberration 
++ 'chromosomal aberration' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004500
+Label(s): radiation induced mutation 
++ 'radiation induced mutation' SubClassOf 'induced mutation'
+
+Class: http://purl.obolibrary.org/obo/EO_0007241
+Label(s): plant nutrient treatment 
++ 'plant nutrient treatment' SubClassOf 'chemical treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004030
+Label(s): gene trap 
++ 'gene trap' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0007222
+Label(s): UV light regimen 
++ 'UV light regimen' SubClassOf 'light regimen'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004024
+Label(s): translocation 
++ 'translocation' SubClassOf 'chromosomal aberration'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004022
+Label(s): reciprocal translocation 
++ 'reciprocal translocation' SubClassOf 'translocation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004021
+Label(s): transposition 
++ 'transposition' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004020
+Label(s): transgenic 
++ 'transgenic' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004019
+Label(s): targeted mutation 
++ 'targeted mutation' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004018
+Label(s): spontaneous mutation 
++ 'spontaneous mutation' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004017
+Label(s): inversion 
++ 'inversion' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004016
+Label(s): insertion 
++ 'insertion' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004015
+Label(s): duplication 
++ 'duplication' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004013
+Label(s): balanced reciprocal translocation 
++ 'balanced reciprocal translocation' SubClassOf 'translocation'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007056
+Label(s): clinical treatment 
++ 'clinical treatment' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004963
+Label(s): gene knock in 
++ 'gene knock in' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0001054
+Label(s): limited nitrate regimen 
++ 'limited nitrate regimen' SubClassOf 'plant nutrient treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007207
+Label(s): red light regimen 
++ 'red light regimen' SubClassOf 'radiation quality treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000727
+Label(s): treatment 
++ 'treatment' SubClassOf 'experimental process'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003961
+Label(s): hormone replacement therapy 
++ 'hormone replacement therapy' SubClassOf 'treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007191
+Label(s): abiotic plant treatment 
++ 'abiotic plant treatment' SubClassOf 'plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007105
+Label(s): abscisic acid treatment 
++ 'abscisic acid treatment' SubClassOf 'growth hormone treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007154
+Label(s): radiation quality treatment 
++ 'radiation quality treatment' SubClassOf 'plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007162
+Label(s): continuous light regimen 
++ 'continuous light regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007165
+Label(s): growth hormone treatment 
++ 'growth hormone treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007129
+Label(s): UV-C light regimen 
++ 'UV-C light regimen' SubClassOf 'UV light regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007174
+Label(s): cold temperature regimen 
++ 'cold temperature regimen' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007185
+Label(s): salt treatment 
++ 'salt treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007189
+Label(s): chemical treatment 
++ 'chemical treatment' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007196
+Label(s): light regimen 
++ 'light regimen' SubClassOf 'radiation quality treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007199
+Label(s): long day length regimen 
++ 'long day length regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0001047
+Label(s): limited iron regimen 
++ 'limited iron regimen' SubClassOf 'plant nutrient treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001046
+Label(s): limited phosphate treatment 
++ 'limited phosphate treatment' SubClassOf 'inorganic chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001020
+Label(s): carbon dioxide treatment 
++ 'carbon dioxide treatment' SubClassOf 'inorganic gas treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001004
+Label(s): inorganic chemical treatment 
++ 'inorganic chemical treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001001
+Label(s): plant treatment 
++ 'plant treatment' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007820
+Label(s): cognitive behavioural therapy 
++ 'cognitive behavioural therapy' SubClassOf 'treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007200
+Label(s): short day length regimen 
++ 'short day length regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007203
+Label(s): far red light regimen 
++ 'far red light regimen' SubClassOf 'radiation quality treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007078
+Label(s): light quantity regimen 
++ 'light quantity regimen' SubClassOf 'radiation quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0007068
+Label(s): ethylene treatment 
++ 'ethylene treatment' SubClassOf 'growth hormone treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007067
+Label(s): hydroponic plant culture media 
++ 'hydroponic plant culture media' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007049
+Label(s): soil environment 
++ 'soil environment' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007048
+Label(s): sodium chloride regimen 
++ 'sodium chloride regimen' SubClassOf 'plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007270
+Label(s): continuous dark (no light) regimen 
++ 'continuous dark (no light) regimen' SubClassOf 'light quantity regimen'
+
+Class: http://purl.obolibrary.org/obo/EO_0001055
+Label(s): inorganic gas treatment 
++ 'inorganic gas treatment' SubClassOf 'chemical treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007319
+Label(s): warm/hot air temperature regimen 
++ 'warm/hot air temperature regimen' SubClassOf 'warm/hot temperature regimen'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004293
+Label(s): recombination 
++ 'recombination' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000510
+Label(s): genetic modification 
++ 'genetic modification' SubClassOf 'experimental process'
+
+Class: http://purl.obolibrary.org/obo/EO_0007357
+Label(s): biotic plant treatment 
++ 'biotic plant treatment' SubClassOf 'plant treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000506
+Label(s): gene knock out 
++ 'gene knock out' SubClassOf 'genetic modification'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004014
+Label(s): deletion 
++ 'deletion' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0001056
+Label(s): elevated carbon dioxide treatment 
++ 'elevated carbon dioxide treatment' SubClassOf 'carbon dioxide treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007153
+Label(s): radiation quantity regimen 
++ 'radiation quantity regimen' SubClassOf 'plant treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000470
+Label(s): environmental stress 
++ 'environmental stress' SubClassOf 'treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0005315
+Label(s): induced mutation 
++ 'induced mutation' SubClassOf 'genetic modification'
+
+Class: http://purl.obolibrary.org/obo/EO_0007171
+Label(s): pH regimen 
++ 'pH regimen' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007173
+Label(s): warm/hot temperature regimen 
++ 'warm/hot temperature regimen' SubClassOf 'abiotic plant treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009600
+Label(s): thyroid radioablation therapy 
++ 'thyroid radioablation therapy' SubClassOf 'treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0001038
+Label(s): osmotic stress treatment 
++ 'osmotic stress treatment' SubClassOf 'abiotic plant treatment'
+
+Class: http://purl.obolibrary.org/obo/EO_0007404
+Label(s): drought environment 
++ 'drought environment' SubClassOf 'plant treatment'
 

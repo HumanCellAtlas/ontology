@@ -121,7 +121,7 @@ fbbi_hcao.owl: fbbi_terms.txt
 
 #generate a small MIREOT extract of FMA from leaf terms in fma_import_manual.txt and with FMA:82472 as upper, then rename the upper term to its UBERON equivalent
 fma_uberon.owl: fma_import_manual.txt
-	$(ROBOT) extract --input $(FMA_IMPORT) --method MiREOT -L fma_import_manual.txt -u FMA:82472 rename --mappings fma_uberon_mappings.csv --output $@
+	$(ROBOT) extract --input $(FMA_IMPORT) --method MiREOT -L fma_import_manual.txt -u FMA:67135 rename --mappings fma_uberon_mappings.csv --output $@
 
 #extract the descendants of the UBERON term into a separate file
 fma_descendants.owl: fma_uberon.owl
