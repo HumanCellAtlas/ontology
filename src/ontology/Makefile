@@ -124,16 +124,16 @@ fma_uberon.owl: fma_import_manual.txt
 	$(ROBOT) extract --input $(FMA_IMPORT) --method MiREOT -L fma_import_manual.txt -u FMA:67135 rename --mappings fma_uberon_mappings.csv --output $@
 
 #extract the descendants of the UBERON term into a separate file
-fma_descendants.owl: fma_uberon.owl
-	$(ROBOT) filter --input $< --term UBERON:0000064 --select "annotations descendants" --output $@
+#fma_descendants.owl: fma_uberon.owl
+#	$(ROBOT) filter --input $< --term UBERON:0000064 --select "annotations descendants" --output $@
 
 #remove all annotations from the FMA-UBERON slim
 #fma_uberon_no_annotations.owl: fma_uberon.owl
 #	$(ROBOT) remove --input $< --axioms annotation --output $@
 
 #merge the annotation-less slim and the descendants with annotations into the uberon_human slim
-uberon_human_extended.owl: fma_descendants.owl uberon_human.owl
-	$(ROBOT) merge --input fma_descendants.owl --input uberon_human.owl relax reduce --output $@
+uberon_human_extended.owl: fma_uberon.owl uberon_human.owl
+	$(ROBOT) merge --input fma_uberon.owl --input uberon_human.owl relax reduce --output $@
 
 
 
