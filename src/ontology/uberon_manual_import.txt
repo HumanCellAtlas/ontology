@@ -1,3 +1,5 @@
 uri
 http://purl.obolibrary.org/obo/UBERON_0004877
 http://purl.obolibrary.org/obo/UBERON_0013682
+http://purl.obolibrary.org/obo/UBERON_0007106
+http://purl.obolibrary.org/obo/UBERON_8000004
