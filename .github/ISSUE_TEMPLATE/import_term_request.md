@@ -1,7 +1,7 @@
 ---
 name: Import term request
 about: Create a ticket asking for an existing ontology term to be imported into the HCAO
-title: [ITR]
+title: "[ITR] "
 labels: 'import term request'
 assignees: paolaroncaglia
 ---
