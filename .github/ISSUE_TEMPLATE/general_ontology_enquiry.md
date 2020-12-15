@@ -1,7 +1,7 @@
 ---
 name: New ontology enquiry
 about: Create a ticket asking an ontology related question
-title: [ENQ]
+title: "[ENQ] "
 labels: question
 assignees: paolaroncaglia, zoependlington
 ---
