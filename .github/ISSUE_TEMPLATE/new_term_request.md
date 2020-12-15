@@ -1,7 +1,7 @@
 ---
 name: New term request
-about: Create a ticket asking for an existing ontology term to be imported into the HCAO
-title: [NTR]
+about: Create a ticket asking for a new ontology term to be created and added to the HCAO
+title: "[NTR] "
 labels: 'new term request'
 assignees: paolaroncaglia
 ---
