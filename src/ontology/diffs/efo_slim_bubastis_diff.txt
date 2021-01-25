@@ -1,90 +1,50 @@
 Ontology Diff Summary
-Diff date: 2020/12/03 16:10:28
+Diff date: 2021/01/25 15:24:36
 First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 14
-Number of classes added: 2
+Number of classes changed: 1
+Number of classes added: 7
 Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008796
-Label(s): MARS-seq 
-- 'MARS-seq' SubClassOf 'library preparation'
-+ 'MARS-seq' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008780
-Label(s): inDrop 
-- 'inDrop' SubClassOf 'library preparation'
-+ 'inDrop' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008906
-Label(s): scChIP-seq 
-+ 'scChIP-seq' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008931
-Label(s): Smart-seq2 
-- 'Smart-seq2' SubClassOf 'library preparation'
-+ 'Smart-seq2' SubClassOf 'Smart-like'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009294
-Label(s): CITE-seq 
-+ 'CITE-seq' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010058
-Label(s): Fluidigm C1-based library preparation 
-- 'Fluidigm C1-based library preparation' SubClassOf 'library preparation'
-+ 'Fluidigm C1-based library preparation' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010550
-Label(s): sci-RNA-seq 
-- 'sci-RNA-seq' SubClassOf 'library preparation'
-+ 'sci-RNA-seq' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008930
-Label(s): Smart-seq 
-- 'Smart-seq' SubClassOf 'library preparation'
-+ 'Smart-seq' SubClassOf 'Smart-like'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008925
-Label(s): Single cell ATAC-seq (cell index) 
-- 'Single cell ATAC-seq (cell index)' SubClassOf 'DNA assay'
-+ 'Single cell ATAC-seq (cell index)' SubClassOf http://www.ebi.ac.uk/efo/EFO_0010891
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008905
-Label(s): scBS-seq 
-+ 'scBS-seq' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008904
-Label(s): scATAC-seq (Microfluidics) 
-- 'scATAC-seq (Microfluidics)' SubClassOf 'DNA assay'
-+ 'scATAC-seq (Microfluidics)' SubClassOf http://www.ebi.ac.uk/efo/EFO_0010891
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008919
-Label(s): Seq-Well 
-- 'Seq-Well' SubClassOf 'library preparation'
-+ 'Seq-Well' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009979
-Label(s): single cell Hi-C 
-+ 'single cell Hi-C' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009919
-Label(s): SPLiT-seq 
-+ 'SPLiT-seq' SubClassOf 'single cell library construction'
+Class: http://www.ebi.ac.uk/efo/EFO_0002703
+Label(s): SNP array 
+- 'SNP array' SubClassOf 'DNA array'
++ 'SNP array' SubClassOf http://www.ebi.ac.uk/efo/EFO_0010939
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010891
-Label(s): scATAC-seq 
-+ 'scATAC-seq' SubClassOf 'single cell library construction'
-+ 'scATAC-seq' SubClassOf 'ATAC-seq'
+Class: http://www.ebi.ac.uk/efo/EFO_0010946
+Label(s): C57BL/6JxCAST/EiJ 
++ 'C57BL/6JxCAST/EiJ' SubClassOf 'Mus musculus'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010892
-Label(s): hydrolisis collection protocol 
-+ 'hydrolisis collection protocol' SubClassOf 'protocol'
+Class: http://www.ebi.ac.uk/efo/EFO_0010945
+Label(s): CAST/EiJxC57BL/6J 
++ 'CAST/EiJxC57BL/6J' SubClassOf 'Mus musculus'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010939
+Label(s): oligonucleotide DNA microarray 
++ 'oligonucleotide DNA microarray' SubClassOf 'DNA array'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010938
+Label(s): large-insert clone DNA microarray 
++ 'large-insert clone DNA microarray' SubClassOf 'DNA array'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010937
+Label(s): comparative genomic hybridization (CGH) 
++ 'comparative genomic hybridization (CGH)' SubClassOf 'in-situ hybridization assay'
++ 'comparative genomic hybridization (CGH)' SubClassOf 'DNA assay'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010936
+Label(s): SDS-PAGE 
++ 'SDS-PAGE' SubClassOf 'protein assay'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010935
+Label(s): cytokine secretion assay 
++ 'cytokine secretion assay' SubClassOf 'protein assay'
 

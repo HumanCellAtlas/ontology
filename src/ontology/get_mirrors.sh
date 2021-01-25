@@ -16,7 +16,7 @@ curl -L https://www.ebi.ac.uk/ols/ontologies/hsapdv/download > ../imports/hsapdv
 
 curl -L https://www.ebi.ac.uk/ols/ontologies/go/download > ../imports/go.owl
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/cl/download > mirror/cl.owl
+curl -L http://purl.obolibrary.org/obo/cl.owl > mirror/cl.owl
 
 curl -L https://www.ebi.ac.uk/ols/ontologies/efo/download  > mirror/efo.owl
 
