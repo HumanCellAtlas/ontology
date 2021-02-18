@@ -1,50 +1,74 @@
 Ontology Diff Summary
-Diff date: 2021/01/25 15:24:36
-First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/efo_slim.owl
+Diff date: 2021/02/18 16:01:56
+First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 1
-Number of classes added: 7
+Number of classes changed: 3
+Number of classes added: 10
 Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0002703
-Label(s): SNP array 
-- 'SNP array' SubClassOf 'DNA array'
-+ 'SNP array' SubClassOf http://www.ebi.ac.uk/efo/EFO_0010939
+Class: http://www.ebi.ac.uk/efo/EFO_0002693
+Label(s): DNA-seq 
+- 'DNA-seq' SubClassOf 'transcription profiling by high throughput sequencing'
++ 'DNA-seq' SubClassOf 'assay by high throughput sequencer'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004160
+Label(s): whole chromosome random sequencing 
+- 'whole chromosome random sequencing' SubClassOf 'transcription profiling by high throughput sequencing'
++ 'whole chromosome random sequencing' SubClassOf 'assay by high throughput sequencer'
++ 'whole chromosome random sequencing' SubClassOf 'DNA assay'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0005396
+Label(s): exome sequencing 
+- 'exome sequencing' SubClassOf 'transcription profiling by high throughput sequencing'
++ 'exome sequencing' SubClassOf 'DNA assay'
++ 'exome sequencing' SubClassOf 'assay by high throughput sequencer'
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010946
-Label(s): C57BL/6JxCAST/EiJ 
-+ 'C57BL/6JxCAST/EiJ' SubClassOf 'Mus musculus'
+Class: http://www.ebi.ac.uk/efo/EFO_0007060
+Label(s): Weiss grade 
++ 'Weiss grade' SubClassOf 'tumor grading'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010945
-Label(s): CAST/EiJxC57BL/6J 
-+ 'CAST/EiJxC57BL/6J' SubClassOf 'Mus musculus'
+Class: http://www.ebi.ac.uk/efo/EFO_0005620
+Label(s): lung adenocarcinoma grade 
++ 'lung adenocarcinoma grade' SubClassOf 'tumor grading'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010939
-Label(s): oligonucleotide DNA microarray 
-+ 'oligonucleotide DNA microarray' SubClassOf 'DNA array'
+Class: http://www.ebi.ac.uk/efo/EFO_0010965
+Label(s): RNAscope 
++ 'RNAscope' SubClassOf 'smFISH'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010938
-Label(s): large-insert clone DNA microarray 
-+ 'large-insert clone DNA microarray' SubClassOf 'DNA array'
+Class: http://www.ebi.ac.uk/efo/EFO_0010964
+Label(s): barcoded plate-based single cell RNA-seq 
++ 'barcoded plate-based single cell RNA-seq' SubClassOf 'single cell library construction'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010937
-Label(s): comparative genomic hybridization (CGH) 
-+ 'comparative genomic hybridization (CGH)' SubClassOf 'in-situ hybridization assay'
-+ 'comparative genomic hybridization (CGH)' SubClassOf 'DNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0010963
+Label(s): Illumina NextSeq 2000 
++ 'Illumina NextSeq 2000' SubClassOf 'high throughput sequencer'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010936
-Label(s): SDS-PAGE 
-+ 'SDS-PAGE' SubClassOf 'protein assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0010962
+Label(s): Illumina NextSeq 1000 
++ 'Illumina NextSeq 1000' SubClassOf 'high throughput sequencer'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010935
-Label(s): cytokine secretion assay 
-+ 'cytokine secretion assay' SubClassOf 'protein assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0010961
+Label(s): Visium Spatial Gene Expression 
++ 'Visium Spatial Gene Expression' SubClassOf '10X sequencing'
++ 'Visium Spatial Gene Expression' SubClassOf 'spatial transcriptomics'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010960
+Label(s): lumbar puncture 
++ 'lumbar puncture' SubClassOf 'collecting specimen from organism'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010959
+Label(s): RNA extraction protocol 
++ 'RNA extraction protocol' SubClassOf 'nucleic acid extraction protocol'
+
+Class: http://purl.obolibrary.org/obo/OBI_0600002
+Label(s): tumor grading 
++ 'tumor grading' SubClassOf 'assay'
 
