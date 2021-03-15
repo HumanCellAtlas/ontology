@@ -60,20 +60,27 @@ $(ONT).owl: $(SRC) uberon_human_extended.owl cl_human.owl go_cell_cycle.owl term
 #top_module_to_remote.owl:
 #	 $(ROBOT) merge --input $(SRC) --input uberon_human.owl --input cl_human.owl relax reduce extract --method BOT --term-file terms_to_delete.txt --output top_module_to_remote.owl
 
-all_anatomy: uberon_import.txt uberon_with_fma_labels.ttl uberon_human.owl $(UBERON_IMPORT) uberon_human_extended.owl
+all_anatomy: uberon_import_auto.txt uberon_with_fma_labels.ttl uberon_import.txt uberon_human.owl $(UBERON_IMPORT) uberon_human_extended.owl
 
 #../imports/euarchontoglires-basic.obo:
 #	sed -i.bak '/property_value\: provenance_notes/d' ../imports/euarchontoglires-basic.obo
 
 # extract human uberon terms (which FMA xref) with FMA label
-uberon_import.txt: $(UBERON_IMPORT)
-	$(ROBOT) query --input $(UBERON_IMPORT) --query ../sparql/select_human_anatomy_subset.sparql uberon_import.txt
+uberon_import.txt: uberon_import_auto.txt uberon_added_for_hca.txt
+	cat $^ > $@
+	
+uberon_import_auto.txt: $(UBERON_IMPORT)
+	$(ROBOT) query --input $(UBERON_IMPORT) --query ../sparql/select_human_anatomy_subset.sparql uberon_import_auto.txt
+
+uberon_added_for_hca.txt: $(UBERON_IMPORT)
+	$(ROBOT) query --input $(UBERON_IMPORT) --query ../sparql/select_added_for_hca.sparql $@
 
 # generate human uberon with FMA prefLabels
 
 uberon_with_fma_labels.ttl: ../imports/fma.owl
 	$(ROBOT) merge --input ../imports/fma.owl --input $(UBERON_IMPORT) query --format ttl --construct ../sparql/construct_fma_labels.sparql uberon_with_fma_labels.ttl
 
+#TO DO: Remove this and replace by uberon_import_manual.txt
 uberon_manual.owl: uberon_manual_import.txt
 	$(ROBOT) extract --method BOT --input $(UBERON_IMPORT) --term-file $< -o $@
 
@@ -87,8 +94,11 @@ all_cells: cell_import_auto.txt cell_import.txt cl_human.owl
 cell_import_auto.txt: $(CL_IMPORT)
 	$(ROBOT) query --input $(CL_IMPORT) --query ../sparql/select_human_cell_subset.sparql cell_import_auto.txt
 
-cell_import.txt: cell_import_auto.txt cell_import_manual.txt
-	cat cell_import_auto.txt cell_import_manual.txt > cell_import.txt
+cell_import.txt: cell_import_auto.txt cell_import_manual.txt cl_added_for_hca.txt
+	cat $^ > $@
+
+cl_added_for_hca.txt: $(CL_IMPORT)
+	$(ROBOT) query --input $(CL_IMPORT) --query ../sparql/select_added_for_hca.sparql $@
 
 cl_human.owl: cell_import.txt
 	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
@@ -96,8 +106,15 @@ cl_human.owl: cell_import.txt
 go_cell_cycle.owl: ../imports/go.owl
 	$(ROBOT) extract -i ../imports/go.owl --method MIREOT -b GO:0022403 -o go_cell_cycle.owl
 
-efo_slim.owl: ../imports/efo_inferred.owl efo_slim.txt
-	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_slim.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
+efo_slim.owl: ../imports/efo_inferred.owl efo_import.txt
+	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_import.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
+
+#TO DO: Append subset IRI to sparql query
+efo_added_for_hca.txt: ../imports/efo_inferred.owl
+	$(ROBOT) query --input $< --query ../sparql/select_added_for_hca.sparql $@
+	
+efo_import.txt: efo_slim.txt efo_added_for_hca.txt
+	cat $^ > $@
 
 microscopy_seed.txt: ../imports/fbbi.owl
 	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
