@@ -1,8 +1,8 @@
 term
+http://purl.obolibrary.org/obo/CL_0008036
 http://purl.obolibrary.org/obo/CL_0009019
 http://purl.obolibrary.org/obo/CL_0019001
 http://purl.obolibrary.org/obo/CL_0008034
 http://purl.obolibrary.org/obo/CL_0019003
-http://purl.obolibrary.org/obo/CL_0008036
 http://purl.obolibrary.org/obo/CL_0019002
 http://purl.obolibrary.org/obo/CL_0008033
