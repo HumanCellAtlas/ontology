@@ -1,923 +1,1354 @@
 Ontology Diff Summary
-Diff date: 2021/02/18 16:01:50
+Diff date: 2021/03/18 15:00:54
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl
 Second ontology URI: hcao.owl
-Number of classes changed: 17
-Number of classes added: 169
-Number of classes deleted: 3
+Number of classes changed: 7
+Number of classes added: 290
+Number of classes deleted: 2
  
 
 ################
 @Classes modified from previous
 
-Class: http://purl.obolibrary.org/obo/UBERON_0012650
-Label(s): gastroduodenal junction 
-- 'gastroduodenal junction' SubClassOf 'anatomical junction'
-+ 'gastroduodenal junction' SubClassOf http://purl.obolibrary.org/obo/UBERON_1100000
+Class: http://purl.obolibrary.org/obo/PATO_0001241
+Label(s): physical object quality 
++ 'physical object quality' SubClassOf 'quality'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0006235
 Label(s): foregut-midgut junction 
-- 'foregut-midgut junction' SubClassOf 'anatomical junction'
-+ 'foregut-midgut junction' EquivalentTo 'anatomical junction' and ('connects' some 'foregut') and ('connects' some 'midgut')
-+ 'foregut-midgut junction' SubClassOf http://purl.obolibrary.org/obo/UBERON_1100000
-+ 'foregut-midgut junction' SubClassOf 'connects' some 'midgut'
-+ 'foregut-midgut junction' SubClassOf 'connects' some 'foregut'
+- 'foregut-midgut junction' SubClassOf 'has part' some ('part of' some 'midgut')
+- 'foregut-midgut junction' SubClassOf 'has part' some ('part of' some 'foregut')
+- 'foregut-midgut junction' EquivalentTo 'anatomical junction' and ('has part' some ('part of' some 'foregut')) and ('has part' some ('part of' some 'midgut'))
 
-Class: http://purl.obolibrary.org/obo/UBERON_0015485
-Label(s): choledocho-duodenal junction 
-- 'choledocho-duodenal junction' SubClassOf 'anatomical junction'
-+ 'choledocho-duodenal junction' SubClassOf http://purl.obolibrary.org/obo/UBERON_1100000
+Class: http://purl.obolibrary.org/obo/PATO_0000051
+Label(s): morphology 
+- 'morphology' SubClassOf 'quality'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001073
-Label(s): ileocecal junction 
-- 'ileocecal junction' SubClassOf 'anatomical junction'
-- 'ileocecal junction' SubClassOf 'anatomical entity'
-- 'ileocecal junction' SubClassOf 'part of' some 'intestine'
-+ 'ileocecal junction' SubClassOf http://purl.obolibrary.org/obo/UBERON_8410024
+Class: http://purl.obolibrary.org/obo/BFO_0000019
+Label(s): quality 
++ http://purl.obolibrary.org/obo/BFO_0000017 DisjointWith 'quality'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007650
-Label(s): esophagogastric junction 
-- 'esophagogastric junction' SubClassOf 'continuous_with' some 'epithelium of stomach'
-- 'esophagogastric junction' SubClassOf 'anatomical junction'
-- 'esophagogastric junction' SubClassOf 'continuous_with' some 'esophagus'
-+ 'esophagogastric junction' SubClassOf http://purl.obolibrary.org/obo/UBERON_1100000
-+ 'esophagogastric junction' SubClassOf 'connects' some 'epithelium of stomach'
-+ 'esophagogastric junction' SubClassOf 'connects' some 'esophagus'
+Class: http://purl.obolibrary.org/obo/CL_0005006
+Label(s): ionocyte 
+- 'ionocyte' SubClassOf 'epithelial cell'
+- 'ionocyte' SubClassOf 'somatic cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0015252
-Label(s): coat hair follicle 
-- 'coat hair follicle' SubClassOf 'hair follicle'
-- 'coat hair follicle' EquivalentTo 'hair follicle' and ('part of' some 'coat of hair')
-- 'coat hair follicle' SubClassOf 'part of' some 'coat of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002354
-Label(s): cardiac Purkinje fiber 
-- 'cardiac Purkinje fiber' SubClassOf 'part of' some 'His-Purkinje system'
-+ 'cardiac Purkinje fiber' SubClassOf 'part of' some http://purl.obolibrary.org/obo/UBERON_8000009
-
-Class: http://purl.obolibrary.org/obo/UBERON_0015144
-Label(s): autopod hair 
-- 'autopod hair' SubClassOf 'strand of hair'
-+ 'autopod hair' SubClassOf http://purl.obolibrary.org/obo/UBERON_0037459
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010509
-Label(s): strand of pelage hair 
-- 'strand of pelage hair' EquivalentTo 'strand of hair' and ('part of' some 'coat of hair')
-- 'strand of pelage hair' SubClassOf 'part of' some 'coat of hair'
-- 'strand of pelage hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001031
-Label(s): sheath of Schwann 
-- 'sheath of Schwann' SubClassOf 'structure with developmental contribution from neural crest'
-+ 'sheath of Schwann' SubClassOf 'anatomical entity'
-
-Class: http://purl.obolibrary.org/obo/CL_0009017
-Label(s): intestinal crypt stem cell of small intestine 
-- 'intestinal crypt stem cell of small intestine' EquivalentTo 'intestinal crypt stem cell' and ('part of' some 'crypt of Lieberkuhn of large intestine')
-- 'intestinal crypt stem cell of small intestine' SubClassOf 'epithelial cell of large intestine'
-- 'intestinal crypt stem cell of small intestine' SubClassOf 'part of' some 'crypt of Lieberkuhn of large intestine'
-+ 'intestinal crypt stem cell of small intestine' SubClassOf 'epithelial cell of small intestine'
-+ 'intestinal crypt stem cell of small intestine' SubClassOf 'part of' some 'crypt of Lieberkuhn of small intestine'
-+ 'intestinal crypt stem cell of small intestine' EquivalentTo 'intestinal crypt stem cell' and ('part of' some 'crypt of Lieberkuhn of small intestine')
-
-Class: http://purl.obolibrary.org/obo/UBERON_0016402
-Label(s): mesocolic lymph node 
-- 'mesocolic lymph node' SubClassOf 'located in' some 'hepatic flexure of colon'
-- 'mesocolic lymph node' EquivalentTo 'lymph node' and ('located in' some 'hepatic flexure of colon')
-- 'mesocolic lymph node' SubClassOf 'visceral abdominal lymph node'
-+ 'mesocolic lymph node' SubClassOf http://purl.obolibrary.org/obo/UBERON_0039168
-
-Class: http://purl.obolibrary.org/obo/UBERON_0036214
-Label(s): rectosigmoid junction 
-- 'rectosigmoid junction' SubClassOf 'anatomical junction'
-+ 'rectosigmoid junction' SubClassOf http://purl.obolibrary.org/obo/UBERON_8410024
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010166
-Label(s): coat of hair 
-- 'coat of hair' SubClassOf 'collection of hairs'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010005
-Label(s): placental labyrinth villous 
-- 'placental labyrinth villous' SubClassOf 'part of' some 'placenta labyrinth'
-+ 'placental labyrinth villous' SubClassOf 'part of' some 'placenta labyrinth'
+Class: http://purl.obolibrary.org/obo/CL_0017000
+Label(s): pulmonary ionocyte 
+- 'pulmonary ionocyte' SubClassOf 'ionocyte'
+- 'pulmonary ionocyte' SubClassOf 'epithelial cell of lung'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0006574
 Label(s): pectinate line 
-- 'pectinate line' SubClassOf 'anatomical junction'
-+ 'pectinate line' SubClassOf 'connects' some 'hindgut'
-+ 'pectinate line' EquivalentTo 'anatomical junction' and ('connects' some 'proctodeum') and ('connects' some 'hindgut')
-+ 'pectinate line' SubClassOf http://purl.obolibrary.org/obo/UBERON_8410024
-+ 'pectinate line' SubClassOf 'connects' some 'proctodeum'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0009870
-Label(s): zone of stomach 
-- 'zone of stomach' SubClassOf 'anatomical entity'
-+ 'zone of stomach' SubClassOf 'subdivision of digestive tract'
+- 'pectinate line' SubClassOf 'adjacent to' some 'proctodeum'
+- 'pectinate line' SubClassOf 'adjacent to' some 'hindgut'
+- 'pectinate line' EquivalentTo 'anatomical junction' and ('adjacent to' some 'proctodeum') and ('adjacent to' some 'hindgut')
 
 
 ################
 @Classes new to this version
 
-Class: http://purl.obolibrary.org/obo/UBERON_0038054
-Label(s): retrocrural lymph node 
-+ 'retrocrural lymph node' SubClassOf 'visceral abdominal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038936
-Label(s): jugulodigastric lymph node 
-+ 'jugulodigastric lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038935
-Label(s): inferior deep lateral cervical lymph node 
-+ 'inferior deep lateral cervical lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038934
-Label(s): superior deep lateral cervical lymph node 
-+ 'superior deep lateral cervical lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038931
-Label(s): thyroid lymph node 
-+ 'thyroid lymph node' SubClassOf 'deep anterior cervical lymph node'
-+ 'thyroid lymph node' SubClassOf 'connected to' some 'thyroid gland'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038929
-Label(s): infrahyoid lymph node 
-+ 'infrahyoid lymph node' SubClassOf 'deep anterior cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038925
-Label(s): lingual lymph node 
-+ 'lingual lymph node' SubClassOf 'lymph node of head'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038922
-Label(s): nasolabial lymph node 
-+ 'nasolabial lymph node' SubClassOf 'facial lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038920
-Label(s): buccinator lymph node 
-+ 'buccinator lymph node' SubClassOf 'facial lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037461
-Label(s): primary hair 
-+ 'primary hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038897
-Label(s): superior tracheobronchial lymph node 
-+ 'superior tracheobronchial lymph node' SubClassOf 'tracheobronchial lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038888
-Label(s): posterior mediastinal lymph node 
-+ 'posterior mediastinal lymph node' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038885
-Label(s): brachiocephalic lymph node 
-+ 'brachiocephalic lymph node' SubClassOf 'thoracic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038879
-Label(s): anterior diaphragmatic lymph node 
-+ 'anterior diaphragmatic lymph node' SubClassOf 'diaphragmatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038868
-Label(s): paramammary lymph node 
-+ 'paramammary lymph node' SubClassOf 'thoracic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038867
-Label(s): interpectoral lymph node 
-+ 'interpectoral lymph node' SubClassOf 'lymph node of upper limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038856
-Label(s): superior lateral inguinal lymph node 
-+ 'superior lateral inguinal lymph node' SubClassOf 'superficial inguinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8000009
-Label(s): Purkinje fiber network 
-+ 'Purkinje fiber network' SubClassOf 'part of' some 'cardiac Purkinje fiber'
-+ 'Purkinje fiber network' SubClassOf 'conducting tissue of heart'
-+ 'Purkinje fiber network' SubClassOf 'cardiac muscle tissue of ventricle'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038818
-Label(s): posterior ancreaticoduodenal lymph node 
-+ 'posterior ancreaticoduodenal lymph node' SubClassOf 'pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037467
-Label(s): anagen hair 
-+ 'anagen hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038787
-Label(s): superior ileocolic lymph node 
-+ 'superior ileocolic lymph node' SubClassOf 'ileocolic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038746
-Label(s): gastro-epiploic lymph node 
-+ 'gastro-epiploic lymph node' SubClassOf 'gastric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038738
-Label(s): intermediate ileal lymph node 
-+ 'intermediate ileal lymph node' SubClassOf 'intermediate mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038737
-Label(s): intermediate jejunal lymph node 
-+ 'intermediate jejunal lymph node' SubClassOf 'intermediate mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038736
-Label(s): juxta-arterial ileal lymph node 
-+ 'juxta-arterial ileal lymph node' SubClassOf 'juxta-arterial mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038735
-Label(s): juxta-arterial jejunal lymph node 
-+ 'juxta-arterial jejunal lymph node' SubClassOf 'juxta-arterial mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038727
-Label(s): juxta-intestinal mesenteric lymph node 
-+ 'juxta-intestinal mesenteric lymph node' SubClassOf 'mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038707
-Label(s): anterior pancreaticoduodenal lymph node 
-+ 'anterior pancreaticoduodenal lymph node' SubClassOf 'pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038700
-Label(s): posterior inferior pancreaticoduodenal lymph node 
-+ 'posterior inferior pancreaticoduodenal lymph node' SubClassOf 'inferior pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038699
-Label(s): anterior inferior pancreaticoduodenal lymph node 
-+ 'anterior inferior pancreaticoduodenal lymph node' SubClassOf 'inferior pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038698
-Label(s): posterior superior pancreaticoduodenal lymph node 
-+ 'posterior superior pancreaticoduodenal lymph node' SubClassOf 'superior pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038697
-Label(s): anterior superior pancreaticoduodenal lymph node 
-+ 'anterior superior pancreaticoduodenal lymph node' SubClassOf 'superior pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038694
-Label(s): hepatoportal lymph node 
-+ 'hepatoportal lymph node' SubClassOf 'hepatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038691
-Label(s): common hepatic lymph node 
-+ 'common hepatic lymph node' SubClassOf 'connected to' some 'celiac lymph node'
-+ 'common hepatic lymph node' SubClassOf 'hepatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038685
-Label(s): inferior left gastric lymph node 
-+ 'inferior left gastric lymph node' SubClassOf 'left gastric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038647
-Label(s): lymph node of inferior pulmonary ligament 
-+ 'lymph node of inferior pulmonary ligament' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038638
-Label(s): lobar lymph node 
-+ 'lobar lymph node' SubClassOf 'pulmonary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037522
-Label(s): ileal lymph node 
-+ 'ileal lymph node' SubClassOf 'mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037532
-Label(s): medial common iliac lymph node 
-+ 'medial common iliac lymph node' SubClassOf 'common iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037540
-Label(s): lateral external iliac lymph node 
-+ 'lateral external iliac lymph node' SubClassOf 'external iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0039167
-Label(s): bronchopulmonary lymph node 
-+ 'bronchopulmonary lymph node' SubClassOf 'thoracic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038587
-Label(s): paracardiac lymph node 
-+ 'paracardiac lymph node' SubClassOf 'diaphragmatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8400024
-Label(s): subcapsular region of liver 
-+ 'subcapsular region of liver' SubClassOf 'adjacent to' some 'capsule of liver'
-+ 'subcapsular region of liver' SubClassOf 'liver parenchyma'
-+ 'subcapsular region of liver' EquivalentTo 'parenchyma' and ('part of' some 'liver') and ('adjacent to' some 'capsule of liver')
-
-Class: http://purl.obolibrary.org/obo/UBERON_8400021
-Label(s): liver serosa 
-+ 'liver serosa' SubClassOf 'mixed endoderm/mesoderm-derived structure'
-+ 'liver serosa' SubClassOf 'serous membrane'
-+ 'liver serosa' SubClassOf 'part of' some 'liver'
-+ 'liver serosa' EquivalentTo 'serous membrane' and ('part of' some 'liver')
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037514
-Label(s): intermediate mesenteric lymph node 
-+ 'intermediate mesenteric lymph node' SubClassOf 'mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037601
-Label(s): left parietal lumbar lymph node 
-+ 'left parietal lumbar lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left parietal lumbar lymph node' SubClassOf 'lumbar lymph node'
-+ 'left parietal lumbar lymph node' SubClassOf 'lateral structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0039163
-Label(s): lateral sacral lymph node 
-+ 'lateral sacral lymph node' SubClassOf 'sacral lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_1100000
-Label(s): digestive tract junction 
-+ 'digestive tract junction' SubClassOf 'anatomical junction'
-+ 'digestive tract junction' SubClassOf 'connects' some 'subdivision of digestive tract'
-+ 'digestive tract junction' EquivalentTo 'anatomical junction' and ('connects' some 'subdivision of digestive tract')
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037764
-Label(s): anterior superior deep cervical lymph node 
-+ 'anterior superior deep cervical lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037789
-Label(s): right apical axillary lymph node 
-+ 'right apical axillary lymph node' SubClassOf 'apical axillary lymph node'
-+ 'right apical axillary lymph node' EquivalentTo 'apical axillary lymph node' and ('in_right_side_of' some 'multicellular organism')
-+ 'right apical axillary lymph node' SubClassOf 'lateral structure'
-+ 'right apical axillary lymph node' SubClassOf 'in_right_side_of' some 'multicellular organism'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037793
-Label(s): right subscapular axillary lymph node 
-+ 'right subscapular axillary lymph node' EquivalentTo 'subscapular axillary lymph node' and ('in_right_side_of' some 'multicellular organism')
-+ 'right subscapular axillary lymph node' SubClassOf 'in_right_side_of' some 'multicellular organism'
-+ 'right subscapular axillary lymph node' SubClassOf 'lateral structure'
-+ 'right subscapular axillary lymph node' SubClassOf 'subscapular axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038139
-Label(s): retro-aortic lymph node 
-+ 'retro-aortic lymph node' SubClassOf 'left parietal lumbar lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038137
-Label(s): parietal pre-aortic lymph node 
-+ 'parietal pre-aortic lymph node' SubClassOf 'left parietal lumbar lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038002
-Label(s): upper intercostal lymph node 
-+ 'upper intercostal lymph node' SubClassOf 'intercostal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038048
-Label(s): antebrachial lymph node 
-+ 'antebrachial lymph node' SubClassOf 'lymph node of upper limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038037
-Label(s): subclavian lymph node 
-+ 'subclavian lymph node' SubClassOf 'cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038003
-Label(s): lower intercostal lymph node 
-+ 'lower intercostal lymph node' SubClassOf 'intercostal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038001
-Label(s): sternal lymph node 
-+ 'sternal lymph node' SubClassOf 'thoracic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038053
-Label(s): cardiophrenic angle lymph node 
-+ 'cardiophrenic angle lymph node' SubClassOf 'visceral abdominal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038093
-Label(s): jejunal lymph node 
-+ 'jejunal lymph node' SubClassOf 'mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038094
-Label(s): inferior rectal lymph node 
-+ 'inferior rectal lymph node' SubClassOf 'visceral abdominal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038124
-Label(s): medial diaphragmatic lymph node 
-+ 'medial diaphragmatic lymph node' SubClassOf 'diaphragmatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037614
-Label(s): appendicular lymph node 
-+ 'appendicular lymph node' SubClassOf 'intestinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037790
-Label(s): left apical axillary lymph node 
-+ 'left apical axillary lymph node' EquivalentTo 'apical axillary lymph node' and ('in_left_side_of' some 'multicellular organism')
-+ 'left apical axillary lymph node' SubClassOf 'lateral structure'
-+ 'left apical axillary lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left apical axillary lymph node' SubClassOf 'apical axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037998
-Label(s): external jugular lymph node 
-+ 'external jugular lymph node' SubClassOf 'cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037995
-Label(s): supramandibular lymph node 
-+ 'supramandibular lymph node' SubClassOf 'lymph node of head'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037865
-Label(s): jugular lymph node 
-+ 'jugular lymph node' SubClassOf 'cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038734
-Label(s): visceral pre-aortic lymph node 
-+ 'visceral pre-aortic lymph node' SubClassOf 'intestinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038951
-Label(s): suprapyloric lymph node 
-+ 'suprapyloric lymph node' SubClassOf 'pyloric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037798
-Label(s): left central axillary lymph node 
-+ 'left central axillary lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left central axillary lymph node' EquivalentTo 'central axillary lymph node' and ('in_left_side_of' some 'multicellular organism')
-+ 'left central axillary lymph node' SubClassOf 'central axillary lymph node'
-+ 'left central axillary lymph node' SubClassOf 'lateral structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037796
-Label(s): left pectoral axillary lymph node 
-+ 'left pectoral axillary lymph node' EquivalentTo 'pectoral axillary lymph node' and ('in_left_side_of' some 'multicellular organism')
-+ 'left pectoral axillary lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left pectoral axillary lymph node' SubClassOf 'lateral structure'
-+ 'left pectoral axillary lymph node' SubClassOf 'pectoral axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037795
-Label(s): right pectoral axillary lymph node 
-+ 'right pectoral axillary lymph node' SubClassOf 'in_right_side_of' some 'multicellular organism'
-+ 'right pectoral axillary lymph node' EquivalentTo 'pectoral axillary lymph node' and ('in_right_side_of' some 'multicellular organism')
-+ 'right pectoral axillary lymph node' SubClassOf 'lateral structure'
-+ 'right pectoral axillary lymph node' SubClassOf 'pectoral axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037794
-Label(s): left subscapular axillary lymph node 
-+ 'left subscapular axillary lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left subscapular axillary lymph node' SubClassOf 'subscapular axillary lymph node'
-+ 'left subscapular axillary lymph node' EquivalentTo 'subscapular axillary lymph node' and ('in_left_side_of' some 'multicellular organism')
-+ 'left subscapular axillary lymph node' SubClassOf 'lateral structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037788
-Label(s): left occipital lymph node 
-+ 'left occipital lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left occipital lymph node' SubClassOf 'occipital lymph node'
-+ 'left occipital lymph node' SubClassOf 'lateral structure'
-+ 'left occipital lymph node' EquivalentTo 'occipital lymph node' and ('in_left_side_of' some 'multicellular organism')
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037787
-Label(s): right occipital lymph node 
-+ 'right occipital lymph node' EquivalentTo 'occipital lymph node' and ('in_right_side_of' some 'multicellular organism')
-+ 'right occipital lymph node' SubClassOf 'occipital lymph node'
-+ 'right occipital lymph node' SubClassOf 'in_right_side_of' some 'multicellular organism'
-+ 'right occipital lymph node' SubClassOf 'lateral structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8400023
-Label(s): liver subserosa 
-+ 'liver subserosa' SubClassOf 'subserosa'
-+ 'liver subserosa' SubClassOf 'part of' some 'liver'
-+ 'liver subserosa' EquivalentTo 'subserosa' and ('part of' some 'liver')
-+ 'liver subserosa' SubClassOf 'endoderm-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0039168
-Label(s): colic lymph node 
-+ 'colic lymph node' SubClassOf 'intestinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0039164
-Label(s): medial sacral lymph node 
-+ 'medial sacral lymph node' SubClassOf 'sacral lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0039162
-Label(s): inferior ileocolic lymph node 
-+ 'inferior ileocolic lymph node' SubClassOf 'ileocolic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037766
-Label(s): anterior inferior deep cervical lymph node 
-+ 'anterior inferior deep cervical lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037765
-Label(s): lateral inferior deep cervical lymph node 
-+ 'lateral inferior deep cervical lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037763
-Label(s): lateral superior deep cervical lymph node 
-+ 'lateral superior deep cervical lymph node' SubClassOf 'deep lateral cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037723
-Label(s): left retropharyngeal lymph node 
-+ 'left retropharyngeal lymph node' SubClassOf 'lateral structure'
-+ 'left retropharyngeal lymph node' EquivalentTo 'retropharyngeal lymph node' and ('in_left_side_of' some 'multicellular organism')
-+ 'left retropharyngeal lymph node' SubClassOf 'retropharyngeal lymph node'
-+ 'left retropharyngeal lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037722
-Label(s): right retropharyngeal lymph node 
-+ 'right retropharyngeal lymph node' SubClassOf 'retropharyngeal lymph node'
-+ 'right retropharyngeal lymph node' EquivalentTo 'retropharyngeal lymph node' and ('in_right_side_of' some 'multicellular organism')
-+ 'right retropharyngeal lymph node' SubClassOf 'in_right_side_of' some 'multicellular organism'
-+ 'right retropharyngeal lymph node' SubClassOf 'lateral structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038849
-Label(s): craniocervical lymph node 
-+ 'craniocervical lymph node' SubClassOf 'lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410034
-Label(s): lymph node artery 
-+ 'lymph node artery' SubClassOf 'artery'
-+ 'lymph node artery' SubClassOf 'supplies' some 'lymph node'
-+ 'lymph node artery' EquivalentTo 'artery' and ('supplies' some 'lymph node')
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410000
-Label(s): duodeno-jejunal junction 
-+ 'duodeno-jejunal junction' EquivalentTo 'anatomical junction' and ('connects' some 'duodenum') and ('connects' some 'jejunum')
-+ 'duodeno-jejunal junction' SubClassOf 'connects' some 'duodenum'
-+ 'duodeno-jejunal junction' SubClassOf 'connects' some 'jejunum'
-+ 'duodeno-jejunal junction' SubClassOf 'part of' some 'small intestine'
-+ 'duodeno-jejunal junction' SubClassOf 'intestinal junction'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410010
-Label(s): fimbria of uterine tube 
-+ 'fimbria of uterine tube' SubClassOf 'fallopian tube'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410017
-Label(s): left colic vein 
-+ 'left colic vein' SubClassOf 'tributary_of' some 'inferior mesenteric vein'
-+ 'left colic vein' SubClassOf 'drains' some 'descending colon'
-+ 'left colic vein' SubClassOf 'part of' some 'inferior mesenteric vein'
-+ 'left colic vein' EquivalentTo 'portal vein' and ('drains' some 'descending colon') and ('tributary_of' some 'inferior mesenteric vein')
-+ 'left colic vein' SubClassOf 'portal vein'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410018
-Label(s): right colic vein 
-+ 'right colic vein' SubClassOf 'portal vein'
-+ 'right colic vein' EquivalentTo 'portal vein' and ('drains' some 'ascending colon') and ('tributary_of' some 'superior mesenteric vein')
-+ 'right colic vein' SubClassOf 'drains' some 'ascending colon'
-+ 'right colic vein' SubClassOf 'part of' some 'superior mesenteric vein'
-+ 'right colic vein' SubClassOf 'tributary_of' some 'superior mesenteric vein'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410019
-Label(s): jejuno-ileal junction 
-+ 'jejuno-ileal junction' SubClassOf 'connects' some 'jejunum'
-+ 'jejuno-ileal junction' SubClassOf 'part of' some 'small intestine'
-+ 'jejuno-ileal junction' SubClassOf 'intestinal junction'
-+ 'jejuno-ileal junction' EquivalentTo 'anatomical junction' and ('connects' some 'jejunum') and ('connects' some 'ileum')
-+ 'jejuno-ileal junction' SubClassOf 'connects' some 'ileum'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410021
-Label(s): inguinal region skin 
-+ 'inguinal region skin' EquivalentTo 'zone of skin' and ('part of' some 'inguinal part of abdomen')
-+ 'inguinal region skin' SubClassOf 'abdominal segment skin'
-+ 'inguinal region skin' SubClassOf 'part of' some 'inguinal part of abdomen'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410022
-Label(s): left colic artery 
-+ 'left colic artery' SubClassOf 'part of' some 'inferior mesenteric artery'
-+ 'left colic artery' SubClassOf 'branching_part_of' some 'inferior mesenteric artery'
-+ 'left colic artery' SubClassOf 'systemic artery'
-+ 'left colic artery' SubClassOf 'supplies' some 'transverse colon'
-+ 'left colic artery' SubClassOf 'supplies' some 'descending colon'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410023
-Label(s): right colic artery 
-+ 'right colic artery' SubClassOf 'artery'
-+ 'right colic artery' SubClassOf 'supplies' some 'ascending colon'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410024
-Label(s): intestinal junction 
-+ 'intestinal junction' SubClassOf 'anatomical entity'
-+ 'intestinal junction' SubClassOf 'digestive tract junction'
-+ 'intestinal junction' EquivalentTo 'anatomical junction' and ('part of' some 'intestine') and ('connects' some 'subdivision of digestive tract')
-+ 'intestinal junction' SubClassOf 'part of' some 'intestine'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410025
-Label(s): transition zone of prostate 
-+ 'transition zone of prostate' SubClassOf 'zone of organ'
-+ 'transition zone of prostate' SubClassOf 'mixed endoderm/mesoderm-derived structure'
-+ 'transition zone of prostate' SubClassOf 'part of' some 'prostate gland'
-+ 'transition zone of prostate' SubClassOf 'reproductive structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410026
-Label(s): peripheral zone of prostate 
-+ 'peripheral zone of prostate' SubClassOf 'zone of organ'
-+ 'peripheral zone of prostate' SubClassOf 'part of' some 'prostate gland'
-+ 'peripheral zone of prostate' SubClassOf 'reproductive structure'
-+ 'peripheral zone of prostate' SubClassOf 'mixed endoderm/mesoderm-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410027
-Label(s): central zone of prostate 
-+ 'central zone of prostate' SubClassOf 'zone of organ'
-+ 'central zone of prostate' SubClassOf 'reproductive structure'
-+ 'central zone of prostate' SubClassOf 'part of' some 'prostate gland'
-+ 'central zone of prostate' SubClassOf 'mixed endoderm/mesoderm-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410033
-Label(s): lymph node vein 
-+ 'lymph node vein' SubClassOf 'drains' some 'lymph node'
-+ 'lymph node vein' EquivalentTo 'vein' and ('drains' some 'lymph node')
-+ 'lymph node vein' SubClassOf 'vein'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038632
-Label(s): pericardial lymph node 
-+ 'pericardial lymph node' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038634
-Label(s): para-aortic thoracic lymph node 
-+ 'para-aortic thoracic lymph node' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038641
-Label(s): segmental lymph node 
-+ 'segmental lymph node' SubClassOf 'pulmonary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038651
-Label(s): superior mediastinal lymph node 
-+ 'superior mediastinal lymph node' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_8410016
-Label(s): descending sigmoid junction 
-+ 'descending sigmoid junction' SubClassOf 'connects' some 'descending colon'
-+ 'descending sigmoid junction' SubClassOf 'part of' some 'proximal-distal subdivision of colon'
-+ 'descending sigmoid junction' EquivalentTo 'anatomical junction' and ('connects' some 'descending colon') and ('connects' some 'sigmoid colon')
-+ 'descending sigmoid junction' SubClassOf 'intestinal junction'
-+ 'descending sigmoid junction' SubClassOf 'connects' some 'sigmoid colon'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038684
-Label(s): superior left gastric lymph node 
-+ 'superior left gastric lymph node' SubClassOf 'left gastric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038687
-Label(s): visceral lymph node of abdomen 
-+ 'visceral lymph node of abdomen' SubClassOf 'abdominal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038695
-Label(s): proximal superior pancreatic lymph node 
-+ 'proximal superior pancreatic lymph node' SubClassOf 'connected to' some 'celiac lymph node'
-+ 'proximal superior pancreatic lymph node' SubClassOf 'pancreaticosplenic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038696
-Label(s): distal superior pancreatic lymph node 
-+ 'distal superior pancreatic lymph node' SubClassOf 'pancreaticosplenic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037615
-Label(s): pararectal lymph node 
-+ 'pararectal lymph node' SubClassOf 'intestinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038633
-Label(s): aortopulmonary lymph node 
-+ 'aortopulmonary lymph node' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038854
-Label(s): deep popliteal lymph node 
-+ 'deep popliteal lymph node' SubClassOf 'popliteal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038855
-Label(s): superior medial inguinal lymph node 
-+ 'superior medial inguinal lymph node' SubClassOf 'superficial inguinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038857
-Label(s): inferior inguinal lymph node 
-+ 'inferior inguinal lymph node' SubClassOf 'superficial inguinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038932
-Label(s): pretracheal lymph node 
-+ 'pretracheal lymph node' SubClassOf 'deep anterior cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038784
-Label(s): pararectal lymph node of pelvis 
-+ 'pararectal lymph node of pelvis' SubClassOf 'pararectal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037590
-Label(s): lateral axillary lymph node 
-+ 'lateral axillary lymph node' SubClassOf 'superficial axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038796
-Label(s): lymph node along bile duct 
-+ 'lymph node along bile duct' SubClassOf 'hepatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037580
-Label(s): left gastric lymph node 
-+ 'left gastric lymph node' EquivalentTo 'gastric lymph node' and ('in_left_side_of' some 'multicellular organism')
-+ 'left gastric lymph node' SubClassOf 'gastric lymph node'
-+ 'left gastric lymph node' SubClassOf 'in_left_side_of' some 'multicellular organism'
-+ 'left gastric lymph node' SubClassOf 'connected to' some 'celiac lymph node'
-+ 'left gastric lymph node' SubClassOf 'lateral structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038930
-Label(s): prelaryngeal lymph node 
-+ 'prelaryngeal lymph node' SubClassOf 'deep anterior cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037566
-Label(s): diaphragmatic lymph node 
-+ 'diaphragmatic lymph node' SubClassOf 'mediastinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037560
-Label(s): superficial axillary lymph node 
-+ 'superficial axillary lymph node' SubClassOf 'axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037559
-Label(s): anorectal lymph node 
-+ 'anorectal lymph node' SubClassOf 'visceral abdominal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037549
-Label(s): inferior gluteal lymph node 
-+ 'inferior gluteal lymph node' SubClassOf 'gluteal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037548
-Label(s): superior gluteal lymph node 
-+ 'superior gluteal lymph node' SubClassOf 'gluteal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037541
-Label(s): interiliac lymph node 
-+ 'interiliac lymph node' SubClassOf 'external iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037797
-Label(s): right central axillary lymph node 
-+ 'right central axillary lymph node' SubClassOf 'in_right_side_of' some 'multicellular organism'
-+ 'right central axillary lymph node' SubClassOf 'lateral structure'
-+ 'right central axillary lymph node' EquivalentTo 'central axillary lymph node' and ('in_right_side_of' some 'multicellular organism')
-+ 'right central axillary lymph node' SubClassOf 'central axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037539
-Label(s): intermediate external iliac lymph node 
-+ 'intermediate external iliac lymph node' SubClassOf 'external iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037538
-Label(s): medial external iliac lymph node 
-+ 'medial external iliac lymph node' SubClassOf 'external iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037536
-Label(s): promontory lymph node 
-+ 'promontory lymph node' SubClassOf 'common iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037535
-Label(s): subaortic common iliac lymph node 
-+ 'subaortic common iliac lymph node' SubClassOf 'common iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037534
-Label(s): lateral common iliac lymph node 
-+ 'lateral common iliac lymph node' SubClassOf 'common iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037533
-Label(s): intermediate common iliac lymph node 
-+ 'intermediate common iliac lymph node' SubClassOf 'common iliac lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037531
-Label(s): intestinal lymph node 
-+ 'intestinal lymph node' SubClassOf 'visceral abdominal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037530
-Label(s): inferior pancreatic lymph node 
-+ 'inferior pancreatic lymph node' SubClassOf 'pancreatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037528
-Label(s): inferior pancreaticoduodenal lymph node 
-+ 'inferior pancreaticoduodenal lymph node' SubClassOf 'pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037527
-Label(s): superior pancreaticoduodenal lymph node 
-+ 'superior pancreaticoduodenal lymph node' SubClassOf 'pancreaticoduodenal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037521
-Label(s): preterminal colic lymph node 
-+ 'preterminal colic lymph node' SubClassOf 'colic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037518
-Label(s): epicolic lymph node 
-+ 'epicolic lymph node' SubClassOf 'colic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037515
-Label(s): juxta-arterial mesenteric lymph node 
-+ 'juxta-arterial mesenteric lymph node' SubClassOf 'mesenteric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037503
-Label(s): apical axillary lymph node 
-+ 'apical axillary lymph node' SubClassOf 'superficial axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037502
-Label(s): central axillary lymph node 
-+ 'central axillary lymph node' SubClassOf 'superficial axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037501
-Label(s): pectoral axillary lymph node 
-+ 'pectoral axillary lymph node' SubClassOf 'superficial axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037500
-Label(s): subscapular axillary lymph node 
-+ 'subscapular axillary lymph node' SubClassOf 'superficial axillary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038635
-Label(s): interlobar lymph node 
-+ 'interlobar lymph node' SubClassOf 'pulmonary lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038853
-Label(s): superficial popliteal lymph node 
-+ 'superficial popliteal lymph node' SubClassOf 'popliteal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038859
-Label(s): intermediate deep inguinal lymph node 
-+ 'intermediate deep inguinal lymph node' SubClassOf 'deep inguinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038860
-Label(s): distal deep inguinal lymph node 
-+ 'distal deep inguinal lymph node' SubClassOf 'deep inguinal lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038861
-Label(s): tibial lymph node 
-+ 'tibial lymph node' SubClassOf 'lymph node of lower limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038864
-Label(s): fibular lymph node 
-+ 'fibular lymph node' SubClassOf 'lymph node of lower limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038870
-Label(s): cubital lymph node 
-+ 'cubital lymph node' SubClassOf 'lymph node of upper limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038871
-Label(s): supratrochlear lymph node 
-+ 'supratrochlear lymph node' SubClassOf 'lymph node of upper limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038878
-Label(s): lateral diaphragmatic lymph node 
-+ 'lateral diaphragmatic lymph node' SubClassOf 'diaphragmatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038882
-Label(s): posterior diaphragmatic lymph node 
-+ 'posterior diaphragmatic lymph node' SubClassOf 'diaphragmatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037494
-Label(s): paracardial gastric lymph node 
-+ 'paracardial gastric lymph node' SubClassOf 'gastric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038894
-Label(s): paratracheal lymph node 
-+ 'paratracheal lymph node' SubClassOf 'deep anterior cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037480
-Label(s): supramammary lymph node 
-+ 'supramammary lymph node' SubClassOf 'thoracic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037468
-Label(s): waist 
-+ 'waist' SubClassOf 'part of' some 'abdomen'
-+ 'waist' SubClassOf 'subdivision of trunk'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037466
-Label(s): telogen hair 
-+ 'telogen hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037465
-Label(s): catagen hair 
-+ 'catagen hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037463
-Label(s): terminal hair 
-+ 'terminal hair' SubClassOf 'strand of hair'
-+ 'vellus hair' DisjointWith 'terminal hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037462
-Label(s): vellus hair 
-+ 'vellus hair' DisjointWith 'terminal hair'
-+ 'vellus hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037459
-Label(s): hair of limb 
-+ 'hair of limb' EquivalentTo 'strand of hair' and ('part of' some 'limb')
-+ 'hair of limb' SubClassOf 'strand of hair'
-+ 'hair of limb' SubClassOf 'part of' some 'limb'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0037458
-Label(s): hair of neck 
-+ 'hair of neck' EquivalentTo 'strand of hair' and ('part of' some 'neck')
-+ 'hair of neck' SubClassOf 'part of' some 'neck'
-+ 'hair of neck' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038900
-Label(s): inferior tracheobronchial lymph node 
-+ 'inferior tracheobronchial lymph node' SubClassOf 'tracheobronchial lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038953
-Label(s): retropyloric lymph node 
-+ 'retropyloric lymph node' SubClassOf 'pyloric lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038923
-Label(s): malar lymph node 
-+ 'malar lymph node' SubClassOf 'facial lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038938
-Label(s): accessory cervical lymph node 
-+ 'accessory cervical lymph node' SubClassOf 'cervical lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038943
-Label(s): superior diaphragmatic lymph node 
-+ 'superior diaphragmatic lymph node' SubClassOf 'diaphragmatic lymph node'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0038952
-Label(s): subpyloric lymph node 
-+ 'subpyloric lymph node' SubClassOf 'pyloric lymph node'
+Class: http://purl.obolibrary.org/obo/IAO_0000028
+Label(s): symbol 
++ 'symbol' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/APOLLO_SV_00000796
+Label(s): dataset creating 
++ 'dataset creating' EquivalentTo 'planned process' and ('has_specified_output' some 'data set')
++ 'dataset creating' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000057
+Label(s): contour plot 
++ 'contour plot' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000005
+Label(s): obsolete dependent continuant 
++ 'obsolete dependent continuant' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000018
+Label(s): zero-dimensional spatial region 
++ 'zero-dimensional spatial region' DisjointWith 'three-dimensional spatial region'
++ 'zero-dimensional spatial region' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000023
+Label(s): role 
++ 'role' SubClassOf 'realizable entity'
++ 'disposition' DisjointWith 'role'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000026
+Label(s): one-dimensional spatial region 
++ 'one-dimensional spatial region' DisjointWith 'three-dimensional spatial region'
++ 'one-dimensional spatial region' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000027
+Label(s): object aggregate 
++ 'object aggregate' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000028
+Label(s): three-dimensional spatial region 
++ 'two-dimensional spatial region' DisjointWith 'three-dimensional spatial region'
++ 'one-dimensional spatial region' DisjointWith 'three-dimensional spatial region'
++ 'zero-dimensional spatial region' DisjointWith 'three-dimensional spatial region'
++ 'three-dimensional spatial region' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000034
+Label(s): function 
++ 'function' SubClassOf 'disposition'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000046
+Label(s): non-commercial use only 
++ 'non-commercial use only' SubClassOf 'not for profit, non commercial use only'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000045
+Label(s): not for profit organisation use only 
++ 'not for profit organisation use only' SubClassOf 'not for profit, non commercial use only'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000043
+Label(s): clinical care use 
++ 'clinical care use' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000042
+Label(s): general research use 
++ 'general research use' SubClassOf 'data use permission'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000040
+Label(s): disease category research 
++ 'disease category research' SubClassOf 'biomedical research'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000039
+Label(s): drug development research 
++ 'drug development research' SubClassOf 'biomedical research'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000038
+Label(s): genetic research 
++ 'genetic research' SubClassOf 'biomedical research'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000037
+Label(s): biomedical research 
++ 'biomedical research' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000036
+Label(s): research control 
++ 'research control' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000035
+Label(s): gender category research 
++ 'gender category research' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000034
+Label(s): age category research 
++ 'age category research' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000033
+Label(s): ancestry research 
++ 'ancestry research' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000032
+Label(s): population research 
++ 'population research' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000029
+Label(s): return to database or resource 
++ 'return to database or resource' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000028
+Label(s): institution specific restriction 
++ 'institution specific restriction' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000027
+Label(s): project specific restriction 
++ 'project specific restriction' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000026
+Label(s): user specific restriction 
++ 'user specific restriction' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000025
+Label(s): time limit on use 
++ 'time limit on use' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000024
+Label(s): publication moratorium 
++ 'publication moratorium' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000022
+Label(s): geographical restriction 
++ 'geographical restriction' SubClassOf 'is restricted to' some 'geographic location'
++ 'geographical restriction' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000021
+Label(s): ethics approval required 
++ 'ethics approval required' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000020
+Label(s): collaboration required 
++ 'collaboration required' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000019
+Label(s): publication required 
++ 'publication required' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000018
+Label(s): not for profit, non commercial use only 
++ 'not for profit, non commercial use only' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000017
+Label(s): data use modifier 
++ 'data use modifier' SubClassOf 'data item'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000016
+Label(s): genetic studies only 
++ 'genetic studies only' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000015
+Label(s): no general methods research 
++ 'no general methods research' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000012
+Label(s): research specific restrictions 
++ 'research specific restrictions' SubClassOf 'data use modifier'
++ 'research specific restrictions' SubClassOf 'is restricted to' some 'Topic'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000011
+Label(s): population origins or ancestry research only 
++ 'population origins or ancestry research only' SubClassOf 'data use permission'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000007
+Label(s): disease specific research 
++ 'disease specific research' SubClassOf 'health or medical or biomedical research'
++ 'disease specific research' SubClassOf 'is restricted to' some 'disease or disorder'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000006
+Label(s): health or medical or biomedical research 
++ 'health or medical or biomedical research' SubClassOf 'general research use'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000005
+Label(s): obsolete general research use and clinical care 
++ 'obsolete general research use and clinical care' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000004
+Label(s): no restriction 
++ 'no restriction' SubClassOf 'data use permission'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000003
+Label(s): obsolete consent code secondary category 
++ 'obsolete consent code secondary category' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000002
+Label(s): obsolete consent code primary category 
++ 'obsolete consent code primary category' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000001
+Label(s): data use permission 
++ 'data use permission' SubClassOf 'data item'
+
+Class: http://purl.obolibrary.org/obo/UO_0000003
+Label(s): time unit 
++ 'time unit' SubClassOf 'measurement unit label'
+
+Class: http://purl.obolibrary.org/obo/UO_0000002
+Label(s): mass unit 
++ 'mass unit' SubClassOf 'measurement unit label'
+
+Class: http://purl.obolibrary.org/obo/UO_0000001
+Label(s): length unit 
++ 'length unit' SubClassOf 'measurement unit label'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000008
+Label(s): analysis subset ontology module 
++ 'analysis subset ontology module' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/APOLLO_SV_00000524
+Label(s): compiling software 
++ 'compiling software' SubClassOf 'software development'
++ 'compiling software' SubClassOf ('has_specified_input' some 
+('software' or 'source code module')) and ('has_specified_output' some 'software')
+
+Class: http://purl.obolibrary.org/obo/IAO_0000102
+Label(s): data about an ontology part 
++ 'data about an ontology part' SubClassOf 'data item'
+
+Class: http://purl.obolibrary.org/obo/OBI_0000471
+Label(s): study design execution 
++ 'study design execution' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/OBI_0000066
+Label(s): investigation 
++ 'investigation' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/PATO_0000122
+Label(s): length 
++ 'length' SubClassOf 'morphology'
+
+Class: http://purl.obolibrary.org/obo/APOLLO_SV_00000033
+Label(s): counting 
++ 'counting' SubClassOf 'planned process'
++ 'counting' EquivalentTo 'planned process' and ('has_specified_output' some 'count')
+
+Class: http://purl.obolibrary.org/obo/IAO_0000707
+Label(s): graphical abstract 
++ 'graphical abstract' SubClassOf 'abstract'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000706
+Label(s): study bias section 
++ 'study bias section' SubClassOf 'study limitations section'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000705
+Label(s): research settings section 
++ 'research settings section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000704
+Label(s): measurement methods section 
++ 'measurement methods section' SubClassOf 'methods section'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000703
+Label(s): research participants section 
++ 'research participants section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000702
+Label(s): additional results section 
++ 'additional results section' SubClassOf 'results section'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000701
+Label(s): descriptive data section 
++ 'descriptive data section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000617
+Label(s): conflict of interest textual entity 
++ 'conflict of interest textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000618
+Label(s): consent section 
++ 'consent section' SubClassOf 'document part'
++ 'consent section' SubClassOf 'has part' some 'consent textual entity'
+
+Class: http://purl.obolibrary.org/obo/PATO_0000125
+Label(s): mass 
++ 'mass' SubClassOf 'physical quality'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000004
+Label(s): bridge ontology module 
++ 'bridge ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000018
+Label(s): obo basic subset ontology module 
++ 'obo basic subset ontology module' SubClassOf 'ontology module subsetted by expressivity'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000019
+Label(s): ontology module subsetted by OWL profile 
++ 'ontology module subsetted by OWL profile' SubClassOf 'ontology module subsetted by expressivity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000017
+Label(s): model number 
++ 'model number' SubClassOf 'symbol'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000650
+Label(s): database extract, transform, and load process 
++ 'database extract, transform, and load process' SubClassOf 'has_specified_input' some 'information content entity'
++ 'database extract, transform, and load process' SubClassOf 'has_specified_output' some 'information content entity'
++ 'database extract, transform, and load process' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000064
+Label(s): algorithm 
++ 'algorithm' SubClassOf 'plan specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000035
+Label(s): obsolete_study interpretation 
++ 'obsolete_study interpretation' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000648
+Label(s): zone improvement plan code 
++ 'zone improvement plan code' SubClassOf 'postal code'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000647
+Label(s): Postal delivery route 
++ 'Postal delivery route' SubClassOf 'plan specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000646
+Label(s): postal code 
++ 'postal code' SubClassOf 'identifier'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000645
+Label(s): tables section 
++ 'tables section' SubClassOf 'document part'
++ 'tables section' SubClassOf 'has part' some 'table'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000644
+Label(s): statistical analysis section 
++ 'statistical analysis section' SubClassOf 'has part' some 'statistical analysis textual entity'
++ 'statistical analysis section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000643
+Label(s): statistical analysis textual entity 
++ 'statistical analysis textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000642
+Label(s): requirements textual entity 
++ 'requirements textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000641
+Label(s): requirements section 
++ 'requirements section' SubClassOf 'has part' some 'requirements textual entity'
++ 'requirements section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000640
+Label(s): related work textual entity 
++ 'related work textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000639
+Label(s): related work section 
++ 'related work section' SubClassOf 'document part'
++ 'related work section' SubClassOf 'has part' some 'related work textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000638
+Label(s): pre-publication history textual entity 
++ 'pre-publication history textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000636
+Label(s): patients textual entity 
++ 'patients textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000635
+Label(s): patients section 
++ 'patients section' SubClassOf 'document part'
++ 'patients section' SubClassOf 'has part' some 'patients textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000634
+Label(s): notes section 
++ 'notes section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000633
+Label(s): materials section 
++ 'materials section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000632
+Label(s): study limitations textual entity 
++ 'study limitations textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000631
+Label(s): study limitations section 
++ 'study limitations section' SubClassOf 'is about' some 'study design'
++ 'study limitations section' SubClassOf 'document part'
++ 'study limitations section' SubClassOf 'has part' some 'study limitations textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000630
+Label(s): keywords section 
++ 'keywords section' SubClassOf 'document part'
++ 'keywords section' SubClassOf 'has part' some 'keyword textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000088
+Label(s): report 
++ 'report' SubClassOf 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000625
+Label(s): future directions section 
++ 'future directions section' SubClassOf 'document part'
++ 'future directions section' SubClassOf 'has part' some 'future directions textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000624
+Label(s): funding source declaration textual entity 
++ 'funding source declaration textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000621
+Label(s): ethical approval textual entity 
++ 'ethical approval textual entity' SubClassOf 'textual entity'
++ 'ethical approval textual entity' SubClassOf 'is about' some 'study design'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000619
+Label(s): consent textual entity 
++ 'consent textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000616
+Label(s): conflict of interest section 
++ 'conflict of interest section' SubClassOf 'document part'
++ 'conflict of interest section' SubClassOf 'has part' some 'conflict of interest textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000615
+Label(s): conclusion section 
++ 'conclusion section' SubClassOf 'document part'
++ 'conclusion section' SubClassOf 'has part' some 'conclusion textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000613
+Label(s): case report section 
++ 'case report section' SubClassOf 'has part' some 'case report textual entity'
++ 'case report section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000608
+Label(s): author information textual entity 
++ 'author information textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/DUO_00000044
+Label(s): population origins or ancestry research prohibited 
++ 'population origins or ancestry research prohibited' SubClassOf 'data use modifier'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000104
+Label(s): plan specification 
++ 'plan specification' SubClassOf 'directive information entity'
++ 'plan specification' SubClassOf 'has part' some 'objective specification'
++ 'plan specification' SubClassOf 'has part' some 'action specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000105
+Label(s): obsolete2_digital document 
++ 'obsolete2_digital document' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000109
+Label(s): measurement datum 
++ 'measurement datum' SubClassOf 'data item'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000595
+Label(s): software script 
++ 'software script' SubClassOf 'software'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000594
+Label(s): software application 
++ 'software application' SubClassOf 'software'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000593
+Label(s): software library 
++ 'software library' SubClassOf 'software'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000592
+Label(s): software module 
++ 'software module' SubClassOf 'software'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000591
+Label(s): software method 
++ 'software method' SubClassOf 'software'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000590
+Label(s): written name 
++ 'written name' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000128
+Label(s): obsolete_identifier 
++ 'obsolete_identifier' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/OBI_0500000
+Label(s): study design 
++ 'study design' SubClassOf 'plan specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000582
+Label(s): time stamped measurement datum 
++ 'time stamped measurement datum' SubClassOf ('has time stamp' some 'time measurement datum') and ('has measurement datum' some 'measurement datum')
++ 'time stamped measurement datum' SubClassOf 'measurement datum'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000580
+Label(s): looking up a centrally registered identifier 
++ 'looking up a centrally registered identifier' SubClassOf 'has_specified_output' some 'information content entity'
++ 'looking up a centrally registered identifier' SubClassOf 'has participant' some 'centrally registered identifier registry'
++ 'looking up a centrally registered identifier' SubClassOf 'has_specified_input' some 'centrally registered identifier symbol'
++ 'looking up a centrally registered identifier' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000578
+Label(s): centrally registered identifier 
++ 'centrally registered identifier' SubClassOf 'identifier'
++ 'centrally registered identifier' SubClassOf 'has part' some ('denotes' some 'centrally registered identifier registry')
++ 'centrally registered identifier' SubClassOf 'has part' some 'centrally registered identifier symbol'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000577
+Label(s): centrally registered identifier symbol 
++ 'centrally registered identifier symbol' SubClassOf 'part of' some 'centrally registered identifier'
++ 'centrally registered identifier symbol' SubClassOf 'symbol'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000576
+Label(s): obsolete_establishing a CRID registry 
++ 'obsolete_establishing a CRID registry' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000575
+Label(s): associating information with a centrally registered identifier in its registry 
++ 'associating information with a centrally registered identifier in its registry' SubClassOf 'has_specified_input' some 'centrally registered identifier symbol'
++ 'associating information with a centrally registered identifier in its registry' SubClassOf 'has participant' some 'centrally registered identifier registry'
++ 'associating information with a centrally registered identifier in its registry' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000574
+Label(s): assigning a centrally registered identifier 
++ 'assigning a centrally registered identifier' SubClassOf 'has_specified_output' some 'centrally registered identifier symbol'
++ 'assigning a centrally registered identifier' SubClassOf 'has participant' some 'centrally registered identifier registry'
++ 'assigning a centrally registered identifier' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000573
+Label(s): line graph 
++ 'line graph' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000572
+Label(s): documenting 
++ 'documenting' SubClassOf 'planned process'
++ 'documenting' SubClassOf 'has_specified_input' some 'information content entity'
++ 'documenting' SubClassOf 'has_specified_output' some 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000140
+Label(s): setting datum 
++ 'setting datum' SubClassOf 'data item'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000180
+Label(s): heatmap 
++ 'heatmap' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000182
+Label(s): obsolete_survival curve 
++ 'obsolete_survival curve' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/MONDO_0000001
+Label(s): disease or disorder 
++ 'disease or disorder' SubClassOf 'disposition'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000225
+Label(s): obsolescence reason specification 
++ 'obsolescence reason specification' SubClassOf 'data about an ontology part'
++ 'obsolescence reason specification' EquivalentTo {'failed exploratory term' , 'placeholder removed' , 'terms merged' , 'term imported' , 'term split'}
+
+Class: http://purl.obolibrary.org/obo/topic_0003
+Label(s): Topic 
++ 'Topic' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000445
+Label(s): document in preparation for publication 
++ 'document in preparation for publication' SubClassOf 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000443
+Label(s): data item extraction from journal article 
++ 'data item extraction from journal article' SubClassOf 'has_specified_input' some 'journal article'
++ 'data item extraction from journal article' SubClassOf 'has_specified_output' some 'data item'
++ 'data item extraction from journal article' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000442
+Label(s): author role 
++ 'author role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000416
+Label(s): time measurement datum 
++ 'time measurement datum' SubClassOf 'scalar measurement datum'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000415
+Label(s): hypothesis textual entity 
++ 'hypothesis textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000414
+Label(s): mass measurement datum 
++ 'mass measurement datum' SubClassOf 'scalar measurement datum'
++ 'mass measurement datum' SubClassOf ('has measurement unit label' only 'mass unit') and ('is quality measurement of' only 'mass')
+
+Class: http://purl.obolibrary.org/obo/IAO_0000403
+Label(s): three dimensional cartesian spatial coordinate datum 
++ 'three dimensional cartesian spatial coordinate datum' SubClassOf 'has z coordinate value' exactly 1 http://www.w3.org/2000/01/rdf-schema#Literal
++ 'three dimensional cartesian spatial coordinate datum' SubClassOf 'has y coordinate value' exactly 1 http://www.w3.org/2000/01/rdf-schema#Literal
++ 'three dimensional cartesian spatial coordinate datum' SubClassOf 'cartesian spatial coordinate datum'
++ 'three dimensional cartesian spatial coordinate datum' SubClassOf 'has x coordinate value' exactly 1 http://www.w3.org/2000/01/rdf-schema#Literal
++ 'three dimensional cartesian spatial coordinate datum' SubClassOf 'denotes' some 
+('zero-dimensional spatial region' and ('part of' some 'three-dimensional spatial region'))
+
+Class: http://purl.obolibrary.org/obo/IAO_0000401
+Label(s): one dimensional cartesian spatial coordinate datum 
++ 'one dimensional cartesian spatial coordinate datum' SubClassOf 'has x coordinate value' exactly 1 http://www.w3.org/2000/01/rdf-schema#Literal
++ 'one dimensional cartesian spatial coordinate datum' SubClassOf 'cartesian spatial coordinate datum'
++ 'one dimensional cartesian spatial coordinate datum' SubClassOf 'denotes' some 
+('zero-dimensional spatial region' and ('part of' some 'one-dimensional spatial region'))
+
+Class: http://purl.obolibrary.org/obo/CL_0009024
+Label(s): mesothelial cell of small intestine 
++ 'mesothelial cell of small intestine' SubClassOf 'mesothelial cell'
++ 'mesothelial cell of small intestine' SubClassOf 'epithelial cell of small intestine'
++ 'mesothelial cell of small intestine' EquivalentTo 'mesothelial cell' and ('part of' some 'small intestine')
+
+Class: http://purl.obolibrary.org/obo/CL_0009023
+Label(s): small intestine Peyer's patch T cell 
++ 'small intestine Peyer's patch T cell' SubClassOf 'mature T cell'
++ 'small intestine Peyer's patch T cell' SubClassOf 'Peyer's patch lymphocyte'
++ 'small intestine Peyer's patch T cell' SubClassOf 'part of' some 'small intestine Peyer's patch'
++ 'small intestine Peyer's patch T cell' EquivalentTo 'mature T cell' and ('part of' some 'small intestine Peyer's patch')
+
+Class: http://purl.obolibrary.org/obo/CL_0009022
+Label(s): stromal cell of lamina propria of small intestine 
++ 'stromal cell of lamina propria of small intestine' SubClassOf 'part of' some 'lamina propria of small intestine'
++ 'stromal cell of lamina propria of small intestine' SubClassOf 'stromal cell'
++ 'stromal cell of lamina propria of small intestine' EquivalentTo 'stromal cell' and ('part of' some 'lamina propria of small intestine')
+
+Class: http://purl.obolibrary.org/obo/CL_0009021
+Label(s): stromal cell of lamina propria of large intestine 
++ 'stromal cell of lamina propria of large intestine' SubClassOf 'stromal cell'
++ 'stromal cell of lamina propria of large intestine' SubClassOf 'part of' some 'lamina propria of large intestine'
++ 'stromal cell of lamina propria of large intestine' EquivalentTo 'stromal cell' and ('part of' some 'lamina propria of large intestine')
+
+Class: http://purl.obolibrary.org/obo/IAO_0000330
+Label(s): copyright section 
++ 'copyright section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000031
+Label(s): method development 
++ 'method development' SubClassOf 'investigation'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000300
+Label(s): textual entity 
++ 'textual entity' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000302
+Label(s): author identification 
++ 'author identification' SubClassOf 'written name'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000303
+Label(s): institutional identification 
++ 'institutional identification' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000304
+Label(s): caption 
++ 'caption' SubClassOf 'is about' some 'figure'
++ 'caption' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000308
+Label(s): figure 
++ 'figure' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000310
+Label(s): document 
++ 'document' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000314
+Label(s): document part 
++ 'document part' SubClassOf 'part of' some 'document'
++ 'document part' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000315
+Label(s): abstract 
++ 'abstract' SubClassOf 'document part'
++ 'abstract' SubClassOf 'is about' some 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000323
+Label(s): author contributions section 
++ 'author contributions section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000324
+Label(s): acknowledgements section 
++ 'acknowledgements section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000328
+Label(s): table of figures 
++ 'table of figures' SubClassOf 'table'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000329
+Label(s): running title 
++ 'running title' SubClassOf 'document title'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000322
+Label(s): institution list 
++ 'institution list' SubClassOf 'document part'
++ 'institution list' SubClassOf 'has part' some 'institutional identification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000321
+Label(s): author list 
++ 'author list' SubClassOf 'document part'
++ 'author list' SubClassOf 'has part' some 'author identification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000320
+Label(s): references section 
++ 'references section' SubClassOf 'document part'
++ 'references section' SubClassOf 'has part' some 'citation'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000319
+Label(s): discussion section of a publication about an investigation 
++ 'discussion section of a publication about an investigation' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000317
+Label(s): methods section 
++ 'methods section' SubClassOf 'document part'
++ 'methods section' SubClassOf 'is about' some 'study design'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000313
+Label(s): patent 
++ 'patent' SubClassOf 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000312
+Label(s): publication about an investigation 
++ 'publication about an investigation' SubClassOf 'is about' some 'investigation'
++ 'publication about an investigation' SubClassOf 'publication'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000311
+Label(s): publication 
++ 'publication' SubClassOf 'document'
++ 'publication' EquivalentTo 'document' and ('is_specified_output_of' only 'publishing process')
+
+Class: http://purl.obolibrary.org/obo/IAO_0000306
+Label(s): table 
++ 'table' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000301
+Label(s): citation 
++ 'citation' SubClassOf 'textual entity'
++ 'citation' SubClassOf 'is about' some 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000400
+Label(s): cartesian spatial coordinate datum 
++ 'cartesian spatial coordinate datum' SubClassOf 'data item'
++ 'cartesian spatial coordinate datum' SubClassOf 'denotes' some 'zero-dimensional spatial region'
++ 'cartesian spatial coordinate datum' SubClassOf 'has coordinate unit label' exactly 1 http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000402
+Label(s): two dimensional cartesian spatial coordinate datum 
++ 'two dimensional cartesian spatial coordinate datum' SubClassOf 'cartesian spatial coordinate datum'
++ 'two dimensional cartesian spatial coordinate datum' SubClassOf 'denotes' some 
+('zero-dimensional spatial region' and ('part of' some 'two-dimensional spatial region'))
++ 'two dimensional cartesian spatial coordinate datum' SubClassOf 'has y coordinate value' exactly 1 http://www.w3.org/2000/01/rdf-schema#Literal
++ 'two dimensional cartesian spatial coordinate datum' SubClassOf 'has x coordinate value' exactly 1 http://www.w3.org/2000/01/rdf-schema#Literal
+
+Class: http://purl.obolibrary.org/obo/IAO_0000408
+Label(s): length measurement datum 
++ 'length measurement datum' SubClassOf 'is quality measurement of' some 'length'
++ 'length measurement datum' SubClassOf 'has measurement unit label' some 'length unit'
++ 'length measurement datum' SubClassOf 'scalar measurement datum'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000409
+Label(s): denotator type 
++ 'denotator type' EquivalentTo {'universal' , 'defined class' , 'named class expression'}
++ 'denotator type' SubClassOf 'data about an ontology part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000422
+Label(s): postal address 
++ 'postal address' SubClassOf 'textual entity'
++ 'postal address' SubClassOf 'is about' some 'geographic location'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000429
+Label(s): email address 
++ 'email address' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000444
+Label(s): publishing process 
++ 'publishing process' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000003
+Label(s): main release ontology module 
++ 'main release ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000182
+Label(s): history 
++ 'history' SubClassOf http://www.w3.org/2002/07/owl#Thing
++ 'process profile' DisjointWith 'history'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000148
+Label(s): zero-dimensional temporal region 
++ 'one-dimensional temporal region' DisjointWith 'zero-dimensional temporal region'
++ 'zero-dimensional temporal region' SubClassOf 'temporal region'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000147
+Label(s): zero-dimensional continuant fiat boundary 
++ 'zero-dimensional continuant fiat boundary' SubClassOf 'continuant fiat boundary'
++ 'one-dimensional continuant fiat boundary' DisjointWith 'zero-dimensional continuant fiat boundary'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000146
+Label(s): two-dimensional continuant fiat boundary 
++ 'two-dimensional continuant fiat boundary' SubClassOf 'continuant fiat boundary'
++ 'one-dimensional continuant fiat boundary' DisjointWith 'two-dimensional continuant fiat boundary'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000145
+Label(s): relational quality 
++ 'relational quality' SubClassOf 'quality'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000144
+Label(s): process profile 
++ 'process profile' DisjointWith 'history'
++ 'process profile' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000142
+Label(s): one-dimensional continuant fiat boundary 
++ 'one-dimensional continuant fiat boundary' DisjointWith 'zero-dimensional continuant fiat boundary'
++ 'one-dimensional continuant fiat boundary' DisjointWith 'two-dimensional continuant fiat boundary'
++ 'one-dimensional continuant fiat boundary' SubClassOf 'continuant fiat boundary'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000186
+Label(s): photographic print 
++ 'photographic print' SubClassOf 'material information bearer'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000185
+Label(s): photograph 
++ 'photograph' SubClassOf 'image'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000183
+Label(s): dendrogram 
++ 'dendrogram' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000181
+Label(s): Venn diagram 
++ 'Venn diagram' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000179
+Label(s): histogram 
++ 'histogram' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000178
+Label(s): material information bearer 
++ 'material information bearer' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000144
+Label(s): conclusion textual entity 
++ 'conclusion textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000579
+Label(s): centrally registered identifier registry 
++ 'centrally registered identifier registry' SubClassOf 'data set'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000132
+Label(s): lot number 
++ 'lot number' SubClassOf 'symbol'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000584
+Label(s): time sampled measurement data set 
++ 'time sampled measurement data set' SubClassOf 'has part' some 'time stamped measurement datum'
++ 'time sampled measurement data set' SubClassOf 'data set'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000100
+Label(s): data set 
++ 'data set' SubClassOf 'data item'
+
+Class: http://purl.obolibrary.org/obo/GAZ_00000448
+Label(s): geographic location 
++ 'geographic location' SubClassOf 'site'
+
+Class: http://purl.obolibrary.org/obo/IAO_0020000
+Label(s): identifier 
++ 'identifier' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000605
+Label(s): abbreviation textual entity 
++ 'abbreviation textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000606
+Label(s): abbreviations section 
++ 'abbreviations section' SubClassOf 'has part' some 'abbreviation textual entity'
++ 'abbreviations section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000607
+Label(s): author information section 
++ 'author information section' SubClassOf 'document part'
++ 'author information section' SubClassOf 'has part' some 'author information textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000609
+Label(s): author summary section 
++ 'author summary section' SubClassOf 'has part' some 'author summary textual entity'
++ 'author summary section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000610
+Label(s): author summary textual entity 
++ 'author summary textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000611
+Label(s): availability section 
++ 'availability section' SubClassOf 'document part'
++ 'availability section' SubClassOf 'has part' some 'availability textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000612
+Label(s): availability textual entity 
++ 'availability textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000098
+Label(s): data format specification 
++ 'data format specification' SubClassOf 'directive information entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000097
+Label(s): obsolete_report table 
++ 'obsolete_report table' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000096
+Label(s): source code module 
++ 'source code module' SubClassOf 'directive information entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000093
+Label(s): obsolete2_binary executable 
++ 'obsolete2_binary executable' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000091
+Label(s): obsolete_report element 
++ 'obsolete_report element' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000620
+Label(s): ethical approval section 
++ 'ethical approval section' SubClassOf 'document part'
++ 'ethical approval section' SubClassOf 'has part' some 'ethical approval textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000622
+Label(s): figures section 
++ 'figures section' SubClassOf 'document part'
++ 'figures section' SubClassOf 'has part' some 'figure'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000623
+Label(s): funding source declaration section 
++ 'funding source declaration section' SubClassOf 'document part'
++ 'funding source declaration section' SubClassOf 'has part' some 'funding source declaration textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000626
+Label(s): future directions textual entity 
++ 'future directions textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000627
+Label(s): genome announcement section 
++ 'genome announcement section' SubClassOf 'document part'
++ 'genome announcement section' SubClassOf 'has part' some 'genome announcement textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000628
+Label(s): genome announcement textual entity 
++ 'genome announcement textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000629
+Label(s): keyword textual entity 
++ 'keyword textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000031
+Label(s): generically dependent continuant 
++ 'generically dependent continuant' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000637
+Label(s): pre-publication history section 
++ 'pre-publication history section' SubClassOf 'document part'
++ 'pre-publication history section' SubClassOf 'has part' some 'pre-publication history textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000079
+Label(s): density plot 
++ 'density plot' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000078
+Label(s): curation status specification 
++ 'curation status specification' SubClassOf 'data about an ontology part'
++ 'curation status specification' EquivalentTo {'example to be eventually removed' , 'metadata complete' , 'organizational term' , 'ready for release' , 'metadata incomplete' , 'uncurated' , 'pending final vetting' , 'to be replaced with external ontology term' , 'requires discussion'}
+
+Class: http://purl.obolibrary.org/obo/BFO_0000016
+Label(s): disposition 
++ 'disposition' SubClassOf 'realizable entity'
++ 'disposition' DisjointWith 'role'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000006
+Label(s): narrative object 
++ 'narrative object' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000011
+Label(s): spatiotemporal region 
++ 'temporal region' DisjointWith 'spatiotemporal region'
++ 'spatiotemporal region' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000059
+Label(s): obsolete2_report figure 
++ 'obsolete2_report figure' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000009
+Label(s): two-dimensional spatial region 
++ 'two-dimensional spatial region' SubClassOf http://www.w3.org/2002/07/owl#Thing
++ 'two-dimensional spatial region' DisjointWith 'three-dimensional spatial region'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000008
+Label(s): temporal region 
++ 'temporal region' DisjointWith 'spatiotemporal region'
++ 'temporal region' DisjointWith 'process boundary'
++ 'temporal region' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000001
+Label(s): entity 
++ 'entity' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000015
+Label(s): information carrier 
++ 'information carrier' SubClassOf 'quality'
++ 'information carrier' EquivalentTo 'quality' and ('concretizes' some 'information content entity')
+
+Class: http://purl.obolibrary.org/obo/IAO_0000038
+Label(s): graph 
++ 'graph' SubClassOf 'diagram'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000034
+Label(s): time trigger 
++ 'time trigger' SubClassOf 'conditional specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000033
+Label(s): directive information entity 
++ 'directive information entity' SubClassOf 'is about' some 'realizable entity'
++ 'directive information entity' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000032
+Label(s): scalar measurement datum 
++ 'scalar measurement datum' SubClassOf 'has measurement unit label' min 1 http://www.w3.org/2002/07/owl#Thing
++ 'scalar measurement datum' SubClassOf 'measurement datum'
++ 'scalar measurement datum' SubClassOf 'has measurement value' min 1 http://www.w3.org/2000/01/rdf-schema#Literal
+
+Class: http://purl.obolibrary.org/obo/IAO_0000031
+Label(s): integer numeral 
++ 'integer numeral' SubClassOf 'numeral'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000030
+Label(s): information content entity 
++ 'information content entity' SubClassOf 'generically dependent continuant'
++ 'information content entity' SubClassOf 'is about' some 'entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000029
+Label(s): numeral 
++ 'numeral' SubClassOf 'symbol'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000024
+Label(s): obsolete_unit of measure 
++ 'obsolete_unit of measure' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000025
+Label(s): programming language 
++ 'programming language' SubClassOf 'plan specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000027
+Label(s): data item 
++ 'data item' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/OBI_0000011
+Label(s): planned process 
++ 'planned process' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000019
+Label(s): obsolete2_binary digital entity 
++ 'obsolete2_binary digital entity' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000010
+Label(s): software 
++ 'software' SubClassOf 'plan specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000009
+Label(s): datum label 
++ 'datum label' SubClassOf 'information content entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000007
+Label(s): action specification 
++ 'action specification' SubClassOf 'directive information entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000005
+Label(s): objective specification 
++ 'objective specification' SubClassOf 'directive information entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000003
+Label(s): measurement unit label 
++ 'measurement unit label' SubClassOf 'datum label'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000001
+Label(s): conditional specification 
++ 'conditional specification' SubClassOf 'directive information entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000037
+Label(s): dot plot 
++ 'dot plot' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000047
+Label(s): obsolete2_text based digital entity 
++ 'obsolete2_text based digital entity' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000055
+Label(s): rule 
++ 'rule' SubClassOf 'conditional specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000065
+Label(s): software interpreter 
++ 'software interpreter' SubClassOf 'algorithm'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000017
+Label(s): realizable entity 
++ 'realizable entity' DisjointWith 'quality'
++ 'realizable entity' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000029
+Label(s): site 
++ 'site' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/BFO_0000038
+Label(s): one-dimensional temporal region 
++ 'one-dimensional temporal region' SubClassOf 'temporal region'
++ 'one-dimensional temporal region' DisjointWith 'zero-dimensional temporal region'
+
+Class: http://purl.obolibrary.org/obo/DUO_0000014
+Label(s): obsolete research use only 
++ 'obsolete research use only' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000101
+Label(s): image 
++ 'image' SubClassOf 'figure'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000129
+Label(s): version number 
++ 'version number' SubClassOf 'symbol'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000035
+Label(s): process boundary 
++ 'temporal region' DisjointWith 'process boundary'
++ 'process boundary' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000131
+Label(s): serial number 
++ 'serial number' SubClassOf 'symbol'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000141
+Label(s): obsolete_digital quality 
++ 'obsolete_digital quality' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000184
+Label(s): scatter plot 
++ 'scatter plot' SubClassOf 'graph'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000140
+Label(s): continuant fiat boundary 
++ 'continuant fiat boundary' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_8000020
+Label(s): EL++ ontology module 
++ 'EL++ ontology module' SubClassOf 'ontology module subsetted by OWL profile'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000017
+Label(s): ontology module subsetted by expressivity 
++ 'ontology module subsetted by expressivity' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000016
+Label(s): taxonomic bridge ontology module 
++ 'taxonomic bridge ontology module' SubClassOf 'bridge ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000015
+Label(s): template generated ontology module 
++ 'template generated ontology module' SubClassOf 'generated ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000014
+Label(s): generated ontology module 
++ 'generated ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000013
+Label(s): reasoned ontology module 
++ 'reasoned ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000012
+Label(s): species subset ontology module 
++ 'species subset ontology module' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000011
+Label(s): external import ontology module 
++ 'external import ontology module' SubClassOf 'import ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000010
+Label(s): exclusion subset ontology module 
++ 'exclusion subset ontology module' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000009
+Label(s): single layer subset ontology module 
++ 'single layer subset ontology module' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000007
+Label(s): curation subset ontology module 
++ 'curation subset ontology module' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000006
+Label(s): subset ontology module 
++ 'subset ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000005
+Label(s): import ontology module 
++ 'import ontology module' SubClassOf 'subset ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000002
+Label(s): editors ontology module 
++ 'editors ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000001
+Label(s): base ontology module 
++ 'base ontology module' SubClassOf 'ontology module'
+
+Class: http://purl.obolibrary.org/obo/IAO_8000000
+Label(s): ontology module 
++ 'ontology module' SubClassOf 'data about an ontology part'
+
+Class: http://purl.obolibrary.org/obo/CL_0009025
+Label(s): mesothelial cell of large intestine 
++ 'mesothelial cell of large intestine' SubClassOf 'mesothelial cell'
++ 'mesothelial cell of large intestine' SubClassOf 'epithelial cell of large intestine'
++ 'mesothelial cell of large intestine' EquivalentTo 'mesothelial cell' and ('part of' some 'large intestine')
+
+Class: http://purl.obolibrary.org/obo/APOLLO_SV_00000008
+Label(s): software development 
++ 'software development' SubClassOf 'planned process'
++ 'software development' EquivalentTo 'planned process' and ('has_specified_output' some 
+('software' or 'source code module'))
+
+Class: http://purl.obolibrary.org/obo/APOLLO_SV_00000032
+Label(s): count 
++ 'count' EquivalentTo 'data item' and ('is_specified_output_of' some 'counting')
++ 'count' SubClassOf 'measurement datum'
+
+Class: http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
+Label(s): Obsolete Class 
++ 'Obsolete Class' SubClassOf http://www.w3.org/2002/07/owl#Thing
+
+Class: http://purl.obolibrary.org/obo/IAO_0000307
+Label(s): table of abbreviations 
++ 'table of abbreviations' SubClassOf 'table'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000614
+Label(s): case report textual entity 
++ 'case report textual entity' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/OBI_0200000
+Label(s): data transformation 
++ 'data transformation' SubClassOf 'planned process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000316
+Label(s): introduction to a publication about an investigation 
++ 'introduction to a publication about an investigation' SubClassOf 'document part'
++ 'introduction to a publication about an investigation' SubClassOf 'is about' some 'objective specification'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000305
+Label(s): document title 
++ 'document title' SubClassOf 'textual entity'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000309
+Label(s): diagram 
++ 'diagram' SubClassOf 'figure'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000318
+Label(s): results section 
++ 'results section' SubClassOf 'is about' some 'study design execution'
++ 'results section' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000325
+Label(s): footnote 
++ 'footnote' SubClassOf 'is about' some 'document part'
++ 'footnote' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000326
+Label(s): supplementary material to a document 
++ 'supplementary material to a document' SubClassOf 'document part'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000327
+Label(s): table of contents 
++ 'table of contents' SubClassOf 'table'
+
+Class: http://purl.obolibrary.org/obo/APOLLO_SV_00000522
+Label(s): source code repository 
++ 'source code repository' SubClassOf 'has part' some 'source code module'
++ 'source code repository' SubClassOf 'has part' some 
+('data item' and ('is about' some 'source code module'))
++ 'source code repository' SubClassOf 'document'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000008
+Label(s): obsolete_artifact 
++ 'obsolete_artifact' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000012
+Label(s): obsolete2_digital entity 
++ 'obsolete2_digital entity' SubClassOf 'Obsolete Class'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000013
+Label(s): journal article 
++ 'journal article' SubClassOf 'is_specified_output_of' some 'publishing process'
++ 'journal article' SubClassOf 'report'
++ 'journal article' SubClassOf 'publication'
++ 'journal article' SubClassOf 'is_specified_output_of' only 'publishing process'
+
+Class: http://purl.obolibrary.org/obo/IAO_0000018
+Label(s): obsolete_material_entity 
++ 'obsolete_material_entity' SubClassOf 'Obsolete Class'
 
 
 ################
 @Classes deleted from this version
 
-Class: http://purl.obolibrary.org/obo/UBERON_0015252
-Label(s): coat hair follicle 
-+ 'coat hair follicle' SubClassOf 'hair follicle'
-+ 'coat hair follicle' EquivalentTo 'hair follicle' and ('part of' some 'coat of hair')
-+ 'coat hair follicle' SubClassOf 'part of' some 'coat of hair'
+Class: http://purl.obolibrary.org/obo/CL_0005006
+Label(s): ionocyte 
++ 'ionocyte' SubClassOf 'epithelial cell'
++ 'ionocyte' SubClassOf 'somatic cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010509
-Label(s): strand of pelage hair 
-+ 'strand of pelage hair' EquivalentTo 'strand of hair' and ('part of' some 'coat of hair')
-+ 'strand of pelage hair' SubClassOf 'part of' some 'coat of hair'
-+ 'strand of pelage hair' SubClassOf 'strand of hair'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010166
-Label(s): coat of hair 
-+ 'coat of hair' SubClassOf 'collection of hairs'
+Class: http://purl.obolibrary.org/obo/CL_0017000
+Label(s): pulmonary ionocyte 
++ 'pulmonary ionocyte' SubClassOf 'ionocyte'
++ 'pulmonary ionocyte' SubClassOf 'epithelial cell of lung'
 
