@@ -7,3 +7,13 @@ http://www.ebi.ac.uk/efo/EFO_0004446 # biological macromolecule
 http://www.ebi.ac.uk/efo/EFO_0000399 # developmental stage
 http://purl.obolibrary.org/obo/PATO_0000461 # normal
 http://www.ebi.ac.uk/efo/EFO_0002012 # organization role
+http://www.ebi.ac.uk/efo/EFO_0010741
+http://www.ebi.ac.uk/efo/EFO_0010892
+http://www.ebi.ac.uk/efo/EFO_0010935
+http://www.ebi.ac.uk/efo/EFO_0010936
+http://www.ebi.ac.uk/efo/EFO_0010945
+http://www.ebi.ac.uk/efo/EFO_0010946
+http://www.ebi.ac.uk/efo/EFO_0010960
+http://www.ebi.ac.uk/efo/EFO_0010961
+http://www.ebi.ac.uk/efo/EFO_0010964
+http://www.ebi.ac.uk/efo/EFO_0010965

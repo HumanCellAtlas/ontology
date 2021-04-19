@@ -17,6 +17,7 @@ UBERON_IMPORT=mirror/uberon.owl
 #UBERON_IMPORT="http://purl.obolibrary.org/obo/uberon/subsets/euarchontoglires-basic.owl"
 #CL_IMPORT=../imports/cl.owl
 CL_IMPORT=mirror/cl.owl
+CLO_IMPORT=mirror/clo.owl
 FBBI=../imports/fbbi.owl
 #EDAM=../imports/edam.owl
 FMA_IMPORT=../imports/fma.owl
@@ -29,7 +30,7 @@ EFO_MIRROR=mirror/efo.owl
 
 some: $(ONT).owl sparql_test
 
-all: all_imports all_anatomy all_cells  go_cell_cycle.owl efo_slim.owl fbbi_hcao.owl $(ONT).owl
+all: all_imports all_anatomy  go_cell_cycle.owl efo_slim.owl fbbi_hcao.owl $(ONT).owl
 
 test: sparql_test all
 prepare_release: all
@@ -44,8 +45,8 @@ prepare_release: all
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
 # The main release target needs breaking into separate steps to avoid ROBOT exception
-$(ONT).owl: $(SRC) uberon_human_extended.owl cl_human.owl go_cell_cycle.owl terms_to_delete.txt
-	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_human.owl --input ../imports/duo.owl -o hcao_merged.owl &&\
+$(ONT).owl: $(SRC) uberon_human_extended.owl $(CL_IMPORT) go_cell_cycle.owl clo_import.owl terms_to_delete.txt
+	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input mirror/cl.owl --input ../imports/duo.owl --input clo_import.owl -o hcao_merged.owl &&\
 	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt -p false -o hcao_cleaned.owl &&\
 	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
@@ -77,7 +78,7 @@ uberon_added_for_hca.txt: $(UBERON_IMPORT)
 
 # generate human uberon with FMA prefLabels
 
-uberon_with_fma_labels.ttl: ../imports/fma.owl
+uberon_with_fma_labels.ttl: ../imports/fma.owl ../sparql/construct_fma_labels.sparql
 	$(ROBOT) merge --input ../imports/fma.owl --input $(UBERON_IMPORT) query --format ttl --construct ../sparql/construct_fma_labels.sparql uberon_with_fma_labels.ttl
 
 #TO DO: Remove this and replace by uberon_import_manual.txt
@@ -89,22 +90,25 @@ uberon_human.owl: uberon_with_fma_labels.ttl uberon_manual.owl uberon_import.txt
 
 # extract human cells from CTO ontology (based on FMA xref)
 
-all_cells: cell_import_auto.txt cell_import.txt cl_human.owl
+#all_cells: cell_import_auto.txt cell_import.txt cl_human.owl
 
-cell_import_auto.txt: $(CL_IMPORT)
-	$(ROBOT) query --input $(CL_IMPORT) --query ../sparql/select_human_cell_subset.sparql cell_import_auto.txt
+#cell_import_auto.txt: $(CL_IMPORT) ../sparql/select_human_cell_subset.sparql
+#	$(ROBOT) query --input $(CL_IMPORT) --query ../sparql/select_human_cell_subset.sparql cell_import_auto.txt
 
-cell_import.txt: cell_import_auto.txt cell_import_manual.txt cl_added_for_hca.txt
-	cat $^ > $@
+#cell_import.txt: cell_import_auto.txt cell_import_manual.txt cl_added_for_hca.txt
+#	cat $^ > $@
 
-cl_added_for_hca.txt: $(CL_IMPORT)
-	$(ROBOT) query --input $(CL_IMPORT) --query ../sparql/select_added_for_hca.sparql $@
+#cl_added_for_hca.txt: $(CL_IMPORT)
+#	$(ROBOT) query --input $(CL_IMPORT) --query ../sparql/select_added_for_hca.sparql $@
 
-cl_human.owl: cell_import.txt
-	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
+#cl_human.owl: cell_import.txt
+#	$(ROBOT) extract --method BOT --input $(CL_IMPORT) --term-file cell_import.txt --output cl_human.owl
 
 go_cell_cycle.owl: ../imports/go.owl
 	$(ROBOT) extract -i ../imports/go.owl --method MIREOT -b GO:0022403 -o go_cell_cycle.owl
+	
+clo_import.owl: clo_manual_import.txt
+	$(ROBOT) extract --method BOT --input $(CLO_IMPORT) --term-file $< -o $@
 
 efo_slim.owl: ../imports/efo_inferred.owl efo_import.txt
 	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_import.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
@@ -113,7 +117,7 @@ efo_slim.owl: ../imports/efo_inferred.owl efo_import.txt
 efo_added_for_hca.txt: ../imports/efo_inferred.owl
 	$(ROBOT) query --input $< --query ../sparql/select_added_for_hca.sparql $@
 	
-efo_import.txt: efo_slim.txt efo_added_for_hca.txt
+efo_import.txt: efo_slim.txt efo_added_for_hca.txt efo_import_manual.txt
 	cat $^ > $@
 
 microscopy_seed.txt: ../imports/fbbi.owl
