@@ -1,4 +1,4 @@
-FROM simonjupp/ebi-ols:3.1.1
+FROM quay.io/ebi-ait/ingest-base-images:ebi-ols_3.1.1
 
 ENV OLS_HOME /opt/ols
 ENV JAVA_OPTS "-Xmx1g"
