@@ -1,5 +1,5 @@
 Ontology Diff Summary
-Diff date: 2021/04/19 15:20:04
+Diff date: 2021/05/18 15:21:56
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/fbbi_hcao.owl
 Second ontology URI: fbbi_hcao.owl
 Number of classes changed: 0

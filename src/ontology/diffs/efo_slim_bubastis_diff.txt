@@ -1,451 +1,78 @@
 Ontology Diff Summary
-Diff date: 2021/04/19 15:20:02
+Diff date: 2021/05/18 15:21:54
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 69
+Number of classes changed: 7
 Number of classes added: 6
-Number of classes deleted: 26
+Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0002771
-Label(s): genotyping by high throughput sequencing 
-- 'genotyping by high throughput sequencing' SubClassOf 'DNA assay'
-- 'genotyping by high throughput sequencing' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010048
-Label(s): Fluidigm C1-based dissociation 
-- 'Fluidigm C1-based dissociation' SubClassOf 'assay by Fluidigm C1 microfluidics platform'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0005219
-Label(s): TraDIS sequencing 
-- 'TraDIS sequencing' SubClassOf 'assay by high throughput sequencer'
-- 'TraDIS sequencing' SubClassOf 'DNA assay'
-+ 'TraDIS sequencing' SubClassOf 'experimental process'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001033
-Label(s): translation profiling 
-- 'translation profiling' SubClassOf 'assay by array'
-- 'translation profiling' SubClassOf 'RNA assay'
-+ 'translation profiling' SubClassOf 'experimental process'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001731
-Label(s): consortium member 
-- 'consortium member' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001734
-Label(s): data analyst 
-- 'data analyst' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001740
-Label(s): software manufacturer 
-- 'software manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002769
-Label(s): transcription profiling by tiling array 
-- 'transcription profiling by tiling array' SubClassOf 'assay by array'
-- 'transcription profiling by tiling array' SubClassOf 'RNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009736
-Label(s): principal investigator 
-- 'principal investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009741
-Label(s): experimental scientist 
-- 'experimental scientist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000753
-Label(s): microRNA profiling by array 
-- 'microRNA profiling by array' SubClassOf 'assay by array'
-- 'microRNA profiling by array' SubClassOf 'RNA assay'
-+ 'microRNA profiling by array' SubClassOf 'experimental process'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000749
-Label(s): comparative genomic hybridization by array 
-- 'comparative genomic hybridization by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003749
-Label(s): MeDIP-seq 
-- 'MeDIP-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'MeDIP-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001738
-Label(s): institution 
-- 'institution' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003750
-Label(s): MBD-seq 
-- 'MBD-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'MBD-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0004447
-Label(s): peer review quality control role 
-- 'peer review quality control role' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003741
-Label(s): pooled clone sequencing 
-- 'pooled clone sequencing' SubClassOf 'assay by high throughput sequencer'
-+ 'pooled clone sequencing' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009975
-Label(s): dilution HiC 
-- 'dilution HiC' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009743
-Label(s): administrator 
-- 'administrator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009742
-Label(s): computational scientist 
-- 'computational scientist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009740
-Label(s): clinician 
-- 'clinician' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009739
-Label(s): technician 
-- 'technician' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009738
-Label(s): pathologist 
-- 'pathologist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009737
-Label(s): data curator 
-- 'data curator' SubClassOf 'curator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009735
-Label(s): co-investigator 
-- 'co-investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001030
-Label(s): RNAi profiling by array 
-- 'RNAi profiling by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000647
-Label(s): experiment performer 
-- 'experiment performer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002760
-Label(s): ChIP-chip by array 
-- 'ChIP-chip by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0005032
-Label(s): IP-seq 
-- 'IP-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'IP-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010058
-Label(s): Fluidigm C1-based library preparation 
-- 'Fluidigm C1-based library preparation' SubClassOf 'assay by Fluidigm C1 microfluidics platform'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001741
-Label(s): submitter 
-- 'submitter' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001739
-Label(s): investigator 
-- 'investigator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001737
-Label(s): hardware manufacturer 
-- 'hardware manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001736
-Label(s): funder 
-- 'funder' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001735
-Label(s): data coder 
-- 'data coder' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001733
-Label(s): curator 
-- 'curator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001732
-Label(s): consultant 
-- 'consultant' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001730
-Label(s): biosequence provider 
-- 'biosequence provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001729
-Label(s): biomaterial provider 
-- 'biomaterial provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001728
-Label(s): array manufacturer 
-- 'array manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002762
-Label(s): ChIP-chip by tiling array 
-- 'ChIP-chip by tiling array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007687
-Label(s): microRNA profiling by RT-PCR 
-- 'microRNA profiling by RT-PCR' SubClassOf 'assay by array'
-- 'microRNA profiling by RT-PCR' SubClassOf 'RNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008896
-Label(s): RNA-Seq 
-- 'RNA-Seq' SubClassOf 'assay by high throughput sequencer'
-+ 'RNA-Seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001031
-Label(s): tiling path by array 
-- 'tiling path by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008808
-Label(s): Micro-C XL 
-- 'Micro-C XL' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007690
-Label(s): 4C 
-- '4C' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007689
-Label(s): 3C 
-- '3C' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002770
-Label(s): transcription profiling by high throughput sequencing 
-- 'transcription profiling by high throughput sequencing' SubClassOf 'RNA assay'
-- 'transcription profiling by high throughput sequencing' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002768
-Label(s): transcription profiling by array 
-- 'transcription profiling by array' SubClassOf 'RNA assay'
-- 'transcription profiling by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002767
-Label(s): genotyping by array 
-- 'genotyping by array' SubClassOf 'assay by array'
-- 'genotyping by array' SubClassOf 'DNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002766
-Label(s): proteomic profiling by mass spectrometer 
-- 'proteomic profiling by mass spectrometer' SubClassOf 'protein assay'
-- 'proteomic profiling by mass spectrometer' SubClassOf 'assay by mass spectrometry'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002765
-Label(s): proteomic profiling by array 
-- 'proteomic profiling by array' SubClassOf 'assay by array'
-- 'proteomic profiling by array' SubClassOf 'protein assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002761
-Label(s): methylation profiling by high throughput sequencing 
-- 'methylation profiling by high throughput sequencing' SubClassOf 'assay by high throughput sequencer'
-+ 'methylation profiling by high throughput sequencing' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002759
-Label(s): methylation profiling by array 
-- 'methylation profiling by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009988
-Label(s): MARGI 
-- 'MARGI' SubClassOf 'assay by high throughput sequencer'
-+ 'MARGI' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009987
-Label(s): GAM 
-- 'GAM' SubClassOf 'assay by high throughput sequencer'
-+ 'GAM' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009984
-Label(s): SPRITE 
-- 'SPRITE' SubClassOf 'assay by high throughput sequencer'
-+ 'SPRITE' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009982
-Label(s): Trac-Loop 
-- 'Trac-Loop' SubClassOf 'assay by high throughput sequencer'
-+ 'Trac-Loop' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009980
-Label(s): MC-Hi-C 
-- 'MC-Hi-C' SubClassOf 'assay by long read sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009979
-Label(s): single cell Hi-C 
-- 'single cell Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009978
-Label(s): sn-Hi-C 
-- 'sn-Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009977
-Label(s): sci-Hi-C 
-- 'sci-Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009976
-Label(s): DNase Hi-C 
-- 'DNase Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009974
-Label(s): in situ HiC 
-- 'in situ HiC' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009973
-Label(s): CUT&RUN 
-- 'CUT&RUN' SubClassOf 'assay by high throughput sequencer'
-+ 'CUT&RUN' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009972
-Label(s): NAD-seq 
-- 'NAD-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'NAD-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009971
-Label(s): TSA-seq 
-- 'TSA-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'TSA-seq' SubClassOf 'assay by sequencer'
-
-Class: http://purl.obolibrary.org/obo/OBI_0000018
-Label(s): material supplier role 
-- 'material supplier role' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002764
-Label(s): ChIP-chip by SNP array 
-- 'ChIP-chip by SNP array' SubClassOf 'assay by array'
+Class: http://www.ebi.ac.uk/efo/EFO_0009899
+Label(s): 10x 3' v2 sequencing 
+- '10x 3' v2 sequencing' SubClassOf '10x v2 sequencing'
++ '10x 3' v2 sequencing' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030003
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010713
+Label(s): 10x immune profiling 
+- '10x immune profiling' SubClassOf '10x 5' v2 sequencing'
++ '10x immune profiling' SubClassOf '10x sequencing'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009922
+Label(s): 10x 3' v3 sequencing 
+- '10x 3' v3 sequencing' SubClassOf '10x v3 sequencing'
++ '10x 3' v3 sequencing' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030003
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010961
+Label(s): Visium Spatial Gene Expression 
+- 'Visium Spatial Gene Expression' SubClassOf 'spatial transcriptomics'
++ 'Visium Spatial Gene Expression' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030005
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009901
+Label(s): 10x 3' v1 sequencing 
+- '10x 3' v1 sequencing' SubClassOf '10x v1 sequencing'
++ '10x 3' v1 sequencing' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030003
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009900
+Label(s): 10x 5' v2 sequencing 
+- '10x 5' v2 sequencing' SubClassOf '10x v2 sequencing'
++ '10x 5' v2 sequencing' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030004
+
+Class: http://www.ebi.ac.uk/efo/EFO_0011025
+Label(s): 10x 5' v1 sequencing 
+- '10x 5' v1 sequencing' SubClassOf '10x v1 sequencing'
++ '10x 5' v1 sequencing' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030004
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0011026
-Label(s): enzyme-free chemical dissociation 
-+ 'enzyme-free chemical dissociation' SubClassOf 'sample dissociation'
+Class: http://www.ebi.ac.uk/efo/EFO_0030004
+Label(s): 10x 5' transcription profiling 
++ '10x 5' transcription profiling' SubClassOf '10x technology'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0011030
-Label(s): C57BL/6NCrl 
-+ 'C57BL/6NCrl' SubClassOf 'C57BL'
+Class: http://www.ebi.ac.uk/efo/EFO_0030005
+Label(s): spatial transcriptomics by high-throughput sequencing 
++ 'spatial transcriptomics by high-throughput sequencing' SubClassOf 'assay by high throughput sequencer'
++ 'spatial transcriptomics by high-throughput sequencing' SubClassOf 'spatial transcriptomics'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0011028
-Label(s): BRB-seq 
-+ 'BRB-seq' SubClassOf 'RNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0030002
+Label(s): microwell-seq 
++ 'microwell-seq' SubClassOf 'single cell library construction'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0011029
-Label(s): tracheal brush 
-+ 'tracheal brush' SubClassOf 'collecting specimen from organism'
+Class: http://www.ebi.ac.uk/efo/EFO_0030000
+Label(s): STARmap 
++ 'STARmap' SubClassOf 'RNA assay'
++ 'STARmap' SubClassOf 'microscopy assay'
++ 'STARmap' SubClassOf 'in-situ hybridization assay'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0011027
-Label(s): Illumina HiSeq 1500 
-+ 'Illumina HiSeq 1500' SubClassOf 'high throughput sequencer'
+Class: http://www.ebi.ac.uk/efo/EFO_0030001
+Label(s): sci-CAR 
++ 'sci-CAR' SubClassOf 'single cell library construction'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0011025
-Label(s): 10x 5' v1 sequencing 
-+ '10x 5' v1 sequencing' SubClassOf '10x v1 sequencing'
-
-
-################
-@Classes deleted from this version
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001731
-Label(s): consortium member 
-+ 'consortium member' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001734
-Label(s): data analyst 
-+ 'data analyst' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001740
-Label(s): software manufacturer 
-+ 'software manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009736
-Label(s): principal investigator 
-+ 'principal investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009741
-Label(s): experimental scientist 
-+ 'experimental scientist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001738
-Label(s): institution 
-+ 'institution' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0004447
-Label(s): peer review quality control role 
-+ 'peer review quality control role' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009743
-Label(s): administrator 
-+ 'administrator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009742
-Label(s): computational scientist 
-+ 'computational scientist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009740
-Label(s): clinician 
-+ 'clinician' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009739
-Label(s): technician 
-+ 'technician' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009738
-Label(s): pathologist 
-+ 'pathologist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009737
-Label(s): data curator 
-+ 'data curator' SubClassOf 'curator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009735
-Label(s): co-investigator 
-+ 'co-investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000647
-Label(s): experiment performer 
-+ 'experiment performer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001741
-Label(s): submitter 
-+ 'submitter' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001739
-Label(s): investigator 
-+ 'investigator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001737
-Label(s): hardware manufacturer 
-+ 'hardware manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001736
-Label(s): funder 
-+ 'funder' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001735
-Label(s): data coder 
-+ 'data coder' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001733
-Label(s): curator 
-+ 'curator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001732
-Label(s): consultant 
-+ 'consultant' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001730
-Label(s): biosequence provider 
-+ 'biosequence provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001729
-Label(s): biomaterial provider 
-+ 'biomaterial provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001728
-Label(s): array manufacturer 
-+ 'array manufacturer' SubClassOf 'organization role'
-
-Class: http://purl.obolibrary.org/obo/OBI_0000018
-Label(s): material supplier role 
-+ 'material supplier role' SubClassOf 'organization role'
+Class: http://www.ebi.ac.uk/efo/EFO_0030003
+Label(s): 10x 3' transcription profiling 
++ '10x 3' transcription profiling' SubClassOf '10x technology'
 
