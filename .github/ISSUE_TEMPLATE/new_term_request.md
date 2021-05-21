@@ -24,6 +24,7 @@ assignees: paolaroncaglia
 ## Suggested parent term
 
 <!-- Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/hcao) -->
+<!-- IMPORTANT: please consider the HCA ontology metadata validation schema when suggesting a parent term, and ensure that your suggested classification falls within the validation schema. -->
 
 ## Use case
 
