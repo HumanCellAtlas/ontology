@@ -1,99 +1,54 @@
 Ontology Diff Summary
-Diff date: 2021/06/16 16:02:30
+Diff date: 2021/07/19 10:56:59
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
 Number of classes changed: 6
-Number of classes added: 8
-Number of classes deleted: 5
+Number of classes added: 3
+Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010010
-Label(s): CEL-seq2 
-- 'CEL-seq2' SubClassOf 'assay'
-+ 'CEL-seq2' SubClassOf 'RNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0008777
+Label(s): Ig-Seq 
++ 'Ig-Seq' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
 
-Class: http://www.ebi.ac.uk/efo/EFO_0009898
-Label(s): 10x v3 
-- '10x v3' SubClassOf '10x technology'
+Class: http://www.ebi.ac.uk/efo/EFO_0010713
+Label(s): 10x immune profiling 
++ '10x immune profiling' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030015
++ '10x immune profiling' SubClassOf 'RNA assay'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0009310
-Label(s): 10x v2 
-- '10x v2' SubClassOf '10x technology'
+Class: http://www.ebi.ac.uk/efo/EFO_0010017
+Label(s): HTGTS-Rep-seq 
+- 'HTGTS-Rep-seq' SubClassOf 'assay'
++ 'HTGTS-Rep-seq' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
 
-Class: http://www.ebi.ac.uk/efo/EFO_0009921
-Label(s): 10x 5' v3 
-- '10x 5' v3' SubClassOf '10x v3'
+Class: http://www.ebi.ac.uk/efo/EFO_0008966
+Label(s): TCR Chain Paring 
++ 'TCR Chain Paring' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030015
 
-Class: http://www.ebi.ac.uk/efo/EFO_0009897
-Label(s): 10x v1 
-- '10x v1' SubClassOf '10x technology'
+Class: http://www.ebi.ac.uk/efo/EFO_0008842
+Label(s): Paired VH:VL Antibody Repertoire Analysis 
++ 'Paired VH:VL Antibody Repertoire Analysis' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008940
-Label(s): snRNA-seq 
-- 'snRNA-seq' SubClassOf 'RNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0008887
+Label(s): Rep-Seq 
++ 'Rep-Seq' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0600009
-Label(s): cardiac ablation 
-+ 'cardiac ablation' SubClassOf 'medical procedure'
+Class: http://www.ebi.ac.uk/efo/EFO_0030015
+Label(s): single cell immune repertoire sequencing 
++ 'single cell immune repertoire sequencing' SubClassOf 'immune sequencing'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0030007
-Label(s): 10x scATAC-seq 
-+ '10x scATAC-seq' SubClassOf 'RNA assay'
-+ '10x scATAC-seq' SubClassOf '10x technology'
-+ '10x scATAC-seq' SubClassOf 'scATAC-seq'
+Class: http://www.ebi.ac.uk/efo/EFO_0030006
+Label(s): immune sequencing 
++ 'immune sequencing' SubClassOf 'assay by sequencer'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0030008
-Label(s): CITE-seq (cell surface protein profiling) 
-+ 'CITE-seq (cell surface protein profiling)' SubClassOf 'CITE-seq'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030010
-Label(s): 10x feature profiling 
-+ '10x feature profiling' SubClassOf '10x technology'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030011
-Label(s): 10x feature barcode (cell surface protein profiling) 
-+ '10x feature barcode (cell surface protein profiling)' SubClassOf '10x feature profiling'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030009
-Label(s): CITE-seq (sample multiplexing) 
-+ 'CITE-seq (sample multiplexing)' SubClassOf 'CITE-seq'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030013
-Label(s): 10x feature barcode (CRISPR screening) 
-+ '10x feature barcode (CRISPR screening)' SubClassOf '10x feature profiling'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030012
-Label(s): 10x feature barcode (sample multiplexing) 
-+ '10x feature barcode (sample multiplexing)' SubClassOf '10x feature profiling'
-
-
-################
-@Classes deleted from this version
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009898
-Label(s): 10x v3 
-+ '10x v3' SubClassOf '10x technology'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009310
-Label(s): 10x v2 
-+ '10x v2' SubClassOf '10x technology'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009921
-Label(s): 10x 5' v3 
-+ '10x 5' v3' SubClassOf '10x v3'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009897
-Label(s): 10x v1 
-+ '10x v1' SubClassOf '10x technology'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008940
-Label(s): snRNA-seq 
-+ 'snRNA-seq' SubClassOf 'RNA assay'
+Class: http://www.ebi.ac.uk/efo/EFO_0030014
+Label(s): bulk immune repertoire sequencing 
++ 'bulk immune repertoire sequencing' SubClassOf 'immune sequencing'
 

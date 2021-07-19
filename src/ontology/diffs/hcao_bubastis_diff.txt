@@ -1,79 +1,2524 @@
 Ontology Diff Summary
-Diff date: 2021/06/16 16:02:23
+Diff date: 2021/07/19 10:56:55
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl
 Second ontology URI: hcao.owl
-Number of classes changed: 13
-Number of classes added: 0
-Number of classes deleted: 0
+Number of classes changed: 329
+Number of classes added: 148
+Number of classes deleted: 14
  
 
 ################
 @Classes modified from previous
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022347
-Label(s): dentate gyrus molecular layer inner 
-- 'dentate gyrus molecular layer inner' SubClassOf 'part_of' some 'dentate gyrus molecular layer'
-+ 'dentate gyrus molecular layer inner' SubClassOf 'part_of' some 'dentate gyrus molecular layer'
+Class: http://purl.obolibrary.org/obo/GO_0071702
+Label(s): organic substance transport 
+- 'organic substance transport' SubClassOf 'anion transport'
++ 'organic substance transport' SubClassOf 'transport'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022346
-Label(s): dentate gyrus molecular layer middle 
-- 'dentate gyrus molecular layer middle' SubClassOf 'part_of' some 'dentate gyrus molecular layer'
-+ 'dentate gyrus molecular layer middle' SubClassOf 'part_of' some 'dentate gyrus molecular layer'
+Class: http://purl.obolibrary.org/obo/UBERON_0004763
+Label(s): endochondral bone tissue 
+- 'endochondral bone tissue' SubClassOf 'anatomical entity'
++ 'endochondral bone tissue' SubClassOf 'structure with developmental contribution from neural crest'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022337
-Label(s): entorhinal cortex layer 2 
-- 'entorhinal cortex layer 2' SubClassOf 'part_of' some 'entorhinal cortex'
-+ 'entorhinal cortex layer 2' SubClassOf 'part_of' some 'entorhinal cortex'
+Class: http://purl.obolibrary.org/obo/CL_0011003
+Label(s): magnocellular neurosecretory cell (duplicate class) 
+- 'magnocellular neurosecretory cell (duplicate class)' SubClassOf 'central nervous system neuron'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022336
-Label(s): entorhinal cortex layer 1 
-- 'entorhinal cortex layer 1' SubClassOf 'part_of' some 'entorhinal cortex'
-+ 'entorhinal cortex layer 1' SubClassOf 'part_of' some 'entorhinal cortex'
+Class: http://purl.obolibrary.org/obo/UBERON_0010252
+Label(s): 1st arch mandibular mesenchyme from neural crest 
+- '1st arch mandibular mesenchyme from neural crest' SubClassOf 'part_of' some '1st arch mandibular mesenchyme'
++ '1st arch mandibular mesenchyme from neural crest' SubClassOf 'part_of' some '1st arch mandibular mesenchyme'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022329
-Label(s): entorhinal cortex layer 6 
-- 'entorhinal cortex layer 6' SubClassOf 'part_of' some 'entorhinal cortex'
-+ 'entorhinal cortex layer 6' SubClassOf 'part_of' some 'entorhinal cortex'
+Class: http://purl.obolibrary.org/obo/UBERON_0002236
+Label(s): costal cartilage 
++ 'costal cartilage' SubClassOf 'structure with developmental contribution from neural crest'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022327
-Label(s): entorhinal cortex layer 3 
-- 'entorhinal cortex layer 3' SubClassOf 'part_of' some 'entorhinal cortex'
-+ 'entorhinal cortex layer 3' SubClassOf 'part_of' some 'entorhinal cortex'
+Class: http://purl.obolibrary.org/obo/CL_0011113
+Label(s): spiral ganglion neuron 
+- 'spiral ganglion neuron' SubClassOf 'part_of' some 'cochlear ganglion'
+- 'spiral ganglion neuron' EquivalentTo 'neuron' and ('part_of' some 'cochlear ganglion')
++ 'spiral ganglion neuron' EquivalentTo 'neuron' and ('has soma location' some 'cochlear ganglion')
++ 'spiral ganglion neuron' SubClassOf 'has soma location' some 'cochlear ganglion'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022325
-Label(s): entorhinal cortex layer 5 
-- 'entorhinal cortex layer 5' SubClassOf 'part_of' some 'entorhinal cortex'
-+ 'entorhinal cortex layer 5' SubClassOf 'part_of' some 'entorhinal cortex'
+Class: http://purl.obolibrary.org/obo/UBERON_0004446
+Label(s): epiphysis of phalanx 
++ 'epiphysis of phalanx' SubClassOf 'structure with developmental contribution from neural crest'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022318
-Label(s): olfactory cortex layer 2 
-- 'olfactory cortex layer 2' SubClassOf 'part_of' some 'olfactory cortex'
-+ 'olfactory cortex layer 2' SubClassOf 'part_of' some 'olfactory cortex'
+Class: http://purl.obolibrary.org/obo/GO_0043900
+Label(s): regulation of multi-organism process 
+- 'regulation of multi-organism process' EquivalentTo 'biological regulation' and ('regulates' some 'multi-organism process')
+- 'regulation of multi-organism process' SubClassOf 'regulation of biological process'
+- 'regulation of multi-organism process' SubClassOf 'regulates' some 'multi-organism process'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022317
-Label(s): olfactory cortex layer 1 
-- 'olfactory cortex layer 1' SubClassOf 'part_of' some 'olfactory cortex'
-+ 'olfactory cortex layer 1' SubClassOf 'part_of' some 'olfactory cortex'
+Class: http://purl.obolibrary.org/obo/GO_0009306
+Label(s): protein secretion 
+- 'protein secretion' SubClassOf 'peptide secretion'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022315
-Label(s): primary motor cortex layer 5 
-- 'primary motor cortex layer 5' SubClassOf 'part_of' some 'cortical layer V'
-- 'primary motor cortex layer 5' SubClassOf 'part_of' some 'primary motor cortex'
-+ 'primary motor cortex layer 5' SubClassOf 'part_of' some 'cortical layer V'
-+ 'primary motor cortex layer 5' SubClassOf 'part_of' some 'primary motor cortex'
+Class: http://purl.obolibrary.org/obo/UBERON_0002498
+Label(s): deltopectoral crest 
++ 'deltopectoral crest' SubClassOf 'structure with developmental contribution from neural crest'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0022323
-Label(s): entorhinal cortex layer 4 
-- 'entorhinal cortex layer 4' SubClassOf 'part_of' some 'entorhinal cortex'
-+ 'entorhinal cortex layer 4' SubClassOf 'part_of' some 'entorhinal cortex'
+Class: http://purl.obolibrary.org/obo/UBERON_0002497
+Label(s): acromion 
+- 'acromion' SubClassOf 'anatomical entity'
++ 'acromion' SubClassOf 'structure with developmental contribution from neural crest'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005271
-Label(s): juxtamedullary cortex 
-- 'juxtamedullary cortex' SubClassOf 'part_of' some 'cortex of kidney'
-+ 'juxtamedullary cortex' SubClassOf 'part_of' some 'cortex of kidney'
+Class: http://purl.obolibrary.org/obo/UBERON_0004696
+Label(s): venous system smooth muscle 
++ 'venous system smooth muscle' SubClassOf 'part_of' some 'blood vessel smooth muscle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035044
-Label(s): olfactory cortex layer 3 
-- 'olfactory cortex layer 3' SubClassOf 'part_of' some 'olfactory cortex'
-+ 'olfactory cortex layer 3' SubClassOf 'part_of' some 'olfactory cortex'
+Class: http://purl.obolibrary.org/obo/GO_0005929
+Label(s): cilium 
+- 'cilium' SubClassOf 'organelle'
++ 'cilium' SubClassOf 'membrane-bounded organelle'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004662
+Label(s): vertebra lamina 
+- 'vertebra lamina' SubClassOf 'anatomical entity'
++ 'vertebra lamina' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006862
+Label(s): diaphysis of femur 
++ 'diaphysis of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004652
+Label(s): humerus diaphysis 
++ 'humerus diaphysis' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004651
+Label(s): scapula spine 
+- 'scapula spine' SubClassOf 'anatomical entity'
++ 'scapula spine' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0000740
+Label(s): retinal ganglion cell 
+- 'retinal ganglion cell' SubClassOf 'part_of' some 'retina'
+- 'retinal ganglion cell' SubClassOf 'retinal cell'
++ 'retinal ganglion cell' SubClassOf 'has soma location' some 'retina'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006810
+Label(s): olecranon 
++ 'olecranon' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006802
+Label(s): acetabular rim 
++ 'acetabular rim' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006801
+Label(s): proximal head of humerus 
++ 'proximal head of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002230
+Label(s): head of rib 
+- 'head of rib' SubClassOf 'anatomical entity'
++ 'head of rib' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009000
+Label(s): ischial spine 
++ 'ischial spine' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0005815
+Label(s): anterior tubercle of transverse process of cervical vertebra 
+- 'anterior tubercle of transverse process of cervical vertebra' SubClassOf 'anatomical entity'
++ 'anterior tubercle of transverse process of cervical vertebra' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0011006
+Label(s): Lugaro cell 
++ 'Lugaro cell' SubClassOf 'cerebellar neuron'
++ 'Lugaro cell' SubClassOf 'CNS interneuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0098840
+Label(s): protein transport along microtubule 
+- 'protein transport along microtubule' SubClassOf 'intracellular protein transport'
+- 'protein transport along microtubule' SubClassOf 'microtubule-based protein transport'
+- 'protein transport along microtubule' SubClassOf 'transport along microtubule'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000199
+Label(s): neck of radius 
++ 'neck of radius' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014430
+Label(s): sciatic notch 
++ 'sciatic notch' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0000693
+Label(s): neuroglioform cell 
+- 'neuroglioform cell' SubClassOf 'stellate interneuron'
++ 'neuroglioform cell' EquivalentTo 'interneuron' and ('bearer of' some 'neurogliaform morphology')
++ 'neuroglioform cell' SubClassOf 'multipolar neuron'
++ 'neuroglioform cell' SubClassOf 'bearer of' some 'neurogliaform morphology'
++ 'neuroglioform cell' SubClassOf 'interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_0000691
+Label(s): stellate interneuron 
+- 'stellate interneuron' SubClassOf 'CNS interneuron'
+- 'stellate interneuron' SubClassOf 'stellate neuron'
++ 'stellate interneuron' SubClassOf 'multipolar neuron'
++ 'stellate interneuron' SubClassOf 'interneuron'
++ 'stellate interneuron' EquivalentTo 'interneuron' and ('bearer of' some 'stellate morphology')
++ 'stellate interneuron' SubClassOf 'bearer of' some 'stellate morphology'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000144
+Label(s): trochlea of humerus 
++ 'trochlea of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_4023036
+Label(s): Chandelier Pvalb GABAergic cortical interneuron (Mus musculus) 
+- 'Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bearer of' some 'chandelier cell morphology'
++ 'Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)' SubClassOf http://purl.obolibrary.org/obo/CL_4023083
+
+Class: http://purl.obolibrary.org/obo/CL_0000677
+Label(s): gut absorptive cell 
++ 'gut absorptive cell' SubClassOf 'anatomical entity'
++ 'gut absorptive cell' SubClassOf 'part_of' some 'intestinal epithelium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000130
+Label(s): transverse foramen 
+- 'transverse foramen' SubClassOf 'anatomical entity'
++ 'transverse foramen' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0043902
+Label(s): positive regulation of multi-organism process 
+- 'positive regulation of multi-organism process' SubClassOf 'positive regulation of biological process'
+- 'positive regulation of multi-organism process' SubClassOf 'positively regulates' some 'multi-organism process'
+- 'positive regulation of multi-organism process' EquivalentTo 'biological regulation' and ('positively regulates' some 'multi-organism process')
+- 'positive regulation of multi-organism process' SubClassOf 'regulation of multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/GO_0043901
+Label(s): negative regulation of multi-organism process 
+- 'negative regulation of multi-organism process' EquivalentTo 'biological regulation' and ('negatively regulates' some 'multi-organism process')
+- 'negative regulation of multi-organism process' SubClassOf 'regulation of multi-organism process'
+- 'negative regulation of multi-organism process' SubClassOf 'negative regulation of biological process'
+- 'negative regulation of multi-organism process' SubClassOf 'negatively regulates' some 'multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/GO_0051668
+Label(s): localization within membrane 
+- 'localization within membrane' SubClassOf 'cellular localization'
+- 'localization within membrane' EquivalentTo 'localization' and ('occurs in' some 'membrane')
+- 'localization within membrane' SubClassOf 'occurs in' some 'membrane'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0012291
+Label(s): lateral malleolus of fibula 
++ 'lateral malleolus of fibula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014444
+Label(s): pubic ramus 
++ 'pubic ramus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014441
+Label(s): ischial ramus 
++ 'ischial ramus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014440
+Label(s): ischiopubic ramus 
++ 'ischiopubic ramus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_1001611
+Label(s): cerebellar neuron 
+- 'cerebellar neuron' EquivalentTo 'neuron' and ('part_of' some 'cerebellum')
+- 'cerebellar neuron' SubClassOf 'part_of' some 'cerebellum'
++ 'cerebellar neuron' SubClassOf 'has soma location' some 'cerebellum'
++ 'cerebellar neuron' EquivalentTo 'neuron' and ('has soma location' some 'cerebellum')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014437
+Label(s): iliac crest 
++ 'iliac crest' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006767
+Label(s): head of femur 
++ 'head of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0011188
+Label(s): lesser tubercle of humerus 
++ 'lesser tubercle of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0011000
+Label(s): dorsal horn interneuron 
+- 'dorsal horn interneuron' EquivalentTo 'interneuron' and ('part_of' some 'dorsal horn of spinal cord')
++ 'dorsal horn interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'dorsal horn of spinal cord')
+
+Class: http://purl.obolibrary.org/obo/CL_0005000
+Label(s): spinal cord interneuron 
+- 'spinal cord interneuron' SubClassOf 'part_of' some 'spinal cord'
+- 'spinal cord interneuron' EquivalentTo 'interneuron' and ('part_of' some 'spinal cord')
++ 'spinal cord interneuron' SubClassOf 'has soma location' some 'spinal cord'
++ 'spinal cord interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'spinal cord')
+
+Class: http://purl.obolibrary.org/obo/GO_0031981
+Label(s): nuclear lumen 
+- 'nuclear lumen' SubClassOf 'organelle lumen'
+
+Class: http://purl.obolibrary.org/obo/UBERON_4200172
+Label(s): neck of humerus 
++ 'neck of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002297
+Label(s): cerumen 
+- 'cerumen' SubClassOf 'sweat'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002231
+Label(s): body of rib 
+- 'body of rib' SubClassOf 'anatomical entity'
++ 'body of rib' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_1001582
+Label(s): lateral ventricle neuron 
+- 'lateral ventricle neuron' EquivalentTo 'neuron' and ('part_of' some 'telencephalic ventricle')
+- 'lateral ventricle neuron' SubClassOf 'part_of' some 'telencephalic ventricle'
++ 'lateral ventricle neuron' SubClassOf 'has soma location' some 'telencephalic ventricle'
++ 'lateral ventricle neuron' EquivalentTo 'neuron' and ('has soma location' some 'telencephalic ventricle')
+
+Class: http://purl.obolibrary.org/obo/CL_1001569
+Label(s): hippocampal interneuron 
+- 'hippocampal interneuron' SubClassOf 'CNS interneuron'
+- 'hippocampal interneuron' SubClassOf 'hippocampal neuron'
++ 'hippocampal interneuron' SubClassOf 'interneuron'
++ 'hippocampal interneuron' SubClassOf 'part_of' some 'Ammon's horn'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014386
+Label(s): vertebral endplate 
+- 'vertebral endplate' SubClassOf 'anatomical entity'
++ 'vertebral endplate' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0011001
+Label(s): spinal cord motor neuron 
++ 'spinal cord motor neuron' SubClassOf 'central nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_1001505
+Label(s): parvocellular neurosecretory cell 
+- 'parvocellular neurosecretory cell' SubClassOf 'central nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_1001503
+Label(s): olfactory bulb tufted cell 
+- 'olfactory bulb tufted cell' SubClassOf 'central nervous system neuron'
++ 'olfactory bulb tufted cell' SubClassOf 'neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006865
+Label(s): metaphysis of femur 
++ 'metaphysis of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0014064
+Label(s): positive regulation of serotonin secretion 
+- 'positive regulation of serotonin secretion' SubClassOf 'positive regulation of anion transport'
++ 'positive regulation of serotonin secretion' SubClassOf 'positive regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014063
+Label(s): negative regulation of serotonin secretion 
+- 'negative regulation of serotonin secretion' SubClassOf 'negative regulation of anion transport'
++ 'negative regulation of serotonin secretion' SubClassOf 'negative regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014062
+Label(s): regulation of serotonin secretion 
+- 'regulation of serotonin secretion' SubClassOf 'regulation of anion transport'
++ 'regulation of serotonin secretion' SubClassOf 'regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014059
+Label(s): regulation of dopamine secretion 
++ 'regulation of dopamine secretion' SubClassOf 'regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014057
+Label(s): positive regulation of acetylcholine secretion, neurotransmission 
++ 'positive regulation of acetylcholine secretion, neurotransmission' SubClassOf 'positive regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014056
+Label(s): regulation of acetylcholine secretion, neurotransmission 
++ 'regulation of acetylcholine secretion, neurotransmission' SubClassOf 'regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014054
+Label(s): positive regulation of gamma-aminobutyric acid secretion 
++ 'positive regulation of gamma-aminobutyric acid secretion' SubClassOf 'positive regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014053
+Label(s): negative regulation of gamma-aminobutyric acid secretion 
++ 'negative regulation of gamma-aminobutyric acid secretion' SubClassOf 'negative regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014052
+Label(s): regulation of gamma-aminobutyric acid secretion 
++ 'regulation of gamma-aminobutyric acid secretion' SubClassOf 'regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014050
+Label(s): negative regulation of glutamate secretion 
+- 'negative regulation of glutamate secretion' SubClassOf 'negative regulation of fatty acid transport'
++ 'negative regulation of glutamate secretion' SubClassOf 'negative regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014049
+Label(s): positive regulation of glutamate secretion 
+- 'positive regulation of glutamate secretion' SubClassOf 'positive regulation of fatty acid transport'
++ 'positive regulation of glutamate secretion' SubClassOf 'positive regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014048
+Label(s): regulation of glutamate secretion 
+- 'regulation of glutamate secretion' SubClassOf 'regulation of fatty acid transport'
++ 'regulation of glutamate secretion' SubClassOf 'regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0014047
+Label(s): glutamate secretion 
+- 'glutamate secretion' SubClassOf 'lipid export from cell'
+- 'glutamate secretion' SubClassOf 'monocarboxylic acid transport'
+- 'glutamate secretion' SubClassOf 'fatty acid transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0042073
+Label(s): intraciliary transport 
+- 'intraciliary transport' SubClassOf 'protein transport along microtubule'
++ 'intraciliary transport' SubClassOf 'transport along microtubule'
+
+Class: http://purl.obolibrary.org/obo/GO_0051223
+Label(s): regulation of protein transport 
+- 'regulation of protein transport' SubClassOf 'regulation of peptide transport'
++ 'regulation of protein transport' SubClassOf 'regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0050709
+Label(s): negative regulation of protein secretion 
+- 'negative regulation of protein secretion' SubClassOf 'negative regulation of peptide secretion'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008430
+Label(s): lumbar vertebral foramen 
++ 'lumbar vertebral foramen' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004390
+Label(s): epiphysis of metacarpal bone 
++ 'epiphysis of metacarpal bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004388
+Label(s): epiphysis of fibula 
++ 'epiphysis of fibula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004384
+Label(s): epiphysis of femur 
++ 'epiphysis of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004383
+Label(s): epiphysis of tibia 
++ 'epiphysis of tibia' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004382
+Label(s): epiphysis of humerus 
++ 'epiphysis of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0002674
+Label(s): H minus 
++ 'H minus' SubClassOf 'in taxon' some http://purl.obolibrary.org/obo/NCBITaxon_4896
+
+Class: http://purl.obolibrary.org/obo/CL_1001474
+Label(s): medium spiny neuron 
+- 'medium spiny neuron' SubClassOf 'central nervous system neuron'
++ 'medium spiny neuron' SubClassOf 'neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0016497
+Label(s): epicondyle of humerus 
++ 'epicondyle of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0012078
+Label(s): fovea capitis of femur 
++ 'fovea capitis of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0000418
+Label(s): arcade cell 
++ 'arcade cell' SubClassOf 'in taxon' some http://purl.obolibrary.org/obo/NCBITaxon_6237
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002513
+Label(s): endochondral bone 
+- 'endochondral bone' SubClassOf 'anatomical entity'
+- 'endochondral bone' SubClassOf 'develops from' some 'cartilage element'
++ 'endochondral bone' SubClassOf 'develops from' some http://purl.obolibrary.org/obo/UBERON_2001544
++ 'endochondral bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000313
+Label(s): portion of cartilage tissue in tibia 
++ 'portion of cartilage tissue in tibia' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0002613
+Label(s): striatum neuron 
+- 'striatum neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'striatum')
+- 'striatum neuron' SubClassOf 'part_of' some 'striatum'
++ 'striatum neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'striatum')
++ 'striatum neuron' SubClassOf 'has soma location' some 'striatum'
+
+Class: http://purl.obolibrary.org/obo/CL_0002612
+Label(s): neuron of the ventral spinal cord 
+- 'neuron of the ventral spinal cord' SubClassOf 'part_of' some 'ventral horn of spinal cord'
+- 'neuron of the ventral spinal cord' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'ventral horn of spinal cord')
++ 'neuron of the ventral spinal cord' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'ventral horn of spinal cord')
++ 'neuron of the ventral spinal cord' SubClassOf 'central nervous system neuron'
++ 'neuron of the ventral spinal cord' SubClassOf 'has soma location' some 'ventral horn of spinal cord'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0018673
+Label(s): neck of fibula 
++ 'neck of fibula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_1001434
+Label(s): olfactory bulb interneuron 
+- 'olfactory bulb interneuron' EquivalentTo 'interneuron' and ('part_of' some 'olfactory bulb')
++ 'olfactory bulb interneuron' SubClassOf 'has soma location' some 'olfactory bulb'
++ 'olfactory bulb interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'olfactory bulb')
+
+Class: http://purl.obolibrary.org/obo/CL_0002609
+Label(s): neuron of cerebral cortex 
+- 'neuron of cerebral cortex' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'cerebral cortex')
++ 'neuron of cerebral cortex' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'cerebral cortex')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0016425
+Label(s): epiphyseal plate of radius 
++ 'epiphyseal plate of radius' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0016419
+Label(s): bony part of vertebral arch 
+- 'bony part of vertebral arch' SubClassOf 'anatomical entity'
++ 'bony part of vertebral arch' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0007011
+Label(s): enteric neuron 
+- 'enteric neuron' EquivalentTo 'neuron' and ('part_of' some 'enteric nervous system')
++ 'enteric neuron' SubClassOf 'has soma location' some 'enteric nervous system'
++ 'enteric neuron' EquivalentTo 'neuron' and ('has soma location' some 'enteric nervous system')
+
+Class: http://purl.obolibrary.org/obo/GO_0031503
+Label(s): protein-containing complex localization 
+- 'protein-containing complex localization' SubClassOf 'protein localization'
++ 'protein-containing complex localization' SubClassOf 'localization'
+
+Class: http://purl.obolibrary.org/obo/CL_0000397
+Label(s): ganglion interneuron 
+- 'ganglion interneuron' EquivalentTo 'interneuron' and ('part_of' some 'ganglion')
+- 'ganglion interneuron' SubClassOf 'part_of' some 'ganglion'
++ 'ganglion interneuron' SubClassOf 'has soma location' some 'ganglion'
++ 'ganglion interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'ganglion')
+
+Class: http://purl.obolibrary.org/obo/CL_0000371
+Label(s): protoplast 
++ 'protoplast' SubClassOf 'in taxon' some (not ('Metazoa'))
+
+Class: http://purl.obolibrary.org/obo/CL_0002563
+Label(s): intestinal epithelial cell 
+- 'intestinal epithelial cell' SubClassOf 'epithelial cell of alimentary canal'
++ 'intestinal epithelial cell' SubClassOf 'epithelial cell of alimentary canal'
+
+Class: http://purl.obolibrary.org/obo/CL_0000315
+Label(s): tears secreting cell 
+- 'tears secreting cell' SubClassOf 'secretory cell'
++ 'tears secreting cell' SubClassOf 'part_of' some 'lacrimal gland'
++ 'tears secreting cell' SubClassOf 'anatomical entity'
++ 'tears secreting cell' SubClassOf 'exocrine cell'
+
+Class: http://purl.obolibrary.org/obo/GO_0044111
+Label(s): development involved in symbiotic interaction 
+- 'development involved in symbiotic interaction' EquivalentTo 'developmental process' and ('part_of' some 'biological process involved in interspecies interaction between organisms')
+- 'development involved in symbiotic interaction' SubClassOf 'developmental process'
+- 'development involved in symbiotic interaction' SubClassOf 'part_of' some 'biological process involved in interspecies interaction between organisms'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010358
+Label(s): arch of centrum of vertebra 
+- 'arch of centrum of vertebra' SubClassOf 'anatomical entity'
++ 'arch of centrum of vertebra' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000219
+Label(s): vertebral foramen of atlas 
++ 'vertebral foramen of atlas' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010388
+Label(s): proximal segment of rib 
+- 'proximal segment of rib' SubClassOf 'anatomical entity'
++ 'proximal segment of rib' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009497
+Label(s): epithelium of foregut-midgut junction 
++ 'epithelium of foregut-midgut junction' SubClassOf 'part_of' some 'digestive tract epithelium'
+
+Class: http://purl.obolibrary.org/obo/GO_1903561
+Label(s): extracellular vesicle 
+- 'extracellular vesicle' SubClassOf 'extracellular organelle'
++ 'extracellular vesicle' SubClassOf http://purl.obolibrary.org/obo/GO_0065010
+
+Class: http://purl.obolibrary.org/obo/GO_0033603
+Label(s): positive regulation of dopamine secretion 
++ 'positive regulation of dopamine secretion' SubClassOf 'positive regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0051224
+Label(s): negative regulation of protein transport 
+- 'negative regulation of protein transport' SubClassOf 'negative regulation of anion transport'
++ 'negative regulation of protein transport' SubClassOf 'negative regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/CL_1000245
+Label(s): posterior lateral line ganglion neuron 
+- 'posterior lateral line ganglion neuron' EquivalentTo 'neuron' and ('part_of' some 'posterior lateral line ganglion')
+- 'posterior lateral line ganglion neuron' SubClassOf 'part_of' some 'posterior lateral line ganglion'
++ 'posterior lateral line ganglion neuron' EquivalentTo 'neuron' and ('has soma location' some 'posterior lateral line ganglion')
++ 'posterior lateral line ganglion neuron' SubClassOf 'has soma location' some 'posterior lateral line ganglion'
+
+Class: http://purl.obolibrary.org/obo/GO_1901264
+Label(s): carbohydrate derivative transport 
+- 'carbohydrate derivative transport' SubClassOf 'organic substance transport'
+
+Class: http://purl.obolibrary.org/obo/CL_0009003
+Label(s): larval midgut cell 
++ 'larval midgut cell' SubClassOf 'part_of' some http://purl.obolibrary.org/obo/UBERON_0002548
++ 'larval midgut cell' SubClassOf 'anatomical entity'
++ 'larval midgut cell' SubClassOf 'part_of' some 'digestive tract'
+
+Class: http://purl.obolibrary.org/obo/CL_0009002
+Label(s): inflammatory cell 
++ 'inflammatory cell' SubClassOf 'capable of part of' some 'inflammatory response'
+
+Class: http://purl.obolibrary.org/obo/CL_0009000
+Label(s): sensory neuron of spinal nerve 
+- 'sensory neuron of spinal nerve' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004096
+Label(s): odontoid process of cervical vertebra 2 
+- 'odontoid process of cervical vertebra 2' SubClassOf 'anatomical entity'
++ 'odontoid process of cervical vertebra 2' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_2000193
+Label(s): positive regulation of fatty acid transport 
+- 'positive regulation of fatty acid transport' SubClassOf 'positively regulates' some 'fatty acid transport'
+- 'positive regulation of fatty acid transport' SubClassOf 'regulation of fatty acid transport'
+- 'positive regulation of fatty acid transport' SubClassOf 'positive regulation of organic acid transport'
+- 'positive regulation of fatty acid transport' SubClassOf 'positive regulation of lipid transport'
+- 'positive regulation of fatty acid transport' EquivalentTo 'biological regulation' and ('positively regulates' some 'fatty acid transport')
+
+Class: http://purl.obolibrary.org/obo/GO_2000192
+Label(s): negative regulation of fatty acid transport 
+- 'negative regulation of fatty acid transport' EquivalentTo 'biological regulation' and ('negatively regulates' some 'fatty acid transport')
+- 'negative regulation of fatty acid transport' SubClassOf 'negatively regulates' some 'fatty acid transport'
+- 'negative regulation of fatty acid transport' SubClassOf 'regulation of fatty acid transport'
+- 'negative regulation of fatty acid transport' SubClassOf 'negative regulation of organic acid transport'
+- 'negative regulation of fatty acid transport' SubClassOf 'negative regulation of lipid transport'
+
+Class: http://purl.obolibrary.org/obo/GO_2000191
+Label(s): regulation of fatty acid transport 
+- 'regulation of fatty acid transport' SubClassOf 'regulation of organic acid transport'
+- 'regulation of fatty acid transport' SubClassOf 'regulates' some 'fatty acid transport'
+- 'regulation of fatty acid transport' SubClassOf 'regulation of lipid transport'
+- 'regulation of fatty acid transport' EquivalentTo 'biological regulation' and ('regulates' some 'fatty acid transport')
+
+Class: http://purl.obolibrary.org/obo/CL_0002371
+Label(s): somatic cell 
++ 'somatic cell' EquivalentTo 'native cell' and (not ('germ line cell'))
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008432
+Label(s): thoracic vertebral foramen 
++ 'thoracic vertebral foramen' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008431
+Label(s): sacral foramen 
++ 'sacral foramen' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0000121
+Label(s): Purkinje cell 
+- 'Purkinje cell' SubClassOf 'part_of' some 'cerebellar cortex'
++ 'Purkinje cell' SubClassOf 'has soma location' some 'cerebellar cortex'
+
+Class: http://purl.obolibrary.org/obo/CL_0000119
+Label(s): cerebellar Golgi cell 
+- 'cerebellar Golgi cell' SubClassOf 'cerebellar neuron'
+- 'cerebellar Golgi cell' SubClassOf 'CNS interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_0000118
+Label(s): basket cell 
+- 'basket cell' SubClassOf 'CNS neuron (sensu Vertebrata)'
++ 'basket cell' SubClassOf 'GABAergic interneuron'
++ 'basket cell' SubClassOf 'multipolar neuron'
++ 'basket cell' EquivalentTo 'interneuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070002) and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
++ 'basket cell' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070002
+
+Class: http://purl.obolibrary.org/obo/CL_0000117
+Label(s): CNS neuron (sensu Vertebrata) 
+- 'CNS neuron (sensu Vertebrata)' SubClassOf 'central nervous system neuron'
++ 'CNS neuron (sensu Vertebrata)' SubClassOf 'neuron'
++ 'CNS neuron (sensu Vertebrata)' SubClassOf 'part_of' some 'central nervous system'
+
+Class: http://purl.obolibrary.org/obo/CL_0000104
+Label(s): multipolar neuron 
++ 'multipolar neuron' EquivalentTo 'neuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070026)
++ 'multipolar neuron' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070026
+
+Class: http://purl.obolibrary.org/obo/CL_0000103
+Label(s): bipolar neuron 
++ 'bipolar neuron' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070006
++ 'bipolar neuron' EquivalentTo 'interneuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070006)
+
+Class: http://purl.obolibrary.org/obo/GO_0043232
+Label(s): intracellular non-membrane-bounded organelle 
+- 'intracellular non-membrane-bounded organelle' SubClassOf 'part_of' some 'intracellular anatomical structure'
+
+Class: http://purl.obolibrary.org/obo/CL_0010012
+Label(s): cerebral cortex neuron 
+- 'cerebral cortex neuron' EquivalentTo 'neuron' and ('part_of' some 'cerebral cortex')
+- 'cerebral cortex neuron' SubClassOf 'part_of' some 'cerebral cortex'
++ 'cerebral cortex neuron' EquivalentTo 'neuron' and ('has soma location' some 'cerebral cortex')
++ 'cerebral cortex neuron' SubClassOf 'has soma location' some 'cerebral cortex'
+
+Class: http://purl.obolibrary.org/obo/CL_0010011
+Label(s): cerebral cortex GABAergic interneuron 
+- 'cerebral cortex GABAergic interneuron' SubClassOf 'has soma location' some 'cerebral cortex'
++ 'cerebral cortex GABAergic interneuron' SubClassOf 'neuron of cerebral cortex'
++ 'cerebral cortex GABAergic interneuron' SubClassOf 'CNS interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_0010010
+Label(s): cerebellar stellate cell 
+- 'cerebellar stellate cell' SubClassOf 'cerebellar neuron'
++ 'cerebellar stellate cell' SubClassOf 'part_of' some 'cerebellum'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0003996
+Label(s): cervical vertebra 1 arcus anterior 
+- 'cervical vertebra 1 arcus anterior' SubClassOf 'anatomical entity'
++ 'cervical vertebra 1 arcus anterior' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001762
+Label(s): turbinate bone 
+- 'turbinate bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0097708
+Label(s): intracellular vesicle 
+- 'intracellular vesicle' SubClassOf 'part_of' some 'intracellular anatomical structure'
++ 'intracellular vesicle' SubClassOf 'intracellular membrane-bounded organelle'
+
+Class: http://purl.obolibrary.org/obo/GO_1905516
+Label(s): positive regulation of fertilization 
+- 'positive regulation of fertilization' SubClassOf 'positive regulation of multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/CL_2000028
+Label(s): cerebellum glutamatergic neuron 
+- 'cerebellum glutamatergic neuron' SubClassOf 'cerebellar neuron'
++ 'cerebellum glutamatergic neuron' SubClassOf 'part_of' some 'cerebellum'
+
+Class: http://purl.obolibrary.org/obo/CL_0000096
+Label(s): mature neutrophil 
+- 'mature neutrophil' EquivalentTo 'neutrophil' and ('has part' some 'neutrophillic cytoplasm') and ('has part' some 'tertiary granule') and ('has part' some 'lobed nucleus') and ('has plasma membrane part' some 'C-X-C chemokine receptor type 1') and ('has plasma membrane part' some 'C-X-C chemokine receptor type 2') and ('has plasma membrane part' some 'alpha-(1,3)-fucosyltransferase 4') and ('has plasma membrane part' some 'low affinity immunoglobulin gamma Fc region receptor III') and ('has plasma membrane part' some 'leukosialin') and ('has plasma membrane part' some 'transcription factor PU.1') and ('has plasma membrane part' some 'proto-oncogene c-Fos') and ('capable of' some 'respiratory burst involved in inflammatory response') and ('capable of' some 'positive regulation of leukocyte chemotaxis') and ('capable of' some 'phagocytosis') and ('capable of' some 'interleukin-8 production') and ('lacks_part' some 'lactotransferrin') and ('lacks_part' some 'myeloperoxidase') and ('lacks_part' some 'myb proto-oncogene protein')
+- 'mature neutrophil' SubClassOf 'has part' some 'lobed nucleus'
++ 'mature neutrophil' SubClassOf 'has part' some 
+('nucleus' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0001979))
++ 'mature neutrophil' EquivalentTo 'neutrophil' and ('has part' some 'neutrophillic cytoplasm') and ('has part' some 'tertiary granule') and ('has part' some 
+('nucleus' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0001979))) and ('has plasma membrane part' some 'C-X-C chemokine receptor type 1') and ('has plasma membrane part' some 'C-X-C chemokine receptor type 2') and ('has plasma membrane part' some 'alpha-(1,3)-fucosyltransferase 4') and ('has plasma membrane part' some 'low affinity immunoglobulin gamma Fc region receptor III') and ('has plasma membrane part' some 'leukosialin') and ('has plasma membrane part' some 'transcription factor PU.1') and ('has plasma membrane part' some 'proto-oncogene c-Fos') and ('capable of' some 'respiratory burst involved in inflammatory response') and ('capable of' some 'positive regulation of leukocyte chemotaxis') and ('capable of' some 'phagocytosis') and ('capable of' some 'interleukin-8 production') and ('lacks_part' some 'lactotransferrin') and ('lacks_part' some 'myeloperoxidase') and ('lacks_part' some 'myb proto-oncogene protein')
+
+Class: http://purl.obolibrary.org/obo/CL_0000041
+Label(s): mature eosinophil 
+- 'mature eosinophil' EquivalentTo 'eosinophil' and ('has part' some 'lobed nucleus') and ('has part' some 'eosinophil peroxidase') and ('has part' some 'erythroid transcription factor') and ('has part' some 'endothelial transcription factor GATA-2') and ('has part' some 'non-secretory ribonuclease') and ('has part' some 'eosinophil cationic protein') and ('has part' some 'eosinophil granule major basic protein') and ('has plasma membrane part' some 'integrin alpha-4') and ('capable of' some 'antigen processing and presentation of peptide antigen via MHC class II') and ('capable of' some 'leukotriene production involved in inflammatory response') and ('capable of' some 'respiratory burst')
+- 'mature eosinophil' SubClassOf 'has part' some 'lobed nucleus'
++ 'mature eosinophil' SubClassOf 'has part' some 
+('nucleus' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0001979))
++ 'mature eosinophil' EquivalentTo 'eosinophil' and ('has part' some 'eosinophil peroxidase') and ('has part' some 'erythroid transcription factor') and ('has part' some 'endothelial transcription factor GATA-2') and ('has part' some 'non-secretory ribonuclease') and ('has part' some 'eosinophil cationic protein') and ('has part' some 'eosinophil granule major basic protein') and ('has part' some 
+('nucleus' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0001979))) and ('has plasma membrane part' some 'integrin alpha-4') and ('capable of' some 'antigen processing and presentation of peptide antigen via MHC class II') and ('capable of' some 'leukotriene production involved in inflammatory response') and ('capable of' some 'respiratory burst')
+
+Class: http://purl.obolibrary.org/obo/CL_0000028
+Label(s): CNS neuron (sensu Nematoda and Protostomia) 
+- 'CNS neuron (sensu Nematoda and Protostomia)' SubClassOf 'central nervous system neuron'
++ 'CNS neuron (sensu Nematoda and Protostomia)' SubClassOf 'neuron'
++ 'CNS neuron (sensu Nematoda and Protostomia)' SubClassOf 'part_of' some 'central nervous system'
+
+Class: http://purl.obolibrary.org/obo/GO_0015031
+Label(s): protein transport 
+- 'protein transport' SubClassOf 'peptide transport'
++ 'protein transport' SubClassOf 'nitrogen compound transport'
++ 'protein transport' SubClassOf 'organic substance transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0051953
+Label(s): negative regulation of amine transport 
+- 'negative regulation of amine transport' SubClassOf 'negative regulation of anion transport'
++ 'negative regulation of amine transport' SubClassOf 'negative regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001693
+Label(s): exoccipital bone 
+- 'exoccipital bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001692
+Label(s): basioccipital bone 
+- 'basioccipital bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008429
+Label(s): cervical vertebral foramen 
++ 'cervical vertebral foramen' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0011575
+Label(s): styloid process of ulna 
++ 'styloid process of ulna' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009617
+Label(s): head paraxial mesoderm 
++ 'head paraxial mesoderm' SubClassOf 'part_of' some 'head mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013752
+Label(s): diaphysis of metacarpal bone 
++ 'diaphysis of metacarpal bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013751
+Label(s): metaphysis of radius 
++ 'metaphysis of radius' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013750
+Label(s): metaphysis of tibia 
++ 'metaphysis of tibia' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0043231
+Label(s): intracellular membrane-bounded organelle 
++ 'intracellular membrane-bounded organelle' EquivalentTo 'membrane-bounded organelle' and ('part_of' some 'intracellular anatomical structure')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006061
+Label(s): process of vertebra 
+- 'process of vertebra' SubClassOf 'anatomical entity'
++ 'process of vertebra' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0003073
+Label(s): lens placode 
++ 'lens placode' SubClassOf 'part_of' some 'immature eye'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013707
+Label(s): iliac spine 
++ 'iliac spine' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_1000378
+Label(s): type 1 vestibular sensory cell of stato-acoustic epithelium 
+- 'type 1 vestibular sensory cell of stato-acoustic epithelium' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_1000379
+Label(s): type 1 vestibular sensory cell of epithelium of macula of utricle of membranous labyrinth 
+- 'type 1 vestibular sensory cell of epithelium of macula of utricle of membranous labyrinth' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0015106
+Label(s): bicarbonate transmembrane transporter activity BESTs transport cytosolic HCO3- to extracellular region 
+- 'bicarbonate transmembrane transporter activity' SubClassOf 'inorganic molecular entity transmembrane transporter activity'
+
+Class: http://purl.obolibrary.org/obo/CL_1000382
+Label(s): type 2 vestibular sensory cell of stato-acoustic epithelium 
+- 'type 2 vestibular sensory cell of stato-acoustic epithelium' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010746
+Label(s): iliac blade 
++ 'iliac blade' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010747
+Label(s): body of ilium 
++ 'body of ilium' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0008013
+Label(s): cranial visceromotor neuron 
++ 'cranial visceromotor neuron' SubClassOf 'central nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_0012001
+Label(s): neuron of the forebrain 
+- 'neuron of the forebrain' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'forebrain')
+- 'neuron of the forebrain' SubClassOf 'part_of' some 'forebrain'
++ 'neuron of the forebrain' SubClassOf 'central nervous system neuron'
++ 'neuron of the forebrain' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'forebrain')
++ 'neuron of the forebrain' SubClassOf 'has soma location' some 'forebrain'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0015875
+Label(s): heel 
++ 'heel' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0007172
+Label(s): angle of scapula 
+- 'angle of scapula' SubClassOf 'anatomical entity'
++ 'angle of scapula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000017
+Label(s): realizable entity 可实现实体 
+- 'realizable entity' SubClassOf http://www.w3.org/2002/07/owl#Thing
++ 'realizable entity' SubClassOf 'part_of' only 'realizable entity'
+
+Class: http://purl.obolibrary.org/obo/CL_4023008
+Label(s): intratelencephalic-projecting glutamatergic cortical neuron 
+- 'intratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'has soma location' some 'cerebral cortex'
+- 'intratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'has synaptic IO in' some 'telencephalon'
++ 'intratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070034
++ 'intratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'cerebral cortex neuron'
++ 'intratelencephalic-projecting glutamatergic cortical neuron' EquivalentTo 'glutamatergic neuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070034) and ('has soma location' some 'cerebral cortex')
+
+Class: http://purl.obolibrary.org/obo/CL_0000043
+Label(s): mature basophil 
+- 'mature basophil' SubClassOf 'has part' some 'lobed nucleus'
+- 'mature basophil' EquivalentTo 'basophil' and ('has part' some 'lobed nucleus') and ('capable of' some 'histamine production involved in inflammatory response') and ('capable of' some 'serotonin production involved in inflammatory response') and ('capable of' some 'positive regulation of type 2 immune response') and ('capable of' some 'blood circulation') and ('capable of' some 'interleukin-13 production') and ('capable of' some 'interleukin-4 production') and ('capable of' some 'positive regulation of isotype switching to IgE isotypes')
++ 'mature basophil' SubClassOf 'has part' some 
+('nucleus' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0001979))
++ 'mature basophil' EquivalentTo 'basophil' and ('has part' some 
+('nucleus' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0001979))) and ('capable of' some 'histamine production involved in inflammatory response') and ('capable of' some 'serotonin production involved in inflammatory response') and ('capable of' some 'positive regulation of type 2 immune response') and ('capable of' some 'blood circulation') and ('capable of' some 'interleukin-13 production') and ('capable of' some 'interleukin-4 production') and ('capable of' some 'positive regulation of isotype switching to IgE isotypes')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0003699
+Label(s): pubic symphysis 
++ 'pubic symphysis' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0005810
+Label(s): cervical vertebra 1 anterior tubercle 
+- 'cervical vertebra 1 anterior tubercle' SubClassOf 'anatomical entity'
++ 'cervical vertebra 1 anterior tubercle' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0050714
+Label(s): positive regulation of protein secretion 
+- 'positive regulation of protein secretion' SubClassOf 'positive regulation of peptide secretion'
+
+Class: http://purl.obolibrary.org/obo/CL_0000107
+Label(s): autonomic neuron 
+- 'autonomic neuron' SubClassOf 'part_of' some 'autonomic nervous system'
+- 'autonomic neuron' EquivalentTo 'neuron' and ('part_of' some 'autonomic nervous system')
++ 'autonomic neuron' SubClassOf 'has soma location' some 'autonomic nervous system'
++ 'autonomic neuron' EquivalentTo 'neuron' and ('has soma location' some 'autonomic nervous system')
+
+Class: http://purl.obolibrary.org/obo/GO_0045087
+Label(s): innate immune response 
+- 'innate immune response' SubClassOf 'immune response'
+
+Class: http://purl.obolibrary.org/obo/CL_0000122
+Label(s): stellate neuron 
++ 'stellate neuron' SubClassOf 'bearer of' some 'stellate morphology'
++ 'stellate neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'stellate morphology')
++ 'stellate neuron' SubClassOf 'multipolar neuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0015318
+Label(s): inorganic molecular entity transmembrane transporter activity 
+- 'inorganic molecular entity transmembrane transporter activity' SubClassOf 'Defective SLC2A9 does not transport Fru, Glc, urate'
+
+Class: http://purl.obolibrary.org/obo/GO_0060467
+Label(s): negative regulation of fertilization 
+- 'negative regulation of fertilization' SubClassOf 'negative regulation of multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/GO_0015908
+Label(s): fatty acid transport 
+- 'fatty acid transport' SubClassOf 'lipid transport'
+- 'fatty acid transport' SubClassOf 'organic acid transport'
+
+Class: http://purl.obolibrary.org/obo/CL_1000606
+Label(s): kidney nerve cell 
+- 'kidney nerve cell' EquivalentTo 'neuron' and ('part_of' some 'kidney')
++ 'kidney nerve cell' SubClassOf 'has soma location' some 'kidney'
++ 'kidney nerve cell' EquivalentTo 'neuron' and ('has soma location' some 'kidney')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013279
+Label(s): diaphysis of fibula 
++ 'diaphysis of fibula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_2000023
+Label(s): spinal cord ventral column interneuron 
+- 'spinal cord ventral column interneuron' SubClassOf 'part_of' some 'spinal cord ventral column'
+- 'spinal cord ventral column interneuron' EquivalentTo 'interneuron' and ('part_of' some 'spinal cord ventral column')
++ 'spinal cord ventral column interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'spinal cord ventral column')
++ 'spinal cord ventral column interneuron' SubClassOf 'has soma location' some 'spinal cord ventral column'
+
+Class: http://purl.obolibrary.org/obo/CL_2000031
+Label(s): lateral line ganglion neuron 
+- 'lateral line ganglion neuron' EquivalentTo 'neuron' and ('part_of' some 'lateral line ganglion')
+- 'lateral line ganglion neuron' SubClassOf 'part_of' some 'lateral line ganglion'
++ 'lateral line ganglion neuron' SubClassOf 'has soma location' some 'lateral line ganglion'
++ 'lateral line ganglion neuron' EquivalentTo 'neuron' and ('has soma location' some 'lateral line ganglion')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009980
+Label(s): condyle of femur 
++ 'condyle of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009986
+Label(s): lateral epicondyle of femur 
++ 'lateral epicondyle of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009987
+Label(s): medial epicondyle of femur 
++ 'medial epicondyle of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009988
+Label(s): condyle of humerus 
++ 'condyle of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009989
+Label(s): condyle of tibia 
++ 'condyle of tibia' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_2000087
+Label(s): dentate gyrus of hippocampal formation basket cell 
+- 'dentate gyrus of hippocampal formation basket cell' SubClassOf 'neuron of cerebral cortex'
+
+Class: http://purl.obolibrary.org/obo/CL_2000090
+Label(s): dentate gyrus of hippocampal formation stellate cell 
+- 'dentate gyrus of hippocampal formation stellate cell' SubClassOf 'neuron of cerebral cortex'
+
+Class: http://purl.obolibrary.org/obo/CL_2000097
+Label(s): midbrain dopaminergic neuron 
+- 'midbrain dopaminergic neuron' SubClassOf 'central nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0099118
+Label(s): microtubule-based protein transport 
+- 'microtubule-based protein transport' SubClassOf 'microtubule-based transport'
+- 'microtubule-based protein transport' SubClassOf 'protein transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001246
+Label(s): interlobular bile duct 
+- 'interlobular bile duct' SubClassOf 'intrahepatic bile duct'
++ 'interlobular bile duct' SubClassOf 'intrahepatic bile duct'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001269
+Label(s): acetabular part of hip bone 
++ 'acetabular part of hip bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001270
+Label(s): bony pelvis 
+- 'bony pelvis' SubClassOf 'anatomical entity'
++ 'bony pelvis' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0032892
+Label(s): positive regulation of organic acid transport 
+- 'positive regulation of organic acid transport' SubClassOf 'positive regulation of anion transport'
++ 'positive regulation of organic acid transport' SubClassOf 'positive regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0050708
+Label(s): regulation of protein secretion 
+- 'regulation of protein secretion' SubClassOf 'regulation of peptide secretion'
+
+Class: http://purl.obolibrary.org/obo/GO_0030659
+Label(s): cytoplasmic vesicle membrane 
++ 'cytoplasmic vesicle membrane' EquivalentTo 'membrane' and ('part_of' some 'cytoplasmic vesicle')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0011187
+Label(s): ventral tubercle of humerus 
++ 'ventral tubercle of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001012
+Label(s): head of radius 
++ 'head of radius' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009920
+Label(s): optic neural crest 
++ 'optic neural crest' SubClassOf 'part_of' some 'mesenchyme derived from head neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013280
+Label(s): diaphysis of tibia 
++ 'diaphysis of tibia' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0011015
+Label(s): iliac fossa 
++ 'iliac fossa' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010339
+Label(s): 1st arch mandibular mesenchyme from head mesenchyme 
+- '1st arch mandibular mesenchyme from head mesenchyme' SubClassOf 'part_of' some '1st arch mandibular mesenchyme'
++ '1st arch mandibular mesenchyme from head mesenchyme' SubClassOf 'part_of' some '1st arch mandibular mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070001
+Label(s): neurogliaform morphology 
+- 'neurogliaform morphology' SubClassOf 'cell morphology'
++ 'neurogliaform morphology' SubClassOf http://purl.obolibrary.org/obo/PATO_0070026
+
+Class: http://purl.obolibrary.org/obo/CL_0000402
+Label(s): CNS interneuron 
+- 'CNS interneuron' EquivalentTo 'interneuron' and ('part_of' some 'central nervous system')
++ 'CNS interneuron' SubClassOf 'central nervous system neuron'
++ 'CNS interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'central nervous system')
+
+Class: http://purl.obolibrary.org/obo/CL_0002608
+Label(s): hippocampal neuron 
+- 'hippocampal neuron' SubClassOf 'neuron of cerebral cortex'
++ 'hippocampal neuron' SubClassOf 'CNS neuron (sensu Vertebrata)'
+
+Class: http://purl.obolibrary.org/obo/CL_0002610
+Label(s): raphe nuclei neuron 
+- 'raphe nuclei neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'raphe nuclei')
+- 'raphe nuclei neuron' SubClassOf 'part_of' some 'raphe nuclei'
++ 'raphe nuclei neuron' SubClassOf 'central nervous system neuron'
++ 'raphe nuclei neuron' SubClassOf 'has soma location' some 'raphe nuclei'
++ 'raphe nuclei neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'raphe nuclei')
+
+Class: http://purl.obolibrary.org/obo/CL_0002611
+Label(s): neuron of the dorsal spinal cord 
+- 'neuron of the dorsal spinal cord' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'dorsal horn of spinal cord')
+- 'neuron of the dorsal spinal cord' SubClassOf 'part_of' some 'dorsal horn of spinal cord'
++ 'neuron of the dorsal spinal cord' SubClassOf 'central nervous system neuron'
++ 'neuron of the dorsal spinal cord' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'dorsal horn of spinal cord')
++ 'neuron of the dorsal spinal cord' SubClassOf 'has soma location' some 'dorsal horn of spinal cord'
+
+Class: http://purl.obolibrary.org/obo/CL_0002614
+Label(s): neuron of the substantia nigra 
+- 'neuron of the substantia nigra' SubClassOf 'part_of' some 'substantia nigra'
+- 'neuron of the substantia nigra' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('part_of' some 'substantia nigra')
++ 'neuron of the substantia nigra' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('has soma location' some 'substantia nigra')
++ 'neuron of the substantia nigra' SubClassOf 'central nervous system neuron'
++ 'neuron of the substantia nigra' SubClassOf 'has soma location' some 'substantia nigra'
+
+Class: http://purl.obolibrary.org/obo/CL_0000411
+Label(s): flatworm hypodermal cell 
++ 'flatworm hypodermal cell' SubClassOf 'in taxon' some http://purl.obolibrary.org/obo/NCBITaxon_6237
+
+Class: http://purl.obolibrary.org/obo/GO_0070257
+Label(s): positive regulation of mucus secretion 
+- 'positive regulation of mucus secretion' SubClassOf 'positive regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0070255
+Label(s): regulation of mucus secretion 
+- 'regulation of mucus secretion' SubClassOf 'regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0070254
+Label(s): mucus secretion 
+- 'mucus secretion' SubClassOf 'carbohydrate derivative transport'
+- 'mucus secretion' SubClassOf 'nitrogen compound transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0031090
+Label(s): organelle membrane 
++ 'organelle membrane' EquivalentTo 'membrane' and ('part_of' some 'membrane-bounded organelle')
+
+Class: http://purl.obolibrary.org/obo/CL_0002675
+Label(s): H plus 
++ 'H plus' SubClassOf 'in taxon' some http://purl.obolibrary.org/obo/NCBITaxon_4896
+
+Class: http://purl.obolibrary.org/obo/GO_1900426
+Label(s): positive regulation of defense response to bacterium 
++ 'positive regulation of defense response to bacterium' SubClassOf 'positive regulation of immune response'
+
+Class: http://purl.obolibrary.org/obo/CL_0000487
+Label(s): oenocyte 
++ 'oenocyte' SubClassOf 'in taxon' some 'Arthropoda'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010994
+Label(s): coronoid process of ulna 
++ 'coronoid process of ulna' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0005775
+Label(s): vacuolar lumen 
+- 'vacuolar lumen' SubClassOf 'organelle lumen'
+
+Class: http://purl.obolibrary.org/obo/GO_0080154
+Label(s): regulation of fertilization 
+- 'regulation of fertilization' SubClassOf 'regulation of multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001067
+Label(s): vertebral arch joint 
+- 'vertebral arch joint' SubClassOf 'anatomical entity'
++ 'vertebral arch joint' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001028
+Label(s): diaphysis of radius 
++ 'diaphysis of radius' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009846
+Label(s): embryonic cloacal epithelium 
++ 'embryonic cloacal epithelium' SubClassOf 'part_of' some 'digestive tract epithelium'
+
+Class: http://purl.obolibrary.org/obo/CL_1000385
+Label(s): type 2 vestibular sensory cell of epithelium of crista of ampulla of semicircular duct of membranous labyrinth 
+- 'type 2 vestibular sensory cell of epithelium of crista of ampulla of semicircular duct of membranous labyrinth' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_1000384
+Label(s): type 2 vestibular sensory cell of epithelium of macula of saccule of membranous labyrinth 
+- 'type 2 vestibular sensory cell of epithelium of macula of saccule of membranous labyrinth' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_1000383
+Label(s): type 2 vestibular sensory cell of epithelium of macula of utricle of membranous labyrinth 
+- 'type 2 vestibular sensory cell of epithelium of macula of utricle of membranous labyrinth' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0090087
+Label(s): regulation of peptide transport 
+- 'regulation of peptide transport' SubClassOf 'regulation of anion transport'
++ 'regulation of peptide transport' SubClassOf 'regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/CL_1000381
+Label(s): type 1 vestibular sensory cell of epithelium of crista of ampulla of semicircular duct of membranous labyrinth 
+- 'type 1 vestibular sensory cell of epithelium of crista of ampulla of semicircular duct of membranous labyrinth' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_1000380
+Label(s): type 1 vestibular sensory cell of epithelium of macula of saccule of membranous labyrinth 
+- 'type 1 vestibular sensory cell of epithelium of macula of saccule of membranous labyrinth' SubClassOf 'peripheral nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001010
+Label(s): diaphysis of ulna 
++ 'diaphysis of ulna' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_4023065
+Label(s): meis2 expressing cortial GABAergic cell (Mus musculus) 
+- 'meis2 expressing cortial GABAergic cell (Mus musculus)' SubClassOf 'has soma location' some 'cerebral cortex'
++ 'meis2 expressing cortial GABAergic cell (Mus musculus)' SubClassOf 'cerebral cortex neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0005809
+Label(s): cortex of manus bone 
++ 'cortex of manus bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_4023055
+Label(s): corticothalamic VAL/VM projecting glutamatergic neuron of the primary motor cortex (Mus musculus) 
++ 'corticothalamic VAL/VM projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'multipolar neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023050
+Label(s): L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus) 
++ 'L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'multipolar neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023045
+Label(s): medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus) 
++ 'medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070031
+
+Class: http://purl.obolibrary.org/obo/CL_4023042
+Label(s): L6 corticothalamic-projecting glutamatergic cortical neuron 
++ 'L6 corticothalamic-projecting glutamatergic cortical neuron' SubClassOf 'has synaptic IO in' some 'thalamic complex'
+
+Class: http://purl.obolibrary.org/obo/CL_4023041
+Label(s): L5 extratelencephalic projecting glutamatergic cortical neuron 
++ 'L5 extratelencephalic projecting glutamatergic cortical neuron' SubClassOf 'multipolar neuron'
++ 'L5 extratelencephalic projecting glutamatergic cortical neuron' SubClassOf 'bearer of' some 'pyramidal family morphology'
+
+Class: http://purl.obolibrary.org/obo/CL_4023038
+Label(s): L6b glutamatergic cortical neuron 
+- 'L6b glutamatergic cortical neuron' SubClassOf 'has soma location' some 'cerebral cortex'
++ 'L6b glutamatergic cortical neuron' SubClassOf 'cerebral cortex neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023031
+Label(s): L4 Sst GABAergic cortical interneuron (Mus musculus) 
+- 'L4 Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bearer of' some 'martinotti morphology'
++ 'L4 Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf http://purl.obolibrary.org/obo/CL_4023076
+
+Class: http://purl.obolibrary.org/obo/CL_4023030
+Label(s): L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus) 
+- 'L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bearer of' some ''fanning-out' martinotti morphology'
++ 'L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf http://purl.obolibrary.org/obo/CL_4023087
+
+Class: http://purl.obolibrary.org/obo/CL_4023027
+Label(s): L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus) 
+- 'L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bearer of' some ''T-shaped' martinotti morphology'
++ 'L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf http://purl.obolibrary.org/obo/CL_4023086
+
+Class: http://purl.obolibrary.org/obo/CL_4023024
+Label(s): Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus) 
+- 'Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bearer of' some 'neurogliaform morphology'
++ 'Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'neuroglioform cell'
+
+Class: http://purl.obolibrary.org/obo/CL_4023023
+Label(s): L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus) 
+- 'L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bearer of' some 'neurogliaform morphology'
++ 'L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'neuroglioform cell'
+
+Class: http://purl.obolibrary.org/obo/CL_4023019
+Label(s): L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus) 
+- 'L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)' SubClassOf 'in taxon' some 'Mus musculus'
++ 'L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)' SubClassOf http://purl.obolibrary.org/obo/CL_4023071
+
+Class: http://purl.obolibrary.org/obo/CL_4023013
+Label(s): corticothalamic-projecting glutamatergic cortical neuron 
+- 'corticothalamic-projecting glutamatergic cortical neuron' SubClassOf 'has soma location' some 'cerebral cortex'
+- 'corticothalamic-projecting glutamatergic cortical neuron' SubClassOf 'has synaptic IO in' some 'thalamic complex'
++ 'corticothalamic-projecting glutamatergic cortical neuron' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070029
++ 'corticothalamic-projecting glutamatergic cortical neuron' EquivalentTo 'glutamatergic neuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070029) and ('has soma location' some 'cerebral cortex')
++ 'corticothalamic-projecting glutamatergic cortical neuron' SubClassOf 'cerebral cortex neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023012
+Label(s): near-projecting glutamatergic cortical neuron 
+- 'near-projecting glutamatergic cortical neuron' SubClassOf 'has soma location' some 'cerebral cortex'
++ 'near-projecting glutamatergic cortical neuron' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070030
++ 'near-projecting glutamatergic cortical neuron' EquivalentTo 'glutamatergic neuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070030) and ('has soma location' some 'cerebral cortex')
++ 'near-projecting glutamatergic cortical neuron' SubClassOf 'cerebral cortex neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023010
+Label(s): alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus) 
+- 'alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'expresses' some 'lysosome-associated membrane glycoprotein 5 (mouse)'
+- 'alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'Lamp5 GABAergic cortical interneuron'
++ 'alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'expresses' some http://purl.obolibrary.org/obo/PR_000005460
++ 'alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)' SubClassOf 'cerebral cortex GABAergic interneuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0043229
+Label(s): intracellular organelle 
+- 'intracellular organelle' SubClassOf 'intracellular anatomical structure'
++ 'intracellular organelle' SubClassOf 'part_of' some 'intracellular anatomical structure'
++ 'intracellular organelle' EquivalentTo 'organelle' and ('part_of' some 'intracellular anatomical structure')
++ 'intracellular organelle' SubClassOf 'organelle'
+
+Class: http://purl.obolibrary.org/obo/CL_4023009
+Label(s): extratelencephalic-projecting glutamatergic cortical neuron 
+- 'extratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'has soma location' some 'cerebral cortex'
++ 'extratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'bearer of' some http://purl.obolibrary.org/obo/PATO_0070028
++ 'extratelencephalic-projecting glutamatergic cortical neuron' EquivalentTo 'glutamatergic neuron' and ('bearer of' some http://purl.obolibrary.org/obo/PATO_0070028) and ('has soma location' some 'cerebral cortex')
++ 'extratelencephalic-projecting glutamatergic cortical neuron' SubClassOf 'cerebral cortex neuron'
+
+Class: http://purl.obolibrary.org/obo/GO_0051954
+Label(s): positive regulation of amine transport 
+- 'positive regulation of amine transport' SubClassOf 'positive regulation of anion transport'
++ 'positive regulation of amine transport' SubClassOf 'positive regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000980
+Label(s): trochanter 
++ 'trochanter' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0015711
+Label(s): organic anion transport 
++ 'organic anion transport' SubClassOf 'anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_1904724
+Label(s): tertiary granule lumen 
+- 'tertiary granule lumen' SubClassOf 'organelle lumen'
++ 'tertiary granule lumen' SubClassOf 'intracellular organelle lumen'
+
+Class: http://purl.obolibrary.org/obo/CL_0000598
+Label(s): pyramidal neuron 
++ 'pyramidal neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'pyramidal family morphology')
++ 'pyramidal neuron' SubClassOf 'multipolar neuron'
++ 'pyramidal neuron' SubClassOf 'bearer of' some 'pyramidal family morphology'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004109
+Label(s): cortex of humerus 
++ 'cortex of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009618
+Label(s): trunk paraxial mesoderm 
++ 'trunk paraxial mesoderm' SubClassOf 'part_of' some 'trunk mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010853
+Label(s): capitulum of humerus 
++ 'capitulum of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070015
+Label(s): pyramidal family morphology 
+- 'pyramidal family morphology' SubClassOf 'cell morphology'
++ 'pyramidal family morphology' SubClassOf http://purl.obolibrary.org/obo/PATO_0070026
+
+Class: http://purl.obolibrary.org/obo/PATO_0070013
+Label(s): spiny stellate cell morphology 
+- 'spiny stellate cell morphology' SubClassOf 'cell morphology'
++ 'spiny stellate cell morphology' SubClassOf http://purl.obolibrary.org/obo/PATO_0070026
+
+Class: http://purl.obolibrary.org/obo/PATO_0070010
+Label(s): stellate morphology 
+- 'stellate morphology' SubClassOf 'cell morphology'
++ 'stellate morphology' SubClassOf http://purl.obolibrary.org/obo/PATO_0070026
+
+Class: http://purl.obolibrary.org/obo/GO_0007288
+Label(s): sperm axoneme assembly 
+- 'sperm axoneme assembly' SubClassOf 'part_of' some 'spermatid development'
+- 'sperm axoneme assembly' SubClassOf 'part_of' some 'flagellated sperm motility'
++ 'sperm axoneme assembly' SubClassOf 'part_of' some http://purl.obolibrary.org/obo/GO_0120316
+
+Class: http://purl.obolibrary.org/obo/PATO_0070007
+Label(s): martinotti morphology 
+- 'martinotti morphology' SubClassOf 'cell morphology'
++ 'martinotti morphology' SubClassOf http://purl.obolibrary.org/obo/PATO_0070026
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009722
+Label(s): entire pharyngeal arch endoderm 
++ 'entire pharyngeal arch endoderm' SubClassOf 'part_of' some 'digestive tract epithelium'
+
+Class: http://purl.obolibrary.org/obo/CL_2000088
+Label(s): Ammon's horn basket cell 
+- 'Ammon's horn basket cell' SubClassOf 'hippocampal neuron'
++ 'Ammon's horn basket cell' SubClassOf 'hippocampal interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_2000086
+Label(s): neocortex basket cell 
+- 'neocortex basket cell' SubClassOf 'neuron of cerebral cortex'
+
+Class: http://purl.obolibrary.org/obo/CL_2000049
+Label(s): primary motor cortex pyramidal cell 
++ 'primary motor cortex pyramidal cell' SubClassOf 'neuron of cerebral cortex'
+
+Class: http://purl.obolibrary.org/obo/CL_2000032
+Label(s): peripheral nervous system neuron 
+- 'peripheral nervous system neuron' EquivalentTo 'neuron' and ('part_of' some 'peripheral nervous system')
+- 'peripheral nervous system neuron' SubClassOf 'part_of' some 'peripheral nervous system'
++ 'peripheral nervous system neuron' EquivalentTo 'neuron' and ('has soma location' some 'peripheral nervous system')
++ 'peripheral nervous system neuron' SubClassOf 'has soma location' some 'peripheral nervous system'
+
+Class: http://purl.obolibrary.org/obo/CL_2000029
+Label(s): central nervous system neuron 
+- 'central nervous system neuron' EquivalentTo 'neuron' and ('part_of' some 'central nervous system')
+- 'central nervous system neuron' SubClassOf 'part_of' some 'central nervous system'
++ 'central nervous system neuron' SubClassOf 'has soma location' some 'central nervous system'
++ 'central nervous system neuron' EquivalentTo 'neuron' and ('has soma location' some 'central nervous system')
+
+Class: http://purl.obolibrary.org/obo/CL_2000027
+Label(s): cerebellum basket cell 
+- 'cerebellum basket cell' SubClassOf 'cerebellar neuron'
++ 'cerebellum basket cell' SubClassOf 'part_of' some 'cerebellum'
+
+Class: http://purl.obolibrary.org/obo/CL_2000024
+Label(s): spinal cord medial motor column neuron 
+- 'spinal cord medial motor column neuron' SubClassOf 'part_of' some 'spinal cord medial motor column'
+- 'spinal cord medial motor column neuron' EquivalentTo 'neuron' and ('part_of' some 'spinal cord medial motor column')
++ 'spinal cord medial motor column neuron' SubClassOf 'has soma location' some 'spinal cord medial motor column'
++ 'spinal cord medial motor column neuron' EquivalentTo 'neuron' and ('has soma location' some 'spinal cord medial motor column')
+
+Class: http://purl.obolibrary.org/obo/GO_0032594
+Label(s): protein transport within lipid bilayer 
+- 'protein transport within lipid bilayer' SubClassOf 'localization within membrane'
++ 'protein transport within lipid bilayer' SubClassOf 'occurs in' some 'membrane'
+
+Class: http://purl.obolibrary.org/obo/CL_0000626
+Label(s): olfactory granule cell 
+- 'olfactory granule cell' SubClassOf 'neuron of the forebrain'
+
+Class: http://purl.obolibrary.org/obo/CL_0008021
+Label(s): anterior lateral line ganglion neuron 
+- 'anterior lateral line ganglion neuron' SubClassOf 'part_of' some 'anterior lateral line ganglion'
+- 'anterior lateral line ganglion neuron' EquivalentTo 'neuron' and ('part_of' some 'anterior lateral line ganglion')
++ 'anterior lateral line ganglion neuron' SubClassOf 'has soma location' some 'anterior lateral line ganglion'
++ 'anterior lateral line ganglion neuron' EquivalentTo 'neuron' and ('has soma location' some 'anterior lateral line ganglion')
+
+Class: http://purl.obolibrary.org/obo/GO_0002793
+Label(s): positive regulation of peptide secretion 
+- 'positive regulation of peptide secretion' SubClassOf 'positive regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0002792
+Label(s): negative regulation of peptide secretion 
+- 'negative regulation of peptide secretion' SubClassOf 'negative regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_1904626
+Label(s): positive regulation of glycine secretion, neurotransmission 
++ 'positive regulation of glycine secretion, neurotransmission' SubClassOf 'positive regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010258
+Label(s): mesenchyme from rhombencephalic neural crest 
++ 'mesenchyme from rhombencephalic neural crest' SubClassOf 'part_of' some 'mesenchyme derived from head neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010760
+Label(s): supraglenoid tubercle 
+- 'supraglenoid tubercle' SubClassOf 'anatomical entity'
++ 'supraglenoid tubercle' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009697
+Label(s): epithelium of appendix 
++ 'epithelium of appendix' SubClassOf 'develops from' some 'caecum epithelium'
+
+Class: http://purl.obolibrary.org/obo/CL_4023007
+Label(s): L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus) 
++ 'L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)' SubClassOf 'bipolar neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0015180
+Label(s): neck of talus 
++ 'neck of talus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013748
+Label(s): ulnar metaphysis 
++ 'ulnar metaphysis' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013749
+Label(s): metaphysis of humerus 
++ 'metaphysis of humerus' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013774
+Label(s): diaphysis of metatarsal bone 
++ 'diaphysis of metatarsal bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_1904625
+Label(s): negative regulation of glycine secretion, neurotransmission 
++ 'negative regulation of glycine secretion, neurotransmission' SubClassOf 'negative regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_1904624
+Label(s): regulation of glycine secretion, neurotransmission 
++ 'regulation of glycine secretion, neurotransmission' SubClassOf 'regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0032890
+Label(s): regulation of organic acid transport 
+- 'regulation of organic acid transport' SubClassOf 'regulation of anion transport'
++ 'regulation of organic acid transport' SubClassOf 'regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0018667
+Label(s): neck of scapula 
+- 'neck of scapula' SubClassOf 'anatomical entity'
++ 'neck of scapula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0014058
+Label(s): negative regulation of acetylcholine secretion, neurotransmission 
++ 'negative regulation of acetylcholine secretion, neurotransmission' SubClassOf 'negative regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013069
+Label(s): popliteal area 
++ 'popliteal area' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0009551
+Label(s): distal segment of digit 
++ 'distal segment of digit' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0012506
+Label(s): vesicle membrane 
++ 'vesicle membrane' EquivalentTo 'membrane' and ('part_of' some 'vesicle')
+
+Class: http://purl.obolibrary.org/obo/GO_0051222
+Label(s): positive regulation of protein transport 
+- 'positive regulation of protein transport' SubClassOf 'positive regulation of anion transport'
++ 'positive regulation of protein transport' SubClassOf 'positive regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0098542
+Label(s): defense response to other organism 
++ 'defense response to other organism' SubClassOf 'immune response'
+
+Class: http://purl.obolibrary.org/obo/GO_0098537
+Label(s): lobed nucleus 
+- 'lobed nucleus' SubClassOf 'nucleus'
+
+Class: http://purl.obolibrary.org/obo/CL_1000001
+Label(s): retrotrapezoid nucleus neuron 
+- 'retrotrapezoid nucleus neuron' EquivalentTo 'neuron' and ('part_of' some 'retrotrapezoid nucleus')
+- 'retrotrapezoid nucleus neuron' SubClassOf 'part_of' some 'retrotrapezoid nucleus'
++ 'retrotrapezoid nucleus neuron' EquivalentTo 'neuron' and ('has soma location' some 'retrotrapezoid nucleus')
++ 'retrotrapezoid nucleus neuron' SubClassOf 'has soma location' some 'retrotrapezoid nucleus'
+
+Class: http://purl.obolibrary.org/obo/GO_0033602
+Label(s): negative regulation of dopamine secretion 
++ 'negative regulation of dopamine secretion' SubClassOf 'negative regulation of ion transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0032370
+Label(s): positive regulation of lipid transport 
+- 'positive regulation of lipid transport' SubClassOf 'positive regulation of anion transport'
++ 'positive regulation of lipid transport' SubClassOf 'positive regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0032369
+Label(s): negative regulation of lipid transport 
+- 'negative regulation of lipid transport' SubClassOf 'negative regulation of anion transport'
++ 'negative regulation of lipid transport' SubClassOf 'negative regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0032368
+Label(s): regulation of lipid transport 
+- 'regulation of lipid transport' SubClassOf 'regulation of anion transport'
++ 'regulation of lipid transport' SubClassOf 'regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008449
+Label(s): trochlear notch 
++ 'trochlear notch' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_1900424
+Label(s): regulation of defense response to bacterium 
++ 'regulation of defense response to bacterium' SubClassOf 'regulation of immune response'
+
+Class: http://purl.obolibrary.org/obo/GO_1900425
+Label(s): negative regulation of defense response to bacterium 
++ 'negative regulation of defense response to bacterium' SubClassOf 'negative regulation of immune response'
+
+Class: http://purl.obolibrary.org/obo/GO_0070256
+Label(s): negative regulation of mucus secretion 
+- 'negative regulation of mucus secretion' SubClassOf 'negative regulation of anion transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0005816
+Label(s): posterior tubercle of transverse process of cervical vertebra 
+- 'posterior tubercle of transverse process of cervical vertebra' SubClassOf 'anatomical entity'
++ 'posterior tubercle of transverse process of cervical vertebra' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0011018
+Label(s): lymphoid tissue–inducer cell 
+- 'lymphoid tissue–inducer cell' SubClassOf 'hematopoietic cell'
++ 'lymphoid tissue–inducer cell' SubClassOf 'has plasma membrane part' some 'interleukin-7 receptor subunit alpha'
++ 'lymphoid tissue–inducer cell' SubClassOf 'group 3 innate lymphoid cell'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0034734
+Label(s): medial olfactory stria 
++ 'medial olfactory stria' DisjointWith http://purl.obolibrary.org/obo/UBERON_2000238
+
+Class: http://purl.obolibrary.org/obo/UBERON_0016412
+Label(s): central part of body of bony vertebral centrum 
+- 'central part of body of bony vertebral centrum' SubClassOf 'anatomical entity'
++ 'central part of body of bony vertebral centrum' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0012130
+Label(s): olecranon fossa 
++ 'olecranon fossa' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004902
+Label(s): urogenital sinus epithelium 
++ 'urogenital sinus epithelium' SubClassOf 'develops from' some 'embryonic cloacal epithelium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010424
+Label(s): distal segment of rib 
+- 'distal segment of rib' SubClassOf 'anatomical entity'
++ 'distal segment of rib' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0007171
+Label(s): border of scapula 
+- 'border of scapula' SubClassOf 'anatomical entity'
++ 'border of scapula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0007119
+Label(s): neck of femur 
++ 'neck of femur' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0003253
+Label(s): neck of rib 
+- 'neck of rib' SubClassOf 'anatomical entity'
++ 'neck of rib' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_0001031
+Label(s): cerebellar granule cell 
+- 'cerebellar granule cell' SubClassOf 'cerebellar neuron'
++ 'cerebellar granule cell' SubClassOf 'part_of' some 'cerebellum'
+
+Class: http://purl.obolibrary.org/obo/CL_0001032
+Label(s): cortical granule cell 
+- 'cortical granule cell' SubClassOf 'neuron of cerebral cortex'
++ 'cortical granule cell' SubClassOf 'part_of' some 'cerebral cortex'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004385
+Label(s): epiphysis of radius 
++ 'epiphysis of radius' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004386
+Label(s): epiphysis of ulna 
++ 'epiphysis of ulna' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004389
+Label(s): epiphysis of metatarsal bone 
++ 'epiphysis of metatarsal bone' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0032891
+Label(s): negative regulation of organic acid transport 
+- 'negative regulation of organic acid transport' SubClassOf 'negative regulation of anion transport'
++ 'negative regulation of organic acid transport' SubClassOf 'negative regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001154
+Label(s): vermiform appendix 
++ 'vermiform appendix' SubClassOf 'continuous_with' some 'caecum'
+
+Class: http://purl.obolibrary.org/obo/GO_0051952
+Label(s): regulation of amine transport 
+- 'regulation of amine transport' SubClassOf 'regulation of anion transport'
++ 'regulation of amine transport' SubClassOf 'regulation of transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0042060
+Label(s): wound healing 
++ 'wound healing' SubClassOf 'has part' some http://purl.obolibrary.org/obo/GO_0042246
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010341
+Label(s): 1st arch mesenchyme from head mesenchyme 
+- '1st arch mesenchyme from head mesenchyme' SubClassOf 'part_of' some '1st arch mesenchyme'
++ '1st arch mesenchyme from head mesenchyme' SubClassOf 'part_of' some '1st arch mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010337
+Label(s): mandibular process mesenchyme from head mesenchyme 
+- 'mandibular process mesenchyme from head mesenchyme' SubClassOf 'part_of' some 'mandibular process mesenchyme'
++ 'mandibular process mesenchyme from head mesenchyme' SubClassOf 'part_of' some 'mandibular process mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010336
+Label(s): mandibular process mesenchyme from neural crest 
+- 'mandibular process mesenchyme from neural crest' SubClassOf 'part_of' some 'mandibular process mesenchyme'
++ 'mandibular process mesenchyme from neural crest' SubClassOf 'part_of' some 'mandibular process mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0010329
+Label(s): paired limb/fin bud mesenchyme 
++ 'paired limb/fin bud mesenchyme' SubClassOf 'develops from' some 'mesenchyme from somatopleure'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0016928
+Label(s): metaphysis of fibula 
++ 'metaphysis of fibula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/CL_2000047
+Label(s): brainstem motor neuron 
++ 'brainstem motor neuron' SubClassOf 'central nervous system neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006633
+Label(s): coracoid process of scapula 
+- 'coracoid process of scapula' SubClassOf 'anatomical entity'
++ 'coracoid process of scapula' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002235
+Label(s): tubercle of rib 
+- 'tubercle of rib' SubClassOf 'anatomical entity'
++ 'tubercle of rib' SubClassOf 'structure with developmental contribution from neural crest'
+
+Class: http://purl.obolibrary.org/obo/GO_0043227
+Label(s): membrane-bounded organelle 
++ 'membrane-bounded organelle' EquivalentTo 'organelle' and ('has part' some 'membrane')
++ 'membrane-bounded organelle' SubClassOf 'has part' some 'membrane'
+
+Class: http://purl.obolibrary.org/obo/GO_0070013
+Label(s): intracellular organelle lumen 
+- 'intracellular organelle lumen' SubClassOf 'membrane-enclosed lumen'
++ 'intracellular organelle lumen' SubClassOf 'organelle lumen'
+
+
+################
+@Classes new to this version
+
+Class: http://purl.obolibrary.org/obo/CL_4023069
+Label(s): medial ganglionic eminence derived GABAergic cortical interneuron 
++ 'medial ganglionic eminence derived GABAergic cortical interneuron' SubClassOf 'cerebral cortex GABAergic interneuron'
++ 'medial ganglionic eminence derived GABAergic cortical interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'cerebral cortex') and ('develops from' some 'medial ganglionic eminence') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
++ 'medial ganglionic eminence derived GABAergic cortical interneuron' SubClassOf 'develops from' some 'medial ganglionic eminence'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410009
+Label(s): arteriole of anorectum 
++ 'arteriole of anorectum' SubClassOf 'part_of' some 'anorectum'
++ 'arteriole of anorectum' SubClassOf 'arteriole'
++ 'arteriole of anorectum' EquivalentTo 'arteriole' and ('part_of' some 'anorectum')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410030
+Label(s): lymphatic vessel of appendix 
++ 'lymphatic vessel of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'lymphatic vessel of appendix' SubClassOf 'lymphatic vessel of colon'
++ 'lymphatic vessel of appendix' EquivalentTo 'lymphatic vessel' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/PATO_0001979
+Label(s): lobed 
++ 'lobed' SubClassOf 'shape'
+
+Class: http://purl.obolibrary.org/obo/CL_0009036
+Label(s): appendix macrophage 
++ 'appendix macrophage' EquivalentTo 'macrophage' and ('part_of' some 'vermiform appendix')
++ 'appendix macrophage' SubClassOf 'part_of' some 'vermiform appendix'
++ 'appendix macrophage' SubClassOf 'macrophage'
+
+Class: http://purl.obolibrary.org/obo/CL_0009035
+Label(s): stromal cell of lamina propria of vermiform appendix 
++ 'stromal cell of lamina propria of vermiform appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'stromal cell of lamina propria of vermiform appendix' SubClassOf 'stromal cell of lamina propria of large intestine'
++ 'stromal cell of lamina propria of vermiform appendix' EquivalentTo 'stromal cell' and ('part_of' some 'vermiform appendix') and ('part_of' some 'lamina propria of large intestine')
+
+Class: http://purl.obolibrary.org/obo/GO_0040007
+Label(s): growth 
++ 'growth' SubClassOf 'biological_process'
+
+Class: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=1960
+Label(s): CHRNA7 (human) 
++ 'CHRNA7 (human)' SubClassOf 'only in taxon' some '人类'
++ 'CHRNA7 (human)' SubClassOf 'protein_coding_gene'
+
+Class: http://purl.obolibrary.org/obo/PR_P36544
+Label(s): neuronal acetylcholine receptor subunit alpha-7 (human) 
++ 'neuronal acetylcholine receptor subunit alpha-7 (human)' SubClassOf 'has_gene_template' some 'CHRNA7 (human)'
++ 'neuronal acetylcholine receptor subunit alpha-7 (human)' EquivalentTo 'neuronal acetylcholine receptor subunit alpha-7' and ('only in taxon' some '人类')
++ 'neuronal acetylcholine receptor subunit alpha-7 (human)' SubClassOf 'neuronal acetylcholine receptor subunit alpha-7'
++ 'neuronal acetylcholine receptor subunit alpha-7 (human)' SubClassOf 'Homo sapiens protein'
+
+Class: http://purl.obolibrary.org/obo/GO_1905505
+Label(s): positive regulation of motile cilium assembly 
++ 'positive regulation of motile cilium assembly' SubClassOf 'positively regulates' some 'motile cilium assembly'
++ 'positive regulation of motile cilium assembly' SubClassOf 'regulation of motile cilium assembly'
++ 'positive regulation of motile cilium assembly' SubClassOf 'positive regulation of cilium assembly'
++ 'positive regulation of motile cilium assembly' EquivalentTo 'biological regulation' and ('positively regulates' some 'motile cilium assembly')
+
+Class: http://purl.obolibrary.org/obo/GO_1905504
+Label(s): negative regulation of motile cilium assembly 
++ 'negative regulation of motile cilium assembly' SubClassOf 'negatively regulates' some 'motile cilium assembly'
++ 'negative regulation of motile cilium assembly' EquivalentTo 'biological regulation' and ('negatively regulates' some 'motile cilium assembly')
++ 'negative regulation of motile cilium assembly' SubClassOf 'negative regulation of cilium assembly'
++ 'negative regulation of motile cilium assembly' SubClassOf 'regulation of motile cilium assembly'
+
+Class: http://purl.obolibrary.org/obo/GO_1905503
+Label(s): regulation of motile cilium assembly 
++ 'regulation of motile cilium assembly' SubClassOf 'regulation of cilium assembly'
++ 'regulation of motile cilium assembly' EquivalentTo 'biological regulation' and ('regulates' some 'motile cilium assembly')
++ 'regulation of motile cilium assembly' SubClassOf 'regulates' some 'motile cilium assembly'
+
+Class: http://purl.obolibrary.org/obo/GO_0005635
+Label(s): nuclear envelope 
++ 'nuclear envelope' SubClassOf 'part_of' some 'endomembrane system'
++ 'nuclear envelope' SubClassOf 'part_of' some 'nucleus'
++ 'nuclear envelope' SubClassOf 'organelle envelope'
+
+Class: http://purl.obolibrary.org/obo/GO_0060560
+Label(s): developmental growth involved in morphogenesis 
++ 'developmental growth involved in morphogenesis' SubClassOf 'part_of' some 'anatomical structure morphogenesis'
++ 'developmental growth involved in morphogenesis' EquivalentTo 'developmental growth' and ('part_of' some 'anatomical structure morphogenesis')
++ 'developmental growth involved in morphogenesis' SubClassOf 'developmental growth'
+
+Class: http://purl.obolibrary.org/obo/GO_0015276
+Label(s): ligand-gated ion channel activity 
++ 'ligand-gated ion channel activity' SubClassOf 'molecular_function'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410001
+Label(s): small intestine venule 
++ 'small intestine venule' SubClassOf 'venule'
++ 'small intestine venule' SubClassOf 'part_of' some 'intestinal villus'
++ 'small intestine venule' EquivalentTo 'venule' and ('part_of' some 'intestinal villus')
+
+Class: http://purl.obolibrary.org/obo/CL_4023087
+Label(s): fan Martinotti neuron 
++ 'fan Martinotti neuron' SubClassOf 'Martinotti neuron'
++ 'fan Martinotti neuron' SubClassOf 'bearer of' some ''fanning-out' martinotti morphology'
++ 'fan Martinotti neuron' EquivalentTo 'interneuron' and ('bearer of' some ''fanning-out' martinotti morphology') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
+
+Class: http://purl.obolibrary.org/obo/CL_4023089
+Label(s): nest basket cell 
++ 'nest basket cell' EquivalentTo 'interneuron' and ('bearer of' some 'nest basket cell morphology') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
++ 'nest basket cell' SubClassOf 'basket cell'
++ 'nest basket cell' SubClassOf 'bearer of' some 'nest basket cell morphology'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410043
+Label(s): bronchus submucosal gland 
++ 'bronchus submucosal gland' EquivalentTo 'submucosal gland' and ('part_of' some 'bronchus')
++ 'bronchus submucosal gland' SubClassOf 'respiratory system gland'
++ 'bronchus submucosal gland' SubClassOf 'submucosal gland'
++ 'bronchus submucosal gland' SubClassOf 'endoderm-derived structure'
++ 'bronchus submucosal gland' SubClassOf 'part_of' some 'bronchus'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410056
+Label(s): capillary of anorectum 
++ 'capillary of anorectum' SubClassOf 'part_of' some 'anorectum'
++ 'capillary of anorectum' EquivalentTo 'capillary' and ('part_of' some 'anorectum')
++ 'capillary of anorectum' SubClassOf 'capillary'
+
+Class: http://purl.obolibrary.org/obo/UBERON_2000238
+Label(s): olfactory tract linking bulb to ipsilateral ventral telencephalon 
++ 'olfactory tract linking bulb to ipsilateral ventral telencephalon' SubClassOf 'has part' some ('part_of' some 'ventral part of telencephalon')
++ 'medial olfactory stria' DisjointWith 'olfactory tract linking bulb to ipsilateral ventral telencephalon'
++ 'olfactory tract linking bulb to ipsilateral ventral telencephalon' EquivalentTo 'olfactory tract' and ('has part' some ('part_of' some 'ventral part of telencephalon'))
++ 'olfactory tract linking bulb to ipsilateral ventral telencephalon' SubClassOf 'olfactory tract'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_2697495
+Label(s): Spiralia 
++ 'Spiralia' SubClassOf 'Protostomia'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_119089
+Label(s): Chromadorea 
++ 'Chromadorea' SubClassOf 'Nematoda'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_4896
+Label(s): Schizosaccharomyces pombe 
++ 'Schizosaccharomyces pombe' SubClassOf 'Schizosaccharomyces'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_4895
+Label(s): Schizosaccharomyces 
++ 'Schizosaccharomyces' SubClassOf 'Schizosaccharomycetaceae'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_4894
+Label(s): Schizosaccharomycetaceae 
++ 'Schizosaccharomycetaceae' SubClassOf 'Schizosaccharomycetales'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_4890
+Label(s): Ascomycota 
++ 'Ascomycota' SubClassOf 'Dikarya'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_147554
+Label(s): Schizosaccharomycetes 
++ 'Schizosaccharomycetes' SubClassOf 'Taphrinomycotina'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410061
+Label(s): colon smooth muscle longitudinal layer 
++ 'colon smooth muscle longitudinal layer' SubClassOf 'part_of' some 'colon'
++ 'colon smooth muscle longitudinal layer' EquivalentTo 'longitudinal muscle layer of muscular coat' and ('part_of' some 'colon') and ('part_of' some 'large intestine smooth muscle')
++ 'colon smooth muscle longitudinal layer' SubClassOf 'large intestine smooth muscle longitudinal layer'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070002
+Label(s): basket cell morphology 
++ 'basket cell morphology' SubClassOf 'multipolar neuron morphology'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_451866
+Label(s): Taphrinomycotina 
++ 'Taphrinomycotina' SubClassOf 'Ascomycota'
+
+Class: http://purl.obolibrary.org/obo/PR_000019254
+Label(s): cholecystokinin, signal peptide removed form 
++ 'cholecystokinin, signal peptide removed form' SubClassOf 'cholecystokinin'
++ 'cholecystokinin, signal peptide removed form' EquivalentTo 'cholecystokinin' and ('lacks_part' some 'signal_peptide')
++ 'cholecystokinin, signal peptide removed form' SubClassOf 'lacks_part' some 'signal_peptide'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004026
+Label(s): caudal ganglionic eminence 
++ 'caudal ganglionic eminence' SubClassOf 'embryonic structure'
++ 'caudal ganglionic eminence' SubClassOf 'part_of' some 'ganglionic eminence'
++ 'caudal ganglionic eminence' SubClassOf 'contributes to morphology of' some 'ganglionic eminence'
++ 'caudal ganglionic eminence' SubClassOf 'anatomical entity'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004024
+Label(s): medial ganglionic eminence 
++ 'medial ganglionic eminence' SubClassOf 'contributes to morphology of' some 'ganglionic eminence'
++ 'medial ganglionic eminence' SubClassOf 'part_of' some 'ganglionic eminence'
++ 'medial ganglionic eminence' SubClassOf 'anatomical entity'
++ 'medial ganglionic eminence' SubClassOf 'embryonic structure'
+
+Class: http://purl.obolibrary.org/obo/GO_0031099
+Label(s): regeneration 
++ 'regeneration' SubClassOf 'anatomical structure development'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0004023
+Label(s): ganglionic eminence 
++ 'ganglionic eminence' SubClassOf 'part_of' some 'nervous system'
++ 'ganglionic eminence' SubClassOf 'anatomical entity'
++ 'ganglionic eminence' SubClassOf 'embryonic structure'
+
+Class: http://purl.obolibrary.org/obo/CL_4023083
+Label(s): chandelier cell 
++ 'chandelier cell' SubClassOf 'bearer of' some 'chandelier cell morphology'
++ 'chandelier cell' EquivalentTo 'interneuron' and ('bearer of' some 'chandelier cell morphology')
++ 'chandelier cell' SubClassOf 'interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023086
+Label(s): T Martinotti neuron 
++ 'T Martinotti neuron' SubClassOf 'Martinotti neuron'
++ 'T Martinotti neuron' SubClassOf 'bearer of' some ''T-shaped' martinotti morphology'
++ 'T Martinotti neuron' EquivalentTo 'interneuron' and ('bearer of' some ''T-shaped' martinotti morphology') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
+
+Class: http://purl.obolibrary.org/obo/CL_4023092
+Label(s): inverted pyramidal neuron 
++ 'inverted pyramidal neuron' SubClassOf 'pyramidal neuron'
++ 'inverted pyramidal neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'inverted pyramidal morphology')
++ 'inverted pyramidal neuron' SubClassOf 'bearer of' some 'inverted pyramidal morphology'
+
+Class: http://purl.obolibrary.org/obo/GO_0045927
+Label(s): positive regulation of growth 
++ 'positive regulation of growth' SubClassOf 'positively regulates' some 'growth'
++ 'positive regulation of growth' SubClassOf 'positive regulation of biological process'
++ 'positive regulation of growth' EquivalentTo 'biological regulation' and ('positively regulates' some 'growth')
++ 'positive regulation of growth' SubClassOf 'regulation of growth'
+
+Class: http://purl.obolibrary.org/obo/GO_0045926
+Label(s): negative regulation of growth 
++ 'negative regulation of growth' SubClassOf 'regulation of growth'
++ 'negative regulation of growth' EquivalentTo 'biological regulation' and ('negatively regulates' some 'growth')
++ 'negative regulation of growth' SubClassOf 'negative regulation of biological process'
++ 'negative regulation of growth' SubClassOf 'negatively regulates' some 'growth'
+
+Class: http://purl.obolibrary.org/obo/GO_0043264
+Label(s): extracellular non-membrane-bounded organelle 
++ 'extracellular non-membrane-bounded organelle' EquivalentTo 'non-membrane-bounded organelle' and ('part_of' some 'extracellular region')
++ 'extracellular non-membrane-bounded organelle' SubClassOf 'non-membrane-bounded organelle'
++ 'extracellular non-membrane-bounded organelle' SubClassOf 'extracellular organelle'
+
+Class: http://purl.obolibrary.org/obo/PR_000044668
+Label(s): nicotinic acetylcholine receptor protein 
++ 'nicotinic acetylcholine receptor protein' SubClassOf 'ligand-gated ion channel protein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_6002639
+Label(s): insect larval sense organ 
++ 'insect larval sense organ' EquivalentTo 'sense organ' and ('part_of' some 'larva')
++ 'insect larval sense organ' SubClassOf 'part_of' some 'larva'
++ 'insect larval sense organ' SubClassOf 'sense organ'
+
+Class: http://purl.obolibrary.org/obo/PR_000044671
+Label(s): ligand-gated ion channel protein 
++ 'ligand-gated ion channel protein' EquivalentTo 'ion channel protein' and ('capable of' some 'ligand-gated ion channel activity')
++ 'ligand-gated ion channel protein' SubClassOf 'capable of' some 'ligand-gated ion channel activity'
++ 'ligand-gated ion channel protein' SubClassOf 'ion channel protein'
+
+Class: http://purl.obolibrary.org/obo/PR_P49582
+Label(s): neuronal acetylcholine receptor subunit alpha-7 (mouse) 
++ 'neuronal acetylcholine receptor subunit alpha-7 (mouse)' EquivalentTo 'neuronal acetylcholine receptor subunit alpha-7' and ('only in taxon' some 'Mus musculus')
++ 'neuronal acetylcholine receptor subunit alpha-7 (mouse)' SubClassOf 'Mus musculus protein'
++ 'neuronal acetylcholine receptor subunit alpha-7 (mouse)' SubClassOf 'has_gene_template' some 'Chrna7 (mouse)'
++ 'neuronal acetylcholine receptor subunit alpha-7 (mouse)' SubClassOf 'neuronal acetylcholine receptor subunit alpha-7'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070034
+Label(s): intratelencephalic projecting 
++ 'intratelencephalic projecting' SubClassOf 'neuron projection quality'
+
+Class: http://purl.obolibrary.org/obo/GO_0048640
+Label(s): negative regulation of developmental growth 
++ 'negative regulation of developmental growth' SubClassOf 'negative regulation of growth'
++ 'negative regulation of developmental growth' EquivalentTo 'biological regulation' and ('negatively regulates' some 'developmental growth')
++ 'negative regulation of developmental growth' SubClassOf 'negative regulation of developmental process'
++ 'negative regulation of developmental growth' SubClassOf 'regulation of developmental growth'
++ 'negative regulation of developmental growth' SubClassOf 'negatively regulates' some 'developmental growth'
+
+Class: http://purl.obolibrary.org/obo/GO_0036322
+Label(s): pancreatic polypeptide secretion 
++ 'pancreatic polypeptide secretion' SubClassOf 'peptide hormone secretion'
+
+Class: http://purl.obolibrary.org/obo/GO_0048589
+Label(s): developmental growth 
++ 'developmental growth' SubClassOf 'growth'
++ 'developmental growth' SubClassOf 'developmental process'
+
+Class: http://purl.obolibrary.org/obo/PR_000044063
+Label(s): PR:000044063 located_in GO:0005886 neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form (human) 
++ 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form (human)' SubClassOf 'neuronal acetylcholine receptor subunit alpha-7 (human)'
++ 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form (human)' SubClassOf 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form'
++ 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form (human)' EquivalentTo 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form' and ('only in taxon' some '人类')
+
+Class: http://purl.obolibrary.org/obo/PR_000044062
+Label(s): neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form 
++ 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form' SubClassOf 'neuronal acetylcholine receptor subunit alpha-7'
++ 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form' EquivalentTo 'neuronal acetylcholine receptor subunit alpha-7' and ('lacks_part' some 'signal_peptide')
++ 'neuronal acetylcholine receptor subunit alpha-7, signal peptide removed form' SubClassOf 'lacks_part' some 'signal_peptide'
+
+Class: http://purl.obolibrary.org/obo/CL_4023078
+Label(s): basket morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus) 
++ 'basket morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus)'
++ 'basket morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'basket cell'
+
+Class: http://purl.obolibrary.org/obo/CL_4023090
+Label(s): small basket cell 
++ 'small basket cell' SubClassOf 'basket cell'
++ 'small basket cell' EquivalentTo 'interneuron' and ('bearer of' some 'small basket cell morphology') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
++ 'small basket cell' SubClassOf 'bearer of' some 'small basket cell morphology'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070033
+Label(s): neuron projection quality 
++ 'neuron projection quality' SubClassOf 'physical quality'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070031
+Label(s): corticomedulla projecting 
++ 'corticomedulla projecting' SubClassOf 'neuron projection quality'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070030
+Label(s): near projecting 
++ 'near projecting' SubClassOf 'neuron projection quality'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070006
+Label(s): bipolar morphology 
++ 'bipolar morphology' SubClassOf 'cell morphology'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070005
+Label(s): nest basket cell morphology 
++ 'nest basket cell morphology' SubClassOf 'basket cell morphology'
+
+Class: http://purl.obolibrary.org/obo/PR_000046582
+Label(s): cholecystokinin, signal peptide removed form (human) PR:000046582 located_in GO:0005576 
++ 'cholecystokinin, signal peptide removed form (human)' SubClassOf 'cholecystokinin (human)'
++ 'cholecystokinin, signal peptide removed form (human)' SubClassOf 'cholecystokinin, signal peptide removed form'
++ 'cholecystokinin, signal peptide removed form (human)' EquivalentTo 'cholecystokinin (human)' and ('lacks_part' some 'signal_peptide')
+
+Class: http://purl.obolibrary.org/obo/PR_000005460
+Label(s): neuronal acetylcholine receptor subunit alpha-7 
++ 'neuronal acetylcholine receptor subunit alpha-7' SubClassOf 'nicotinic acetylcholine receptor protein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410015
+Label(s): arteriole of colon 
++ 'arteriole of colon' EquivalentTo 'arteriole' and ('part_of' some 'colon')
++ 'arteriole of colon' SubClassOf 'part_of' some 'colon'
++ 'arteriole of colon' SubClassOf 'arteriole'
+
+Class: http://purl.obolibrary.org/obo/GO_0048638
+Label(s): regulation of developmental growth 
++ 'regulation of developmental growth' EquivalentTo 'biological regulation' and ('regulates' some 'developmental growth')
++ 'regulation of developmental growth' SubClassOf 'regulates' some 'developmental growth'
++ 'regulation of developmental growth' SubClassOf 'regulation of developmental process'
++ 'regulation of developmental growth' SubClassOf 'regulation of growth'
+
+Class: http://purl.obolibrary.org/obo/GO_0040008
+Label(s): regulation of growth 
++ 'regulation of growth' EquivalentTo 'biological regulation' and ('regulates' some 'growth')
++ 'regulation of growth' SubClassOf 'regulates' some 'growth'
++ 'regulation of growth' SubClassOf 'regulation of biological process'
+
+Class: http://purl.obolibrary.org/obo/PR_P09240
+Label(s): cholecystokinin (mouse) 
++ 'cholecystokinin (mouse)' SubClassOf 'Mus musculus protein'
++ 'cholecystokinin (mouse)' EquivalentTo 'cholecystokinin' and ('only in taxon' some 'Mus musculus')
++ 'cholecystokinin (mouse)' SubClassOf 'cholecystokinin'
++ 'cholecystokinin (mouse)' SubClassOf 'has_gene_template' some 'Cck (mouse)'
+
+Class: http://purl.obolibrary.org/obo/UBERON_6001730
+Label(s): insect larval head 
++ 'insect larval head' SubClassOf 'head'
++ 'insect larval head' EquivalentTo 'head' and ('part_of' some 'larva')
++ 'insect larval head' SubClassOf 'part_of' some 'larva'
+
+Class: http://purl.obolibrary.org/obo/PR_P06307
+Label(s): cholecystokinin (human) 
++ 'cholecystokinin (human)' SubClassOf 'cholecystokinin'
++ 'cholecystokinin (human)' EquivalentTo 'cholecystokinin' and ('only in taxon' some '人类')
++ 'cholecystokinin (human)' SubClassOf 'Homo sapiens protein'
++ 'cholecystokinin (human)' SubClassOf 'has_gene_template' some 'CCK (human)'
+
+Class: http://purl.obolibrary.org/obo/GO_0031965
+Label(s): nuclear membrane 
++ 'nuclear membrane' SubClassOf 'organelle membrane'
++ 'nuclear membrane' SubClassOf 'part_of' some 'nuclear envelope'
++ 'nuclear membrane' EquivalentTo 'membrane' and ('part_of' some 'nucleus')
+
+Class: http://purl.obolibrary.org/obo/GO_0031967
+Label(s): organelle envelope 
++ 'organelle envelope' SubClassOf 'part_of' some 'membrane-bounded organelle'
++ 'organelle envelope' SubClassOf 'part_of' some 'intracellular organelle'
++ 'organelle envelope' SubClassOf 'envelope'
+
+Class: http://purl.obolibrary.org/obo/CL_4023094
+Label(s): tufted pyramidal neuron 
++ 'tufted pyramidal neuron' SubClassOf 'bearer of' some 'tufted pyramidal morphology'
++ 'tufted pyramidal neuron' SubClassOf 'pyramidal neuron'
++ 'tufted pyramidal neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'tufted pyramidal morphology')
+
+Class: http://purl.obolibrary.org/obo/PATO_0070003
+Label(s): small basket cell morphology 
++ 'small basket cell morphology' SubClassOf 'basket cell morphology'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070004
+Label(s): large basket cell morphology 
++ 'large basket cell morphology' SubClassOf 'basket cell morphology'
+
+Class: http://purl.obolibrary.org/obo/GO_0044458
+Label(s): motile cilium assembly 
++ 'motile cilium assembly' SubClassOf 'cilium assembly'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070026
+Label(s): multipolar neuron morphology 
++ 'multipolar neuron morphology' SubClassOf 'cell morphology'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070028
+Label(s): extratelencephalic projecting 
++ 'extratelencephalic projecting' SubClassOf 'neuron projection quality'
+
+Class: http://purl.obolibrary.org/obo/PATO_0070029
+Label(s): corticothalamic projecting 
++ 'corticothalamic projecting' SubClassOf 'neuron projection quality'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_34346
+Label(s): Schizosaccharomycetales 
++ 'Schizosaccharomycetales' SubClassOf 'Schizosaccharomycetes'
+
+Class: http://purl.obolibrary.org/obo/UBERON_6007280
+Label(s): insect embryonic/larval head sense organ 
++ 'insect embryonic/larval head sense organ' SubClassOf 'part_of' some 'insect larval head'
++ 'insect embryonic/larval head sense organ' EquivalentTo 'sense organ' and ('part_of' some 'insect larval head')
++ 'insect embryonic/larval head sense organ' SubClassOf 'insect larval sense organ'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_2301116
+Label(s): Rhabditina 
++ 'Rhabditina' SubClassOf 'Rhabditida'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_2301119
+Label(s): Rhabditomorpha 
++ 'Rhabditomorpha' SubClassOf 'Rhabditina'
+
+Class: http://purl.obolibrary.org/obo/UBERON_6007242
+Label(s): insect embryonic/larval head sensillum 
++ 'insect embryonic/larval head sensillum' SubClassOf 'insect embryonic/larval head sense organ'
++ 'insect embryonic/larval head sensillum' SubClassOf 'head sensillum'
++ 'insect embryonic/larval head sensillum' SubClassOf 'insect embryonic/larval sensillum'
++ 'insect embryonic/larval head sensillum' EquivalentTo 'arthropod sensillum' and ('part_of' some 'insect larval head')
+
+Class: http://purl.obolibrary.org/obo/UBERON_6007240
+Label(s): insect embryonic/larval sensillum 
++ 'insect embryonic/larval sensillum' EquivalentTo 'arthropod sensillum' and ('part_of' some 'larva')
++ 'insect embryonic/larval sensillum' SubClassOf 'insect larval sense organ'
++ 'insect embryonic/larval sensillum' SubClassOf 'arthropod sensillum'
+
+Class: http://purl.obolibrary.org/obo/UBERON_2001544
+Label(s): sublingual cartilage 
++ 'sublingual cartilage' SubClassOf 'pharyngeal arch cartilage'
+
+Class: http://purl.obolibrary.org/obo/GO_0120316
+Label(s): sperm flagellum assembly 
++ 'sperm flagellum assembly' SubClassOf 'developmental process involved in reproduction'
++ 'sperm flagellum assembly' SubClassOf 'part_of' some 'spermatid development'
++ 'sperm flagellum assembly' SubClassOf 'part_of' some 'flagellated sperm motility'
++ 'sperm flagellum assembly' SubClassOf 'cellular process involved in reproduction in multicellular organism'
++ 'sperm flagellum assembly' SubClassOf 'motile cilium assembly'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410004
+Label(s): small intestine arteriole 
++ 'small intestine arteriole' EquivalentTo 'arteriole' and ('part_of' some 'intestinal villus')
++ 'small intestine arteriole' SubClassOf 'part_of' some 'intestinal villus'
++ 'small intestine arteriole' SubClassOf 'arteriole'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410006
+Label(s): submucous nerve plexus of anorectum 
++ 'submucous nerve plexus of anorectum' SubClassOf 'submucous nerve plexus'
++ 'submucous nerve plexus of anorectum' EquivalentTo 'submucous nerve plexus' and ('part_of' some 'anorectum')
++ 'submucous nerve plexus of anorectum' SubClassOf 'part_of' some 'anorectum'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410007
+Label(s): myenteric nerve plexus of anorectum 
++ 'myenteric nerve plexus of anorectum' SubClassOf 'part_of' some 'anorectum'
++ 'myenteric nerve plexus of anorectum' SubClassOf 'myenteric nerve plexus'
++ 'myenteric nerve plexus of anorectum' EquivalentTo 'myenteric nerve plexus' and ('part_of' some 'anorectum')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410008
+Label(s): venule of anorectum 
++ 'venule of anorectum' SubClassOf 'venule'
++ 'venule of anorectum' SubClassOf 'part_of' some 'anorectum'
++ 'venule of anorectum' EquivalentTo 'venule' and ('part_of' some 'anorectum')
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_451864
+Label(s): Dikarya 
++ 'Dikarya' SubClassOf 'Fungi'
+
+Class: http://www.informatics.jax.org/marker/MGI:88297
+Label(s): Cck (mouse) 
++ 'Cck (mouse)' SubClassOf 'protein_coding_gene'
++ 'Cck (mouse)' SubClassOf 'only in taxon' some 'Mus musculus'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_6231
+Label(s): Nematoda 
++ 'Nematoda' SubClassOf 'Ecdysozoa'
+
+Class: http://purl.obolibrary.org/obo/GO_0042246
+Label(s): tissue regeneration 
++ 'tissue regeneration' SubClassOf 'regeneration'
++ 'tissue regeneration' SubClassOf 'developmental growth'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000069
+Label(s): larval stage 
++ 'larval stage' SubClassOf 'immediately_preceded_by' some 'embryo stage'
++ 'larval stage' SubClassOf 'life cycle stage'
++ 'larval stage' SubClassOf 'part_of' some 'post-embryonic stage'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_55885
+Label(s): Peloderinae 
++ 'Peloderinae' SubClassOf 'Rhabditidae'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_55879
+Label(s): Rhabditoidea 
++ 'Rhabditoidea' SubClassOf 'Rhabditomorpha'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_6243
+Label(s): Rhabditidae 
++ 'Rhabditidae' SubClassOf 'Rhabditoidea'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_6237
+Label(s): Caenorhabditis 
++ 'Caenorhabditis' SubClassOf 'Peloderinae'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_6236
+Label(s): Rhabditida 
++ 'Rhabditida' SubClassOf 'Chromadorea'
+
+Class: http://purl.obolibrary.org/obo/GO_0048639
+Label(s): positive regulation of developmental growth 
++ 'positive regulation of developmental growth' SubClassOf 'positive regulation of growth'
++ 'positive regulation of developmental growth' SubClassOf 'positive regulation of developmental process'
++ 'positive regulation of developmental growth' SubClassOf 'positively regulates' some 'developmental growth'
++ 'positive regulation of developmental growth' EquivalentTo 'biological regulation' and ('positively regulates' some 'developmental growth')
++ 'positive regulation of developmental growth' SubClassOf 'regulation of developmental growth'
+
+Class: http://purl.obolibrary.org/obo/GO_0065010
+Label(s): extracellular membrane-bounded organelle 
++ 'extracellular membrane-bounded organelle' EquivalentTo 'membrane-bounded organelle' and ('part_of' some 'extracellular region')
++ 'extracellular membrane-bounded organelle' SubClassOf 'membrane-bounded organelle'
++ 'extracellular membrane-bounded organelle' SubClassOf 'extracellular organelle'
+
+Class: http://purl.obolibrary.org/obo/CL_4023081
+Label(s): inverted L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus) 
++ 'inverted L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'bearer of' some 'inverted pyramidal morphology'
++ 'inverted L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)'
+
+Class: http://purl.obolibrary.org/obo/CL_4023095
+Label(s): untufted pyramidal neuron 
++ 'untufted pyramidal neuron' SubClassOf 'bearer of' some 'untufted pyramidal morphology'
++ 'untufted pyramidal neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'untufted pyramidal morphology')
++ 'untufted pyramidal neuron' SubClassOf 'pyramidal neuron'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002548
+Label(s): larva 
++ 'larva' SubClassOf 'multicellular organism'
++ 'larva' EquivalentTo 'multicellular organism' and ('existence starts and ends during' some 'larval stage')
++ 'larva' SubClassOf 'existence starts and ends during' some 'larval stage'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410064
+Label(s): submucous nerve plexus of small intestine 
++ 'submucous nerve plexus of small intestine' EquivalentTo 'submucous nerve plexus' and ('part_of' some 'small intestine')
++ 'submucous nerve plexus of small intestine' SubClassOf 'submucous nerve plexus'
++ 'submucous nerve plexus of small intestine' SubClassOf 'part_of' some 'small intestine'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410063
+Label(s): myenteric nerve plexus of small intestine 
++ 'myenteric nerve plexus of small intestine' SubClassOf 'part_of' some 'small intestine'
++ 'myenteric nerve plexus of small intestine' SubClassOf 'myenteric nerve plexus'
++ 'myenteric nerve plexus of small intestine' EquivalentTo 'myenteric nerve plexus' and ('part_of' some 'small intestine')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410060
+Label(s): colon smooth muscle circular layer 
++ 'colon smooth muscle circular layer' SubClassOf 'part_of' some 'colon'
++ 'colon smooth muscle circular layer' SubClassOf 'large intestine smooth muscle circular layer'
++ 'colon smooth muscle circular layer' EquivalentTo 'circular muscle layer of muscular coat' and ('part_of' some 'colon') and ('part_of' some 'large intestine smooth muscle')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410059
+Label(s): submucous nerve plexus of colon 
++ 'submucous nerve plexus of colon' SubClassOf 'submucous nerve plexus'
++ 'submucous nerve plexus of colon' EquivalentTo 'submucous nerve plexus' and ('part_of' some 'colon')
++ 'submucous nerve plexus of colon' SubClassOf 'part_of' some 'colon'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410058
+Label(s): myenteric nerve plexus of colon 
++ 'myenteric nerve plexus of colon' EquivalentTo 'myenteric nerve plexus' and ('part_of' some 'colon')
++ 'myenteric nerve plexus of colon' SubClassOf 'myenteric nerve plexus'
++ 'myenteric nerve plexus of colon' SubClassOf 'part_of' some 'colon'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410057
+Label(s): capillary of colon 
++ 'capillary of colon' SubClassOf 'capillary'
++ 'capillary of colon' SubClassOf 'part_of' some 'colon'
++ 'capillary of colon' EquivalentTo 'capillary' and ('part_of' some 'colon')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410055
+Label(s): lymphatic capillary of anorectum 
++ 'lymphatic capillary of anorectum' SubClassOf 'lymphatic capillary'
++ 'lymphatic capillary of anorectum' SubClassOf 'part_of' some 'anorectum'
++ 'lymphatic capillary of anorectum' EquivalentTo 'lymphatic capillary' and ('part_of' some 'anorectum')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410054
+Label(s): lymphatic capillary of colon 
++ 'lymphatic capillary of colon' SubClassOf 'lymphatic vessel of colon'
++ 'lymphatic capillary of colon' EquivalentTo 'lymphatic capillary' and ('part_of' some 'colon')
++ 'lymphatic capillary of colon' SubClassOf 'lymphatic capillary'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410051
+Label(s): lymphatic vessel of colon 
++ 'lymphatic vessel of colon' SubClassOf 'lymphatic vessel'
++ 'lymphatic vessel of colon' EquivalentTo 'lymphatic vessel' and ('part_of' some 'colon')
++ 'lymphatic vessel of colon' SubClassOf 'part_of' some 'colon'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410050
+Label(s): anorectum 
++ 'anorectum' SubClassOf 'has part' some 'anal canal'
++ 'anorectum' SubClassOf 'has part' some 'rectum'
++ 'anorectum' SubClassOf 'part_of' some 'large intestine'
++ 'anorectum' EquivalentTo 'subdivision of digestive tract' and ('has part' some 'anal canal') and ('has part' some 'rectum') and ('has part' some 'anus')
++ 'anorectum' SubClassOf 'has part' some 'anus'
++ 'anorectum' SubClassOf 'subdivision of digestive tract'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410049
+Label(s): serosal nerve fiber of appendix 
++ 'serosal nerve fiber of appendix' SubClassOf 'part_of' some 'serosa of appendix'
++ 'serosal nerve fiber of appendix' EquivalentTo 'nerve fiber' and ('part_of' some 'serosa of appendix')
++ 'serosal nerve fiber of appendix' SubClassOf 'nerve fiber'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410047
+Label(s): appendix smooth muscle longitudinal layer 
++ 'appendix smooth muscle longitudinal layer' EquivalentTo 'longitudinal muscle layer of muscular coat' and ('part_of' some 'vermiform appendix')
++ 'appendix smooth muscle longitudinal layer' SubClassOf 'part_of' some 'vermiform appendix'
++ 'appendix smooth muscle longitudinal layer' SubClassOf 'longitudinal muscle layer of muscular coat'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410046
+Label(s): appendix smooth muscle circular layer 
++ 'appendix smooth muscle circular layer' SubClassOf 'part_of' some 'vermiform appendix'
++ 'appendix smooth muscle circular layer' SubClassOf 'circular muscle layer of muscular coat'
++ 'appendix smooth muscle circular layer' EquivalentTo 'circular muscle layer of muscular coat' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410045
+Label(s): artery of appendix 
++ 'artery of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'artery of appendix' SubClassOf 'artery'
++ 'artery of appendix' EquivalentTo 'artery' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410044
+Label(s): vein of appendix 
++ 'vein of appendix' EquivalentTo 'vein' and ('part_of' some 'vermiform appendix')
++ 'vein of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'vein of appendix' SubClassOf 'vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410042
+Label(s): arteriole of lymph node 
++ 'arteriole of lymph node' SubClassOf 'part_of' some 'lymph node'
++ 'arteriole of lymph node' EquivalentTo 'arteriole' and ('part_of' some 'lymph node')
++ 'arteriole of lymph node' SubClassOf 'arteriole'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410041
+Label(s): venule of lymph node 
++ 'venule of lymph node' SubClassOf 'venule'
++ 'venule of lymph node' SubClassOf 'part_of' some 'lymph node'
++ 'venule of lymph node' EquivalentTo 'venule' and ('part_of' some 'lymph node')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410036
+Label(s): medullary venule of lymph node 
++ 'medullary venule of lymph node' SubClassOf 'part_of' some 'medulla of lymph node'
++ 'medullary venule of lymph node' SubClassOf 'venule of lymph node'
++ 'medullary venule of lymph node' EquivalentTo 'venule' and ('part_of' some 'medulla of lymph node')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410035
+Label(s): medullary arteriole of lymph node 
++ 'medullary arteriole of lymph node' SubClassOf 'part_of' some 'medulla of lymph node'
++ 'medullary arteriole of lymph node' SubClassOf 'branching_part_of' some 'lymph node artery'
++ 'medullary arteriole of lymph node' SubClassOf 'arteriole of lymph node'
++ 'medullary arteriole of lymph node' EquivalentTo 'arteriole' and ('part_of' some 'medulla of lymph node')
++ 'medullary arteriole of lymph node' SubClassOf 'part_of' some 'lymph node artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410032
+Label(s): trabecular sinus of lymph node 
++ 'trabecular sinus of lymph node' SubClassOf 'part_of' some 'lymph node'
++ 'trabecular sinus of lymph node' SubClassOf 'anatomical entity'
++ 'trabecular sinus of lymph node' SubClassOf 'anatomical space'
++ 'trabecular sinus of lymph node' SubClassOf 'adjacent to' some 'trabecula of lymph node'
++ 'trabecular sinus of lymph node' EquivalentTo 'anatomical space' and ('part_of' some 'lymph node') and ('adjacent to' some 'trabecula of lymph node')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410031
+Label(s): muscularis mucosae of appendix 
++ 'muscularis mucosae of appendix' SubClassOf 'muscularis mucosae of large intestine'
++ 'muscularis mucosae of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'muscularis mucosae of appendix' EquivalentTo 'muscularis mucosa' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410029
+Label(s): lymphatic capillary of appendix 
++ 'lymphatic capillary of appendix' EquivalentTo 'lymphatic capillary' and ('part_of' some 'vermiform appendix')
++ 'lymphatic capillary of appendix' SubClassOf 'lymphatic vessel of appendix'
++ 'lymphatic capillary of appendix' SubClassOf 'lymphatic capillary of colon'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410028
+Label(s): arteriole of appendix 
++ 'arteriole of appendix' SubClassOf 'arteriole of colon'
++ 'arteriole of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'arteriole of appendix' EquivalentTo 'arteriole' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410020
+Label(s): venule of appendix 
++ 'venule of appendix' EquivalentTo 'venule' and ('part_of' some 'vermiform appendix')
++ 'venule of appendix' SubClassOf 'venule of colon'
++ 'venule of appendix' SubClassOf 'part_of' some 'vermiform appendix'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410014
+Label(s): efferent lymphatic vessel valve 
++ 'efferent lymphatic vessel valve' SubClassOf 'lymphatic valve'
++ 'efferent lymphatic vessel valve' SubClassOf 'part_of' some 'efferent lymphatic vessel'
++ 'efferent lymphatic vessel valve' EquivalentTo 'lymphatic valve' and ('part_of' some 'efferent lymphatic vessel')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410012
+Label(s): submucous nerve plexus of appendix 
++ 'submucous nerve plexus of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'submucous nerve plexus of appendix' SubClassOf 'submucous nerve plexus of colon'
++ 'submucous nerve plexus of appendix' EquivalentTo 'submucous nerve plexus' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410011
+Label(s): myenteric nerve plexus of appendix 
++ 'myenteric nerve plexus of appendix' SubClassOf 'myenteric nerve plexus of colon'
++ 'myenteric nerve plexus of appendix' SubClassOf 'part_of' some 'vermiform appendix'
++ 'myenteric nerve plexus of appendix' EquivalentTo 'myenteric nerve plexus' and ('part_of' some 'vermiform appendix')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410002
+Label(s): small intestine lymphatic vessel 
++ 'small intestine lymphatic vessel' EquivalentTo 'lymphatic vessel' and ('part_of' some 'small intestine')
++ 'small intestine lymphatic vessel' SubClassOf 'part_of' some 'small intestine'
++ 'small intestine lymphatic vessel' SubClassOf 'lymphatic vessel'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_6157
+Label(s): Platyhelminthes 
++ 'Platyhelminthes' SubClassOf 'Lophotrochozoa'
+
+Class: http://purl.obolibrary.org/obo/NCBITaxon_1206795
+Label(s): Lophotrochozoa 
++ 'Lophotrochozoa' SubClassOf 'Spiralia'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410003
+Label(s): ductal plate 
++ 'ductal plate' SubClassOf 'has part' some 'bile duct epithelium'
++ 'ductal plate' SubClassOf 'part_of' some 'bile duct'
++ 'ductal plate' SubClassOf 'existence starts during' some 'embryo stage'
++ 'ductal plate' SubClassOf 'multicellular anatomical structure'
++ 'ductal plate' SubClassOf 'surrounds' some 'portal vein'
++ 'ductal plate' SubClassOf 'existence ends during' some 'late embryonic stage'
++ 'ductal plate' SubClassOf 'endoderm-derived structure'
+
+Class: http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=1569
+Label(s): CCK (human) 
++ 'CCK (human)' SubClassOf 'only in taxon' some '人类'
++ 'CCK (human)' SubClassOf 'protein_coding_gene'
+
+Class: http://purl.obolibrary.org/obo/CL_4023093
+Label(s): stellate pyramidal neuron 
++ 'stellate pyramidal neuron' SubClassOf 'bearer of' some 'stellate pyramidal morphology'
++ 'stellate pyramidal neuron' SubClassOf 'pyramidal neuron'
++ 'stellate pyramidal neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'stellate pyramidal morphology')
+
+Class: http://purl.obolibrary.org/obo/CL_4023088
+Label(s): large basket cell 
++ 'large basket cell' EquivalentTo 'interneuron' and ('bearer of' some 'large basket cell morphology') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
++ 'large basket cell' SubClassOf 'basket cell'
++ 'large basket cell' SubClassOf 'bearer of' some 'large basket cell morphology'
+
+Class: http://purl.obolibrary.org/obo/CL_4023080
+Label(s): stellate L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus) 
++ 'stellate L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'bearer of' some 'stellate pyramidal morphology'
++ 'stellate L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)' SubClassOf 'L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)'
+
+Class: http://purl.obolibrary.org/obo/CL_4023077
+Label(s): bitufted neuron 
++ 'bitufted neuron' SubClassOf 'bearer of' some 'bitufted cell morphology'
++ 'bitufted neuron' EquivalentTo 'interneuron' and ('bearer of' some 'bitufted cell morphology')
++ 'bitufted neuron' SubClassOf 'interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023076
+Label(s): Martinotti neuron 
++ 'Martinotti neuron' SubClassOf 'GABAergic interneuron'
++ 'Martinotti neuron' SubClassOf 'bearer of' some 'martinotti morphology'
++ 'Martinotti neuron' SubClassOf 'multipolar neuron'
++ 'Martinotti neuron' EquivalentTo 'interneuron' and ('bearer of' some 'martinotti morphology') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
+
+Class: http://purl.obolibrary.org/obo/CL_4023071
+Label(s): L5/6 CCK cortical GABAergic interneuron (Mus musculus) 
++ 'L5/6 CCK cortical GABAergic interneuron (Mus musculus)' SubClassOf 'expresses' some 'cholecystokinin (mouse)'
++ 'L5/6 CCK cortical GABAergic interneuron (Mus musculus)' SubClassOf 'in taxon' some 'Mus musculus'
++ 'L5/6 CCK cortical GABAergic interneuron (Mus musculus)' SubClassOf 'cerebral cortex GABAergic interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023070
+Label(s): caudal ganglionic eminence derived GABAergic cortical interneuron 
++ 'caudal ganglionic eminence derived GABAergic cortical interneuron' SubClassOf 'develops from' some 'caudal ganglionic eminence'
++ 'caudal ganglionic eminence derived GABAergic cortical interneuron' EquivalentTo 'interneuron' and ('has soma location' some 'cerebral cortex') and ('develops from' some 'caudal ganglionic eminence') and ('capable of' some 'gamma-aminobutyric acid secretion, neurotransmission')
++ 'caudal ganglionic eminence derived GABAergic cortical interneuron' SubClassOf 'cerebral cortex GABAergic interneuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023067
+Label(s): Martinotti morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus) 
++ 'Martinotti morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus)'
++ 'Martinotti morphology L2/3 Pvalb-like Sst GABAergic cortical interneuron (Mus musculus)' SubClassOf 'Martinotti neuron'
+
+Class: http://purl.obolibrary.org/obo/CL_4023066
+Label(s): horizontal pyramidal neuron 
++ 'horizontal pyramidal neuron' SubClassOf 'pyramidal neuron'
++ 'horizontal pyramidal neuron' SubClassOf 'bearer of' some 'horizontal pyramidal morphology'
++ 'horizontal pyramidal neuron' EquivalentTo 'CNS neuron (sensu Vertebrata)' and ('bearer of' some 'horizontal pyramidal morphology')
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410048
+Label(s): venule of colon 
++ 'venule of colon' EquivalentTo 'venule' and ('part_of' some 'colon')
++ 'venule of colon' SubClassOf 'part_of' some 'colon'
++ 'venule of colon' SubClassOf 'venule'
+
+Class: http://purl.obolibrary.org/obo/PR_000005110
+Label(s): cholecystokinin 
++ 'cholecystokinin' SubClassOf 'protein'
+
+Class: http://www.informatics.jax.org/marker/MGI:99779
+Label(s): Chrna7 (mouse) 
++ 'Chrna7 (mouse)' SubClassOf 'protein_coding_gene'
++ 'Chrna7 (mouse)' SubClassOf 'only in taxon' some 'Mus musculus'
+
+Class: http://purl.obolibrary.org/obo/GO_0031975
+Label(s): envelope 
++ 'envelope' SubClassOf 'cellular anatomical entity'
+
+
+################
+@Classes deleted from this version
+
+Class: http://purl.obolibrary.org/obo/GO_0043900
+Label(s): regulation of multi-organism process 
++ 'regulation of multi-organism process' EquivalentTo 'biological regulation' and ('regulates' some 'multi-organism process')
++ 'regulation of multi-organism process' SubClassOf 'regulation of biological process'
++ 'regulation of multi-organism process' SubClassOf 'regulates' some 'multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/GO_0098840
+Label(s): protein transport along microtubule 
++ 'protein transport along microtubule' SubClassOf 'intracellular protein transport'
++ 'protein transport along microtubule' SubClassOf 'microtubule-based protein transport'
++ 'protein transport along microtubule' SubClassOf 'transport along microtubule'
+
+Class: http://purl.obolibrary.org/obo/GO_0043902
+Label(s): positive regulation of multi-organism process 
++ 'positive regulation of multi-organism process' SubClassOf 'positive regulation of biological process'
++ 'positive regulation of multi-organism process' SubClassOf 'positively regulates' some 'multi-organism process'
++ 'positive regulation of multi-organism process' EquivalentTo 'biological regulation' and ('positively regulates' some 'multi-organism process')
++ 'positive regulation of multi-organism process' SubClassOf 'regulation of multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/GO_0043901
+Label(s): negative regulation of multi-organism process 
++ 'negative regulation of multi-organism process' EquivalentTo 'biological regulation' and ('negatively regulates' some 'multi-organism process')
++ 'negative regulation of multi-organism process' SubClassOf 'regulation of multi-organism process'
++ 'negative regulation of multi-organism process' SubClassOf 'negative regulation of biological process'
++ 'negative regulation of multi-organism process' SubClassOf 'negatively regulates' some 'multi-organism process'
+
+Class: http://purl.obolibrary.org/obo/GO_0051668
+Label(s): localization within membrane 
++ 'localization within membrane' SubClassOf 'cellular localization'
++ 'localization within membrane' EquivalentTo 'localization' and ('occurs in' some 'membrane')
++ 'localization within membrane' SubClassOf 'occurs in' some 'membrane'
+
+Class: http://purl.obolibrary.org/obo/GO_0044111
+Label(s): development involved in symbiotic interaction 
++ 'development involved in symbiotic interaction' EquivalentTo 'developmental process' and ('part_of' some 'biological process involved in interspecies interaction between organisms')
++ 'development involved in symbiotic interaction' SubClassOf 'developmental process'
++ 'development involved in symbiotic interaction' SubClassOf 'part_of' some 'biological process involved in interspecies interaction between organisms'
+
+Class: http://purl.obolibrary.org/obo/GO_1901264
+Label(s): carbohydrate derivative transport 
++ 'carbohydrate derivative transport' SubClassOf 'organic substance transport'
+
+Class: http://purl.obolibrary.org/obo/GO_2000193
+Label(s): positive regulation of fatty acid transport 
++ 'positive regulation of fatty acid transport' SubClassOf 'positively regulates' some 'fatty acid transport'
++ 'positive regulation of fatty acid transport' SubClassOf 'regulation of fatty acid transport'
++ 'positive regulation of fatty acid transport' SubClassOf 'positive regulation of organic acid transport'
++ 'positive regulation of fatty acid transport' SubClassOf 'positive regulation of lipid transport'
++ 'positive regulation of fatty acid transport' EquivalentTo 'biological regulation' and ('positively regulates' some 'fatty acid transport')
+
+Class: http://purl.obolibrary.org/obo/GO_2000192
+Label(s): negative regulation of fatty acid transport 
++ 'negative regulation of fatty acid transport' EquivalentTo 'biological regulation' and ('negatively regulates' some 'fatty acid transport')
++ 'negative regulation of fatty acid transport' SubClassOf 'negatively regulates' some 'fatty acid transport'
++ 'negative regulation of fatty acid transport' SubClassOf 'regulation of fatty acid transport'
++ 'negative regulation of fatty acid transport' SubClassOf 'negative regulation of organic acid transport'
++ 'negative regulation of fatty acid transport' SubClassOf 'negative regulation of lipid transport'
+
+Class: http://purl.obolibrary.org/obo/GO_2000191
+Label(s): regulation of fatty acid transport 
++ 'regulation of fatty acid transport' SubClassOf 'regulation of organic acid transport'
++ 'regulation of fatty acid transport' SubClassOf 'regulates' some 'fatty acid transport'
++ 'regulation of fatty acid transport' SubClassOf 'regulation of lipid transport'
++ 'regulation of fatty acid transport' EquivalentTo 'biological regulation' and ('regulates' some 'fatty acid transport')
+
+Class: http://purl.obolibrary.org/obo/GO_0015318
+Label(s): inorganic molecular entity transmembrane transporter activity 
++ 'inorganic molecular entity transmembrane transporter activity' SubClassOf 'Defective SLC2A9 does not transport Fru, Glc, urate'
+
+Class: http://purl.obolibrary.org/obo/GO_0015908
+Label(s): fatty acid transport 
++ 'fatty acid transport' SubClassOf 'lipid transport'
++ 'fatty acid transport' SubClassOf 'organic acid transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0099118
+Label(s): microtubule-based protein transport 
++ 'microtubule-based protein transport' SubClassOf 'microtubule-based transport'
++ 'microtubule-based protein transport' SubClassOf 'protein transport'
+
+Class: http://purl.obolibrary.org/obo/GO_0098537
+Label(s): lobed nucleus 
++ 'lobed nucleus' SubClassOf 'nucleus'
 

@@ -1,6 +1,7 @@
 term
-http://purl.obolibrary.org/obo/UBERON_8410025
-http://purl.obolibrary.org/obo/UBERON_8410026
 http://purl.obolibrary.org/obo/UBERON_8410010
+http://purl.obolibrary.org/obo/UBERON_8410025
 http://purl.obolibrary.org/obo/UBERON_8410027
+http://purl.obolibrary.org/obo/UBERON_8410003
+http://purl.obolibrary.org/obo/UBERON_8410026
 http://purl.obolibrary.org/obo/UBERON_8410021
