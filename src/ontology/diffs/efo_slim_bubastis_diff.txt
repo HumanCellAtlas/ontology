@@ -1,54 +1,8 @@
 Ontology Diff Summary
-Diff date: 2021/07/19 10:56:59
+Diff date: 2021/07/19 11:50:57
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 6
-Number of classes added: 3
+Number of classes changed: 0
+Number of classes added: 0
 Number of classes deleted: 0
  
-
-################
-@Classes modified from previous
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008777
-Label(s): Ig-Seq 
-+ 'Ig-Seq' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010713
-Label(s): 10x immune profiling 
-+ '10x immune profiling' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030015
-+ '10x immune profiling' SubClassOf 'RNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010017
-Label(s): HTGTS-Rep-seq 
-- 'HTGTS-Rep-seq' SubClassOf 'assay'
-+ 'HTGTS-Rep-seq' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008966
-Label(s): TCR Chain Paring 
-+ 'TCR Chain Paring' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030015
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008842
-Label(s): Paired VH:VL Antibody Repertoire Analysis 
-+ 'Paired VH:VL Antibody Repertoire Analysis' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008887
-Label(s): Rep-Seq 
-+ 'Rep-Seq' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030014
-
-
-################
-@Classes new to this version
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030015
-Label(s): single cell immune repertoire sequencing 
-+ 'single cell immune repertoire sequencing' SubClassOf 'immune sequencing'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030006
-Label(s): immune sequencing 
-+ 'immune sequencing' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030014
-Label(s): bulk immune repertoire sequencing 
-+ 'bulk immune repertoire sequencing' SubClassOf 'immune sequencing'
-
