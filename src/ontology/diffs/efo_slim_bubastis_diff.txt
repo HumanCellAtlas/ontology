@@ -1,62 +1,8 @@
 Ontology Diff Summary
-Diff date: 2021/11/16 16:07:28
+Diff date: 2021/12/16 10:04:40
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 2
-Number of classes added: 9
+Number of classes changed: 0
+Number of classes added: 0
 Number of classes deleted: 0
  
-
-################
-@Classes modified from previous
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030034
-Label(s): shRNA-seq 
-- 'shRNA-seq' SubClassOf 'RNA assay'
-+ 'shRNA-seq' SubClassOf 'DNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030033
-Label(s): gRNA-seq 
-- 'gRNA-seq' SubClassOf 'RNA assay'
-+ 'gRNA-seq' SubClassOf 'DNA assay'
-
-
-################
-@Classes new to this version
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030053
-Label(s): pseudo-bulk aggregation of single-cell expression data 
-+ 'pseudo-bulk aggregation of single-cell expression data' SubClassOf 'processed matrix generation'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030057
-Label(s): Luminex multi-analyte profiling 
-+ 'Luminex multi-analyte profiling' SubClassOf 'assay by instrument'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030054
-Label(s): label-free quantification 
-+ 'label-free quantification' SubClassOf 'proteomic profiling by mass spectrometer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030056
-Label(s): tandem mass spectrometry 
-+ 'tandem mass spectrometry' SubClassOf 'assay by mass spectrometry'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030058
-Label(s): transcription profiling by NanoString 
-+ 'transcription profiling by NanoString' SubClassOf 'transcription profiling'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030037
-Label(s): T cell activation assay 
-+ 'T cell activation assay' SubClassOf 'assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030036
-Label(s): bronchoscopic microsampling 
-+ 'bronchoscopic microsampling' SubClassOf 'biopsy'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030055
-Label(s): 16S metagenomic sequencing 
-+ '16S metagenomic sequencing' SubClassOf 'amplicon sequencing'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030052
-Label(s): nuclear RNA 
-+ 'nuclear RNA' SubClassOf 'RNA'
-
