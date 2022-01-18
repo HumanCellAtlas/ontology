@@ -1,8 +1,56 @@
 Ontology Diff Summary
-Diff date: 2021/12/16 10:04:40
+Diff date: 2022/01/18 10:00:28
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 0
-Number of classes added: 0
+Number of classes changed: 2
+Number of classes added: 6
 Number of classes deleted: 0
  
+
+################
+@Classes modified from previous
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009920
+Label(s): Slide-seq 
+- 'Slide-seq' SubClassOf 'RNA assay'
++ 'Slide-seq' SubClassOf 'single cell library construction'
++ 'Slide-seq' SubClassOf 'spatial transcriptomics by high-throughput sequencing'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0008864
+Label(s): PMA 
+- 'PMA' SubClassOf 'RNA assay'
++ 'PMA' SubClassOf 'MDA'
+
+
+################
+@Classes new to this version
+
+Class: http://ebi.ac.uk/efo/EFO_0600086
+Label(s): appendectomy 
++ 'appendectomy' SubClassOf 'medical procedure'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030060
+Label(s): mCT-seq 
++ 'mCT-seq' SubClassOf 'scRNA-seq'
++ 'mCT-seq' SubClassOf 'DNA assay'
++ 'mCT-seq' SubClassOf 'single cell library construction'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030059
+Label(s): 10x multiome 
++ '10x multiome' SubClassOf 'scATAC-seq'
++ '10x multiome' SubClassOf '10x technology'
++ '10x multiome' SubClassOf 'scRNA-seq'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030061
+Label(s): mcSCRB-seq 
++ 'mcSCRB-seq' SubClassOf 'SCRB-seq'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030062
+Label(s): Slide-seqV2 
++ 'Slide-seqV2' SubClassOf 'spatial transcriptomics by high-throughput sequencing'
++ 'Slide-seqV2' SubClassOf 'single cell library construction'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020684
+Label(s): radical prostatectomy 
++ 'radical prostatectomy' SubClassOf 'medical procedure'
+
