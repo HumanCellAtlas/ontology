@@ -19,3 +19,4 @@ http://purl.obolibrary.org/obo/CARO_0000007 # immaterial anatomical entity
 http://purl.obolibrary.org/obo/BFO_0000030 # object
 http://purl.obolibrary.org/obo/NCBITaxon_1 # root
 http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
+http://purl.obolibrary.org/obo/UBERON_0039176

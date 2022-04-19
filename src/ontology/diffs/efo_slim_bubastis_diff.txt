@@ -1,771 +1,211 @@
 Ontology Diff Summary
-Diff date: 2022/03/16 10:18:25
+Diff date: 2022/04/19 17:34:58
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 64
-Number of classes added: 63
-Number of classes deleted: 58
+Number of classes changed: 8
+Number of classes added: 39
+Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://ebi.ac.uk/efo/EFO_0600087
-Label(s): narrow occludable anterior chamber angle 
-- 'narrow occludable anterior chamber angle' SubClassOf 'anterior chamber depth measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0008440
+Label(s): tag based single cell RNA sequencing 
+- 'tag based single cell RNA sequencing' SubClassOf 'single cell sequencing'
++ 'tag based single cell RNA sequencing' SubClassOf 'single-cell RNA sequencing'
 
-Class: http://ebi.ac.uk/efo/EFO_0600086
-Label(s): appendectomy 
-- 'appendectomy' SubClassOf 'medical procedure'
+Class: http://purl.obolibrary.org/obo/HP_0003826
+Label(s): Stillbirth 
+- 'Stillbirth' SubClassOf 'age at death'
++ 'Stillbirth' SubClassOf http://purl.obolibrary.org/obo/HP_0034241
 
-Class: http://ebi.ac.uk/efo/EFO_0600085
-Label(s): PP interval 
-- 'PP interval' SubClassOf 'electrocardiography'
+Class: http://www.ebi.ac.uk/efo/EFO_0008441
+Label(s): full length single cell RNA sequencing 
+- 'full length single cell RNA sequencing' SubClassOf 'single cell sequencing'
++ 'full length single cell RNA sequencing' SubClassOf 'single-cell RNA sequencing'
 
-Class: http://ebi.ac.uk/efo/EFO_0600084
-Label(s): bowel opening frequency 
-- 'bowel opening frequency' SubClassOf 'measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0005685
+Label(s): RNA-seq of non coding RNA from single cells 
+- 'RNA-seq of non coding RNA from single cells' SubClassOf 'single cell sequencing'
++ 'RNA-seq of non coding RNA from single cells' SubClassOf 'single-cell RNA sequencing'
 
-Class: http://ebi.ac.uk/efo/EFO_0600079
-Label(s): glucocorticoid receptor gene expression measurement 
-- 'glucocorticoid receptor gene expression measurement' SubClassOf 'gene expression measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0005684
+Label(s): RNA-seq of coding RNA from single cells 
+- 'RNA-seq of coding RNA from single cells' SubClassOf 'single cell sequencing'
++ 'RNA-seq of coding RNA from single cells' SubClassOf 'single-cell RNA sequencing'
 
-Class: http://ebi.ac.uk/efo/EFO_0600073
-Label(s): anti-WU polyomavirus antibody measurement 
-- 'anti-WU polyomavirus antibody measurement' SubClassOf 'antibody measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0030029
+Label(s): NanoString digital spatial profiling 
++ 'NanoString digital spatial profiling' SubClassOf 'library preparation'
 
-Class: http://ebi.ac.uk/efo/EFO_0600072
-Label(s): human polyomavirus 6 seropositivity 
-- 'human polyomavirus 6 seropositivity' SubClassOf 'seropositivity measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0006795
+Label(s): serum VEGFR2 concentration measurement 
+- 'serum VEGFR2 concentration measurement' SubClassOf 'measurement'
++ 'serum VEGFR2 concentration measurement' SubClassOf 'cardiovascular disease biomarker measurement'
 
-Class: http://ebi.ac.uk/efo/EFO_0600071
-Label(s): blood glutathione peroxidase measurement 
-- 'blood glutathione peroxidase measurement' SubClassOf 'protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600068
-Label(s): gene expression measurement 
-- 'gene expression measurement' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600067
-Label(s): mastiha supplement exposure measurement 
-- 'mastiha supplement exposure measurement' SubClassOf 'nutritional supplement exposure measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600061
-Label(s): blood group B 
-- 'blood group B' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600050
-Label(s): plasma leucine rich alpha-2-glycoprotein 1 measurement 
-- 'plasma leucine rich alpha-2-glycoprotein 1 measurement' SubClassOf 'inflammatory biomarker measurement'
-- 'plasma leucine rich alpha-2-glycoprotein 1 measurement' SubClassOf 'blood protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600049
-Label(s): pancreas fat measurement 
-- 'pancreas fat measurement' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600048
-Label(s): liver volume 
-- 'liver volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600047
-Label(s): spleen volume 
-- 'spleen volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600046
-Label(s): lung volume 
-- 'lung volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600045
-Label(s): pancreas volume 
-- 'pancreas volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600044
-Label(s): kidney volume 
-- 'kidney volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600043
-Label(s): serum N-desmethylclozapine measurement 
-- 'serum N-desmethylclozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600042
-Label(s): serum clozapine-to-N-desmethylclozapine ratio measurement 
-- 'serum clozapine-to-N-desmethylclozapine ratio measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600041
-Label(s): serum clozapine measurement 
-- 'serum clozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600040
-Label(s): plasma clozapine-to-N-desmethylclozapine ratio measurement 
-- 'plasma clozapine-to-N-desmethylclozapine ratio measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600039
-Label(s): plasma N-desmethylclozapine measurement 
-- 'plasma N-desmethylclozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600038
-Label(s): plasma clozapine measurement 
-- 'plasma clozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600036
-Label(s): muscle fiber cross-sectional area measurement 
-- 'muscle fiber cross-sectional area measurement' SubClassOf 'muscle measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010729
-Label(s): sun exposure measurement 
-- 'sun exposure measurement' SubClassOf 'time spent outdoors measurement'
-+ 'sun exposure measurement' SubClassOf http://www.ebi.ac.uk/efo/EFO_0600081
-
-Class: http://ebi.ac.uk/efo/EFO_0600055
-Label(s): complement factor H-related protein 2 measurement 
-- 'complement factor H-related protein 2 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600056
-Label(s): complement factor H-related protein 3 measurement 
-- 'complement factor H-related protein 3 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600057
-Label(s): complement factor H-related protein 4A measurement 
-- 'complement factor H-related protein 4A measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600058
-Label(s): blood group 
-- 'blood group' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600062
-Label(s): blood group AB 
-- 'blood group AB' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600066
-Label(s): nutritional supplement exposure measurement 
-- 'nutritional supplement exposure measurement' SubClassOf 'environmental exposure measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600069
-Label(s): tumor necrosis factor alpha gene expression measurement 
-- 'tumor necrosis factor alpha gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600082
-Label(s): insulin use measurement 
-- 'insulin use measurement' SubClassOf 'drug use measurement'
-- 'insulin use measurement' SubClassOf 'insulin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008913
-Label(s): scRNA-seq 
-+ 'scRNA-seq' SubClassOf 'single cell sequencing'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009116
-Label(s): vitamin supplement exposure measurement 
-- 'vitamin supplement exposure measurement' SubClassOf 'nutritional supplement exposure measurement'
-+ 'vitamin supplement exposure measurement' SubClassOf http://www.ebi.ac.uk/efo/EFO_0600066
-
-Class: http://ebi.ac.uk/efo/EFO_0600070
-Label(s): interleukin-6 gene expression measurement 
-- 'interleukin-6 gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600081
-Label(s): time spent outdoors measurement 
-- 'time spent outdoors measurement' SubClassOf 'environmental exposure measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600060
-Label(s): blood group A 
-- 'blood group A' SubClassOf 'ABO blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007832
-Label(s): single cell sequencing 
-- 'single cell sequencing' SubClassOf 'transcription profiling by high throughput sequencing'
-+ 'single cell sequencing' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030009
-Label(s): CITE-seq (sample multiplexing) 
-+ 'CITE-seq (sample multiplexing)' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030077
-
-Class: http://ebi.ac.uk/efo/EFO_0600035
-Label(s): left atrial volume measurement 
-- 'left atrial volume measurement' SubClassOf 'cardiovascular measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600053
-Label(s): complement factor H-related proteins measurement 
-- 'complement factor H-related proteins measurement' SubClassOf 'blood protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600054
-Label(s): complement factor H-related protein 1 measurement 
-- 'complement factor H-related protein 1 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600059
-Label(s): ABO blood group 
-- 'ABO blood group' SubClassOf 'blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600063
-Label(s): blood group O 
-- 'blood group O' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600074
-Label(s): anti-human polyomavirus 6 antibody measurement 
-- 'anti-human polyomavirus 6 antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600076
-Label(s): stimulant use measurement 
-- 'stimulant use measurement' SubClassOf 'drug use measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600077
-Label(s): cardiac troponin I change measurement 
-- 'cardiac troponin I change measurement' SubClassOf 'cardiac troponin I measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020865
-Label(s): low density lipoprotein particle size change measurement 
-- 'low density lipoprotein particle size change measurement' SubClassOf 'low density lipoprotein particle size measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020864
-Label(s): very low density lipoprotein particle size change measurement 
-- 'very low density lipoprotein particle size change measurement' SubClassOf 'very low density lipoprotein particle size measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020863
-Label(s): intermediate density lipoprotein change measurement 
-- 'intermediate density lipoprotein change measurement' SubClassOf 'intermediate density lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020862
-Label(s): free cholesterol change measurement 
-- 'free cholesterol change measurement' SubClassOf 'free cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020861
-Label(s): esterified cholesterol change measurement 
-- 'esterified cholesterol change measurement' SubClassOf 'esterified cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020860
-Label(s): phospholipid change measurement 
-- 'phospholipid change measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600083
-Label(s): family history of prostate cancer 
-- 'family history of prostate cancer' SubClassOf 'family history of cancer'
-
-Class: http://ebi.ac.uk/efo/EFO_0600088
-Label(s): lymphocyte:monocyte ratio 
-- 'lymphocyte:monocyte ratio' SubClassOf 'hematological measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600089
-Label(s): peritoneal solute transfer rate 
-- 'peritoneal solute transfer rate' SubClassOf 'renal system measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020858
-Label(s): chylomicron change measurement 
-- 'chylomicron change measurement' SubClassOf 'chylomicron measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020859
-Label(s): bombay phenotype 
-- 'bombay phenotype' SubClassOf 'blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600007
-Label(s): fish oil supplement exposure measurement 
-- 'fish oil supplement exposure measurement' SubClassOf 'nutritional supplement exposure measurement'
-+ 'fish oil supplement exposure measurement' SubClassOf http://www.ebi.ac.uk/efo/EFO_0600066
-
-Class: http://ebi.ac.uk/efo/EFO_0600094
-Label(s): skin roughness measurement 
-- 'skin roughness measurement' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600092
-Label(s): complement factor H-like 1 protein measurement 
-- 'complement factor H-like 1 protein measurement' SubClassOf 'blood protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600091
-Label(s): complement factor H-related protein 4 measurement 
-- 'complement factor H-related protein 4 measurement' SubClassOf 'complement factor H-related proteins measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0007693
+Label(s): Hi-C 
+- 'Hi-C' SubClassOf 'ligation-free chromosome conformation capture assay'
++ 'Hi-C' SubClassOf 'ligation-mediated chromosome conformation capture assay'
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0600081
-Label(s): time spent outdoors measurement 
-+ 'time spent outdoors measurement' SubClassOf 'environmental exposure measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600040
-Label(s): plasma clozapine-to-N-desmethylclozapine ratio measurement 
-+ 'plasma clozapine-to-N-desmethylclozapine ratio measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600044
-Label(s): kidney volume 
-+ 'kidney volume' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600048
-Label(s): liver volume 
-+ 'liver volume' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600053
-Label(s): complement factor H-related proteins measurement 
-+ 'complement factor H-related proteins measurement' SubClassOf 'blood protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600054
-Label(s): complement factor H-related protein 1 measurement 
-+ 'complement factor H-related protein 1 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600059
-Label(s): ABO blood group 
-+ 'ABO blood group' SubClassOf 'blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600060
-Label(s): blood group A 
-+ 'blood group A' SubClassOf 'ABO blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600061
-Label(s): blood group B 
-+ 'blood group B' SubClassOf 'ABO blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600062
-Label(s): blood group AB 
-+ 'blood group AB' SubClassOf 'ABO blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600063
-Label(s): blood group O 
-+ 'blood group O' SubClassOf 'ABO blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600069
-Label(s): tumor necrosis factor alpha gene expression measurement 
-+ 'tumor necrosis factor alpha gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600070
-Label(s): interleukin-6 gene expression measurement 
-+ 'interleukin-6 gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600072
-Label(s): human polyomavirus 6 seropositivity 
-+ 'human polyomavirus 6 seropositivity' SubClassOf 'seropositivity measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600073
-Label(s): anti-WU polyomavirus antibody measurement 
-+ 'anti-WU polyomavirus antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600079
-Label(s): glucocorticoid receptor gene expression measurement 
-+ 'glucocorticoid receptor gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600083
-Label(s): family history of prostate cancer 
-+ 'family history of prostate cancer' SubClassOf 'family history of cancer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600086
-Label(s): appendectomy 
-+ 'appendectomy' SubClassOf 'medical procedure'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600088
-Label(s): lymphocyte:monocyte ratio 
-+ 'lymphocyte:monocyte ratio' SubClassOf 'hematological measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600089
-Label(s): peritoneal solute transfer rate 
-+ 'peritoneal solute transfer rate' SubClassOf 'renal system measurement'
-
-Class: http://purl.obolibrary.org/obo/OBI_0002584
-Label(s): differential expression analysis data 
-+ 'differential expression analysis data' SubClassOf 'data set'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020908
-Label(s): low density lipoprotein particle size change measurement 
-+ 'low density lipoprotein particle size change measurement' SubClassOf 'low density lipoprotein particle size measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020907
-Label(s): very low density lipoprotein particle size change measurement 
-+ 'very low density lipoprotein particle size change measurement' SubClassOf 'very low density lipoprotein particle size measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020905
-Label(s): free cholesterol change measurement 
-+ 'free cholesterol change measurement' SubClassOf 'free cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020904
-Label(s): esterified cholesterol change measurement 
-+ 'esterified cholesterol change measurement' SubClassOf 'esterified cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020903
-Label(s): phospholipid change measurement 
-+ 'phospholipid change measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020901
-Label(s): chylomicron change measurement 
-+ 'chylomicron change measurement' SubClassOf 'chylomicron measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030077
-Label(s): cell hashing 
-+ 'cell hashing' SubClassOf 'single cell library construction'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600041
-Label(s): serum clozapine measurement 
-+ 'serum clozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600043
-Label(s): serum N-desmethylclozapine measurement 
-+ 'serum N-desmethylclozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600055
-Label(s): complement factor H-related protein 2 measurement 
-+ 'complement factor H-related protein 2 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020929
-Label(s): electrocardiogram PR prolongation 
-+ 'electrocardiogram PR prolongation' SubClassOf 'PR interval'
-+ 'electrocardiogram PR prolongation' SubClassOf 'PR segment'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020902
-Label(s): bombay phenotype 
-+ 'bombay phenotype' SubClassOf 'blood group'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020899
-Label(s): filaggrin gene expression measurement 
-+ 'filaggrin gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020897
-Label(s): citrus intake measurement 
-+ 'citrus intake measurement' SubClassOf 'diet measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600094
-Label(s): skin roughness measurement 
-+ 'skin roughness measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600092
-Label(s): complement factor H-like 1 protein measurement 
-+ 'complement factor H-like 1 protein measurement' SubClassOf 'blood protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600091
-Label(s): complement factor H-related protein 4 measurement 
-+ 'complement factor H-related protein 4 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600087
-Label(s): narrow occludable anterior chamber angle 
-+ 'narrow occludable anterior chamber angle' SubClassOf 'anterior chamber depth measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600085
-Label(s): PP interval 
-+ 'PP interval' SubClassOf 'electrocardiography'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600084
-Label(s): bowel opening frequency 
-+ 'bowel opening frequency' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600082
-Label(s): insulin use measurement 
-+ 'insulin use measurement' SubClassOf 'drug use measurement'
-+ 'insulin use measurement' SubClassOf 'insulin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600077
-Label(s): cardiac troponin I change measurement 
-+ 'cardiac troponin I change measurement' SubClassOf 'cardiac troponin I measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600076
-Label(s): stimulant use measurement 
-+ 'stimulant use measurement' SubClassOf 'drug use measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600074
-Label(s): anti-human polyomavirus 6 antibody measurement 
-+ 'anti-human polyomavirus 6 antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600071
-Label(s): blood glutathione peroxidase measurement 
-+ 'blood glutathione peroxidase measurement' SubClassOf 'protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600068
-Label(s): gene expression measurement 
-+ 'gene expression measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600067
-Label(s): mastiha supplement exposure measurement 
-+ 'mastiha supplement exposure measurement' SubClassOf 'nutritional supplement exposure measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600066
-Label(s): nutritional supplement exposure measurement 
-+ 'nutritional supplement exposure measurement' SubClassOf 'environmental exposure measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600058
-Label(s): blood group 
-+ 'blood group' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600057
-Label(s): complement factor H-related protein 4A measurement 
-+ 'complement factor H-related protein 4A measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600056
-Label(s): complement factor H-related protein 3 measurement 
-+ 'complement factor H-related protein 3 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600050
-Label(s): plasma leucine rich alpha-2-glycoprotein 1 measurement 
-+ 'plasma leucine rich alpha-2-glycoprotein 1 measurement' SubClassOf 'inflammatory biomarker measurement'
-+ 'plasma leucine rich alpha-2-glycoprotein 1 measurement' SubClassOf 'blood protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600049
-Label(s): pancreas fat measurement 
-+ 'pancreas fat measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600047
-Label(s): spleen volume 
-+ 'spleen volume' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600046
-Label(s): lung volume 
-+ 'lung volume' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600045
-Label(s): pancreas volume 
-+ 'pancreas volume' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600042
-Label(s): serum clozapine-to-N-desmethylclozapine ratio measurement 
-+ 'serum clozapine-to-N-desmethylclozapine ratio measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600039
-Label(s): plasma N-desmethylclozapine measurement 
-+ 'plasma N-desmethylclozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600038
-Label(s): plasma clozapine measurement 
-+ 'plasma clozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600036
-Label(s): muscle fiber cross-sectional area measurement 
-+ 'muscle fiber cross-sectional area measurement' SubClassOf 'muscle measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0600035
-Label(s): left atrial volume measurement 
-+ 'left atrial volume measurement' SubClassOf 'cardiovascular measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020906
-Label(s): intermediate density lipoprotein change measurement 
-+ 'intermediate density lipoprotein change measurement' SubClassOf 'intermediate density lipoprotein measurement'
-
-
-################
-@Classes deleted from this version
-
-Class: http://ebi.ac.uk/efo/EFO_0600087
-Label(s): narrow occludable anterior chamber angle 
-+ 'narrow occludable anterior chamber angle' SubClassOf 'anterior chamber depth measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600086
-Label(s): appendectomy 
-+ 'appendectomy' SubClassOf 'medical procedure'
-
-Class: http://ebi.ac.uk/efo/EFO_0600085
-Label(s): PP interval 
-+ 'PP interval' SubClassOf 'electrocardiography'
-
-Class: http://ebi.ac.uk/efo/EFO_0600084
-Label(s): bowel opening frequency 
-+ 'bowel opening frequency' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600079
-Label(s): glucocorticoid receptor gene expression measurement 
-+ 'glucocorticoid receptor gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600073
-Label(s): anti-WU polyomavirus antibody measurement 
-+ 'anti-WU polyomavirus antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600072
-Label(s): human polyomavirus 6 seropositivity 
-+ 'human polyomavirus 6 seropositivity' SubClassOf 'seropositivity measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600071
-Label(s): blood glutathione peroxidase measurement 
-+ 'blood glutathione peroxidase measurement' SubClassOf 'protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600068
-Label(s): gene expression measurement 
-+ 'gene expression measurement' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600067
-Label(s): mastiha supplement exposure measurement 
-+ 'mastiha supplement exposure measurement' SubClassOf 'nutritional supplement exposure measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600061
-Label(s): blood group B 
-+ 'blood group B' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600050
-Label(s): plasma leucine rich alpha-2-glycoprotein 1 measurement 
-+ 'plasma leucine rich alpha-2-glycoprotein 1 measurement' SubClassOf 'inflammatory biomarker measurement'
-+ 'plasma leucine rich alpha-2-glycoprotein 1 measurement' SubClassOf 'blood protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600049
-Label(s): pancreas fat measurement 
-+ 'pancreas fat measurement' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600048
-Label(s): liver volume 
-+ 'liver volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600047
-Label(s): spleen volume 
-+ 'spleen volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600046
-Label(s): lung volume 
-+ 'lung volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600045
-Label(s): pancreas volume 
-+ 'pancreas volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600044
-Label(s): kidney volume 
-+ 'kidney volume' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600043
-Label(s): serum N-desmethylclozapine measurement 
-+ 'serum N-desmethylclozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600042
-Label(s): serum clozapine-to-N-desmethylclozapine ratio measurement 
-+ 'serum clozapine-to-N-desmethylclozapine ratio measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600041
-Label(s): serum clozapine measurement 
-+ 'serum clozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600040
-Label(s): plasma clozapine-to-N-desmethylclozapine ratio measurement 
-+ 'plasma clozapine-to-N-desmethylclozapine ratio measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600039
-Label(s): plasma N-desmethylclozapine measurement 
-+ 'plasma N-desmethylclozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600038
-Label(s): plasma clozapine measurement 
-+ 'plasma clozapine measurement' SubClassOf 'mental or behavioural disorder biomarker'
-
-Class: http://ebi.ac.uk/efo/EFO_0600036
-Label(s): muscle fiber cross-sectional area measurement 
-+ 'muscle fiber cross-sectional area measurement' SubClassOf 'muscle measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600055
-Label(s): complement factor H-related protein 2 measurement 
-+ 'complement factor H-related protein 2 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600056
-Label(s): complement factor H-related protein 3 measurement 
-+ 'complement factor H-related protein 3 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600057
-Label(s): complement factor H-related protein 4A measurement 
-+ 'complement factor H-related protein 4A measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600058
-Label(s): blood group 
-+ 'blood group' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600062
-Label(s): blood group AB 
-+ 'blood group AB' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600066
-Label(s): nutritional supplement exposure measurement 
-+ 'nutritional supplement exposure measurement' SubClassOf 'environmental exposure measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600069
-Label(s): tumor necrosis factor alpha gene expression measurement 
-+ 'tumor necrosis factor alpha gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600082
-Label(s): insulin use measurement 
-+ 'insulin use measurement' SubClassOf 'drug use measurement'
-+ 'insulin use measurement' SubClassOf 'insulin measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600070
-Label(s): interleukin-6 gene expression measurement 
-+ 'interleukin-6 gene expression measurement' SubClassOf 'gene expression measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600081
-Label(s): time spent outdoors measurement 
-+ 'time spent outdoors measurement' SubClassOf 'environmental exposure measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600060
-Label(s): blood group A 
-+ 'blood group A' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600035
-Label(s): left atrial volume measurement 
-+ 'left atrial volume measurement' SubClassOf 'cardiovascular measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600053
-Label(s): complement factor H-related proteins measurement 
-+ 'complement factor H-related proteins measurement' SubClassOf 'blood protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600054
-Label(s): complement factor H-related protein 1 measurement 
-+ 'complement factor H-related protein 1 measurement' SubClassOf 'complement factor H-related proteins measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600059
-Label(s): ABO blood group 
-+ 'ABO blood group' SubClassOf 'blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600063
-Label(s): blood group O 
-+ 'blood group O' SubClassOf 'ABO blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600074
-Label(s): anti-human polyomavirus 6 antibody measurement 
-+ 'anti-human polyomavirus 6 antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600076
-Label(s): stimulant use measurement 
-+ 'stimulant use measurement' SubClassOf 'drug use measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600077
-Label(s): cardiac troponin I change measurement 
-+ 'cardiac troponin I change measurement' SubClassOf 'cardiac troponin I measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020865
-Label(s): low density lipoprotein particle size change measurement 
-+ 'low density lipoprotein particle size change measurement' SubClassOf 'low density lipoprotein particle size measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020864
-Label(s): very low density lipoprotein particle size change measurement 
-+ 'very low density lipoprotein particle size change measurement' SubClassOf 'very low density lipoprotein particle size measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020863
-Label(s): intermediate density lipoprotein change measurement 
-+ 'intermediate density lipoprotein change measurement' SubClassOf 'intermediate density lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020862
-Label(s): free cholesterol change measurement 
-+ 'free cholesterol change measurement' SubClassOf 'free cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020861
-Label(s): esterified cholesterol change measurement 
-+ 'esterified cholesterol change measurement' SubClassOf 'esterified cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020860
-Label(s): phospholipid change measurement 
-+ 'phospholipid change measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600083
-Label(s): family history of prostate cancer 
-+ 'family history of prostate cancer' SubClassOf 'family history of cancer'
-
-Class: http://ebi.ac.uk/efo/EFO_0600088
-Label(s): lymphocyte:monocyte ratio 
-+ 'lymphocyte:monocyte ratio' SubClassOf 'hematological measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600089
-Label(s): peritoneal solute transfer rate 
-+ 'peritoneal solute transfer rate' SubClassOf 'renal system measurement'
-
-Class: http://www.ebi.ac.uk/EFO/EFO_0020858
-Label(s): chylomicron change measurement 
-+ 'chylomicron change measurement' SubClassOf 'chylomicron measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020859
-Label(s): bombay phenotype 
-+ 'bombay phenotype' SubClassOf 'blood group'
-
-Class: http://ebi.ac.uk/efo/EFO_0600094
-Label(s): skin roughness measurement 
-+ 'skin roughness measurement' SubClassOf 'measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600092
-Label(s): complement factor H-like 1 protein measurement 
-+ 'complement factor H-like 1 protein measurement' SubClassOf 'blood protein measurement'
-
-Class: http://ebi.ac.uk/efo/EFO_0600091
-Label(s): complement factor H-related protein 4 measurement 
-+ 'complement factor H-related protein 4 measurement' SubClassOf 'complement factor H-related proteins measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020946
+Label(s): phospholipids:total lipids ratio 
++ 'phospholipids:total lipids ratio' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020947
+Label(s): triglycerides:total lipids ratio 
++ 'triglycerides:total lipids ratio' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020948
+Label(s): salicylic acid measurement 
++ 'salicylic acid measurement' SubClassOf 'metabolite measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020949
+Label(s): clonal hematopoiesis mutation measurement 
++ 'clonal hematopoiesis mutation measurement' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020957
+Label(s): tetranectin measurement 
++ 'tetranectin measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020958
+Label(s): total brassicasterol measurement 
++ 'total brassicasterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020966
+Label(s): free sitosterol measurement 
++ 'free sitosterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020967
+Label(s): esterified sitosterol measurement 
++ 'esterified sitosterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020968
+Label(s): total stigmasterol measurement 
++ 'total stigmasterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020969
+Label(s): free stigmasterol measurement 
++ 'free stigmasterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://purl.obolibrary.org/obo/HP_0034241
+Label(s): Prenatal death 
++ 'Prenatal death' SubClassOf 'age at death'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020956
+Label(s): pancreatic secretory trypsin inhibitor protein measurement 
++ 'pancreatic secretory trypsin inhibitor protein measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020959
+Label(s): free brassicasterol measurement 
++ 'free brassicasterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020964
+Label(s): esterified campesterol measurement 
++ 'esterified campesterol measurement' SubClassOf 'campesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030079
+Label(s): paracentesis 
++ 'paracentesis' SubClassOf 'collecting specimen from organism'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030078
+Label(s): droplet-based single-cell RNA library preparation 
++ 'droplet-based single-cell RNA library preparation' SubClassOf 'single cell library construction'
+
+Class: http://purl.obolibrary.org/obo/HP_0005268
+Label(s): Miscarriage 
++ 'Miscarriage' SubClassOf 'Prenatal death'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020970
+Label(s): esterified stigmasterol measurement 
++ 'esterified stigmasterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://purl.obolibrary.org/obo/EFO_0011022
+Label(s): BRCA2 mutation carier statu 
++ 'BRCA2 mutation carier statu' SubClassOf 'carrier status'
+
+Class: http://purl.obolibrary.org/obo/EFO_0011021
+Label(s): BRCA1 mutation carier status 
++ 'BRCA1 mutation carier status' SubClassOf 'carrier status'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020965
+Label(s): total sitosterol measurement 
++ 'total sitosterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020963
+Label(s): free campesterol measurement 
++ 'free campesterol measurement' SubClassOf 'campesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020962
+Label(s): total campesterol measurement 
++ 'total campesterol measurement' SubClassOf 'campesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020961
+Label(s): free lanosterol measurement 
++ 'free lanosterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020960
+Label(s): esterified brassicasterol measurement 
++ 'esterified brassicasterol measurement' SubClassOf 'phytosterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020955
+Label(s): beta-microseminoprotein measurement 
++ 'beta-microseminoprotein measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020954
+Label(s): pigement epithleium-derived factor (PEDF) measurement 
++ 'pigement epithleium-derived factor (PEDF) measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020953
+Label(s): omentin measurement 
++ 'omentin measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020952
+Label(s): dopamine beta-hydroxylase measurement 
++ 'dopamine beta-hydroxylase measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020951
+Label(s): apolipoprotein H measurement 
++ 'apolipoprotein H measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020950
+Label(s): apolipoprotein C measurement 
++ 'apolipoprotein C measurement' SubClassOf 'blood protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020945
+Label(s): free cholesterol:total lipids ratio 
++ 'free cholesterol:total lipids ratio' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020944
+Label(s): cholesteryl esters:total lipids ratio 
++ 'cholesteryl esters:total lipids ratio' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020943
+Label(s): cholesterol:total lipids ratio 
++ 'cholesterol:total lipids ratio' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020942
+Label(s): propionylcarnitine measurement 
++ 'propionylcarnitine measurement' SubClassOf 'cardiovascular disease biomarker measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020941
+Label(s): lysophosphatidylcholine 15:0 measurement 
++ 'lysophosphatidylcholine 15:0 measurement' SubClassOf 'lysophosphatidylcholine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020940
+Label(s): platelet function test 
++ 'platelet function test' SubClassOf 'platelet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020933
+Label(s): HIV resevoir measurement 
++ 'HIV resevoir measurement' SubClassOf 'infectious disease biomarker'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020932
+Label(s): galectin-1 measurement 
++ 'galectin-1 measurement' SubClassOf 'blood protein measurement'
 
