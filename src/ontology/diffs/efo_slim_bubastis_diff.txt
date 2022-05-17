@@ -1,211 +1,949 @@
 Ontology Diff Summary
-Diff date: 2022/04/19 17:34:58
+Diff date: 2022/05/17 10:10:14
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 8
-Number of classes added: 39
-Number of classes deleted: 0
+Number of classes changed: 45
+Number of classes added: 146
+Number of classes deleted: 40
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008440
-Label(s): tag based single cell RNA sequencing 
-- 'tag based single cell RNA sequencing' SubClassOf 'single cell sequencing'
-+ 'tag based single cell RNA sequencing' SubClassOf 'single-cell RNA sequencing'
+Class: http://www.ebi.ac.uk/efo/EFO_0600086
+Label(s): appendectomy 
+- 'appendectomy' SubClassOf 'medical procedure'
++ 'appendectomy' SubClassOf http://www.ebi.ac.uk/efo/EFO_0020979
 
-Class: http://purl.obolibrary.org/obo/HP_0003826
-Label(s): Stillbirth 
-- 'Stillbirth' SubClassOf 'age at death'
-+ 'Stillbirth' SubClassOf http://purl.obolibrary.org/obo/HP_0034241
+Class: http://www.ebi.ac.uk/efo/EFO_0030004
+Label(s): 10x 5' transcription profiling 
+- '10x 5' transcription profiling' SubClassOf '10x technology'
++ '10x 5' transcription profiling' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030080
 
-Class: http://www.ebi.ac.uk/efo/EFO_0008441
-Label(s): full length single cell RNA sequencing 
-- 'full length single cell RNA sequencing' SubClassOf 'single cell sequencing'
-+ 'full length single cell RNA sequencing' SubClassOf 'single-cell RNA sequencing'
+Class: http://www.ebi.ac.uk/EFO/EFO_0020908
+Label(s): low density lipoprotein particle size change measurement 
+- 'low density lipoprotein particle size change measurement' SubClassOf 'low density lipoprotein particle size measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0005685
-Label(s): RNA-seq of non coding RNA from single cells 
-- 'RNA-seq of non coding RNA from single cells' SubClassOf 'single cell sequencing'
-+ 'RNA-seq of non coding RNA from single cells' SubClassOf 'single-cell RNA sequencing'
+Class: http://www.ebi.ac.uk/EFO/EFO_0020907
+Label(s): very low density lipoprotein particle size change measurement 
+- 'very low density lipoprotein particle size change measurement' SubClassOf 'very low density lipoprotein particle size measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0005684
-Label(s): RNA-seq of coding RNA from single cells 
-- 'RNA-seq of coding RNA from single cells' SubClassOf 'single cell sequencing'
-+ 'RNA-seq of coding RNA from single cells' SubClassOf 'single-cell RNA sequencing'
+Class: http://www.ebi.ac.uk/EFO/EFO_0020905
+Label(s): free cholesterol change measurement 
+- 'free cholesterol change measurement' SubClassOf 'free cholesterol measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0030029
-Label(s): NanoString digital spatial profiling 
-+ 'NanoString digital spatial profiling' SubClassOf 'library preparation'
+Class: http://www.ebi.ac.uk/EFO/EFO_0020904
+Label(s): esterified cholesterol change measurement 
+- 'esterified cholesterol change measurement' SubClassOf 'esterified cholesterol measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0006795
-Label(s): serum VEGFR2 concentration measurement 
-- 'serum VEGFR2 concentration measurement' SubClassOf 'measurement'
-+ 'serum VEGFR2 concentration measurement' SubClassOf 'cardiovascular disease biomarker measurement'
+Class: http://www.ebi.ac.uk/EFO/EFO_0020903
+Label(s): phospholipid change measurement 
+- 'phospholipid change measurement' SubClassOf 'phospholipid measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0007693
-Label(s): Hi-C 
-- 'Hi-C' SubClassOf 'ligation-free chromosome conformation capture assay'
-+ 'Hi-C' SubClassOf 'ligation-mediated chromosome conformation capture assay'
+Class: http://www.ebi.ac.uk/EFO/EFO_0020901
+Label(s): chylomicron change measurement 
+- 'chylomicron change measurement' SubClassOf 'chylomicron measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030003
+Label(s): 10x 3' transcription profiling 
+- '10x 3' transcription profiling' SubClassOf '10x technology'
++ '10x 3' transcription profiling' SubClassOf http://www.ebi.ac.uk/efo/EFO_0030080
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010681
+Label(s): ileostomy 
+- 'ileostomy' SubClassOf 'medical procedure'
++ 'ileostomy' SubClassOf http://www.ebi.ac.uk/efo/EFO_0020979
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020896
+Label(s): glycoprotein change measurement 
+- 'glycoprotein change measurement' SubClassOf 'glycoprotein measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020895
+Label(s): serum albumin change measurement 
+- 'serum albumin change measurement' SubClassOf 'serum albumin measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020894
+Label(s): creatinine change measurement 
+- 'creatinine change measurement' SubClassOf 'creatinine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020893
+Label(s): 3-hydroxybutyrate change measurement 
+- '3-hydroxybutyrate change measurement' SubClassOf '3-hydroxybutyrate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020892
+Label(s): acetate change measurement 
+- 'acetate change measurement' SubClassOf 'acetate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020891
+Label(s): tyrosine change measurement 
+- 'tyrosine change measurement' SubClassOf 'tyrosine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020890
+Label(s): phenylalanine change measurement 
+- 'phenylalanine change measurement' SubClassOf 'phenylalanine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020889
+Label(s): valine change measurement 
+- 'valine change measurement' SubClassOf 'valine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020888
+Label(s): leucine change measurement 
+- 'leucine change measurement' SubClassOf 'leucine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020887
+Label(s): isoleucine change measurement 
+- 'isoleucine change measurement' SubClassOf 'isoleucine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020886
+Label(s): histidine change measurement 
+- 'histidine change measurement' SubClassOf 'histidine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020885
+Label(s): glutamine change measurement 
+- 'glutamine change measurement' SubClassOf 'glutamine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020884
+Label(s): alanine change measurement 
+- 'alanine change measurement' SubClassOf 'alanine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020883
+Label(s): citrate change measurement 
+- 'citrate change measurement' SubClassOf 'citrate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020882
+Label(s): lactate change measurement 
+- 'lactate change measurement' SubClassOf 'lactate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020881
+Label(s): glucose change measurement 
+- 'glucose change measurement' SubClassOf 'glucose measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020880
+Label(s): polyunsaturated fatty acid change measurement 
+- 'polyunsaturated fatty acid change measurement' SubClassOf 'polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020879
+Label(s): omega-6 polyunsaturated fatty acid change measurement 
+- 'omega-6 polyunsaturated fatty acid change measurement' SubClassOf 'omega-6 polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020878
+Label(s): omega-3 polyunsaturated fatty acid change measurement 
+- 'omega-3 polyunsaturated fatty acid change measurement' SubClassOf 'omega-3 polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020877
+Label(s): linoleic acid change measurement 
+- 'linoleic acid change measurement' SubClassOf 'linoleic acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020876
+Label(s): docosahexaenoic acid change measurement 
+- 'docosahexaenoic acid change measurement' SubClassOf 'docosahexaenoic acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020875
+Label(s): fatty acid change measurement 
+- 'fatty acid change measurement' SubClassOf 'fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020874
+Label(s): apolipoprotein B change measurement 
+- 'apolipoprotein B change measurement' SubClassOf 'apolipoprotein B measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020873
+Label(s): apolipoprotein A 1 change measurement 
+- 'apolipoprotein A 1 change measurement' SubClassOf 'apolipoprotein A 1 measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020872
+Label(s): sphingomyelin change measurement 
+- 'sphingomyelin change measurement' SubClassOf 'sphingomyelin measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020871
+Label(s): phosphatidylcholine change measurement 
+- 'phosphatidylcholine change measurement' SubClassOf 'phosphatidylcholine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020870
+Label(s): choline change measurement 
+- 'choline change measurement' SubClassOf 'choline measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020869
+Label(s): glycerophospholipid change measurement 
+- 'glycerophospholipid change measurement' SubClassOf 'glycerophospholipid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020868
+Label(s): diglyceride change measurement 
+- 'diglyceride change measurement' SubClassOf 'diglyceride measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020867
+Label(s): remnant cholesterol change measurement 
+- 'remnant cholesterol change measurement' SubClassOf 'remnant cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020866
+Label(s): high density lipoprotein particle size change measurement 
+- 'high density lipoprotein particle size change measurement' SubClassOf 'high density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020859
+Label(s): lipid change measurement 
+- 'lipid change measurement' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020857
+Label(s): very low density lipoprotein cholesterol change measurement 
+- 'very low density lipoprotein cholesterol change measurement' SubClassOf 'very low density lipoprotein cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020906
+Label(s): intermediate density lipoprotein change measurement 
+- 'intermediate density lipoprotein change measurement' SubClassOf 'intermediate density lipoprotein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0005244
+Label(s): gastric bypass 
+- 'gastric bypass' SubClassOf 'medical procedure'
++ 'gastric bypass' SubClassOf http://www.ebi.ac.uk/efo/EFO_0020979
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020946
-Label(s): phospholipids:total lipids ratio 
-+ 'phospholipids:total lipids ratio' SubClassOf 'lipid measurement'
+Class: http://purl.obolibrary.org/obo/BTO_0001516
+Label(s): BA/F3 cell 
++ 'BA/F3 cell' SubClassOf 'interleukin (Mus musculus)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020947
-Label(s): triglycerides:total lipids ratio 
-+ 'triglycerides:total lipids ratio' SubClassOf 'lipid measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020987
+Label(s): mastectomy 
++ 'mastectomy' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020948
-Label(s): salicylic acid measurement 
-+ 'salicylic acid measurement' SubClassOf 'metabolite measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003836
+Label(s): lipoprotein 
++ 'lipoprotein' SubClassOf 'protein'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020949
-Label(s): clonal hematopoiesis mutation measurement 
-+ 'clonal hematopoiesis mutation measurement' SubClassOf 'measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003810
+Label(s): interleukin-22 (Homo sapiens) 
++ 'interleukin-22 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020957
-Label(s): tetranectin measurement 
-+ 'tetranectin measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003807
+Label(s): interleukin-33 (Rattus norvegicus) 
++ 'interleukin-33 (Rattus norvegicus)' SubClassOf 'interleukin (Rattus norvegicus)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020958
-Label(s): total brassicasterol measurement 
-+ 'total brassicasterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003806
+Label(s): interleukin-26 (Homo sapiens) 
++ 'interleukin-26 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020966
-Label(s): free sitosterol measurement 
-+ 'free sitosterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003805
+Label(s): interleukin-24 (Homo sapiens) 
++ 'interleukin-24 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020967
-Label(s): esterified sitosterol measurement 
-+ 'esterified sitosterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003804
+Label(s): interleukin-21 (Mus musculus) 
++ 'interleukin-21 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020968
-Label(s): total stigmasterol measurement 
-+ 'total stigmasterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003803
+Label(s): interleukin-20 (Homo sapiens) 
++ 'interleukin-20 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020969
-Label(s): free stigmasterol measurement 
-+ 'free stigmasterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003801
+Label(s): interleukin-19 (Homo sapiens) 
++ 'interleukin-19 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://purl.obolibrary.org/obo/HP_0034241
-Label(s): Prenatal death 
-+ 'Prenatal death' SubClassOf 'age at death'
+Class: http://www.ebi.ac.uk/efo/EFO_0003800
+Label(s): interleukin-17 (Mus musculus) 
++ 'interleukin-17 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020956
-Label(s): pancreatic secretory trypsin inhibitor protein measurement 
-+ 'pancreatic secretory trypsin inhibitor protein measurement' SubClassOf 'blood protein measurement'
+Class: http://purl.obolibrary.org/obo/CHEBI_7044
+Label(s): myoglobin 
++ 'myoglobin' SubClassOf 'protein'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020959
-Label(s): free brassicasterol measurement 
-+ 'free brassicasterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0005688
+Label(s): NHDL cholesterol 
++ 'NHDL cholesterol' SubClassOf 'cholesterol'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020964
-Label(s): esterified campesterol measurement 
-+ 'esterified campesterol measurement' SubClassOf 'campesterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003798
+Label(s): interleukin-13 (Mus musculus) 
++ 'interleukin-13 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0030079
-Label(s): paracentesis 
-+ 'paracentesis' SubClassOf 'collecting specimen from organism'
+Class: http://www.ebi.ac.uk/efo/EFO_0003797
+Label(s): interleukin-13 (Homo sapiens) 
++ 'interleukin-13 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0030078
-Label(s): droplet-based single-cell RNA library preparation 
-+ 'droplet-based single-cell RNA library preparation' SubClassOf 'single cell library construction'
+Class: http://www.ebi.ac.uk/efo/EFO_0003796
+Label(s): interleukin-1 beta (Rattus norvegicus) 
++ 'interleukin-1 beta (Rattus norvegicus)' SubClassOf 'interleukin (Rattus norvegicus)'
 
-Class: http://purl.obolibrary.org/obo/HP_0005268
-Label(s): Miscarriage 
-+ 'Miscarriage' SubClassOf 'Prenatal death'
+Class: http://www.ebi.ac.uk/efo/EFO_0003795
+Label(s): interleukin-1 beta (Mus musculus) 
++ 'interleukin-1 beta (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020970
-Label(s): esterified stigmasterol measurement 
-+ 'esterified stigmasterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003794
+Label(s): interleukin-1 beta (Homo sapiens) 
++ 'interleukin-1 beta (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
 
-Class: http://purl.obolibrary.org/obo/EFO_0011022
-Label(s): BRCA2 mutation carier statu 
-+ 'BRCA2 mutation carier statu' SubClassOf 'carrier status'
+Class: http://www.ebi.ac.uk/efo/EFO_0003793
+Label(s): interleukin (Rattus norvegicus) 
++ 'interleukin (Rattus norvegicus)' SubClassOf 'interleukin'
 
-Class: http://purl.obolibrary.org/obo/EFO_0011021
-Label(s): BRCA1 mutation carier status 
-+ 'BRCA1 mutation carier status' SubClassOf 'carrier status'
+Class: http://www.ebi.ac.uk/efo/EFO_0003792
+Label(s): interleukin (Mus musculus) 
++ 'interleukin (Mus musculus)' SubClassOf 'interleukin'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020965
-Label(s): total sitosterol measurement 
-+ 'total sitosterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003791
+Label(s): interleukin (Homo sapiens) 
++ 'interleukin (Homo sapiens)' SubClassOf 'interleukin'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020963
-Label(s): free campesterol measurement 
-+ 'free campesterol measurement' SubClassOf 'campesterol measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003786
+Label(s): cytokine 
++ 'cytokine' SubClassOf 'protein'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020962
-Label(s): total campesterol measurement 
-+ 'total campesterol measurement' SubClassOf 'campesterol measurement'
+Class: http://purl.obolibrary.org/obo/OBA_2001004
+Label(s): age of onset of cataract 
++ 'age of onset of cataract' SubClassOf 'Onset'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020961
-Label(s): free lanosterol measurement 
-+ 'free lanosterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://purl.obolibrary.org/obo/OBA_2001007
+Label(s): age of onset of hyperlipidemia 
++ 'age of onset of hyperlipidemia' SubClassOf 'Onset'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020960
-Label(s): esterified brassicasterol measurement 
-+ 'esterified brassicasterol measurement' SubClassOf 'phytosterol measurement'
+Class: http://purl.obolibrary.org/obo/OBA_2001009
+Label(s): age of onset of Parkinson disease 
++ 'age of onset of Parkinson disease' SubClassOf 'Onset'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020955
-Label(s): beta-microseminoprotein measurement 
-+ 'beta-microseminoprotein measurement' SubClassOf 'blood protein measurement'
+Class: http://purl.obolibrary.org/obo/OBA_2001012
+Label(s): age of onset of type 1 diabetes mellitus 
++ 'age of onset of type 1 diabetes mellitus' SubClassOf 'Onset'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020954
-Label(s): pigement epithleium-derived factor (PEDF) measurement 
-+ 'pigement epithleium-derived factor (PEDF) measurement' SubClassOf 'blood protein measurement'
+Class: http://purl.obolibrary.org/obo/OBA_2001018
+Label(s): age of onset of amyotrophic lateral sclerosis 
++ 'age of onset of amyotrophic lateral sclerosis' SubClassOf 'Onset'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020953
-Label(s): omentin measurement 
-+ 'omentin measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0003199
+Label(s): leptin 
++ 'leptin' SubClassOf 'protein'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020952
-Label(s): dopamine beta-hydroxylase measurement 
-+ 'dopamine beta-hydroxylase measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0004580
+Label(s): interleukin 18 (Homo sapiens) 
++ 'interleukin 18 (Homo sapiens)' SubClassOf 'interleukin'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020951
-Label(s): apolipoprotein H measurement 
-+ 'apolipoprotein H measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020989
+Label(s): bone marrow transplantation 
++ 'bone marrow transplantation' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020950
-Label(s): apolipoprotein C measurement 
-+ 'apolipoprotein C measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020988
+Label(s): blood transfusion 
++ 'blood transfusion' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020945
-Label(s): free cholesterol:total lipids ratio 
-+ 'free cholesterol:total lipids ratio' SubClassOf 'lipid measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020981
+Label(s): dependence on enabling machines and devices 
++ 'dependence on enabling machines and devices' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020944
-Label(s): cholesteryl esters:total lipids ratio 
-+ 'cholesteryl esters:total lipids ratio' SubClassOf 'lipid measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020980
+Label(s): radiation exposure 
++ 'radiation exposure' SubClassOf 'environmental exposure measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020943
-Label(s): cholesterol:total lipids ratio 
-+ 'cholesterol:total lipids ratio' SubClassOf 'lipid measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020979
+Label(s): digestive system surgery 
++ 'digestive system surgery' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020942
-Label(s): propionylcarnitine measurement 
-+ 'propionylcarnitine measurement' SubClassOf 'cardiovascular disease biomarker measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020977
+Label(s): occupational attainment 
++ 'occupational attainment' SubClassOf 'cognitive function measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020941
-Label(s): lysophosphatidylcholine 15:0 measurement 
-+ 'lysophosphatidylcholine 15:0 measurement' SubClassOf 'lysophosphatidylcholine measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020975
+Label(s): total knee arthroplasty 
++ 'total knee arthroplasty' SubClassOf 'medical procedure'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020940
-Label(s): platelet function test 
-+ 'platelet function test' SubClassOf 'platelet measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020974
+Label(s): revision of total joint arthroplasty 
++ 'revision of total joint arthroplasty' SubClassOf 'total joint arthroplasty'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020933
-Label(s): HIV resevoir measurement 
-+ 'HIV resevoir measurement' SubClassOf 'infectious disease biomarker'
+Class: http://www.ebi.ac.uk/efo/EFO_0020973
+Label(s): revision of total hip arthroplasty 
++ 'revision of total hip arthroplasty' SubClassOf 'total joint arthroplasty'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020932
-Label(s): galectin-1 measurement 
-+ 'galectin-1 measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020972
+Label(s): revision of total knee arthroplasty 
++ 'revision of total knee arthroplasty' SubClassOf 'total joint arthroplasty'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020908
+Label(s): low density lipoprotein particle size change measurement 
++ 'low density lipoprotein particle size change measurement' SubClassOf 'low density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020907
+Label(s): very low density lipoprotein particle size change measurement 
++ 'very low density lipoprotein particle size change measurement' SubClassOf 'very low density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020906
+Label(s): intermediate density lipoprotein change measurement 
++ 'intermediate density lipoprotein change measurement' SubClassOf 'intermediate density lipoprotein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020905
+Label(s): free cholesterol change measurement 
++ 'free cholesterol change measurement' SubClassOf 'free cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020903
+Label(s): phospholipid change measurement 
++ 'phospholipid change measurement' SubClassOf 'phospholipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020901
+Label(s): chylomicron change measurement 
++ 'chylomicron change measurement' SubClassOf 'chylomicron measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020904
+Label(s): esterified cholesterol change measurement 
++ 'esterified cholesterol change measurement' SubClassOf 'esterified cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0005816
+Label(s): microtubule-associated protein tau 
++ 'microtubule-associated protein tau' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020895
+Label(s): serum albumin change measurement 
++ 'serum albumin change measurement' SubClassOf 'serum albumin measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020894
+Label(s): creatinine change measurement 
++ 'creatinine change measurement' SubClassOf 'creatinine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020893
+Label(s): 3-hydroxybutyrate change measurement 
++ '3-hydroxybutyrate change measurement' SubClassOf '3-hydroxybutyrate measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020891
+Label(s): tyrosine change measurement 
++ 'tyrosine change measurement' SubClassOf 'tyrosine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020890
+Label(s): phenylalanine change measurement 
++ 'phenylalanine change measurement' SubClassOf 'phenylalanine measurement'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001026
+Label(s): age of onset of migraine disorder 
++ 'age of onset of migraine disorder' SubClassOf 'Onset'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020889
+Label(s): valine change measurement 
++ 'valine change measurement' SubClassOf 'valine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020887
+Label(s): isoleucine change measurement 
++ 'isoleucine change measurement' SubClassOf 'isoleucine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020886
+Label(s): histidine change measurement 
++ 'histidine change measurement' SubClassOf 'histidine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020885
+Label(s): glutamine change measurement 
++ 'glutamine change measurement' SubClassOf 'glutamine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020884
+Label(s): alanine change measurement 
++ 'alanine change measurement' SubClassOf 'alanine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020883
+Label(s): citrate change measurement 
++ 'citrate change measurement' SubClassOf 'citrate measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020882
+Label(s): lactate change measurement 
++ 'lactate change measurement' SubClassOf 'lactate measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020881
+Label(s): glucose change measurement 
++ 'glucose change measurement' SubClassOf 'glucose measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020880
+Label(s): polyunsaturated fatty acid change measurement 
++ 'polyunsaturated fatty acid change measurement' SubClassOf 'polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020879
+Label(s): omega-6 polyunsaturated fatty acid change measurement 
++ 'omega-6 polyunsaturated fatty acid change measurement' SubClassOf 'omega-6 polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020878
+Label(s): omega-3 polyunsaturated fatty acid change measurement 
++ 'omega-3 polyunsaturated fatty acid change measurement' SubClassOf 'omega-3 polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020877
+Label(s): linoleic acid change measurement 
++ 'linoleic acid change measurement' SubClassOf 'linoleic acid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020876
+Label(s): docosahexaenoic acid change measurement 
++ 'docosahexaenoic acid change measurement' SubClassOf 'docosahexaenoic acid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020875
+Label(s): fatty acid change measurement 
++ 'fatty acid change measurement' SubClassOf 'fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020874
+Label(s): apolipoprotein B change measurement 
++ 'apolipoprotein B change measurement' SubClassOf 'apolipoprotein B measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020873
+Label(s): apolipoprotein A 1 change measurement 
++ 'apolipoprotein A 1 change measurement' SubClassOf 'apolipoprotein A 1 measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020872
+Label(s): sphingomyelin change measurement 
++ 'sphingomyelin change measurement' SubClassOf 'sphingomyelin measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020871
+Label(s): phosphatidylcholine change measurement 
++ 'phosphatidylcholine change measurement' SubClassOf 'phosphatidylcholine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020870
+Label(s): choline change measurement 
++ 'choline change measurement' SubClassOf 'choline measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020869
+Label(s): glycerophospholipid change measurement 
++ 'glycerophospholipid change measurement' SubClassOf 'glycerophospholipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020868
+Label(s): diglyceride change measurement 
++ 'diglyceride change measurement' SubClassOf 'diglyceride measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020867
+Label(s): remnant cholesterol change measurement 
++ 'remnant cholesterol change measurement' SubClassOf 'remnant cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020866
+Label(s): high density lipoprotein particle size change measurement 
++ 'high density lipoprotein particle size change measurement' SubClassOf 'high density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020859
+Label(s): lipid change measurement 
++ 'lipid change measurement' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020857
+Label(s): very low density lipoprotein cholesterol change measurement 
++ 'very low density lipoprotein cholesterol change measurement' SubClassOf 'very low density lipoprotein cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003172
+Label(s): pleiotrophin 
++ 'pleiotrophin' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009916
+Label(s): ATP binding cassette subfamily B member 6 
++ 'ATP binding cassette subfamily B member 6' SubClassOf 'protein'
+
+Class: http://purl.obolibrary.org/obo/PR_000016283
+Label(s): thyroglobulin 
++ 'thyroglobulin' SubClassOf 'protein'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_17089
+Label(s): glycoprotein 
++ 'glycoprotein' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003317
+Label(s): anti-CD3 
++ 'anti-CD3' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003316
+Label(s): basic fibroblast growth factor 
++ 'basic fibroblast growth factor' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003308
+Label(s): heregulin B1 
++ 'heregulin B1' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003304
+Label(s): anti-CD28 
++ 'anti-CD28' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003303
+Label(s): hepatocyte growth factor 
++ 'hepatocyte growth factor' SubClassOf 'protein'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_16113
+Label(s): cholesterol 
++ 'cholesterol' SubClassOf 'lipoprotein'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001032
+Label(s): age of onset of narcolepsy-cataplexy syndrome 
++ 'age of onset of narcolepsy-cataplexy syndrome' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001031
+Label(s): age of onset of refractive error 
++ 'age of onset of refractive error' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001030
+Label(s): age of onset of myopia 
++ 'age of onset of myopia' SubClassOf 'age of onset of refractive error'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003298
+Label(s): epidermal growth factor 
++ 'epidermal growth factor' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003296
+Label(s): interleukin-4 (Homo sapiens) 
++ 'interleukin-4 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003294
+Label(s): listeriolysin 
++ 'listeriolysin' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003292
+Label(s): interleukin-2 (Mus musculus) 
++ 'interleukin-2 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001029
+Label(s): age of onset of multiple sclerosis 
++ 'age of onset of multiple sclerosis' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001028
+Label(s): age of onset of migraine without aura, susceptibility to, 4 
++ 'age of onset of migraine without aura, susceptibility to, 4' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001027
+Label(s): age of onset of migraine with aura 
++ 'age of onset of migraine with aura' SubClassOf 'age of onset of migraine disorder'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001024
+Label(s): age of onset of Huntington disease 
++ 'age of onset of Huntington disease' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001022
+Label(s): age of onset of frontotemporal dementia 
++ 'age of onset of frontotemporal dementia' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001020
+Label(s): age of onset of Buruli ulcer disease 
++ 'age of onset of Buruli ulcer disease' SubClassOf 'Onset'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003276
+Label(s): vascular endothelial growth factor 
++ 'vascular endothelial growth factor' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003799
+Label(s): interleukin-14 (Mus musculus) 
++ 'interleukin-14 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001019
+Label(s): age of onset of bipolar disorder 
++ 'age of onset of bipolar disorder' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001017
+Label(s): age of onset of allergic disease 
++ 'age of onset of allergic disease' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001016
+Label(s): age of onset of alcohol dependence 
++ 'age of onset of alcohol dependence' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001015
+Label(s): age of onset of childhood onset asthma 
++ 'age of onset of childhood onset asthma' SubClassOf 'age of onset of asthma'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001013
+Label(s): age of onset of type 2 diabetes mellitus 
++ 'age of onset of type 2 diabetes mellitus' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001011
+Label(s): age of onset of schizophrenia 
++ 'age of onset of schizophrenia' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001010
+Label(s): age of onset of essential hypertension 
++ 'age of onset of essential hypertension' SubClassOf 'Onset'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003271
+Label(s): tumor necrosis factor-alpha 
++ 'tumor necrosis factor-alpha' SubClassOf 'cytokine'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001008
+Label(s): age of onset of osteoarthritis 
++ 'age of onset of osteoarthritis' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001002
+Label(s): age of onset of urinary bladder carcinoma 
++ 'age of onset of urinary bladder carcinoma' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001001
+Label(s): age of onset of asthma 
++ 'age of onset of asthma' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001000
+Label(s): age of onset of Alzheimer disease 
++ 'age of onset of Alzheimer disease' SubClassOf 'Onset'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003266
+Label(s): neuromedin U 
++ 'neuromedin U' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003241
+Label(s): flagellin 
++ 'flagellin' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003236
+Label(s): thrombopoietin 
++ 'thrombopoietin' SubClassOf 'glycoprotein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003234
+Label(s): follicle stimulating hormone 
++ 'follicle stimulating hormone' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003233
+Label(s): erythropoietin 
++ 'erythropoietin' SubClassOf 'glycoprotein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004195
+Label(s): LDL cholesterol 
++ 'LDL cholesterol' SubClassOf 'cholesterol'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003200
+Label(s): oncostatin M 
++ 'oncostatin M' SubClassOf 'interleukin'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004100
+Label(s): interleukin 
++ 'interleukin' SubClassOf 'cytokine'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030082
+Label(s): polygenic risk score 
++ 'polygenic risk score' SubClassOf 'measurement'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_47775
+Label(s): HDL cholesterol 
++ 'HDL cholesterol' SubClassOf 'cholesterol'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_36080
+Label(s): protein 
++ 'protein' SubClassOf 'biological macromolecule'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003191
+Label(s): ocimene 
++ 'ocimene' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003183
+Label(s): thrombin 
++ 'thrombin' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030081
+Label(s): HLA typing by NGS 
++ 'HLA typing by NGS' SubClassOf 'genotyping by high throughput sequencing'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0030080
+Label(s): 10x transcription profiling 
++ '10x transcription profiling' SubClassOf '10x technology'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009914
+Label(s): FA complementation group E 
++ 'FA complementation group E' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009915
+Label(s): TBC1 domain family member 24 
++ 'TBC1 domain family member 24' SubClassOf 'protein'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_5931
+Label(s): insulin 
++ 'insulin' SubClassOf 'protein'
+
+Class: http://purl.obolibrary.org/obo/PR_000003918
+Label(s): serum albumin 
++ 'serum albumin' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003024
+Label(s): interferon gamma 
++ 'interferon gamma' SubClassOf 'cytokine'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003023
+Label(s): interferon beta 
++ 'interferon beta' SubClassOf 'cytokine'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003022
+Label(s): interferon alpha 2a 
++ 'interferon alpha 2a' SubClassOf 'cytokine'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003021
+Label(s): interferon alpha 
++ 'interferon alpha' SubClassOf 'cytokine'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010161
+Label(s): carbonic anhydrase 2 
++ 'carbonic anhydrase 2' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020888
+Label(s): leucine change measurement 
++ 'leucine change measurement' SubClassOf 'leucine measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020892
+Label(s): acetate change measurement 
++ 'acetate change measurement' SubClassOf 'acetate measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020896
+Label(s): glycoprotein change measurement 
++ 'glycoprotein change measurement' SubClassOf 'glycoprotein measurement'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001033
+Label(s): age of onset of coronary atherosclerosis 
++ 'age of onset of coronary atherosclerosis' SubClassOf 'Onset'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0002679
+Label(s): urocortin I 
++ 'urocortin I' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0002680
+Label(s): urocortin II 
++ 'urocortin II' SubClassOf 'protein'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003941
+Label(s): sex hormone-binding globulin 
++ 'sex hormone-binding globulin' SubClassOf 'glycoprotein'
+
+
+################
+@Classes deleted from this version
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020908
+Label(s): low density lipoprotein particle size change measurement 
++ 'low density lipoprotein particle size change measurement' SubClassOf 'low density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020907
+Label(s): very low density lipoprotein particle size change measurement 
++ 'very low density lipoprotein particle size change measurement' SubClassOf 'very low density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020905
+Label(s): free cholesterol change measurement 
++ 'free cholesterol change measurement' SubClassOf 'free cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020904
+Label(s): esterified cholesterol change measurement 
++ 'esterified cholesterol change measurement' SubClassOf 'esterified cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020903
+Label(s): phospholipid change measurement 
++ 'phospholipid change measurement' SubClassOf 'phospholipid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020901
+Label(s): chylomicron change measurement 
++ 'chylomicron change measurement' SubClassOf 'chylomicron measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020896
+Label(s): glycoprotein change measurement 
++ 'glycoprotein change measurement' SubClassOf 'glycoprotein measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020895
+Label(s): serum albumin change measurement 
++ 'serum albumin change measurement' SubClassOf 'serum albumin measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020894
+Label(s): creatinine change measurement 
++ 'creatinine change measurement' SubClassOf 'creatinine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020893
+Label(s): 3-hydroxybutyrate change measurement 
++ '3-hydroxybutyrate change measurement' SubClassOf '3-hydroxybutyrate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020892
+Label(s): acetate change measurement 
++ 'acetate change measurement' SubClassOf 'acetate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020891
+Label(s): tyrosine change measurement 
++ 'tyrosine change measurement' SubClassOf 'tyrosine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020890
+Label(s): phenylalanine change measurement 
++ 'phenylalanine change measurement' SubClassOf 'phenylalanine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020889
+Label(s): valine change measurement 
++ 'valine change measurement' SubClassOf 'valine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020888
+Label(s): leucine change measurement 
++ 'leucine change measurement' SubClassOf 'leucine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020887
+Label(s): isoleucine change measurement 
++ 'isoleucine change measurement' SubClassOf 'isoleucine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020886
+Label(s): histidine change measurement 
++ 'histidine change measurement' SubClassOf 'histidine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020885
+Label(s): glutamine change measurement 
++ 'glutamine change measurement' SubClassOf 'glutamine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020884
+Label(s): alanine change measurement 
++ 'alanine change measurement' SubClassOf 'alanine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020883
+Label(s): citrate change measurement 
++ 'citrate change measurement' SubClassOf 'citrate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020882
+Label(s): lactate change measurement 
++ 'lactate change measurement' SubClassOf 'lactate measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020881
+Label(s): glucose change measurement 
++ 'glucose change measurement' SubClassOf 'glucose measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020880
+Label(s): polyunsaturated fatty acid change measurement 
++ 'polyunsaturated fatty acid change measurement' SubClassOf 'polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020879
+Label(s): omega-6 polyunsaturated fatty acid change measurement 
++ 'omega-6 polyunsaturated fatty acid change measurement' SubClassOf 'omega-6 polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020878
+Label(s): omega-3 polyunsaturated fatty acid change measurement 
++ 'omega-3 polyunsaturated fatty acid change measurement' SubClassOf 'omega-3 polyunsaturated fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020877
+Label(s): linoleic acid change measurement 
++ 'linoleic acid change measurement' SubClassOf 'linoleic acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020876
+Label(s): docosahexaenoic acid change measurement 
++ 'docosahexaenoic acid change measurement' SubClassOf 'docosahexaenoic acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020875
+Label(s): fatty acid change measurement 
++ 'fatty acid change measurement' SubClassOf 'fatty acid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020874
+Label(s): apolipoprotein B change measurement 
++ 'apolipoprotein B change measurement' SubClassOf 'apolipoprotein B measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020873
+Label(s): apolipoprotein A 1 change measurement 
++ 'apolipoprotein A 1 change measurement' SubClassOf 'apolipoprotein A 1 measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020872
+Label(s): sphingomyelin change measurement 
++ 'sphingomyelin change measurement' SubClassOf 'sphingomyelin measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020871
+Label(s): phosphatidylcholine change measurement 
++ 'phosphatidylcholine change measurement' SubClassOf 'phosphatidylcholine measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020870
+Label(s): choline change measurement 
++ 'choline change measurement' SubClassOf 'choline measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020869
+Label(s): glycerophospholipid change measurement 
++ 'glycerophospholipid change measurement' SubClassOf 'glycerophospholipid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020868
+Label(s): diglyceride change measurement 
++ 'diglyceride change measurement' SubClassOf 'diglyceride measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020867
+Label(s): remnant cholesterol change measurement 
++ 'remnant cholesterol change measurement' SubClassOf 'remnant cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020866
+Label(s): high density lipoprotein particle size change measurement 
++ 'high density lipoprotein particle size change measurement' SubClassOf 'high density lipoprotein particle size measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020859
+Label(s): lipid change measurement 
++ 'lipid change measurement' SubClassOf 'lipid measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020857
+Label(s): very low density lipoprotein cholesterol change measurement 
++ 'very low density lipoprotein cholesterol change measurement' SubClassOf 'very low density lipoprotein cholesterol measurement'
+
+Class: http://www.ebi.ac.uk/EFO/EFO_0020906
+Label(s): intermediate density lipoprotein change measurement 
++ 'intermediate density lipoprotein change measurement' SubClassOf 'intermediate density lipoprotein measurement'
 
