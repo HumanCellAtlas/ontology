@@ -33,5 +33,8 @@ curl -L http://www.ebi.ac.uk/efo/efo.owl  > mirror/efo.owl && echo "EFO DOWNLOAD
 echo "DOWNLOADING EDAM..."
 curl -L https://www.ebi.ac.uk/ols/ontologies/edam/download  > ../imports/edam.owl && echo "EDAM DOWNLOADED"
 
+echo "DOWNLOADING HPO..."
+curl -L http://purl.obolibrary.org/obo/hp.owl > mirror/hp.owl && echo "HPO DOWNLOADED"
+
 
 
