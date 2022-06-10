@@ -1,123 +1,157 @@
 Ontology Diff Summary
-Diff date: 2022/05/17 10:10:02
+Diff date: 2022/06/10 15:01:33
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/hcao.owl
 Second ontology URI: hcao.owl
-Number of classes changed: 283
-Number of classes added: 1
-Number of classes deleted: 0
+Number of classes changed: 244
+Number of classes added: 7
+Number of classes deleted: 9
  
 
 ################
 @Classes modified from previous
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006723
-Label(s): cochlear modiolus 
-+ 'cochlear modiolus' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0013133
+Label(s): superior phrenic artery 
+- 'superior phrenic artery' SubClassOf 'connected to' some 'descending thoracic aorta'
++ 'superior phrenic artery' SubClassOf 'connected to' some 'descending thoracic aorta'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0010422
 Label(s): primary nodular lymphoid tissue 
 - 'primary nodular lymphoid tissue' SubClassOf 'has part' some 'naive B cell'
 + 'primary nodular lymphoid tissue' SubClassOf 'has part' some 'naive B cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0009129
-Label(s): right atrium endocardium 
-+ 'right atrium endocardium' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035655
+Label(s): paraumbilical vein 
+- 'paraumbilical vein' SubClassOf 'connected to' some 'hepatic portal vein'
++ 'paraumbilical vein' SubClassOf 'connected to' some 'hepatic portal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001747
-Label(s): parenchyma of thyroid gland 
-+ 'parenchyma of thyroid gland' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0011192
+Label(s): superior ophthalmic vein 
+- 'superior ophthalmic vein' SubClassOf 'connected to' some 'cavernous sinus'
++ 'superior ophthalmic vein' SubClassOf 'connected to' some 'cavernous sinus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002499
-Label(s): cochlear labyrinth 
-+ 'cochlear labyrinth' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035547
+Label(s): posterior ciliary vein 
+- 'posterior ciliary vein' SubClassOf 'connected to' some 'superior ophthalmic vein'
+- 'posterior ciliary vein' SubClassOf 'connected to' some 'inferior ophthalmic vein'
++ 'posterior ciliary vein' SubClassOf 'connected to' some 'superior ophthalmic vein'
++ 'posterior ciliary vein' SubClassOf 'connected to' some 'inferior ophthalmic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035606
-Label(s): cartilage of external acoustic meatus 
-+ 'cartilage of external acoustic meatus' SubClassOf 'ectoderm-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0035539
+Label(s): esophageal artery 
+- 'esophageal artery' SubClassOf 'connected to' some 'descending thoracic aorta'
++ 'esophageal artery' SubClassOf 'connected to' some 'descending thoracic aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010062
-Label(s): pharyngotympanic tube epithelium 
-+ 'pharyngotympanic tube epithelium' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035530
+Label(s): basal vein 
+- 'basal vein' SubClassOf 'connected to' some 'great cerebral vein'
++ 'basal vein' SubClassOf 'connected to' some 'great cerebral vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010071
-Label(s): layer of tympanic membrane 
-- 'layer of tympanic membrane' SubClassOf 'anatomical entity'
-+ 'layer of tympanic membrane' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0011191
+Label(s): ophthalmic vein 
+- 'ophthalmic vein' SubClassOf 'craniocervical region vein'
++ 'ophthalmic vein' SubClassOf 'craniocervical region vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004637
-Label(s): otic capsule 
-+ 'otic capsule' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035483
+Label(s): left suprarenal vein 
+- 'left suprarenal vein' SubClassOf 'connected to' some 'left renal vein'
++ 'left suprarenal vein' SubClassOf 'connected to' some 'left renal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011941
-Label(s): lateral angle of scapula 
-- 'lateral angle of scapula' SubClassOf 'angle of scapula'
-+ 'lateral angle of scapula' SubClassOf 'angle of scapula'
+Class: http://purl.obolibrary.org/obo/UBERON_0035474
+Label(s): right subcostal vein 
+- 'right subcostal vein' SubClassOf 'connected to' some 'azygos vein'
++ 'right subcostal vein' SubClassOf 'connected to' some 'azygos vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001929
-Label(s): supraoptic nucleus 
-- 'supraoptic nucleus' SubClassOf 'part_of' some 'periventricular zone of hypothalamus'
-+ 'supraoptic nucleus' SubClassOf 'part_of' some 'periventricular zone of hypothalamus'
+Class: http://purl.obolibrary.org/obo/UBERON_0005994
+Label(s): chorda tendineae 
+- 'chorda tendineae' SubClassOf 'attaches_to' some 'tricuspid valve leaflet'
++ 'chorda tendineae' SubClassOf 'attaches_to' some 'tricuspid valve leaflet'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035130
-Label(s): auditory ossicle endochondral element 
-- 'auditory ossicle endochondral element' SubClassOf 'structure with developmental contribution from neural crest'
-- 'auditory ossicle endochondral element' SubClassOf 'ectoderm-derived structure'
-+ 'auditory ossicle endochondral element' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0035435
+Label(s): right suprarenal vein 
+- 'right suprarenal vein' SubClassOf 'connected to' some 'posterior vena cava'
++ 'right suprarenal vein' SubClassOf 'connected to' some 'posterior vena cava'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0036250
-Label(s): zone of basilar membrane of cochlea 
-+ 'zone of basilar membrane of cochlea' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001626
+Label(s): left coronary artery 
+- 'left coronary artery' SubClassOf 'connected to' some 'ascending aorta'
++ 'left coronary artery' SubClassOf 'connected to' some 'ascending aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0036212
-Label(s): intertragic incisure 
-+ 'intertragic incisure' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001670
+Label(s): inferior cerebellar vein 
+- 'inferior cerebellar vein' SubClassOf 'connected to' some 'transverse sinus'
++ 'inferior cerebellar vein' SubClassOf 'connected to' some 'transverse sinus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035129
-Label(s): pes cartilage element 
-- 'pes cartilage element' SubClassOf 'develops_from' some 'mesenchyme of footplate'
-+ 'pes cartilage element' SubClassOf 'develops_from' some 'mesenchyme of footplate'
+Class: http://purl.obolibrary.org/obo/UBERON_0010181
+Label(s): straight venules of kidney 
+- 'straight venules of kidney' SubClassOf 'connected to' some 'kidney arcuate vein'
++ 'straight venules of kidney' SubClassOf 'connected to' some 'kidney arcuate vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035128
-Label(s): manus cartilage element 
-- 'manus cartilage element' SubClassOf 'develops_from' some 'mesenchyme of handplate'
-+ 'manus cartilage element' SubClassOf 'develops_from' some 'mesenchyme of handplate'
+Class: http://purl.obolibrary.org/obo/UBERON_0035392
+Label(s): cystic vein 
+- 'cystic vein' SubClassOf 'connected to' some 'hepatic portal vein'
++ 'cystic vein' SubClassOf 'connected to' some 'hepatic portal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001762
-Label(s): turbinate bone 
-+ 'turbinate bone' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035374
+Label(s): small cardiac vein 
+- 'small cardiac vein' SubClassOf 'connected to' some 'coronary sinus'
++ 'small cardiac vein' SubClassOf 'connected to' some 'coronary sinus'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0035252
+Label(s): left subcostal vein 
+- 'left subcostal vein' SubClassOf 'connected to' some 'hemiazygos vein'
++ 'left subcostal vein' SubClassOf 'connected to' some 'hemiazygos vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001979
+Label(s): venule 
++ 'venule' SubClassOf http://purl.obolibrary.org/obo/UBERON_8410081
+
+Class: http://purl.obolibrary.org/obo/UBERON_0035183
+Label(s): calcarine artery 
+- 'calcarine artery' SubClassOf 'connected to' some 'posterior cerebral artery'
++ 'calcarine artery' SubClassOf 'connected to' some 'posterior cerebral artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0035152
+Label(s): internal cerebral vein 
+- 'internal cerebral vein' SubClassOf 'connected to' some 'great cerebral vein'
++ 'internal cerebral vein' SubClassOf 'connected to' some 'great cerebral vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0035150
+Label(s): superior cerebral vein 
+- 'superior cerebral vein' SubClassOf 'connected to' some 'superior sagittal sinus'
++ 'superior cerebral vein' SubClassOf 'connected to' some 'superior sagittal sinus'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0000983
 Label(s): metatarsus region 
 - 'metatarsus region' SubClassOf 'part_of' some 'pedal digitopodium region'
 + 'metatarsus region' SubClassOf 'part_of' some 'pedal digitopodium region'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035048
-Label(s): parotid gland excretory duct 
-+ 'parotid gland excretory duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035261
+Label(s): posterior temporal artery 
+- 'posterior temporal artery' SubClassOf 'connected to' some 'superficial temporal artery'
++ 'posterior temporal artery' SubClassOf 'connected to' some 'superficial temporal artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0035045
-Label(s): parotid gland intralobular duct 
-+ 'parotid gland intralobular duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035074
+Label(s): duct of apocrine sweat gland 
+- 'duct of apocrine sweat gland' SubClassOf 'duct'
+- 'duct of apocrine sweat gland' SubClassOf 'part_of' some 'apocrine sweat gland'
+- 'duct of apocrine sweat gland' EquivalentTo 'duct' and ('part_of' some 'apocrine sweat gland')
+- 'duct of apocrine sweat gland' SubClassOf 'ectoderm-derived structure'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0037191
-Label(s): wall of membranous labyrinth 
-+ 'wall of membranous labyrinth' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0035042
+Label(s): middle temporal artery 
+- 'middle temporal artery' SubClassOf 'connected to' some 'middle cerebral artery'
++ 'middle temporal artery' SubClassOf 'connected to' some 'middle cerebral artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003977
-Label(s): utricle duct 
-+ 'utricle duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0034927
+Label(s): arcuate artery of foot 
+- 'arcuate artery of foot' SubClassOf 'connected to' some 'dorsalis pedis artery'
++ 'arcuate artery of foot' SubClassOf 'connected to' some 'dorsalis pedis artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011922
-Label(s): cochlear basement membrane 
-+ 'cochlear basement membrane' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0016568
-Label(s): gelatinous layer of statoconial membrane 
-+ 'gelatinous layer of statoconial membrane' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0016569
-Label(s): subcupular meshwork of statoconial membrane 
-+ 'subcupular meshwork of statoconial membrane' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0015482
+Label(s): right hepatic artery 
+- 'right hepatic artery' SubClassOf 'connected to' some 'proper hepatic artery'
++ 'right hepatic artery' SubClassOf 'connected to' some 'proper hepatic artery'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0022315
 Label(s): primary motor cortex layer 5 
@@ -126,38 +160,14 @@ Label(s): primary motor cortex layer 5
 + 'primary motor cortex layer 5' SubClassOf 'part_of' some 'cortical layer V'
 + 'primary motor cortex layer 5' SubClassOf 'part_of' some 'primary motor cortex'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005271
-Label(s): juxtamedullary cortex 
-- 'juxtamedullary cortex' SubClassOf 'part_of' some 'cortex of kidney'
-+ 'juxtamedullary cortex' SubClassOf 'part_of' some 'cortex of kidney'
+Class: http://purl.obolibrary.org/obo/UBERON_0002084
+Label(s): heart left ventricle 
++ 'heart left ventricle' SubClassOf 'connected to' some 'blood vasculature'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005290
-Label(s): myelencephalon 
-- 'myelencephalon' SubClassOf 'develops_from' some 'central nervous system'
-- 'myelencephalon' SubClassOf 'develops_from' some 'Eumetazoa'
-- 'myelencephalon' SubClassOf 'develops_from' some 'hindbrain'
-- 'myelencephalon' SubClassOf 'develops_from' some 'nervous system'
-- 'myelencephalon' SubClassOf 'develops_from' some 'brain'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011859
-Label(s): internal acoustic meatus 
-+ 'internal acoustic meatus' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011857
-Label(s): acinus of lacrimal gland 
-+ 'acinus of lacrimal gland' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011847
-Label(s): acinus of parotid gland 
-+ 'acinus of parotid gland' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010752
-Label(s): exoccipital cartilage element 
-+ 'exoccipital cartilage element' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011774
-Label(s): utriculosaccular duct 
-+ 'utriculosaccular duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0004912
+Label(s): biliary bud 
+- 'biliary bud' SubClassOf 'develops_from' some 'septum transversum'
++ 'biliary bud' SubClassOf 'develops_from' some 'septum transversum'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0010696
 Label(s): skeleton of pedal acropodium 
@@ -174,23 +184,18 @@ Label(s): spleen secondary B follicle
 - 'spleen secondary B follicle' SubClassOf 'develops_from' some 'spleen primary B follicle'
 + 'spleen secondary B follicle' SubClassOf 'develops_from' some 'spleen primary B follicle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0036655
-Label(s): wall of cerebral aqueduct 
-+ 'wall of cerebral aqueduct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0002078
+Label(s): right cardiac atrium 
++ 'right cardiac atrium' SubClassOf 'connected to' some 'blood vasculature'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004076
-Label(s): cerebellum vermis lobule III 
-- 'cerebellum vermis lobule III' SubClassOf 'part_of' some 'central lobule'
-+ 'cerebellum vermis lobule III' SubClassOf 'part_of' some 'central lobule'
+Class: http://purl.obolibrary.org/obo/UBERON_0002079
+Label(s): left cardiac atrium 
++ 'left cardiac atrium' SubClassOf 'connected to' some 'blood vasculature'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004079
-Label(s): cerebellum vermis lobule V 
-- 'cerebellum vermis lobule V' SubClassOf 'part_of' some 'cerebellum vermis culmen'
-+ 'cerebellum vermis lobule V' SubClassOf 'part_of' some 'cerebellum vermis culmen'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011602
-Label(s): gingiva of lower jaw 
-+ 'gingiva of lower jaw' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0006958
+Label(s): great vein of heart 
+- 'great vein of heart' SubClassOf 'connected to' some 'coronary sinus'
++ 'great vein of heart' SubClassOf 'connected to' some 'coronary sinus'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0010546
 Label(s): metapodial skeleton 
@@ -202,158 +207,118 @@ Label(s): acropodial skeleton
 - 'acropodial skeleton' SubClassOf 'part_of' some 'skeleton of digitopodium'
 + 'acropodial skeleton' SubClassOf 'part_of' some 'skeleton of digitopodium'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0013764
-Label(s): common crus of semicircular duct 
-+ 'common crus of semicircular duct' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0013757
-Label(s): capillary blood 
-+ 'capillary blood' SubClassOf 'located in' some 'capillary'
-+ 'capillary blood' EquivalentTo 'blood' and ('located in' some 'capillary')
-
-Class: http://purl.obolibrary.org/obo/UBERON_0013756
-Label(s): venous blood 
-+ 'venous blood' EquivalentTo 'blood' and ('located in' some 'vein')
-+ 'venous blood' SubClassOf 'located in' some 'vein'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0013755
-Label(s): arterial blood 
-+ 'arterial blood' SubClassOf 'located in' some 'artery'
-+ 'arterial blood' EquivalentTo 'blood' and ('located in' some 'artery')
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011592
-Label(s): future upper lip 
-+ 'future upper lip' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0011595
+Label(s): jaw region 
+- 'jaw region' SubClassOf 'part_of' some 'mouth'
++ 'jaw region' SubClassOf 'part_of' some 'mouth'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0011582
 Label(s): paired limb/fin skeleton 
 - 'paired limb/fin skeleton' SubClassOf 'develops_from' some 'lateral plate mesoderm'
 + 'paired limb/fin skeleton' SubClassOf 'develops_from' some 'lateral plate mesoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0016930
-Label(s): ridge of tooth 
-+ 'ridge of tooth' SubClassOf 'ectoderm-derived structure'
-
 Class: http://purl.obolibrary.org/obo/UBERON_0010421
 Label(s): spleen B cell corona 
 - 'spleen B cell corona' SubClassOf 'part_of' some 'spleen secondary B follicle'
 + 'spleen B cell corona' SubClassOf 'part_of' some 'spleen secondary B follicle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011693
-Label(s): extraembryonic portion of umbilical artery 
-- 'extraembryonic portion of umbilical artery' SubClassOf 'extraembryonic structure'
-- 'extraembryonic portion of umbilical artery' SubClassOf 'part_of' some 'connecting stalk vasculature'
-+ 'extraembryonic portion of umbilical artery' SubClassOf 'extraembryonic structure'
-+ 'extraembryonic portion of umbilical artery' SubClassOf 'part_of' some 'connecting stalk vasculature'
+Class: http://purl.obolibrary.org/obo/UBERON_0010400
+Label(s): spleen trabecular vein 
+- 'spleen trabecular vein' SubClassOf 'connected to' some 'splenic vein'
++ 'spleen trabecular vein' SubClassOf 'connected to' some 'splenic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0014702
-Label(s): frontonasal process epithelium 
-- 'frontonasal process epithelium' SubClassOf 'anatomical entity'
-+ 'frontonasal process epithelium' SubClassOf 'ecto-epithelium'
+Class: http://purl.obolibrary.org/obo/UBERON_0005096
+Label(s): descending thin limb 
++ 'descending thin limb' SubClassOf 'part_of' some 'descending limb of loop of Henle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002045
-Label(s): cuneate nucleus 
-- 'cuneate nucleus' SubClassOf 'dorsal column nucleus'
-+ 'cuneate nucleus' SubClassOf 'dorsal column nucleus'
+Class: http://purl.obolibrary.org/obo/UBERON_0014691
+Label(s): right gastric vein 
+- 'right gastric vein' SubClassOf 'connected to' some 'hepatic portal vein'
++ 'right gastric vein' SubClassOf 'connected to' some 'hepatic portal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0009526
-Label(s): maxillary process mesenchyme 
-- 'maxillary process mesenchyme' SubClassOf 'anatomical entity'
-+ 'maxillary process mesenchyme' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0014690
+Label(s): left gastric vein 
+- 'left gastric vein' SubClassOf 'connected to' some 'hepatic portal vein'
++ 'left gastric vein' SubClassOf 'connected to' some 'hepatic portal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010335
-Label(s): maxillary process mesenchyme from head mesenchyme 
-- 'maxillary process mesenchyme from head mesenchyme' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0014685
+Label(s): pterygoid plexus 
+- 'pterygoid plexus' SubClassOf 'connected to' some 'maxillary vein'
++ 'pterygoid plexus' SubClassOf 'connected to' some 'maxillary vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010333
-Label(s): extraembryonic membrane mesenchyme 
-- 'extraembryonic membrane mesenchyme' SubClassOf 'develops_from' some 'extraembryonic mesoderm'
-+ 'extraembryonic membrane mesenchyme' SubClassOf 'develops_from' some 'extraembryonic mesoderm'
+Class: http://purl.obolibrary.org/obo/UBERON_0015704
+Label(s): sagittal sinus 
+- 'sagittal sinus' SubClassOf 'unpaired venous dural sinus'
++ 'sagittal sinus' SubClassOf 'unpaired venous dural sinus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010329
-Label(s): paired limb/fin bud mesenchyme 
-- 'paired limb/fin bud mesenchyme' SubClassOf 'develops_from' some 'mesenchyme from somatopleure'
-+ 'paired limb/fin bud mesenchyme' SubClassOf 'develops_from' some 'mesenchyme from somatopleure'
+Class: http://purl.obolibrary.org/obo/UBERON_0008320
+Label(s): common penile artery 
+- 'common penile artery' SubClassOf 'connected to' some 'internal pudendal artery'
++ 'common penile artery' SubClassOf 'connected to' some 'internal pudendal artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004164
-Label(s): branchiomeric muscle 
-+ 'branchiomeric muscle' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0000991
+Label(s): gonad 
++ 'gonad' SubClassOf 'part_of' some http://purl.obolibrary.org/obo/UBERON_3011048
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000995
-Label(s): uterus 
-- 'uterus' SubClassOf 'develops_from' some 'embryo'
+Class: http://purl.obolibrary.org/obo/UBERON_0000985
+Label(s): axillary vein 
+- 'axillary vein' SubClassOf 'connected to' some 'subclavian vein'
++ 'axillary vein' SubClassOf 'connected to' some 'subclavian vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0014624
-Label(s): basis modioli 
-+ 'basis modioli' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0000947
+Label(s): aorta 
+- 'aorta' SubClassOf 'connected to' some 'heart left ventricle'
++ 'aorta' SubClassOf 'connected to' some 'heart left ventricle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000955
-Label(s): brain 
-- 'brain' SubClassOf 'develops_from' some 'neurectoderm'
+Class: http://purl.obolibrary.org/obo/UBERON_0009714
+Label(s): intermaxillary process 
+- 'intermaxillary process' SubClassOf 'embryonic nasal process'
++ 'intermaxillary process' SubClassOf 'embryonic nasal process'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000926
-Label(s): mesoderm 
-- 'mesoderm' SubClassOf 'develops_from' some 'blastula'
+Class: http://purl.obolibrary.org/obo/UBERON_0010279
+Label(s): pericardial sinus 
+- 'pericardial sinus' SubClassOf 'part_of' some 'pericardial cavity'
++ 'pericardial sinus' SubClassOf 'part_of' some 'pericardial cavity'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000925
-Label(s): endoderm 
-- 'endoderm' SubClassOf 'develops_from' some 'blastula'
+Class: http://purl.obolibrary.org/obo/UBERON_0010243
+Label(s): merocrine gland 
++ http://purl.obolibrary.org/obo/UBERON_0008974 DisjointWith 'merocrine gland'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000924
-Label(s): ectoderm 
-- 'ectoderm' SubClassOf 'develops_from' some 'blastula'
+Class: http://purl.obolibrary.org/obo/UBERON_0001983
+Label(s): crypt of Lieberkuhn 
+- 'crypt of Lieberkuhn' SubClassOf 'only_in_taxon' some 'Tetrapoda'
++ 'crypt of Lieberkuhn' SubClassOf 'only_in_taxon' some 'Tetrapoda'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011319
-Label(s): disk of temporomandibular joint 
-+ 'disk of temporomandibular joint' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001982
+Label(s): capillary 
+- 'capillary' SubClassOf 'blood vessel'
+- 'capillary' SubClassOf 'microcirculatory vessel'
++ 'capillary' SubClassOf http://purl.obolibrary.org/obo/UBERON_8410081
++ 'capillary' EquivalentTo http://purl.obolibrary.org/obo/UBERON_8410081 and ('connects' some 'venule') and ('connects' some 'arteriole')
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011318
-Label(s): capsule of temporomandibular joint 
-+ 'capsule of temporomandibular joint' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001954
-Label(s): Ammon's horn 
-- 'Ammon's horn' SubClassOf 'part_of' some 'hippocampal formation'
-+ 'Ammon's horn' SubClassOf 'part_of' some 'hippocampal formation'
+Class: http://purl.obolibrary.org/obo/UBERON_0001980
+Label(s): arteriole 
++ 'arteriole' SubClassOf http://purl.obolibrary.org/obo/UBERON_8410081
 
 Class: http://purl.obolibrary.org/obo/UBERON_0005146
 Label(s): metanephric nephron tubule 
 - 'metanephric nephron tubule' SubClassOf 'develops_from' some 'metanephric mesenchyme'
 + 'metanephric nephron tubule' SubClassOf 'develops_from' some 'metanephric mesenchyme'
 
+Class: http://purl.obolibrary.org/obo/UBERON_0001915
+Label(s): endothelium of capillary 
+- 'endothelium of capillary' SubClassOf 'blood vessel endothelium'
++ 'endothelium of capillary' SubClassOf 'microvascular endothelium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001909
+Label(s): habenular commissure 
+- 'habenular commissure' SubClassOf 'part_of' some 'diencephalic white matter'
++ 'habenular commissure' SubClassOf 'part_of' some 'diencephalic white matter'
+
 Class: http://purl.obolibrary.org/obo/UBERON_0000084
 Label(s): ureteric bud 
 - 'ureteric bud' SubClassOf 'developmentally_induced_by' some 'metanephric mesenchyme'
 + 'ureteric bud' SubClassOf 'developmentally_induced_by' some 'metanephric mesenchyme'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0012337
-Label(s): cauda equina 
-- 'cauda equina' SubClassOf 'part_of' some 'spinal nerve root'
-+ 'cauda equina' SubClassOf 'part_of' some 'spinal nerve root'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0012332
-Label(s): broad ligament of uterus 
-- 'broad ligament of uterus' SubClassOf 'ligament'
-+ 'broad ligament of uterus' SubClassOf 'ligament'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006250
-Label(s): infundibular recess of 3rd ventricle 
-+ 'infundibular recess of 3rd ventricle' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0012313
-Label(s): 1st arch maxillary ectoderm 
-+ '1st arch maxillary ectoderm' SubClassOf 'ecto-epithelium'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0012312
-Label(s): maxillary process ectoderm 
-- 'maxillary process ectoderm' SubClassOf 'anatomical entity'
-+ 'maxillary process ectoderm' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003231
-Label(s): epithelium of hip 
-- 'epithelium of hip' SubClassOf 'anatomical entity'
-- 'epithelium of hip' SubClassOf 'epithelium'
-+ 'epithelium of hip' SubClassOf 'ecto-epithelium'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0011216
 Label(s): organ system subdivision 
@@ -367,295 +332,326 @@ Label(s): paratenial nucleus
 - 'paratenial nucleus' SubClassOf 'part_of' some 'midline nuclear group'
 + 'paratenial nucleus' SubClassOf 'part_of' some 'midline nuclear group'
 
-Class: http://purl.obolibrary.org/obo/CL_1000359
-Label(s): microfold cell of epithelium proper of appendix 
-+ 'microfold cell of epithelium proper of appendix' SubClassOf 'endo-epithelium'
+Class: http://purl.obolibrary.org/obo/UBERON_0002205
+Label(s): manubrium of sternum 
+- 'manubrium of sternum' SubClassOf 'serially homologous to' some 'sternebra'
++ 'manubrium of sternum' SubClassOf 'serially homologous to' some 'sternebra'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001865
-Label(s): cartilaginous external acoustic tube 
-+ 'cartilaginous external acoustic tube' SubClassOf 'ectoderm-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0004212
+Label(s): glomerular capillary 
+- 'glomerular capillary' SubClassOf 'connected to' some 'renal afferent arteriole'
++ 'glomerular capillary' SubClassOf 'connected to' some 'renal afferent arteriole'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001856
-Label(s): semicircular duct 
-+ 'semicircular duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0011193
+Label(s): inferior ophthalmic vein 
+- 'inferior ophthalmic vein' SubClassOf 'connected to' some 'cavernous sinus'
++ 'inferior ophthalmic vein' SubClassOf 'connected to' some 'cavernous sinus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001855
-Label(s): cochlear duct of membranous labyrinth 
-+ 'cochlear duct of membranous labyrinth' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0012200
+Label(s): anterior intercostal vein 
+- 'anterior intercostal vein' SubClassOf 'connected to' some 'internal thoracic vein'
++ 'anterior intercostal vein' SubClassOf 'connected to' some 'internal thoracic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001848
-Label(s): auricular cartilage 
-- 'auricular cartilage' SubClassOf 'anatomical entity'
-+ 'auricular cartilage' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_7500039
+Label(s): posterior of pes 
+- 'posterior of pes' SubClassOf 'in_posterior_side_of' some 'pes'
+- 'posterior of pes' SubClassOf 'anatomical point'
+- 'posterior of pes' EquivalentTo 'anatomical point' and ('in_posterior_side_of' some 'pes')
+- 'posterior of pes' SubClassOf 'anatomical entity'
+- 'posterior of pes' SubClassOf 'part_of' some 'pes'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001846
-Label(s): internal ear 
-+ 'internal ear' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0015481
+Label(s): left hepatic artery 
+- 'left hepatic artery' SubClassOf 'connected to' some 'proper hepatic artery'
++ 'left hepatic artery' SubClassOf 'connected to' some 'proper hepatic artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001844
-Label(s): cochlea 
-+ 'cochlea' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0003910
+Label(s): splenic sinusoid 
+- 'splenic sinusoid' SubClassOf 'connected to' some 'spleen trabecular vein'
++ 'splenic sinusoid' SubClassOf 'connected to' some 'spleen trabecular vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001840
-Label(s): semicircular canal 
-+ 'semicircular canal' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0004176
+Label(s): external genitalia 
++ 'external genitalia' SubClassOf 'part_of' some http://purl.obolibrary.org/obo/UBERON_3011048
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001834
-Label(s): upper lip 
-- 'upper lip' SubClassOf 'develops_from' some 'midface'
-- 'upper lip' SubClassOf 'develops_from' some 'mouth'
-- 'upper lip' SubClassOf 'develops_from' some 'digestive tract'
-- 'upper lip' SubClassOf 'develops_from' some 'digestive system'
-- 'upper lip' SubClassOf 'develops_from' some 'upper jaw region'
-- 'upper lip' SubClassOf 'develops_from' some 'face'
-- 'upper lip' SubClassOf 'develops_from' some 'body proper'
-- 'upper lip' SubClassOf 'develops_from' some 'anterior region of body'
-- 'upper lip' SubClassOf 'develops_from' some 'main body axis'
-- 'upper lip' SubClassOf 'develops_from' some 'craniocervical region'
-- 'upper lip' SubClassOf 'develops_from' some 'organ'
-- 'upper lip' SubClassOf 'develops_from' some 'head'
-- 'upper lip' SubClassOf 'develops_from' some 'jaw region'
+Class: http://purl.obolibrary.org/obo/UBERON_0014393
+Label(s): sweat of axilla 
+- 'sweat of axilla' EquivalentTo 'sweat' and ('produced by' some 'axillary sweat gland')
+- 'sweat of axilla' SubClassOf 'sweat'
+- 'sweat of axilla' SubClassOf 'produced by' some 'axillary sweat gland'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001831
-Label(s): parotid gland 
-+ 'parotid gland' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001806
-Label(s): sympathetic ganglion 
-- 'sympathetic ganglion' SubClassOf 'ectoderm-derived structure'
-+ 'sympathetic ganglion' SubClassOf 'neural crest-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001804
-Label(s): capsule of lens 
-+ 'capsule of lens' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001817
-Label(s): lacrimal gland 
-+ 'lacrimal gland' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003976
-Label(s): saccule duct 
-+ 'saccule duct' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0016567
-Label(s): statoconial membrane 
-+ 'statoconial membrane' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003962
-Label(s): pterygopalatine ganglion 
-- 'pterygopalatine ganglion' SubClassOf 'develops_from' some 'peripheral nervous system'
-- 'pterygopalatine ganglion' SubClassOf 'develops_from' some 'autonomic nervous system'
-- 'pterygopalatine ganglion' SubClassOf 'develops_from' some 'parasympathetic nervous system'
-- 'pterygopalatine ganglion' SubClassOf 'develops_from' some 'nervous system'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010069
-Label(s): outer epithelial layer of tympanic membrane 
-+ 'outer epithelial layer of tympanic membrane' SubClassOf 'ecto-epithelium'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010063
-Label(s): tympanic cavity epithelium 
-+ 'tympanic cavity epithelium' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0010054
-Label(s): malleus cartilage element 
-- 'malleus cartilage element' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0001798
+Label(s): vitreous body 
+- 'vitreous body' SubClassOf 'has developmental contribution from' some 'neurectoderm'
++ 'vitreous body' SubClassOf 'has developmental contribution from' some 'neurectoderm'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0010001
 Label(s): cell cluster organ 
 - 'cell cluster organ' DisjointWith 'organ system subdivision'
 + 'cell cluster organ' DisjointWith 'organ system subdivision'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001782
-Label(s): pigmented layer of retina 
-- 'pigmented layer of retina' SubClassOf 'develops_from' some 'Eumetazoa'
+Class: http://purl.obolibrary.org/obo/UBERON_0001777
+Label(s): substantia propria of cornea 
+- 'substantia propria of cornea' SubClassOf 'develops_from' some 'mesenchyme derived from head neural crest'
++ 'substantia propria of cornea' SubClassOf 'develops_from' some 'mesenchyme derived from head neural crest'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001757
-Label(s): pinna 
-+ 'pinna' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001775
+Label(s): ciliary body 
+- 'ciliary body' SubClassOf 'develops_from' some 'neurectoderm'
++ 'ciliary body' SubClassOf 'develops_from' some 'neurectoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001706
-Label(s): nasal septum 
-- 'nasal septum' SubClassOf 'develops_from' some 'intermaxillary process'
-+ 'nasal septum' SubClassOf 'develops_from' some 'intermaxillary process'
+Class: http://purl.obolibrary.org/obo/UBERON_0001773
+Label(s): sclera 
+- 'sclera' SubClassOf 'develops_from' some 'eye mesenchyme'
++ 'sclera' SubClassOf 'develops_from' some 'eye mesenchyme'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0012168
-Label(s): umbilical cord blood 
-- 'umbilical cord blood' SubClassOf 'blood'
-+ 'umbilical cord blood' SubClassOf 'arterial blood'
+Class: http://purl.obolibrary.org/obo/UBERON_0001772
+Label(s): corneal epithelium 
+- 'corneal epithelium' SubClassOf 'develops_from' some 'external ectoderm'
++ 'corneal epithelium' SubClassOf 'develops_from' some 'external ectoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011060
-Label(s): perilymphatic channel 
-+ 'perilymphatic channel' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001750
+Label(s): lacrimal apparatus 
+- 'lacrimal apparatus' SubClassOf 'develops_from' some 'external ectoderm'
++ 'lacrimal apparatus' SubClassOf 'develops_from' some 'external ectoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001692
-Label(s): basioccipital bone 
-+ 'basioccipital bone' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0012199
+Label(s): posterior intercostal vein 
+- 'posterior intercostal vein' SubClassOf 'connected to' some 'azygos vein'
++ 'posterior intercostal vein' SubClassOf 'connected to' some 'azygos vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000054
-Label(s): macula 
-+ 'macula' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0012194
+Label(s): superior intercostal vein 
+- 'superior intercostal vein' SubClassOf 'connected to' some 'azygos vein'
++ 'superior intercostal vein' SubClassOf 'connected to' some 'azygos vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001655
-Label(s): submental vein 
-+ 'submental vein' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0013228
+Label(s): sweat gland of eyelid 
+- 'sweat gland of eyelid' SubClassOf 'eyelid gland'
+- 'sweat gland of eyelid' SubClassOf 'eye skin gland'
+- 'sweat gland of eyelid' SubClassOf 'apocrine sweat gland'
+- 'sweat gland of eyelid' EquivalentTo 'apocrine sweat gland' and ('part_of' some 'eyelid')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001680
+Label(s): lacrimal bone 
+- 'lacrimal bone' SubClassOf 'has part' some ('part_of' some 'orbit of skull')
++ 'lacrimal bone' SubClassOf 'has part' some ('part_of' some 'orbit of skull')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0006146
+Label(s): dorsal digital artery of manus 
+- 'dorsal digital artery of manus' SubClassOf 'connected to' some 'dorsal metacarpal artery'
++ 'dorsal digital artery of manus' SubClassOf 'connected to' some 'dorsal metacarpal artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001661
+Label(s): deep temporal vein 
+- 'deep temporal vein' SubClassOf 'connected to' some 'pterygoid plexus'
++ 'deep temporal vein' SubClassOf 'connected to' some 'pterygoid plexus'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001659
+Label(s): transverse facial vein 
+- 'transverse facial vein' SubClassOf 'connected to' some 'superficial temporal vein'
++ 'transverse facial vein' SubClassOf 'connected to' some 'superficial temporal vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001652
+Label(s): left pulmonary artery 
+- 'left pulmonary artery' SubClassOf 'connected to' some 'pulmonary trunk'
++ 'left pulmonary artery' SubClassOf 'connected to' some 'pulmonary trunk'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001651
+Label(s): right pulmonary artery 
+- 'right pulmonary artery' SubClassOf 'connected to' some 'pulmonary trunk'
++ 'right pulmonary artery' SubClassOf 'connected to' some 'pulmonary trunk'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0000081
 Label(s): metanephros 
 - 'metanephros' SubClassOf 'developmentally_replaces' some 'mesonephros'
 + 'metanephros' SubClassOf 'developmentally_replaces' some 'mesonephros'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002067
-Label(s): dermis 
-- 'dermis' SubClassOf 'develops_from' some 'integument'
-- 'dermis' SubClassOf 'develops_from' some 'integumental system'
+Class: http://purl.obolibrary.org/obo/UBERON_0001639
+Label(s): hepatic portal vein 
+- 'hepatic portal vein' SubClassOf 'connected to' some 'hepatic sinusoid'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007214
-Label(s): mesenchyme derived from trunk neural crest 
-- 'mesenchyme derived from trunk neural crest' SubClassOf 'ectoderm-derived structure'
-+ 'mesenchyme derived from trunk neural crest' SubClassOf 'mesenchyme derived from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001634
+Label(s): mesencephalic artery 
+- 'mesencephalic artery' SubClassOf 'connected to' some 'posterior cerebral artery'
++ 'mesencephalic artery' SubClassOf 'connected to' some 'posterior cerebral artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0013173
-Label(s): anterior part of tympanic bone 
-+ 'anterior part of tympanic bone' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001664
+Label(s): inferior cerebral vein 
+- 'inferior cerebral vein' SubClassOf 'connected to' some 'transverse sinus'
++ 'inferior cerebral vein' SubClassOf 'connected to' some 'transverse sinus'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001625
+Label(s): right coronary artery 
+- 'right coronary artery' SubClassOf 'connected to' some 'ascending aorta'
++ 'right coronary artery' SubClassOf 'connected to' some 'ascending aorta'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001620
+Label(s): central retinal artery 
+- 'central retinal artery' SubClassOf 'develops_from_part_of' some 'hyaloid artery'
++ 'central retinal artery' SubClassOf 'develops_from_part_of' some 'hyaloid artery'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001616
 Label(s): maxillary artery 
-- 'maxillary artery' SubClassOf 'develops_from' some 'pharyngeal vasculature'
-- 'maxillary artery' SubClassOf 'develops_from' some 'chordate pharynx'
-- 'maxillary artery' SubClassOf 'develops_from' some 'pharyngeal arch system'
-- 'maxillary artery' SubClassOf 'develops_from' some 'Eumetazoa'
-- 'maxillary artery' SubClassOf 'develops_from' some 'arterial system'
-- 'maxillary artery' SubClassOf 'develops_from' some 'organ'
-- 'maxillary artery' SubClassOf 'develops_from' some 'digestive system'
-- 'maxillary artery' SubClassOf 'develops_from' some 'body proper'
-- 'maxillary artery' SubClassOf 'develops_from' some 'pharyngeal arch 1'
-- 'maxillary artery' SubClassOf 'develops_from' some 'craniocervical region'
-- 'maxillary artery' SubClassOf 'develops_from' some 'circulatory system'
-- 'maxillary artery' SubClassOf 'develops_from' some 'anterior region of body'
-- 'maxillary artery' SubClassOf 'develops_from' some 'respiratory system'
-- 'maxillary artery' SubClassOf 'develops_from' some 'foregut'
-- 'maxillary artery' SubClassOf 'develops_from' some 'digestive tract'
-- 'maxillary artery' SubClassOf 'develops_from' some 'main body axis'
-- 'maxillary artery' SubClassOf 'develops_from' some 'cranial blood vasculature'
-- 'maxillary artery' SubClassOf 'develops_from' some 'cardiovascular system'
-- 'maxillary artery' SubClassOf 'develops_from' some 'embryonic head'
+- 'maxillary artery' SubClassOf 'connected to' some 'external carotid artery'
++ 'maxillary artery' SubClassOf 'connected to' some 'external carotid artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002086
+Label(s): sinoatrial valve 
+- 'sinoatrial valve' SubClassOf 'connects' some 'cardiac atrium'
+- 'sinoatrial valve' SubClassOf 'connects' some 'sinus venosus'
++ 'sinoatrial valve' SubClassOf 'connects' some 'cardiac atrium'
++ 'sinoatrial valve' SubClassOf 'connects' some 'sinus venosus'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001608
+Label(s): dilatator pupillae 
+- 'dilatator pupillae' SubClassOf 'develops_from' some 'neurectoderm'
++ 'dilatator pupillae' SubClassOf 'develops_from' some 'neurectoderm'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001607
+Label(s): sphincter pupillae 
+- 'sphincter pupillae' SubClassOf 'develops_from' some 'neurectoderm'
++ 'sphincter pupillae' SubClassOf 'develops_from' some 'neurectoderm'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0004870
 Label(s): superficial cervical lymph node 
 - 'superficial cervical lymph node' SubClassOf 'peripheral lymph node'
 + 'superficial cervical lymph node' SubClassOf 'peripheral lymph node'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004817
-Label(s): lacrimal gland epithelium 
-+ 'lacrimal gland epithelium' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/CL_1001100
+Label(s): kidney efferent arteriole smooth muscle cell 
++ 'kidney efferent arteriole smooth muscle cell' SubClassOf 'microcirculation associated smooth muscle cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004060
-Label(s): neural tube ventricular layer 
-- 'neural tube ventricular layer' SubClassOf 'develops_from' some 'neural tube'
-- 'neural tube ventricular layer' SubClassOf 'develops_from' some 'nervous system'
+Class: http://purl.obolibrary.org/obo/UBERON_0003713
+Label(s): splenic vein 
+- 'splenic vein' SubClassOf 'connected to' some 'hepatic portal vein'
++ 'splenic vein' SubClassOf 'connected to' some 'hepatic portal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002673
-Label(s): vestibular nuclear complex 
-- 'vestibular nuclear complex' SubClassOf 'part_of' some 'medulla oblongata'
-+ 'vestibular nuclear complex' SubClassOf 'part_of' some 'medulla oblongata'
+Class: http://purl.obolibrary.org/obo/UBERON_0003711
+Label(s): brachiocephalic vein 
+- 'brachiocephalic vein' SubClassOf 'connected to' some 'anterior vena cava'
++ 'brachiocephalic vein' SubClassOf 'connected to' some 'anterior vena cava'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003707
-Label(s): sinus of Valsalva 
-+ 'sinus of Valsalva' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0003706
+Label(s): laryngeal vocal fold 
+- 'laryngeal vocal fold' SubClassOf 'part_of' some 'glottis'
++ 'laryngeal vocal fold' SubClassOf 'part_of' some 'glottis'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003700
-Label(s): temporomandibular joint 
-- 'temporomandibular joint' SubClassOf 'anatomical entity'
-+ 'temporomandibular joint' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001594
+Label(s): azygos vein 
+- 'azygos vein' SubClassOf 'connected to' some 'anterior vena cava'
++ 'azygos vein' SubClassOf 'connected to' some 'anterior vena cava'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006209
-Label(s): basioccipital cartilage element 
-+ 'basioccipital cartilage element' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001589
+Label(s): internal thoracic vein 
+- 'internal thoracic vein' SubClassOf 'connected to' some 'brachiocephalic vein'
++ 'internal thoracic vein' SubClassOf 'connected to' some 'brachiocephalic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001595
-Label(s): auricular muscle 
-+ 'auricular muscle' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001587
+Label(s): subclavian vein 
+- 'subclavian vein' SubClassOf 'connected to' some 'brachiocephalic vein'
++ 'subclavian vein' SubClassOf 'connected to' some 'brachiocephalic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001555
-Label(s): digestive tract 
-- 'digestive tract' SubClassOf 'develops_from' some 'embryo'
+Class: http://purl.obolibrary.org/obo/UBERON_0006230
+Label(s): extrinsic ocular pre-muscle mass 
+- 'extrinsic ocular pre-muscle mass' SubClassOf 'develops_from' some 'eye mesenchyme'
++ 'extrinsic ocular pre-muscle mass' SubClassOf 'develops_from' some 'eye mesenchyme'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001553
+Label(s): medial tarsal artery 
+- 'medial tarsal artery' SubClassOf 'connected to' some 'dorsalis pedis artery'
++ 'medial tarsal artery' SubClassOf 'connected to' some 'dorsalis pedis artery'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001543
 Label(s): popliteal lymph node 
 - 'popliteal lymph node' SubClassOf 'peripheral lymph node'
 + 'popliteal lymph node' SubClassOf 'peripheral lymph node'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006938
-Label(s): pinna surface epithelium 
-- 'pinna surface epithelium' SubClassOf 'anatomical entity'
-+ 'pinna surface epithelium' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001534
+Label(s): right subclavian artery 
+- 'right subclavian artery' SubClassOf 'connected to' some 'brachiocephalic artery'
++ 'right subclavian artery' SubClassOf 'connected to' some 'brachiocephalic artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002279
-Label(s): vestibular aqueduct 
-+ 'vestibular aqueduct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001533
+Label(s): subclavian artery 
+- 'subclavian artery' SubClassOf 'connected to' some 'arch of aorta'
++ 'subclavian artery' SubClassOf 'connected to' some 'arch of aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000429
-Label(s): enteric plexus 
-- 'enteric plexus' SubClassOf 'ectoderm-derived structure'
-+ 'enteric plexus' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0000475
+Label(s): organism subdivision 
+- 'organism subdivision' SubClassOf 'has part' some ('part_of' some 'integumental system')
+- 'organism subdivision' SubClassOf 'has part' some ('part_of' some 'skeletal system')
+- 'organism subdivision' SubClassOf 'has part' some ('part_of' some 'musculature')
+- 'organism subdivision' SubClassOf 'has part' some ('part_of' some 'nervous system')
+- 'organism subdivision' SubClassOf 'has part' some ('part_of' some 'circulatory system')
 
-Class: http://purl.obolibrary.org/obo/UBERON_4000118
-Label(s): cellular bone tissue 
-+ 'cellular bone tissue' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001516
+Label(s): abdominal aorta 
+- 'abdominal aorta' SubClassOf 'connected to' some 'descending thoracic aorta'
++ 'abdominal aorta' SubClassOf 'connected to' some 'descending thoracic aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003077
-Label(s): paraxial mesoderm 
-- 'paraxial mesoderm' SubClassOf 'develops_from' some 'blastula'
+Class: http://purl.obolibrary.org/obo/UBERON_0001514
+Label(s): descending aorta 
+- 'descending aorta' SubClassOf 'connected to' some 'arch of aorta'
++ 'descending aorta' SubClassOf 'connected to' some 'arch of aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004721
-Label(s): crista ampullaris 
-+ 'crista ampullaris' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0000443
+Label(s): left testicular vein 
+- 'left testicular vein' SubClassOf 'connected to' some 'left renal vein'
++ 'left testicular vein' SubClassOf 'connected to' some 'left renal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003675
-Label(s): tooth crown 
-+ 'tooth crown' SubClassOf 'ectoderm-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0000423
+Label(s): eccrine sweat gland 
+- 'apocrine sweat gland' DisjointWith 'eccrine sweat gland'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005229
-Label(s): lower leg epithelium 
-- 'lower leg epithelium' SubClassOf 'epithelium'
-- 'lower leg epithelium' SubClassOf 'anatomical entity'
-+ 'lower leg epithelium' SubClassOf 'ecto-epithelium'
+Class: http://purl.obolibrary.org/obo/UBERON_0008450
+Label(s): psoas muscle 
+- 'psoas muscle' SubClassOf 'prevertebral muscle'
++ 'psoas muscle' SubClassOf 'prevertebral muscle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0015181
-Label(s): neck of tooth 
-+ 'neck of tooth' SubClassOf 'ectoderm-derived structure'
+Class: http://purl.obolibrary.org/obo/CL_1001097
+Label(s): kidney afferent arteriole smooth muscle cell 
++ 'kidney afferent arteriole smooth muscle cell' SubClassOf 'microcirculation associated smooth muscle cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002226
-Label(s): basilar membrane of cochlea 
-+ 'basilar membrane of cochlea' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0004726
+Label(s): vasa recta 
+- 'vasa recta' SubClassOf 'connected to' some 'renal efferent arteriole'
++ 'vasa recta' SubClassOf 'connected to' some 'renal efferent arteriole'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005286
-Label(s): tela choroidea of midbrain cerebral aqueduct 
-+ 'tela choroidea of midbrain cerebral aqueduct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0004723
+Label(s): interlobular artery 
+- 'interlobular artery' SubClassOf 'connected to' some 'kidney arcuate artery'
++ 'interlobular artery' SubClassOf 'connected to' some 'kidney arcuate artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002518
-Label(s): otolith organ 
-+ 'otolith organ' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0004719
+Label(s): kidney arcuate vein 
+- 'kidney arcuate vein' SubClassOf 'connected to' some 'interlobar vein'
++ 'kidney arcuate vein' SubClassOf 'connected to' some 'interlobar vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002505
-Label(s): spiral modiolar artery 
-+ 'spiral modiolar artery' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0000382
+Label(s): apocrine sweat gland 
+- 'apocrine sweat gland' SubClassOf 'merocrine gland'
+- 'apocrine sweat gland' DisjointWith 'eccrine sweat gland'
+- 'apocrine sweat gland' SubClassOf 'sweat gland'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003217
-Label(s): neural lobe of neurohypophysis 
-+ 'neural lobe of neurohypophysis' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0002011
+Label(s): thoracodorsal artery 
+- 'thoracodorsal artery' SubClassOf 'connected to' some 'subscapular artery'
++ 'thoracodorsal artery' SubClassOf 'connected to' some 'subscapular artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000389
-Label(s): lens cortex 
-+ 'lens cortex' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0002016
+Label(s): pulmonary vein 
++ 'pulmonary vein' SubClassOf 'connected to' some 'left cardiac atrium'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006811
-Label(s): occipital condyle 
-+ 'occipital condyle' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0005438
+Label(s): coronary sinus 
+- 'coronary sinus' SubClassOf 'connected to' some 'right cardiac atrium'
++ 'coronary sinus' SubClassOf 'connected to' some 'right cardiac atrium'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0009712
-Label(s): endocardium of right ventricle 
-+ 'endocardium of right ventricle' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001406
+Label(s): ulnar artery 
+- 'ulnar artery' SubClassOf 'connected to' some 'brachial artery'
++ 'ulnar artery' SubClassOf 'connected to' some 'brachial artery'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0007688
 Label(s): anlage 
@@ -664,132 +660,82 @@ Label(s): anlage
 + 'anlage' SubClassOf 'developing anatomical structure'
 + 'anlage' SubClassOf 'tissue'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001351
-Label(s): lacrimal sac 
-+ 'lacrimal sac' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001399
+Label(s): deep brachial artery 
+- 'deep brachial artery' SubClassOf 'connected to' some 'brachial artery'
++ 'deep brachial artery' SubClassOf 'connected to' some 'brachial artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006725
-Label(s): spiral ligament 
-+ 'spiral ligament' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001397
+Label(s): subscapular artery 
+- 'subscapular artery' SubClassOf 'connected to' some 'axillary artery'
++ 'subscapular artery' SubClassOf 'connected to' some 'axillary artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006724
-Label(s): osseus spiral lamina 
-+ 'osseus spiral lamina' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001395
+Label(s): thoraco-acromial artery 
+- 'thoraco-acromial artery' SubClassOf 'connected to' some 'axillary artery'
++ 'thoraco-acromial artery' SubClassOf 'connected to' some 'axillary artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001394
+Label(s): axillary artery 
+- 'axillary artery' SubClassOf 'connected to' some 'subclavian artery'
++ 'axillary artery' SubClassOf 'connected to' some 'subclavian artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001360
+Label(s): deep circumflex iliac vein 
+- 'deep circumflex iliac vein' SubClassOf 'connected to' some 'external iliac vein'
++ 'deep circumflex iliac vein' SubClassOf 'connected to' some 'external iliac vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001357
+Label(s): inferior rectal artery 
+- 'inferior rectal artery' SubClassOf 'connected to' some 'internal pudendal artery'
++ 'inferior rectal artery' SubClassOf 'connected to' some 'internal pudendal artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001317
+Label(s): internal iliac vein 
+- 'internal iliac vein' SubClassOf 'connected to' some 'common iliac vein'
++ 'internal iliac vein' SubClassOf 'connected to' some 'common iliac vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001305
+Label(s): ovarian follicle 
+- 'ovarian follicle' SubClassOf 'reproductive structure'
+- 'ovarian follicle' SubClassOf 'organ part'
+- 'ovarian follicle' SubClassOf 'part_of' some 'ovary'
++ 'ovarian follicle' SubClassOf http://purl.obolibrary.org/obo/UBERON_8450001
 
 Class: http://purl.obolibrary.org/obo/UBERON_0018231
 Label(s): labyrinthine artery 
-+ 'labyrinthine artery' SubClassOf 'structure with developmental contribution from neural crest'
+- 'labyrinthine artery' SubClassOf 'connected to' some 'anterior inferior cerebellar artery'
++ 'labyrinthine artery' SubClassOf 'connected to' some 'anterior inferior cerebellar artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0011599
-Label(s): lenticular process of incus bone 
-- 'lenticular process of incus bone' SubClassOf 'ectoderm-derived structure'
-- 'lenticular process of incus bone' SubClassOf 'structure with developmental contribution from neural crest'
-+ 'lenticular process of incus bone' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0002366
+Label(s): bulbo-urethral gland 
+- 'bulbo-urethral gland' SubClassOf 'sexually_homologous_to' some 'major vestibular gland'
++ 'bulbo-urethral gland' SubClassOf 'sexually_homologous_to' some 'major vestibular gland'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007628
-Label(s): lateral septal complex 
-- 'lateral septal complex' SubClassOf 'part_of' some 'striatum'
-+ 'lateral septal complex' SubClassOf 'part_of' some 'striatum'
+Class: http://purl.obolibrary.org/obo/UBERON_0001190
+Label(s): ovarian artery 
+- 'ovarian artery' SubClassOf 'connected to' some 'abdominal aorta'
++ 'ovarian artery' SubClassOf 'connected to' some 'abdominal aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0008879
-Label(s): ligament of pinna 
-+ 'ligament of pinna' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0002333
+Label(s): pulmonary trunk 
+- 'pulmonary trunk' SubClassOf 'connected to' some 'heart right ventricle'
++ 'pulmonary trunk' SubClassOf 'connected to' some 'heart right ventricle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006592
-Label(s): transformed vein 
-- 'transformed vein' SubClassOf 'develops_from' some 'venous system'
-- 'transformed vein' SubClassOf 'develops_from' some 'cardiovascular system'
-- 'transformed vein' SubClassOf 'develops_from' some 'blood vasculature'
-- 'transformed vein' SubClassOf 'develops_from' some 'circulatory system'
+Class: http://purl.obolibrary.org/obo/UBERON_0006687
+Label(s): median sacral vein 
+- 'median sacral vein' SubClassOf 'connected to' some 'common iliac vein'
++ 'median sacral vein' SubClassOf 'connected to' some 'common iliac vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0000007
-Label(s): pituitary gland 
-- 'pituitary gland' SubClassOf 'develops_from' some 'head'
-- 'pituitary gland' SubClassOf 'develops_from' some 'craniocervical region'
-- 'pituitary gland' SubClassOf 'develops_from' some 'body proper'
-- 'pituitary gland' SubClassOf 'develops_from' some 'main body axis'
-- 'pituitary gland' SubClassOf 'develops_from' some 'anterior region of body'
-+ 'pituitary gland' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002280
-Label(s): otolith 
-+ 'otolith' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002376
-Label(s): cranial muscle 
-- 'cranial muscle' SubClassOf 'develops_from' some 'head mesenchyme from mesoderm'
-+ 'cranial muscle' SubClassOf 'develops_from' some 'head mesenchyme from mesoderm'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0000044
-Label(s): dorsal root ganglion 
-- 'dorsal root ganglion' SubClassOf 'ectoderm-derived structure'
-+ 'dorsal root ganglion' SubClassOf 'neural crest-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0008813
-Label(s): helicotrema 
-+ 'helicotrema' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002276
-Label(s): lamina of spiral limbus 
-+ 'lamina of spiral limbus' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006699
-Label(s): foramen cecum of tongue 
-- 'foramen cecum of tongue' SubClassOf 'develops_from' some 'respiratory system'
-- 'foramen cecum of tongue' SubClassOf 'develops_from' some 'endocrine system'
-- 'foramen cecum of tongue' SubClassOf 'develops_from' some 'chordate pharynx'
-- 'foramen cecum of tongue' SubClassOf 'develops_from' some 'thyroid primordium'
-+ 'foramen cecum of tongue' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006670
-Label(s): central tendon of diaphragm 
-- 'central tendon of diaphragm' SubClassOf 'develops_from' some 'musculoskeletal system'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006591
-Label(s): transformed artery 
-- 'transformed artery' SubClassOf 'develops_from' some 'arterial system'
-- 'transformed artery' SubClassOf 'develops_from' some 'circulatory system'
-- 'transformed artery' SubClassOf 'develops_from' some 'blood vasculature'
-- 'transformed artery' SubClassOf 'develops_from' some 'cardiovascular system'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002227
-Label(s): spiral organ of cochlea 
-+ 'spiral organ of cochlea' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006606
-Label(s): mandibular symphysis 
-+ 'mandibular symphysis' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003323
-Label(s): mesenchyme of upper jaw 
-+ 'mesenchyme of upper jaw' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003325
-Label(s): mesenchyme of pinna 
-- 'mesenchyme of pinna' SubClassOf 'anatomical entity'
-+ 'mesenchyme of pinna' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002289
-Label(s): midbrain cerebral aqueduct 
-+ 'midbrain cerebral aqueduct' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003371
-Label(s): pelvic appendage bud ectoderm 
-- 'pelvic appendage bud ectoderm' SubClassOf 'anatomical entity'
-+ 'pelvic appendage bud ectoderm' SubClassOf 'ecto-epithelium'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003367
-Label(s): epithelium of vomeronasal organ 
-+ 'epithelium of vomeronasal organ' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0009887
+Label(s): interlobar vein 
+- 'interlobar vein' SubClassOf 'connected to' some 'renal vein'
++ 'interlobar vein' SubClassOf 'connected to' some 'renal vein'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0009877
 Label(s): metapodium region 
 - 'metapodium region' SubClassOf 'part_of' some 'digitopodium region'
 + 'metapodium region' SubClassOf 'part_of' some 'digitopodium region'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011320
-Label(s): ligament of temporomandibular joint 
-+ 'ligament of temporomandibular joint' SubClassOf 'structure with developmental contribution from neural crest'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0011022
 Label(s): flexor hallucis brevis muscle 
@@ -803,96 +749,67 @@ Label(s): metacarpus region
 - 'metacarpus region' SubClassOf 'part_of' some 'manual digitopodium region'
 + 'metacarpus region' SubClassOf 'part_of' some 'manual digitopodium region'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003355
-Label(s): epithelium of incisor 
-- 'epithelium of incisor' SubClassOf 'epithelium'
-+ 'epithelium of incisor' SubClassOf 'ecto-epithelium'
+Class: http://purl.obolibrary.org/obo/UBERON_0002297
+Label(s): cerumen 
+- 'cerumen' SubClassOf 'located in' some 'external acoustic meatus'
+- 'cerumen' SubClassOf 'sweat'
+- 'cerumen' SubClassOf 'produced by' some 'apocrine sweat gland'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002281
-Label(s): vestibular membrane of cochlear duct 
-+ 'vestibular membrane of cochlear duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0034762
+Label(s): areolar sweat gland 
+- 'areolar sweat gland' SubClassOf 'apocrine sweat gland'
+- 'areolar sweat gland' SubClassOf 'part_of' some 'areola'
+- 'areolar sweat gland' EquivalentTo 'sweat gland' and ('part_of' some 'areola')
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002255
-Label(s): vomeronasal organ 
-- 'vomeronasal organ' SubClassOf 'has developmental contribution from' some 'intermaxillary process'
-+ 'vomeronasal organ' SubClassOf 'has developmental contribution from' some 'intermaxillary process'
+Class: http://purl.obolibrary.org/obo/UBERON_0002270
+Label(s): hyaloid artery 
+- 'hyaloid artery' SubClassOf 'connected to' some 'ophthalmic artery'
++ 'hyaloid artery' SubClassOf 'connected to' some 'ophthalmic artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002244
-Label(s): premaxilla 
-- 'premaxilla' SubClassOf 'develops_from' some 'skeleton'
-- 'premaxilla' SubClassOf 'develops_from' some 'skeleton of upper jaw'
-- 'premaxilla' SubClassOf 'develops_from' some 'skull'
-- 'premaxilla' SubClassOf 'develops_from' some 'face'
-- 'premaxilla' SubClassOf 'develops_from' some 'dermatocranium'
-- 'premaxilla' SubClassOf 'develops_from' some 'jaw region'
-- 'premaxilla' SubClassOf 'develops_from' some 'facial skeleton'
-- 'premaxilla' SubClassOf 'develops_from' some 'body proper'
-- 'premaxilla' SubClassOf 'develops_from' some 'digestive tract'
-- 'premaxilla' SubClassOf 'develops_from' some 'main body axis'
-- 'premaxilla' SubClassOf 'develops_from' some 'axial skeletal system'
-- 'premaxilla' SubClassOf 'develops_from' some 'dermal skeleton'
-- 'premaxilla' SubClassOf 'develops_from' some 'digestive system'
-- 'premaxilla' SubClassOf 'develops_from' some 'upper jaw region'
-- 'premaxilla' SubClassOf 'develops_from' some 'midface'
-- 'premaxilla' SubClassOf 'develops_from' some 'skeletal system'
-- 'premaxilla' SubClassOf 'develops_from' some 'cranial skeletal system'
-- 'premaxilla' SubClassOf 'develops_from' some 'mouth'
-- 'premaxilla' SubClassOf 'develops_from' some 'head'
-- 'premaxilla' SubClassOf 'develops_from' some 'musculoskeletal system'
-- 'premaxilla' SubClassOf 'develops_from' some 'jaw skeleton'
-- 'premaxilla' SubClassOf 'develops_from' some 'anterior region of body'
-- 'premaxilla' SubClassOf 'develops_from' some 'craniocervical region'
+Class: http://purl.obolibrary.org/obo/UBERON_0002249
+Label(s): median artery 
+- 'median artery' SubClassOf 'connected to' some 'ulnar artery'
++ 'median artery' SubClassOf 'connected to' some 'ulnar artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002240
-Label(s): spinal cord 
-- 'spinal cord' SubClassOf 'develops_from' some 'central nervous system'
-- 'spinal cord' SubClassOf 'develops_from' some 'nervous system'
+Class: http://purl.obolibrary.org/obo/UBERON_0002207
+Label(s): xiphoid process 
+- 'xiphoid process' SubClassOf 'serially homologous to' some 'sternebra'
++ 'xiphoid process' SubClassOf 'serially homologous to' some 'sternebra'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002233
-Label(s): tectorial membrane of cochlea 
-+ 'tectorial membrane of cochlea' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0002203
+Label(s): vasculature of eye 
+- 'vasculature of eye' SubClassOf 'develops_from' some 'eye mesenchyme'
++ 'vasculature of eye' SubClassOf 'develops_from' some 'eye mesenchyme'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007650
-Label(s): esophagogastric junction 
-- 'esophagogastric junction' SubClassOf 'connects' some 'esophagus'
-+ 'esophagogastric junction' SubClassOf 'connects' some 'esophagus'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001175
-Label(s): common hepatic duct 
-- 'common hepatic duct' SubClassOf 'develops_from' some 'digestive system'
-- 'common hepatic duct' SubClassOf 'develops_from' some 'hepatobiliary system'
-- 'common hepatic duct' SubClassOf 'develops_from' some 'biliary tree'
-- 'common hepatic duct' SubClassOf 'develops_from' some 'biliary system'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0018153
-Label(s): pars tensa of tympanic membrane 
-- 'pars tensa of tympanic membrane' SubClassOf 'anatomical entity'
-+ 'pars tensa of tympanic membrane' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002206
-Label(s): mammillary body 
-- 'mammillary body' SubClassOf 'part_of' some 'medial zone of hypothalamus'
-+ 'mammillary body' SubClassOf 'part_of' some 'medial zone of hypothalamus'
+Class: http://purl.obolibrary.org/obo/UBERON_0006586
+Label(s): otolymph 
+- 'otolymph' SubClassOf 'transudate'
++ 'otolymph' SubClassOf 'transudate'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001155
 Label(s): colon 
 - 'colon' SubClassOf 'subdivision of digestive tract'
 + 'colon' SubClassOf 'subdivision of digestive tract'
 
+Class: http://purl.obolibrary.org/obo/UBERON_0006564
+Label(s): superficial palmar arch 
+- 'superficial palmar arch' SubClassOf 'connected to' some 'ulnar artery'
++ 'superficial palmar arch' SubClassOf 'connected to' some 'ulnar artery'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001138
+Label(s): superior mesenteric vein 
+- 'superior mesenteric vein' SubClassOf 'connected to' some 'hepatic portal vein'
++ 'superior mesenteric vein' SubClassOf 'connected to' some 'hepatic portal vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0005492
+Label(s): hyaloid vessel 
+- 'hyaloid vessel' SubClassOf 'part_of' some 'vasculature of eye'
++ 'hyaloid vessel' SubClassOf 'part_of' some 'vasculature of eye'
+
 Class: http://purl.obolibrary.org/obo/UBERON_0005475
 Label(s): sigmoid sinus 
 - 'sigmoid sinus' SubClassOf 'tributary of' some 'internal jugular vein'
 + 'sigmoid sinus' SubClassOf 'tributary of' some 'internal jugular vein'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002364
-Label(s): tympanic membrane 
-- 'tympanic membrane' SubClassOf 'anatomical entity'
-+ 'tympanic membrane' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0018152
-Label(s): pars flaccida of tympanic membrane 
-- 'pars flaccida of tympanic membrane' SubClassOf 'anatomical entity'
-+ 'pars flaccida of tympanic membrane' SubClassOf 'structure with developmental contribution from neural crest'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0002389
 Label(s): manual digit 
@@ -904,58 +821,27 @@ Label(s): limb bud
 - 'limb bud' SubClassOf 'developmentally_induced_by' some 'lateral plate mesoderm'
 + 'limb bud' SubClassOf 'developmentally_induced_by' some 'lateral plate mesoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003291
-Label(s): meninx of hindbrain 
-- 'meninx of hindbrain' SubClassOf 'develops_from' some 'brain'
-- 'meninx of hindbrain' SubClassOf 'develops_from' some 'Eumetazoa'
-- 'meninx of hindbrain' SubClassOf 'develops_from' some 'hindbrain'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002196
-Label(s): adenohypophysis 
-+ 'adenohypophysis' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003232
-Label(s): epithelium of knee 
-- 'epithelium of knee' SubClassOf 'anatomical entity'
-- 'epithelium of knee' SubClassOf 'epithelium'
-+ 'epithelium of knee' SubClassOf 'ecto-epithelium'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006638
-Label(s): remnant of urachus 
-- 'remnant of urachus' SubClassOf 'develops_from' some 'renal system'
-- 'remnant of urachus' SubClassOf 'develops_from' some 'body proper'
-- 'remnant of urachus' SubClassOf 'develops_from' some 'Eumetazoa'
-- 'remnant of urachus' SubClassOf 'develops_from' some 'urinary bladder'
-- 'remnant of urachus' SubClassOf 'develops_from' some 'trunk'
-- 'remnant of urachus' SubClassOf 'develops_from' some 'lower urinary tract'
-- 'remnant of urachus' SubClassOf 'develops_from' some 'main body axis'
+Class: http://purl.obolibrary.org/obo/UBERON_0004340
+Label(s): allantois 
+- 'allantois' SubClassOf 'has part' some ('part_of' some 'renal system')
+- 'allantois' SubClassOf 'overlaps' some 'renal system'
++ 'allantois' SubClassOf 'has part' some ('part_of' some 'renal system')
++ 'allantois' SubClassOf 'overlaps' some 'renal system'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0003220
 Label(s): metanephric mesenchyme 
 - 'metanephric mesenchyme' SubClassOf 'developmentally_induced_by' some 'ureteric bud'
 + 'metanephric mesenchyme' SubClassOf 'developmentally_induced_by' some 'ureteric bud'
 
+Class: http://purl.obolibrary.org/obo/UBERON_0000170
+Label(s): pair of lungs 
+- 'pair of lungs' SubClassOf 'part_of' some 'lower respiratory tract'
++ 'pair of lungs' SubClassOf 'part_of' some 'lower respiratory tract'
+
 Class: http://purl.obolibrary.org/obo/UBERON_0000178
 Label(s): blood 
 - 'blood' SubClassOf 'has part' some 'erythrocyte'
 + 'blood' SubClassOf 'has part' some 'erythrocyte'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001285
-Label(s): nephron 
-- 'nephron' SubClassOf 'develops_from' some 'body proper'
-- 'nephron' SubClassOf 'develops_from' some 'kidney'
-- 'nephron' SubClassOf 'develops_from' some 'trunk'
-- 'nephron' SubClassOf 'develops_from' some 'renal system'
-- 'nephron' SubClassOf 'develops_from' some 'abdominal segment of trunk'
-- 'nephron' SubClassOf 'develops_from' some 'abdomen'
-- 'nephron' SubClassOf 'develops_from' some 'upper urinary tract'
-- 'nephron' SubClassOf 'develops_from' some 'multicellular organism'
-- 'nephron' SubClassOf 'develops_from' some 'main body axis'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0002161
-Label(s): gracile nucleus 
-- 'gracile nucleus' SubClassOf 'dorsal column nucleus'
-+ 'gracile nucleus' SubClassOf 'dorsal column nucleus'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001097
 Label(s): axillary lymph node 
@@ -964,12 +850,18 @@ Label(s): axillary lymph node
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001091
 Label(s): calcareous tooth 
-+ 'calcareous tooth' SubClassOf 'ectoderm-derived structure'
+- 'calcareous tooth' SubClassOf 'has developmental contribution from' some 'tooth enamel organ'
++ 'calcareous tooth' SubClassOf 'has developmental contribution from' some 'tooth enamel organ'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006721
-Label(s): alisphenoid bone 
-- 'alisphenoid bone' SubClassOf 'develops_from' some 'alisphenoid ossification center'
-+ 'alisphenoid bone' SubClassOf 'develops_from' some 'alisphenoid ossification center'
+Class: http://purl.obolibrary.org/obo/UBERON_0001072
+Label(s): posterior vena cava 
+- 'posterior vena cava' SubClassOf 'connected to' some 'right cardiac atrium'
++ 'posterior vena cava' SubClassOf 'connected to' some 'right cardiac atrium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001071
+Label(s): superficial cervical artery 
+- 'superficial cervical artery' SubClassOf 'connected to' some 'transverse cervical artery'
++ 'superficial cervical artery' SubClassOf 'connected to' some 'transverse cervical artery'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0002116
 Label(s): ileum 
@@ -986,18 +878,6 @@ Label(s): duodenum
 - 'duodenum' SubClassOf 'subdivision of digestive tract'
 + 'duodenum' SubClassOf 'subdivision of digestive tract'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006496
-Label(s): external acoustic meatus osseus part 
-+ 'external acoustic meatus osseus part' SubClassOf 'ectoderm-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006495
-Label(s): osseus cochlear canal 
-+ 'osseus cochlear canal' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0007825
-Label(s): reticular membrane of spiral organ 
-+ 'reticular membrane of spiral organ' SubClassOf 'structure with developmental contribution from neural crest'
-
 Class: http://purl.obolibrary.org/obo/UBERON_0001021
 Label(s): nerve 
 - 'nerve' SubClassOf 'neuron projection bundle'
@@ -1008,404 +888,474 @@ Label(s): central nervous system
 - 'central nervous system' SubClassOf 'organ system subdivision'
 + 'central nervous system' SubClassOf 'organ system subdivision'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001016
-Label(s): nervous system 
-- 'nervous system' SubClassOf 'develops_from' some 'embryo'
+Class: http://purl.obolibrary.org/obo/UBERON_0001396
+Label(s): lateral thoracic artery 
+- 'lateral thoracic artery' SubClassOf 'connected to' some 'axillary artery'
++ 'lateral thoracic artery' SubClassOf 'connected to' some 'axillary artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002392
-Label(s): nasolacrimal duct 
-+ 'nasolacrimal duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001398
+Label(s): brachial artery 
+- 'brachial artery' SubClassOf 'connected to' some 'axillary artery'
++ 'brachial artery' SubClassOf 'connected to' some 'axillary artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002393
-Label(s): pharyngotympanic tube 
-- 'pharyngotympanic tube' SubClassOf 'anatomical entity'
-+ 'pharyngotympanic tube' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0002455
+Label(s): common plantar digital arteries 
+- 'common plantar digital arteries' SubClassOf 'connected to' some 'plantar metatarsal artery'
++ 'common plantar digital arteries' SubClassOf 'connected to' some 'plantar metatarsal artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0009672
-Label(s): oronasal membrane 
-+ 'oronasal membrane' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0009687
+Label(s): middle cardiac vein 
+- 'middle cardiac vein' SubClassOf 'connected to' some 'coronary sinus'
++ 'middle cardiac vein' SubClassOf 'connected to' some 'coronary sinus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0009639
-Label(s): body of sphenoid 
-- 'body of sphenoid' SubClassOf 'develops_from' some 'prechordal cartilage'
-- 'body of sphenoid' SubClassOf 'develops_from' some 'hypophyseal cartilage'
-+ 'body of sphenoid' SubClassOf 'develops_from' some 'prechordal cartilage'
-+ 'body of sphenoid' SubClassOf 'develops_from' some 'hypophyseal cartilage'
+Class: http://purl.obolibrary.org/obo/UBERON_0004640
+Label(s): renal efferent arteriole 
+- 'renal efferent arteriole' SubClassOf 'connected to' some 'glomerular capillary'
++ 'renal efferent arteriole' SubClassOf 'connected to' some 'glomerular capillary'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004666
-Label(s): interventricular septum membranous part 
-- 'interventricular septum membranous part' SubClassOf 'ectoderm-derived structure'
-+ 'interventricular septum membranous part' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0004688
+Label(s): costo-cervical trunk 
+- 'costo-cervical trunk' SubClassOf 'connected to' some 'subclavian artery'
++ 'costo-cervical trunk' SubClassOf 'connected to' some 'subclavian artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0009615
-Label(s): midbrain hindbrain boundary neural plate 
-- 'midbrain hindbrain boundary neural plate' SubClassOf 'develops_from' some 'future brain'
+Class: http://purl.obolibrary.org/obo/UBERON_0004689
+Label(s): naso-frontal vein 
+- 'naso-frontal vein' SubClassOf 'connected to' some 'superior ophthalmic vein'
++ 'naso-frontal vein' SubClassOf 'connected to' some 'superior ophthalmic vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002080
+Label(s): heart right ventricle 
++ 'heart right ventricle' SubClassOf 'connected to' some 'blood vasculature'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0005732
 Label(s): paired limb/fin field 
 - 'paired limb/fin field' SubClassOf 'part_of' some 'lateral plate mesoderm'
 + 'paired limb/fin field' SubClassOf 'part_of' some 'lateral plate mesoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005620
-Label(s): primary palate 
-- 'primary palate' SubClassOf 'develops_from' some '1st arch maxillary component'
-+ 'primary palate' SubClassOf 'develops_from' some '1st arch maxillary component'
+Class: http://purl.obolibrary.org/obo/UBERON_0001404
+Label(s): radial artery 
+- 'radial artery' SubClassOf 'connected to' some 'brachial artery'
++ 'radial artery' SubClassOf 'connected to' some 'brachial artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002028
-Label(s): hindbrain 
-- 'hindbrain' SubClassOf 'overlaps' some 'brainstem'
-- 'hindbrain' SubClassOf 'has part' some ('part_of' some 'brainstem')
-+ 'hindbrain' SubClassOf 'overlaps' some 'brainstem'
-+ 'hindbrain' SubClassOf 'has part' some ('part_of' some 'brainstem')
+Class: http://purl.obolibrary.org/obo/UBERON_0001212
+Label(s): duodenal gland 
+- 'duodenal gland' SubClassOf 'only_in_taxon' some 'Mammalia'
++ 'duodenal gland' SubClassOf 'only_in_taxon' some 'Mammalia'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002025
-Label(s): stratum basale of epidermis 
-+ 'stratum basale of epidermis' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001410
+Label(s): common palmar digital artery 
+- 'common palmar digital artery' SubClassOf 'connected to' some 'superficial palmar arch'
++ 'common palmar digital artery' SubClassOf 'connected to' some 'superficial palmar arch'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002005
-Label(s): enteric nervous system 
-- 'enteric nervous system' SubClassOf 'ectoderm-derived structure'
-+ 'enteric nervous system' SubClassOf 'neural crest-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0000390
-Label(s): lens nucleus 
-+ 'lens nucleus' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001459
-Label(s): skin of external ear 
-+ 'skin of external ear' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0006841
+Label(s): central vein of liver 
+- 'central vein of liver' SubClassOf 'connected to' some 'hepatic vein'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001466
 Label(s): pedal digit 
 - 'pedal digit' SubClassOf 'part_of' some 'pedal digitopodium region'
 + 'pedal digit' SubClassOf 'part_of' some 'pedal digitopodium region'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002511
-Label(s): trabecula carnea 
-+ 'trabecula carnea' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0006345
+Label(s): stapedial artery 
+- 'stapedial artery' SubClassOf 'connected to' some 'posterior auricular artery'
++ 'stapedial artery' SubClassOf 'connected to' some 'posterior auricular artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002519
-Label(s): otolithic part of statoconial membrane 
-+ 'otolithic part of statoconial membrane' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0005272
+Label(s): peritubular capillary 
+- 'peritubular capillary' SubClassOf 'connected to' some 'renal efferent arteriole'
++ 'peritubular capillary' SubClassOf 'connected to' some 'renal efferent arteriole'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005297
-Label(s): testis sex cord 
-- 'testis sex cord' SubClassOf 'develops_from' some 'indifferent external genitalia'
-- 'testis sex cord' SubClassOf 'develops_from' some 'reproductive system'
+Class: http://purl.obolibrary.org/obo/UBERON_7500035
+Label(s): tip of tail 
+- 'tip of tail' EquivalentTo 'anatomical point' and ('distalmost part of' some 'tail')
+- 'tip of tail' SubClassOf 'anatomical point'
+- 'tip of tail' SubClassOf 'distalmost part of' some 'tail'
+- 'tip of tail' SubClassOf 'part_of' some 'tail'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005236
-Label(s): osseus labyrinth vestibule 
-+ 'osseus labyrinth vestibule' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0006634
+Label(s): lingual vein 
+- 'lingual vein' SubClassOf 'connected to' some 'internal jugular vein'
++ 'lingual vein' SubClassOf 'connected to' some 'internal jugular vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005225
-Label(s): upper leg epithelium 
-- 'upper leg epithelium' SubClassOf 'anatomical entity'
-- 'upper leg epithelium' SubClassOf 'epithelium'
-+ 'upper leg epithelium' SubClassOf 'ecto-epithelium'
+Class: http://purl.obolibrary.org/obo/UBERON_0018252
+Label(s): internal pudendal vein 
+- 'internal pudendal vein' SubClassOf 'connected to' some 'internal iliac vein'
++ 'internal pudendal vein' SubClassOf 'connected to' some 'internal iliac vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001316
+Label(s): external iliac vein 
+- 'external iliac vein' SubClassOf 'connected to' some 'common iliac vein'
++ 'external iliac vein' SubClassOf 'connected to' some 'common iliac vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001330
+Label(s): pampiniform plexus 
+- 'pampiniform plexus' SubClassOf 'connected to' some 'right testicular vein'
++ 'pampiniform plexus' SubClassOf 'connected to' some 'right testicular vein'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0004141
 Label(s): heart tube 
-- 'heart tube' SubClassOf 'develops_from' some 'Eumetazoa'
+- 'heart tube' SubClassOf 'immediate transformation of' some 'primitive heart tube'
++ 'heart tube' SubClassOf 'immediate transformation of' some 'primitive heart tube'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002360
-Label(s): meninx 
-- 'meninx' SubClassOf 'develops_from' some 'central nervous system'
-- 'meninx' SubClassOf 'develops_from' some 'meningeal cluster'
-- 'meninx' SubClassOf 'develops_from' some 'nervous system'
+Class: http://purl.obolibrary.org/obo/UBERON_0001361
+Label(s): femoral vein 
+- 'femoral vein' SubClassOf 'connected to' some 'external iliac vein'
++ 'femoral vein' SubClassOf 'connected to' some 'external iliac vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003083
-Label(s): trunk neural crest 
-+ 'trunk neural crest' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001367
+Label(s): external anal sphincter 
+- 'external anal sphincter' SubClassOf 'part_of' some 'anal part of perineum'
++ 'external anal sphincter' SubClassOf 'anal sphincter'
++ 'external anal sphincter' SubClassOf 'striated muscle sphincter'
++ 'external anal sphincter' SubClassOf 'muscle of anal triangle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003082
-Label(s): myotome 
-- 'myotome' SubClassOf 'develops_from' some 'dermomyotome'
-+ 'myotome' SubClassOf 'develops_from' some 'dermomyotome'
+Class: http://purl.obolibrary.org/obo/UBERON_0005832
+Label(s): cuneate fasciculus 
+- 'cuneate fasciculus' SubClassOf 'nerve fasciculus'
++ 'cuneate fasciculus' SubClassOf 'nerve fasciculus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003078
-Label(s): epibranchial placode 
-- 'epibranchial placode' SubClassOf 'develops_from' some 'external ectoderm'
-+ 'epibranchial placode' SubClassOf 'develops_from' some 'external ectoderm'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003075
-Label(s): neural plate 
-- 'neural plate' SubClassOf 'develops_from' some 'future nervous system'
-- 'neural plate' SubClassOf 'develops_from' some 'gastrula'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001352
-Label(s): external acoustic meatus 
-+ 'external acoustic meatus' SubClassOf 'ectoderm-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003052
-Label(s): midbrain-hindbrain boundary 
-- 'midbrain-hindbrain boundary' SubClassOf 'develops_from' some 'neural plate'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003051
-Label(s): ear vesicle 
-+ 'ear vesicle' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0009974
+Label(s): lumen of Rathke's pouch 
+- 'lumen of Rathke's pouch' SubClassOf 'surrounded_by' some 'Rathkes pouch epithelium'
++ 'lumen of Rathke's pouch' SubClassOf 'surrounded_by' some 'Rathkes pouch epithelium'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0003017
 Label(s): substantia innominata 
 - 'substantia innominata' SubClassOf 'part_of' some 'ventral pallidum'
 + 'substantia innominata' SubClassOf 'part_of' some 'ventral pallidum'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006937
-Label(s): inner ear epithelium 
-+ 'inner ear epithelium' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001508
+Label(s): arch of aorta 
+- 'arch of aorta' SubClassOf 'connected to' some 'ascending aorta'
++ 'arch of aorta' SubClassOf 'connected to' some 'ascending aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006289
-Label(s): rib pre-cartilage condensation 
-- 'rib pre-cartilage condensation' SubClassOf 'develops_from' some 'sclerotome'
-+ 'rib pre-cartilage condensation' SubClassOf 'develops_from' some 'sclerotome'
+Class: http://purl.obolibrary.org/obo/UBERON_0006293
+Label(s): spleen primordium 
+- 'spleen primordium' SubClassOf 'part_of' some 'dorsal mesogastrium'
++ 'spleen primordium' SubClassOf 'part_of' some 'dorsal mesogastrium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001529
+Label(s): brachiocephalic artery 
+- 'brachiocephalic artery' SubClassOf 'connected to' some 'arch of aorta'
++ 'brachiocephalic artery' SubClassOf 'connected to' some 'arch of aorta'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008811
+Label(s): intromittent organ 
++ 'intromittent organ' SubClassOf 'part_of' some http://purl.obolibrary.org/obo/UBERON_3011048
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001249
 Label(s): spleen lymphoid follicle 
 - 'spleen lymphoid follicle' SubClassOf 'part_of' some 'white pulp of spleen'
 + 'spleen lymphoid follicle' SubClassOf 'part_of' some 'white pulp of spleen'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006266
-Label(s): nasolacrimal groove 
-+ 'nasolacrimal groove' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006262
-Label(s): malleus pre-cartilage condensation 
-- 'malleus pre-cartilage condensation' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0001563
+Label(s): longus capitis muscle 
+- 'longus capitis muscle' SubClassOf 'prevertebral muscle'
++ 'longus capitis muscle' SubClassOf 'prevertebral muscle'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0005196
 Label(s): spleen germinal center 
 - 'spleen germinal center' SubClassOf 'part_of' some 'spleen secondary B follicle'
 + 'spleen germinal center' SubClassOf 'part_of' some 'spleen secondary B follicle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006207
-Label(s): aortico-pulmonary spiral septum 
-- 'aortico-pulmonary spiral septum' SubClassOf 'ectoderm-derived structure'
-+ 'aortico-pulmonary spiral septum' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0005193
+Label(s): ethmoidal artery 
+- 'ethmoidal artery' SubClassOf 'branching_part_of' some 'ophthalmic artery'
++ 'ethmoidal artery' SubClassOf 'branching_part_of' some 'ophthalmic artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004077
-Label(s): cerebellum vermis lobule IV 
-- 'cerebellum vermis lobule IV' SubClassOf 'part_of' some 'cerebellum vermis culmen'
-+ 'cerebellum vermis lobule IV' SubClassOf 'part_of' some 'cerebellum vermis culmen'
+Class: http://purl.obolibrary.org/obo/UBERON_0001585
+Label(s): anterior vena cava 
+- 'anterior vena cava' SubClassOf 'connected to' some 'right cardiac atrium'
++ 'anterior vena cava' SubClassOf 'connected to' some 'right cardiac atrium'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004075
-Label(s): cerebellum vermis lobule II 
-- 'cerebellum vermis lobule II' SubClassOf 'part_of' some 'central lobule'
-+ 'cerebellum vermis lobule II' SubClassOf 'part_of' some 'central lobule'
+Class: http://purl.obolibrary.org/obo/UBERON_0001588
+Label(s): vertebral vein 
+- 'vertebral vein' SubClassOf 'connected to' some 'brachiocephalic vein'
++ 'vertebral vein' SubClassOf 'connected to' some 'brachiocephalic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005110
-Label(s): metanephric nephron 
-- 'metanephric nephron' SubClassOf 'develops_from' some 'metanephros'
-- 'metanephric nephron' SubClassOf 'develops_from' some 'metanephric cortex mesenchyme'
-+ 'metanephric nephron' SubClassOf 'develops_from' some 'metanephric mesenchyme'
+Class: http://purl.obolibrary.org/obo/CL_0002144
+Label(s): capillary endothelial cell 
+- 'capillary endothelial cell' SubClassOf 'blood vessel endothelial cell'
++ 'capillary endothelial cell' SubClassOf 'microvascular endothelial cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004043
-Label(s): semicircular canal ampulla 
-+ 'semicircular canal ampulla' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0005168
+Label(s): renal interlobular vein 
+- 'renal interlobular vein' SubClassOf 'connected to' some 'kidney arcuate vein'
++ 'renal interlobular vein' SubClassOf 'connected to' some 'kidney arcuate vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001299
-Label(s): glans penis 
-- 'glans penis' SubClassOf 'develops_from' some 'male reproductive system'
-- 'glans penis' SubClassOf 'develops_from' some 'male organism'
-- 'glans penis' SubClassOf 'develops_from' some 'male genital tubercle'
-- 'glans penis' SubClassOf 'develops_from' some 'external male genitalia'
+Class: http://purl.obolibrary.org/obo/UBERON_0018253
+Label(s): external pudendal vein 
+- 'external pudendal vein' SubClassOf 'connected to' some 'great saphenous vein'
++ 'external pudendal vein' SubClassOf 'connected to' some 'great saphenous vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007763
-Label(s): cerebellum vermis culmen 
-- 'cerebellum vermis culmen' SubClassOf 'cerebellum vermis lobule'
-+ 'cerebellum vermis culmen' SubClassOf 'cerebellum vermis lobule'
+Class: http://purl.obolibrary.org/obo/UBERON_0018256
+Label(s): lacrimal vein 
+- 'lacrimal vein' SubClassOf 'connected to' some 'superior ophthalmic vein'
++ 'lacrimal vein' SubClassOf 'connected to' some 'superior ophthalmic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0004016
-Label(s): dermatome 
-- 'dermatome' SubClassOf 'develops_from' some 'dermomyotome'
-+ 'dermatome' SubClassOf 'develops_from' some 'dermomyotome'
+Class: http://purl.obolibrary.org/obo/UBERON_0008339
+Label(s): microvascular endothelium 
+- 'microvascular endothelium' SubClassOf 'cardiovascular system endothelium'
++ 'microvascular endothelium' SubClassOf 'blood vessel endothelium'
++ 'microvascular endothelium' EquivalentTo 'endothelium' and ('part_of' some http://purl.obolibrary.org/obo/UBERON_8410081)
++ 'microvascular endothelium' SubClassOf 'part_of' some http://purl.obolibrary.org/obo/UBERON_8410081
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005922
-Label(s): inferior nasal concha 
-- 'inferior nasal concha' SubClassOf 'develops_from' some 'nasal capsule'
-+ 'inferior nasal concha' SubClassOf 'develops_from' some 'nasal capsule'
+Class: http://purl.obolibrary.org/obo/UBERON_0001320
+Label(s): iliolumbar vein 
+- 'iliolumbar vein' SubClassOf 'connected to' some 'common iliac vein'
++ 'iliolumbar vein' SubClassOf 'connected to' some 'common iliac vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007299
-Label(s): choroid plexus of tectal ventricle 
-+ 'choroid plexus of tectal ventricle' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001281
+Label(s): hepatic sinusoid 
+- 'hepatic sinusoid' SubClassOf 'connected to' some 'central vein of liver'
++ 'hepatic sinusoid' SubClassOf 'connected to' some 'central vein of liver'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001642
-Label(s): superior sagittal sinus 
-+ 'superior sagittal sinus' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0006198
+Label(s): dorsal intercostal artery 
+- 'dorsal intercostal artery' SubClassOf 'connected to' some 'costo-cervical trunk'
++ 'dorsal intercostal artery' SubClassOf 'connected to' some 'costo-cervical trunk'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001687
-Label(s): stapes bone 
-- 'stapes bone' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0013142
+Label(s): soleal vein 
+- 'soleal vein' SubClassOf 'connected to' some 'posterior tibial vein'
++ 'soleal vein' SubClassOf 'connected to' some 'posterior tibial vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001689
-Label(s): malleus bone 
-- 'malleus bone' SubClassOf 'neural crest-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0001672
+Label(s): anterior cerebral vein 
+- 'anterior cerebral vein' SubClassOf 'connected to' some 'basal vein'
++ 'anterior cerebral vein' SubClassOf 'connected to' some 'basal vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001693
-Label(s): exoccipital bone 
-+ 'exoccipital bone' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001673
+Label(s): central retinal vein 
+- 'central retinal vein' SubClassOf 'develops_from_part_of' some 'hyaloid vein'
++ 'central retinal vein' SubClassOf 'develops_from_part_of' some 'hyaloid vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006106
-Label(s): cochlear canal 
-+ 'cochlear canal' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0006137
+Label(s): proper palmar digital artery 
+- 'proper palmar digital artery' SubClassOf 'connected to' some 'common palmar digital artery'
++ 'proper palmar digital artery' SubClassOf 'connected to' some 'common palmar digital artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0005043
-Label(s): mucosa of nasolacrimal duct 
-+ 'mucosa of nasolacrimal duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001390
+Label(s): sural artery 
+- 'sural artery' SubClassOf 'connected to' some 'popliteal artery'
++ 'sural artery' SubClassOf 'connected to' some 'popliteal artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006844
-Label(s): cusp of tooth 
-+ 'cusp of tooth' SubClassOf 'ectoderm-derived structure'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0006669
-Label(s): alveolar canal 
-- 'alveolar canal' SubClassOf 'anatomical entity'
-+ 'alveolar canal' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0018232
+Label(s): axillary sweat gland 
+- 'axillary sweat gland' SubClassOf 'part_of' some 'axilla'
+- 'axillary sweat gland' EquivalentTo 'sweat gland' and ('part_of' some 'axilla')
+- 'axillary sweat gland' SubClassOf 'apocrine sweat gland'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0002520
 Label(s): submandibular lymph node 
 - 'submandibular lymph node' SubClassOf 'peripheral lymph node'
 + 'submandibular lymph node' SubClassOf 'peripheral lymph node'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007176
-Label(s): superior angle of scapula 
-- 'superior angle of scapula' SubClassOf 'angle of scapula'
-+ 'superior angle of scapula' SubClassOf 'angle of scapula'
+Class: http://purl.obolibrary.org/obo/UBERON_0007160
+Label(s): inferior petrosal sinus 
+- 'inferior petrosal sinus' SubClassOf 'connected to' some 'internal jugular vein'
++ 'inferior petrosal sinus' SubClassOf 'connected to' some 'internal jugular vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007175
-Label(s): inferior angle of scapula 
-- 'inferior angle of scapula' SubClassOf 'angle of scapula'
-+ 'inferior angle of scapula' SubClassOf 'angle of scapula'
+Class: http://purl.obolibrary.org/obo/UBERON_0007157
+Label(s): superior thyroid vein 
+- 'superior thyroid vein' SubClassOf 'connected to' some 'internal jugular vein'
++ 'superior thyroid vein' SubClassOf 'connected to' some 'internal jugular vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007174
-Label(s): medial border of scapula 
-- 'medial border of scapula' SubClassOf 'border of scapula'
-+ 'medial border of scapula' SubClassOf 'border of scapula'
+Class: http://purl.obolibrary.org/obo/UBERON_0007156
+Label(s): inferior thyroid vein 
+- 'inferior thyroid vein' SubClassOf 'connected to' some 'brachiocephalic vein'
++ 'inferior thyroid vein' SubClassOf 'connected to' some 'brachiocephalic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0007173
-Label(s): lateral border of scapula 
-- 'lateral border of scapula' SubClassOf 'border of scapula'
-+ 'lateral border of scapula' SubClassOf 'border of scapula'
+Class: http://purl.obolibrary.org/obo/UBERON_0007151
+Label(s): mitral valve leaflet 
+- 'mitral valve leaflet' SubClassOf 'attaches_to' some 'chorda tendinea of left ventricle'
++ 'mitral valve leaflet' SubClassOf 'attaches_to' some 'chorda tendinea of left ventricle'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0015117
-Label(s): lamina terminalis of cerebral hemisphere 
-- 'lamina terminalis of cerebral hemisphere' SubClassOf 'develops_from' some 'future diencephalon'
+Class: http://purl.obolibrary.org/obo/UBERON_0007146
+Label(s): posterior spinal artery 
+- 'posterior spinal artery' SubClassOf 'connected to' some 'vertebral artery'
++ 'posterior spinal artery' SubClassOf 'connected to' some 'vertebral artery'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001723
-Label(s): tongue 
-- 'tongue' SubClassOf 'develops_from' some 'anterior region of body'
-- 'tongue' SubClassOf 'develops_from' some 'head'
-- 'tongue' SubClassOf 'develops_from' some 'body proper'
-- 'tongue' SubClassOf 'develops_from' some 'mouth'
-- 'tongue' SubClassOf 'develops_from' some 'craniocervical region'
-- 'tongue' SubClassOf 'develops_from' some 'main body axis'
-- 'tongue' SubClassOf 'develops_from' some 'digestive tract'
-- 'tongue' SubClassOf 'develops_from' some 'digestive system'
+Class: http://purl.obolibrary.org/obo/UBERON_0006082
+Label(s): fundus of urinary bladder 
+- 'fundus of urinary bladder' SubClassOf 'develops_from' some 'urorectal septum'
++ 'fundus of urinary bladder' SubClassOf 'develops_from' some 'urorectal septum'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0002819
-Label(s): apex of cochlea 
-+ 'apex of cochlea' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0004742
+Label(s): dentary 
+- 'dentary' SubClassOf 'has developmental contribution from' some 'mesenchyme of lower jaw'
++ 'dentary' SubClassOf 'has developmental contribution from' some 'mesenchyme of lower jaw'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003902
-Label(s): retinal neural layer 
-- 'retinal neural layer' SubClassOf 'develops_from' some 'Eumetazoa'
+Class: http://purl.obolibrary.org/obo/UBERON_0017637
+Label(s): marginal venous sinus 
+- 'marginal venous sinus' SubClassOf 'connected to' some 'sigmoid sinus'
++ 'marginal venous sinus' SubClassOf 'connected to' some 'sigmoid sinus'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0003677
-Label(s): tooth root 
-+ 'tooth root' SubClassOf 'ectoderm-derived structure'
+Class: http://purl.obolibrary.org/obo/UBERON_0012237
+Label(s): superior phrenic vein 
+- 'superior phrenic vein' SubClassOf 'connected to' some 'azygos vein'
++ 'superior phrenic vein' SubClassOf 'connected to' some 'azygos vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010065
-Label(s): auditory meatus epithelium 
-+ 'auditory meatus epithelium' SubClassOf 'ecto-epithelium'
+Class: http://purl.obolibrary.org/obo/UBERON_0001811
+Label(s): conjunctiva 
+- 'conjunctiva' SubClassOf 'develops_from' some 'external ectoderm'
++ 'conjunctiva' SubClassOf 'develops_from' some 'external ectoderm'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010066
-Label(s): tympanic plate 
-+ 'tympanic plate' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001530
+Label(s): common carotid artery plus branches 
+- 'common carotid artery plus branches' SubClassOf 'connected to' some 'arch of aorta'
++ 'common carotid artery plus branches' SubClassOf 'connected to' some 'arch of aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0008199
-Label(s): chin 
-- 'chin' SubClassOf 'part_of' some 'face'
-+ 'chin' SubClassOf 'part_of' some 'face'
-+ 'chin' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0003698
-Label(s): subtalar joint 
-- 'subtalar joint' SubClassOf 'intertarsal joint'
-+ 'subtalar joint' SubClassOf 'intertarsal joint'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0011197
-Label(s): parathyroid epithelium 
-- 'parathyroid epithelium' SubClassOf 'multilaminar epithelium'
-+ 'parathyroid epithelium' SubClassOf 'multilaminar epithelium'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001839
-Label(s): bony labyrinth 
-+ 'bony labyrinth' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001847
-Label(s): lobule of pinna 
-+ 'lobule of pinna' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001849
-Label(s): membranous labyrinth 
-+ 'membranous labyrinth' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001860
-Label(s): endolymphatic duct 
-+ 'endolymphatic duct' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001861
-Label(s): ductus reuniens 
-+ 'ductus reuniens' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001862
-Label(s): vestibular labyrinth 
-+ 'vestibular labyrinth' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0000312
-Label(s): inner cambium layer of periosteum 
-- 'inner cambium layer of periosteum' SubClassOf 'anatomical entity'
-+ 'inner cambium layer of periosteum' SubClassOf 'structure with developmental contribution from neural crest'
-
-Class: http://purl.obolibrary.org/obo/UBERON_0001895
-Label(s): metencephalon 
-- 'metencephalon' SubClassOf 'develops_from' some 'hindbrain'
-- 'metencephalon' SubClassOf 'develops_from' some 'nervous system'
-- 'metencephalon' SubClassOf 'develops_from' some 'brain'
-- 'metencephalon' SubClassOf 'develops_from' some 'central nervous system'
-- 'metencephalon' SubClassOf 'develops_from' some 'Eumetazoa'
+Class: http://purl.obolibrary.org/obo/UBERON_0001531
+Label(s): right common carotid artery plus branches 
+- 'right common carotid artery plus branches' SubClassOf 'connected to' some 'brachiocephalic artery'
++ 'right common carotid artery plus branches' SubClassOf 'connected to' some 'brachiocephalic artery'
 
 Class: http://purl.obolibrary.org/obo/UBERON_0001542
 Label(s): inguinal lymph node 
 - 'inguinal lymph node' SubClassOf 'peripheral lymph node'
 + 'inguinal lymph node' SubClassOf 'peripheral lymph node'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0010172
-Label(s): bulb of aorta 
-+ 'bulb of aorta' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/CL_0009049
+Label(s): smooth muscle cell of high endothelial venule of lymph node 
++ 'smooth muscle cell of high endothelial venule of lymph node' SubClassOf 'microcirculation associated smooth muscle cell'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0028194
-Label(s): spiral prominence of cochlear duct 
-+ 'spiral prominence of cochlear duct' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001561
+Label(s): subcostal artery 
+- 'subcostal artery' SubClassOf 'connected to' some 'descending thoracic aorta'
++ 'subcostal artery' SubClassOf 'connected to' some 'descending thoracic aorta'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0006762
-Label(s): suspensory ligament of lens 
-+ 'suspensory ligament of lens' SubClassOf 'structure with developmental contribution from neural crest'
+Class: http://purl.obolibrary.org/obo/UBERON_0001586
+Label(s): internal jugular vein 
+- 'internal jugular vein' SubClassOf 'connected to' some 'brachiocephalic vein'
++ 'internal jugular vein' SubClassOf 'connected to' some 'brachiocephalic vein'
 
-Class: http://purl.obolibrary.org/obo/UBERON_0001997
-Label(s): olfactory epithelium 
-- 'olfactory epithelium' SubClassOf 'develops_from' some 'main body axis'
-- 'olfactory epithelium' SubClassOf 'develops_from' some 'anterior region of body'
-- 'olfactory epithelium' SubClassOf 'develops_from' some 'craniocervical region'
-- 'olfactory epithelium' SubClassOf 'develops_from' some 'body proper'
-- 'olfactory epithelium' SubClassOf 'develops_from' some 'external ectoderm'
-- 'olfactory epithelium' SubClassOf 'develops_from' some 'head'
+Class: http://purl.obolibrary.org/obo/UBERON_0001590
+Label(s): pericardiacophrenic vein 
+- 'pericardiacophrenic vein' SubClassOf 'connected to' some 'brachiocephalic vein'
++ 'pericardiacophrenic vein' SubClassOf 'connected to' some 'brachiocephalic vein'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001916
+Label(s): endothelium of arteriole 
+- 'endothelium of arteriole' SubClassOf 'blood vessel endothelium'
++ 'endothelium of arteriole' SubClassOf 'microvascular endothelium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0001918
+Label(s): endothelium of venule 
+- 'endothelium of venule' SubClassOf 'blood vessel endothelium'
++ 'endothelium of venule' SubClassOf 'microvascular endothelium'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0003712
+Label(s): cavernous sinus 
+- 'cavernous sinus' SubClassOf 'connected to' some 'inferior petrosal sinus'
++ 'cavernous sinus' SubClassOf 'connected to' some 'inferior petrosal sinus'
 
 
 ################
 @Classes new to this version
 
-Class: http://purl.obolibrary.org/obo/UBERON_8470000
-Label(s): placental blood 
-+ 'placental blood' SubClassOf 'located in' some 'placenta'
-+ 'placental blood' SubClassOf 'blood'
-+ 'placental blood' EquivalentTo 'blood' and ('located in' some 'placenta')
+Class: http://purl.obolibrary.org/obo/UBERON_8450001
+Label(s): egg follicle 
++ 'egg follicle' SubClassOf 'anatomical entity'
++ 'egg follicle' SubClassOf 'part_of' some 'ovary'
++ 'egg follicle' SubClassOf 'reproductive structure'
++ 'egg follicle' SubClassOf 'organ part'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0012177
+Label(s): skin apocrine gland 
++ 'skin apocrine gland' SubClassOf 'apocrine gland'
++ 'skin apocrine gland' SubClassOf 'skin gland'
++ 'skin apocrine gland' EquivalentTo 'apocrine gland' and ('part_of' some 'skin of body')
++ 'skin apocrine gland' SubClassOf 'exocrine gland of integumental system'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410081
+Label(s): blood microvessel 
++ 'blood microvessel' SubClassOf 'blood vessel'
++ 'blood microvessel' SubClassOf 'microcirculatory vessel'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410080
+Label(s): red bone marrow of sternum 
++ 'red bone marrow of sternum' EquivalentTo 'red bone marrow' and ('part_of' some 'sternum')
++ 'red bone marrow of sternum' SubClassOf 'red bone marrow'
++ 'red bone marrow of sternum' SubClassOf 'part_of' some 'sternum'
+
+Class: http://purl.obolibrary.org/obo/UBERON_8410079
+Label(s): red bone marrow of iliac crest 
++ 'red bone marrow of iliac crest' SubClassOf 'red bone marrow'
++ 'red bone marrow of iliac crest' SubClassOf 'part_of' some 'iliac crest'
++ 'red bone marrow of iliac crest' EquivalentTo 'red bone marrow' and ('part_of' some 'iliac crest')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0008974
+Label(s): apocrine gland 
++ 'apocrine gland' SubClassOf 'exocrine gland'
++ 'apocrine gland' DisjointWith 'merocrine gland'
+
+Class: http://purl.obolibrary.org/obo/UBERON_3011048
+Label(s): genital system 
++ 'genital system' SubClassOf 'anatomical system'
++ 'genital system' SubClassOf 'part_of' some 'genitourinary system'
+
+
+################
+@Classes deleted from this version
+
+Class: http://purl.obolibrary.org/obo/UBERON_0035074
+Label(s): duct of apocrine sweat gland 
++ 'duct of apocrine sweat gland' SubClassOf 'duct'
++ 'duct of apocrine sweat gland' SubClassOf 'part_of' some 'apocrine sweat gland'
++ 'duct of apocrine sweat gland' EquivalentTo 'duct' and ('part_of' some 'apocrine sweat gland')
++ 'duct of apocrine sweat gland' SubClassOf 'ectoderm-derived structure'
+
+Class: http://purl.obolibrary.org/obo/UBERON_7500039
+Label(s): posterior of pes 
++ 'posterior of pes' SubClassOf 'in_posterior_side_of' some 'pes'
++ 'posterior of pes' SubClassOf 'anatomical point'
++ 'posterior of pes' EquivalentTo 'anatomical point' and ('in_posterior_side_of' some 'pes')
++ 'posterior of pes' SubClassOf 'anatomical entity'
++ 'posterior of pes' SubClassOf 'part_of' some 'pes'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0014393
+Label(s): sweat of axilla 
++ 'sweat of axilla' EquivalentTo 'sweat' and ('produced by' some 'axillary sweat gland')
++ 'sweat of axilla' SubClassOf 'sweat'
++ 'sweat of axilla' SubClassOf 'produced by' some 'axillary sweat gland'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0013228
+Label(s): sweat gland of eyelid 
++ 'sweat gland of eyelid' SubClassOf 'eyelid gland'
++ 'sweat gland of eyelid' SubClassOf 'eye skin gland'
++ 'sweat gland of eyelid' SubClassOf 'apocrine sweat gland'
++ 'sweat gland of eyelid' EquivalentTo 'apocrine sweat gland' and ('part_of' some 'eyelid')
+
+Class: http://purl.obolibrary.org/obo/UBERON_0000382
+Label(s): apocrine sweat gland 
++ 'apocrine sweat gland' SubClassOf 'merocrine gland'
++ 'apocrine sweat gland' DisjointWith 'eccrine sweat gland'
++ 'apocrine sweat gland' SubClassOf 'sweat gland'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0002297
+Label(s): cerumen 
++ 'cerumen' SubClassOf 'located in' some 'external acoustic meatus'
++ 'cerumen' SubClassOf 'sweat'
++ 'cerumen' SubClassOf 'produced by' some 'apocrine sweat gland'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0034762
+Label(s): areolar sweat gland 
++ 'areolar sweat gland' SubClassOf 'apocrine sweat gland'
++ 'areolar sweat gland' SubClassOf 'part_of' some 'areola'
++ 'areolar sweat gland' EquivalentTo 'sweat gland' and ('part_of' some 'areola')
+
+Class: http://purl.obolibrary.org/obo/UBERON_7500035
+Label(s): tip of tail 
++ 'tip of tail' EquivalentTo 'anatomical point' and ('distalmost part of' some 'tail')
++ 'tip of tail' SubClassOf 'anatomical point'
++ 'tip of tail' SubClassOf 'distalmost part of' some 'tail'
++ 'tip of tail' SubClassOf 'part_of' some 'tail'
+
+Class: http://purl.obolibrary.org/obo/UBERON_0018232
+Label(s): axillary sweat gland 
++ 'axillary sweat gland' SubClassOf 'part_of' some 'axilla'
++ 'axillary sweat gland' EquivalentTo 'sweat gland' and ('part_of' some 'axilla')
++ 'axillary sweat gland' SubClassOf 'apocrine sweat gland'
 

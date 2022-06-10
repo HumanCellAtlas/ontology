@@ -20,3 +20,10 @@ http://purl.obolibrary.org/obo/BFO_0000030 # object
 http://purl.obolibrary.org/obo/NCBITaxon_1 # root
 http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
 http://purl.obolibrary.org/obo/UBERON_0039176
+http://purl.obolibrary.org/obo/UBERON_0035074
+http://purl.obolibrary.org/obo/UBERON_0000382
+http://purl.obolibrary.org/obo/UBERON_0002297
+http://purl.obolibrary.org/obo/UBERON_0034762
+http://purl.obolibrary.org/obo/UBERON_0018232
+http://purl.obolibrary.org/obo/UBERON_0014393
+http://purl.obolibrary.org/obo/UBERON_0013228

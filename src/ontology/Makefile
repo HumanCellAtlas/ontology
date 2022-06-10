@@ -34,7 +34,7 @@ all: all_imports all_anatomy  go_cell_cycle.owl efo_slim.owl fbbi_hcao.owl $(ONT
 
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl efo_slim.owl fbbi_hcao.owl $(RELEASEDIR) &&\
+	cp $(ONT).owl efo_slim.owl fbbi_hcao.owl hpo_slim.owl $(RELEASEDIR) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
