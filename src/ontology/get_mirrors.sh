@@ -5,6 +5,8 @@ mkdir -p mirror
 mkdir -p ../imports
 echo "DOWNLOADING MONDO..."
 curl -L http://purl.obolibrary.org/obo/mondo.obo > mirror/mondo.obo && ../../bin/robot convert -i mirror/mondo.obo -f owl -o mirror/mondo.owl && echo "MONDO DOWNLOADED"
+curl -L http://purl.obolibrary.org/obo/mondo.owl > mirror/mondo-full.owl && echo "MONDO DOWNLOADED"
+
 
 echo "DOWNLOADING UBERON..."
 curl -L http://purl.obolibrary.org/obo/uberon.owl > mirror/uberon.owl && echo "UBERON DOWNLOADED"
