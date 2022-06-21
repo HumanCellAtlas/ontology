@@ -45,11 +45,13 @@ prepare_release: all
 # by default we use Elk to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
 # The main release target needs breaking into separate steps to avoid ROBOT exception
-$(ONT).owl: $(SRC) uberon_human_extended.owl $(CL_IMPORT) go_cell_cycle.owl clo_import.owl terms_to_delete.txt
-	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input mirror/cl.owl --input ../imports/duo.owl --input clo_import.owl -o hcao_merged.owl &&\
+$(ONT).owl: $(SRC) uberon_human_extended.owl cl_import.owl go_cell_cycle.owl clo_import.owl terms_to_delete.txt
+	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_import.owl --input ../imports/duo.owl --input clo_import.owl -o hcao_merged.owl &&\
 	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt -p false -o hcao_cleaned.owl &&\
 	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
+debug.md:
+	$(ROBOT) explain -i hcao_cleaned.owl --reasoner ELK -M unsatisfiability --unsatisfiable random:10 --explanation $@
 
 #$(ONT).obo: $(ONT).owl
 #	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
@@ -159,7 +161,14 @@ fma_uberon.owl: fma_import_manual.txt
 uberon_human_extended.owl: fma_uberon.owl uberon_human.owl
 	$(ROBOT) merge --input fma_uberon.owl --input uberon_human.owl relax reduce --output $@
 
+uberon_axioms_in_cl.ofn: mirror/cl.owl
+	$(ROBOT) merge -i $< remove --base-iri http://purl.obolibrary.org/obo/UBERON_ --axioms external --trim false -o $@
 
+uberon_axioms_in_cl.owl: uberon_axioms_in_cl.ofn
+	sed '/^Declaration/d' $< > $@
+
+cl_import.owl: mirror/cl.owl uberon_axioms_in_cl.owl
+	$(ROBOT) merge -i $< unmerge -i uberon_axioms_in_cl.owl -o $@
 
 # ----------------------------------------
 # Import modules
