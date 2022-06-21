@@ -122,8 +122,13 @@ efo_added_for_hca.txt: ../imports/efo_inferred.owl
 efo_import.txt: efo_slim.txt efo_added_for_hca.txt efo_import_manual.txt
 	cat $^ > $@
 
-hpo_slim.owl: ./mirror/hp.owl hp_import.txt
-	$(ROBOT) extract -i $< --method MIREOT -B hp_import.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/hp -o $@
+hpo_remove_terms.txt: mirror/mondo-full.owl
+	$(ROBOT) query -i $< --query ../sparql/hp-mondo-exact.sparql $@
+
+hpo_slim.owl: ./mirror/hp.owl hp_import.txt hpo_remove_terms.txt
+	$(ROBOT) extract -i $< --method MIREOT -B hp_import.txt \
+	remove -T hpo_remove_terms.txt \
+	annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/hp -o $@
 
 microscopy_seed.txt: ../imports/fbbi.owl
 	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
