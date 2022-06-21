@@ -12,6 +12,10 @@ curl -L http://purl.obolibrary.org/obo/uberon.owl > mirror/uberon.owl && echo "U
 echo "DOWNLOADING FMA..."
 curl -L http://purl.obolibrary.org/obo/fma.owl > ../imports/fma.owl && echo "FMA DOWNLOADED"
 
+echo "DOWNLOADING DUO..."
+curl -L http://purl.obolibrary.org/obo/duo.owl > ../imports/duo.owl && echo "DUO DOWNLOADED"
+
+
 echo "DOWNLOADING FBBI..."
 curl -L http://purl.obolibrary.org/obo/fbbi.owl > ../imports/fbbi.owl && echo "FBBI DOWNLOADED"
 
