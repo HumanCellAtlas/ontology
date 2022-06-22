@@ -75,7 +75,7 @@ ontologies:
       - http://purl.obolibrary.org/obo/HP_
     reasoner: None
     oboSlims: false
-    ontology_purl: file:///opt/ols/ontologies/hp_slim.owl
+    ontology_purl: file:///opt/ols/ontologies/hpo_slim.owl
 
 
 
