@@ -110,7 +110,7 @@ go_cell_cycle.owl: ../imports/go.owl
 	$(ROBOT) extract -i ../imports/go.owl --method MIREOT -b GO:0022403 -o go_cell_cycle.owl
 	
 clo_import.owl: clo_manual_import.txt
-	$(ROBOT) extract --method BOT --input $(CLO_IMPORT) --term-file $< -o $@
+	$(ROBOT) extract --method BOT --input $(CLO_IMPORT) --term-file $< remove -t "OBI:0000759" -o $@
 
 efo_slim.owl: ../imports/efo_inferred.owl efo_import.txt
 	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_import.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
@@ -130,17 +130,17 @@ hpo_slim.owl: ./mirror/hp.owl hp_import.txt hpo_remove_terms.txt
 	remove -T hpo_remove_terms.txt \
 	annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/hp -o $@
 
-microscopy_seed.txt: ../imports/fbbi.owl
-	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
+#microscopy_seed.txt: ../imports/fbbi.owl
+#	echo "'microscopy'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
 
-microscopy_label_seed.txt: ../imports/fbbi.owl
-	echo "'fluorescent label'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
+#microscopy_label_seed.txt: ../imports/fbbi.owl
+#	echo "'fluorescent label'" | $(OWLTOOLS) $< --reasoner-query -r elk -d --stdin | cut -d ' ' -f2 > $@
 
-fbbi_terms.txt: microscopy_seed.txt microscopy_label_seed.txt
-	cat $+ > $@
+#fbbi_terms.txt: microscopy_seed.txt microscopy_label_seed.txt
+#	cat $+ > $@
 
-fbbi_hcao.owl: fbbi_terms.txt
-	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
+#fbbi_hcao.owl: fbbi_terms.txt
+#	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
 
 #generate data branch slim from EDAM
 #data_terms.txt: ../imports/edam.owl
