@@ -30,11 +30,11 @@ EFO_MIRROR=mirror/efo.owl
 
 some: $(ONT).owl sparql_test
 
-all: all_imports all_anatomy  go_cell_cycle.owl efo_slim.owl fbbi_hcao.owl $(ONT).owl
+all: all_imports all_anatomy go_cell_cycle.owl efo_slim.owl $(ONT).owl
 
 test: sparql_test all
 prepare_release: all
-	cp $(ONT).owl efo_slim.owl fbbi_hcao.owl hpo_slim.owl $(RELEASEDIR) &&\
+	cp $(ONT).owl efo_slim.owl hpo_slim.owl $(RELEASEDIR) &&\
 	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 
 # ----------------------------------------
