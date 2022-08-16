@@ -1,2252 +1,264 @@
 Ontology Diff Summary
-Diff date: 2022/06/10 15:01:47
+Diff date: 2022/08/16 10:47:14
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 89
-Number of classes added: 435
-Number of classes deleted: 27
+Number of classes changed: 7
+Number of classes added: 208
+Number of classes deleted: 3
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0001033
-Label(s): translation profiling 
-- 'translation profiling' SubClassOf 'assay by array'
-- 'translation profiling' SubClassOf 'RNA assay'
-+ 'translation profiling' SubClassOf 'experimental process'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001030
-Label(s): RNAi profiling by array 
-- 'RNAi profiling by array' SubClassOf 'assay by array'
-
-Class: http://purl.obolibrary.org/obo/BTO_0001516
-Label(s): BA/F3 cell 
-- 'BA/F3 cell' SubClassOf 'interleukin (Mus musculus)'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002759
-Label(s): methylation profiling by array 
-- 'methylation profiling by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002762
-Label(s): ChIP-chip by tiling array 
-- 'ChIP-chip by tiling array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002764
-Label(s): ChIP-chip by SNP array 
-- 'ChIP-chip by SNP array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002766
-Label(s): proteomic profiling by mass spectrometer 
-- 'proteomic profiling by mass spectrometer' SubClassOf 'protein assay'
-- 'proteomic profiling by mass spectrometer' SubClassOf 'assay by mass spectrometry'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002769
-Label(s): transcription profiling by tiling array 
-- 'transcription profiling by tiling array' SubClassOf 'assay by array'
-- 'transcription profiling by tiling array' SubClassOf 'RNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002771
-Label(s): genotyping by high throughput sequencing 
-- 'genotyping by high throughput sequencing' SubClassOf 'DNA assay'
-- 'genotyping by high throughput sequencing' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003810
-Label(s): interleukin-22 (Homo sapiens) 
-- 'interleukin-22 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-22 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003807
-Label(s): interleukin-33 (Rattus norvegicus) 
-- 'interleukin-33 (Rattus norvegicus)' SubClassOf 'interleukin (Rattus norvegicus)'
-+ 'interleukin-33 (Rattus norvegicus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003806
-Label(s): interleukin-26 (Homo sapiens) 
-- 'interleukin-26 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-26 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003805
-Label(s): interleukin-24 (Homo sapiens) 
-- 'interleukin-24 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-24 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003804
-Label(s): interleukin-21 (Mus musculus) 
-- 'interleukin-21 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
-+ 'interleukin-21 (Mus musculus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003803
-Label(s): interleukin-20 (Homo sapiens) 
-- 'interleukin-20 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-20 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003801
-Label(s): interleukin-19 (Homo sapiens) 
-- 'interleukin-19 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-19 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003800
-Label(s): interleukin-17 (Mus musculus) 
-- 'interleukin-17 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
-+ 'interleukin-17 (Mus musculus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0006524
-Label(s): L-arginine measurement 
-- 'L-arginine measurement' SubClassOf 'amino acid measurement'
-+ 'L-arginine measurement' SubClassOf http://www.ebi.ac.uk/efo/EFO_0020990
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003798
-Label(s): interleukin-13 (Mus musculus) 
-- 'interleukin-13 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
-+ 'interleukin-13 (Mus musculus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003797
-Label(s): interleukin-13 (Homo sapiens) 
-- 'interleukin-13 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-13 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003796
-Label(s): interleukin-1 beta (Rattus norvegicus) 
-- 'interleukin-1 beta (Rattus norvegicus)' SubClassOf 'interleukin (Rattus norvegicus)'
-+ 'interleukin-1 beta (Rattus norvegicus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003795
-Label(s): interleukin-1 beta (Mus musculus) 
-- 'interleukin-1 beta (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
-+ 'interleukin-1 beta (Mus musculus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003794
-Label(s): interleukin-1 beta (Homo sapiens) 
-- 'interleukin-1 beta (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-1 beta (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003750
-Label(s): MBD-seq 
-- 'MBD-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'MBD-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003749
-Label(s): MeDIP-seq 
-- 'MeDIP-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'MeDIP-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003741
-Label(s): pooled clone sequencing 
-- 'pooled clone sequencing' SubClassOf 'assay by high throughput sequencer'
-+ 'pooled clone sequencing' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002768
-Label(s): transcription profiling by array 
-- 'transcription profiling by array' SubClassOf 'RNA assay'
-- 'transcription profiling by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002767
-Label(s): genotyping by array 
-- 'genotyping by array' SubClassOf 'assay by array'
-- 'genotyping by array' SubClassOf 'DNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002765
-Label(s): proteomic profiling by array 
-- 'proteomic profiling by array' SubClassOf 'assay by array'
-- 'proteomic profiling by array' SubClassOf 'protein assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002761
-Label(s): methylation profiling by high throughput sequencing 
-- 'methylation profiling by high throughput sequencing' SubClassOf 'assay by high throughput sequencer'
-+ 'methylation profiling by high throughput sequencing' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002760
-Label(s): ChIP-chip by array 
-- 'ChIP-chip by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001031
-Label(s): tiling path by array 
-- 'tiling path by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001740
-Label(s): software manufacturer 
-- 'software manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001739
-Label(s): investigator 
-- 'investigator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001738
-Label(s): institution 
-- 'institution' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001737
-Label(s): hardware manufacturer 
-- 'hardware manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001733
-Label(s): curator 
-- 'curator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001731
-Label(s): consortium member 
-- 'consortium member' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001730
-Label(s): biosequence provider 
-- 'biosequence provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001729
-Label(s): biomaterial provider 
-- 'biomaterial provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001728
-Label(s): array manufacturer 
-- 'array manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0004447
-Label(s): peer review quality control role 
-- 'peer review quality control role' SubClassOf 'organization role'
-
-Class: http://purl.obolibrary.org/obo/OBI_0000018
-Label(s): material supplier role 
-- 'material supplier role' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000749
-Label(s): comparative genomic hybridization by array 
-- 'comparative genomic hybridization by array' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009988
-Label(s): MARGI 
-- 'MARGI' SubClassOf 'assay by high throughput sequencer'
-+ 'MARGI' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009987
-Label(s): GAM 
-- 'GAM' SubClassOf 'assay by high throughput sequencer'
-+ 'GAM' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009984
-Label(s): SPRITE 
-- 'SPRITE' SubClassOf 'assay by high throughput sequencer'
-+ 'SPRITE' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009982
-Label(s): Trac-Loop 
-- 'Trac-Loop' SubClassOf 'assay by high throughput sequencer'
-+ 'Trac-Loop' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009980
-Label(s): MC-Hi-C 
-- 'MC-Hi-C' SubClassOf 'assay by long read sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009978
-Label(s): sn-Hi-C 
-- 'sn-Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009977
-Label(s): sci-Hi-C 
-- 'sci-Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009976
-Label(s): DNase Hi-C 
-- 'DNase Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009975
-Label(s): dilution HiC 
-- 'dilution HiC' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009974
-Label(s): in situ HiC 
-- 'in situ HiC' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009973
-Label(s): CUT&RUN 
-- 'CUT&RUN' SubClassOf 'assay by high throughput sequencer'
-+ 'CUT&RUN' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009972
-Label(s): NAD-seq 
-- 'NAD-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'NAD-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009971
-Label(s): TSA-seq 
-- 'TSA-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'TSA-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000647
-Label(s): experiment performer 
-- 'experiment performer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0005219
-Label(s): TraDIS sequencing 
-- 'TraDIS sequencing' SubClassOf 'assay by high throughput sequencer'
-- 'TraDIS sequencing' SubClassOf 'DNA assay'
-+ 'TraDIS sequencing' SubClassOf 'experimental process'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009809
-Label(s): single nucleus RNA sequencing 
-+ 'single nucleus RNA sequencing' SubClassOf 'assay by sequencer'
-+ 'single nucleus RNA sequencing' SubClassOf 'RNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009735
-Label(s): co-investigator 
-- 'co-investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001732
-Label(s): consultant 
-- 'consultant' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001735
-Label(s): data coder 
-- 'data coder' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008808
-Label(s): Micro-C XL 
-- 'Micro-C XL' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003296
-Label(s): interleukin-4 (Homo sapiens) 
-- 'interleukin-4 (Homo sapiens)' SubClassOf 'interleukin (Homo sapiens)'
-+ 'interleukin-4 (Homo sapiens)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003292
-Label(s): interleukin-2 (Mus musculus) 
-- 'interleukin-2 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
-+ 'interleukin-2 (Mus musculus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000753
-Label(s): microRNA profiling by array 
-- 'microRNA profiling by array' SubClassOf 'assay by array'
-- 'microRNA profiling by array' SubClassOf 'RNA assay'
-+ 'microRNA profiling by array' SubClassOf 'experimental process'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0003799
-Label(s): interleukin-14 (Mus musculus) 
-- 'interleukin-14 (Mus musculus)' SubClassOf 'interleukin (Mus musculus)'
-+ 'interleukin-14 (Mus musculus)' SubClassOf 'interleukin'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009979
-Label(s): single cell Hi-C 
-- 'single cell Hi-C' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0008896
-Label(s): RNA-Seq 
-- 'RNA-Seq' SubClassOf 'assay by high throughput sequencer'
-+ 'RNA-Seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010058
-Label(s): Fluidigm C1-based library preparation 
-- 'Fluidigm C1-based library preparation' SubClassOf 'assay by Fluidigm C1 microfluidics platform'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0010048
-Label(s): Fluidigm C1-based dissociation 
-- 'Fluidigm C1-based dissociation' SubClassOf 'assay by Fluidigm C1 microfluidics platform'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009743
-Label(s): administrator 
-- 'administrator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009742
-Label(s): computational scientist 
-- 'computational scientist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009741
-Label(s): experimental scientist 
-- 'experimental scientist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009740
-Label(s): clinician 
-- 'clinician' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009739
-Label(s): technician 
-- 'technician' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009738
-Label(s): pathologist 
-- 'pathologist' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009737
-Label(s): data curator 
-- 'data curator' SubClassOf 'curator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009736
-Label(s): principal investigator 
-- 'principal investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0005032
-Label(s): IP-seq 
-- 'IP-seq' SubClassOf 'assay by high throughput sequencer'
-+ 'IP-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030030
-Label(s): Quant-seq 
-+ 'Quant-seq' SubClassOf 'RNA assay'
-+ 'Quant-seq' SubClassOf 'assay by sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0002770
-Label(s): transcription profiling by high throughput sequencing 
-- 'transcription profiling by high throughput sequencing' SubClassOf 'RNA assay'
-- 'transcription profiling by high throughput sequencing' SubClassOf 'assay by high throughput sequencer'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001741
-Label(s): submitter 
-- 'submitter' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007690
-Label(s): 4C 
-- '4C' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007689
-Label(s): 3C 
-- '3C' SubClassOf 'assay by array'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0007687
-Label(s): microRNA profiling by RT-PCR 
-- 'microRNA profiling by RT-PCR' SubClassOf 'assay by array'
-- 'microRNA profiling by RT-PCR' SubClassOf 'RNA assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001736
-Label(s): funder 
-- 'funder' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001734
-Label(s): data analyst 
-- 'data analyst' SubClassOf 'organization role'
+Class: http://purl.obolibrary.org/obo/OBA_2001002
+Label(s): age of onset of urinary bladder carcinoma 
+- 'age of onset of urinary bladder carcinoma' SubClassOf 'Onset'
++ 'age of onset of urinary bladder carcinoma' SubClassOf http://purl.obolibrary.org/obo/OBA_2040153
+
+Class: http://purl.obolibrary.org/obo/OBA_2001028
+Label(s): age of onset of migraine without aura, susceptibility to, 4 
+- 'age of onset of migraine without aura, susceptibility to, 4' SubClassOf 'Onset'
++ 'age of onset of migraine without aura, susceptibility to, 4' SubClassOf 'age of onset of migraine disorder'
+
+Class: http://purl.obolibrary.org/obo/OBA_2001010
+Label(s): age of onset of essential hypertension 
+- 'age of onset of essential hypertension' SubClassOf 'Onset'
++ 'age of onset of essential hypertension' SubClassOf http://purl.obolibrary.org/obo/OBA_2040159
+
+Class: http://www.ebi.ac.uk/efo/EFO_0002012
+Label(s): organization role 
++ 'organization role' SubClassOf http://purl.obolibrary.org/obo/BFO_0000023
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021673
+Label(s): Theobromine measurement 
+- 'Theobromine measurement' SubClassOf 'metabolite measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021606
+Label(s): Inositol measurement 
+- 'Inositol measurement' SubClassOf 'metabolite measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021579
+Label(s): Creatine measurement 
+- 'Creatine measurement' SubClassOf 'metabolite measurement'
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0021199
-Label(s): X-06246 measurement 
-+ 'X-06246 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021194
-Label(s): X-04500 measurement 
-+ 'X-04500 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021193
-Label(s): X-04499--3,4-dihydroxybutyrate measurement 
-+ 'X-04499--3,4-dihydroxybutyrate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021192
-Label(s): X-04498 measurement 
-+ 'X-04498 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021191
-Label(s): X-04495 measurement 
-+ 'X-04495 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021190
-Label(s): X-04494 measurement 
-+ 'X-04494 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021189
-Label(s): X-04357 measurement 
-+ 'X-04357 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021187
-Label(s): X-03088 measurement 
-+ 'X-03088 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021185
-Label(s): X-03003 measurement 
-+ 'X-03003 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021184
-Label(s): X-02973 measurement 
-+ 'X-02973 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021183
-Label(s): X-02269 measurement 
-+ 'X-02269 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021182
-Label(s): X-02249 measurement 
-+ 'X-02249 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021181
-Label(s): X-01911 measurement 
-+ 'X-01911 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021178
-Label(s): paraxanthine measurement 
-+ 'paraxanthine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021177
-Label(s): caffeine measurement 
-+ 'caffeine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021176
-Label(s): 7-methylxanthine measurement 
-+ '7-methylxanthine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021175
-Label(s): 3-methylxanthine measurement 
-+ '3-methylxanthine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021174
-Label(s): 1-methylxanthine measurement 
-+ '1-methylxanthine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021173
-Label(s): 1-methylurate measurement 
-+ '1-methylurate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021172
-Label(s): 1,3,7-trimethylurate measurement 
-+ '1,3,7-trimethylurate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021169
-Label(s): stachydrine measurement 
-+ 'stachydrine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021167
-Label(s): quinate measurement 
-+ 'quinate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021166
-Label(s): piperine measurement 
-+ 'piperine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021165
-Label(s): N-2-furoylglycine measurement 
-+ 'N-2-furoylglycine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021163
-Label(s): ergothioneine measurement 
-+ 'ergothioneine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021162
-Label(s): salicyluric glucuronide measurement 
-+ 'salicyluric glucuronide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021161
-Label(s): salicylate measurement 
-+ 'salicylate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021160
-Label(s): p-acetamidophenylglucuronide measurement 
-+ 'p-acetamidophenylglucuronide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021155
-Label(s): 3-cystein-S-ylacetaminophen measurement 
-+ '3-cystein-S-ylacetaminophen measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021154
-Label(s): 2-methoxyacetaminophen sulfate measurement 
-+ '2-methoxyacetaminophen sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021153
-Label(s): 2-hydroxyacetaminophen sulfate measurement 
-+ '2-hydroxyacetaminophen sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021152
-Label(s): glycerol 2-phosphate measurement 
-+ 'glycerol 2-phosphate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021150
-Label(s): benzoate measurement 
-+ 'benzoate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021149
-Label(s): 4-vinylphenol sulfate measurement 
-+ '4-vinylphenol sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021148
-Label(s): 4-ethylphenylsulfate measurement 
-+ '4-ethylphenylsulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021147
-Label(s): HWESASXX measurement 
-+ 'HWESASXX measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021144
-Label(s): gamma-glutamyltyrosine measurement 
-+ 'gamma-glutamyltyrosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021142
-Label(s): gamma-glutamylphenylalanine measurement 
-+ 'gamma-glutamylphenylalanine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021141
-Label(s): gamma-glutamylmethionine measurement 
-+ 'gamma-glutamylmethionine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021140
-Label(s): gamma-glutamylleucine measurement 
-+ 'gamma-glutamylleucine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021138
-Label(s): gamma-glutamylglutamine measurement 
-+ 'gamma-glutamylglutamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021136
-Label(s): DSGEGDFXAEGGGVR measurement 
-+ 'DSGEGDFXAEGGGVR measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021135
-Label(s): ADSGEGDFXAEGGGVR measurement 
-+ 'ADSGEGDFXAEGGGVR measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021134
-Label(s): ADpSGEGDFXAEGGGVR measurement 
-+ 'ADpSGEGDFXAEGGGVR measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021133
-Label(s): pyroglutamylglycine measurement 
-+ 'pyroglutamylglycine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021132
-Label(s): pro-hydroxy-pro measurement 
-+ 'pro-hydroxy-pro measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021131
-Label(s): phenylalanylphenylalanine measurement 
-+ 'phenylalanylphenylalanine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021130
-Label(s): leucylleucine measurement 
-+ 'leucylleucine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021129
-Label(s): glycylvaline measurement 
-+ 'glycylvaline measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021128
-Label(s): cycloleu-pro measurement 
-+ 'cycloleu-pro measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021126
-Label(s): pseudouridine measurement 
-+ 'pseudouridine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021125
-Label(s): N2,N2-dimethylguanosine measurement 
-+ 'N2,N2-dimethylguanosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021124
-Label(s): guanosine measurement 
-+ 'guanosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021123
-Label(s): 7-methylguanine measurement 
-+ '7-methylguanine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021121
-Label(s): lathosterol measurement 
-+ 'lathosterol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020994
-Label(s): cancer antigen 50 measurement 
-+ 'cancer antigen 50 measurement' SubClassOf 'cancer biomarker measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020995
-Label(s): squamous cell carcinoma antigen measurement 
-+ 'squamous cell carcinoma antigen measurement' SubClassOf 'cancer biomarker measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021118
-Label(s): cortisone measurement 
-+ 'cortisone measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021114
-Label(s): 4-androsten-3beta,17beta-diol disulfate 2 measurement 
-+ '4-androsten-3beta,17beta-diol disulfate 2 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021113
-Label(s): 4-androsten-3beta,17beta-diol disulfate 1 measurement 
-+ '4-androsten-3beta,17beta-diol disulfate 1 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021112
-Label(s): valerate measurement 
-+ 'valerate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021111
-Label(s): 1-stearoylglycerol 1-monostearin measurement 
-+ '1-stearoylglycerol 1-monostearin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021110
-Label(s): 1-palmitoylglycerol 1-monopalmitin measurement 
-+ '1-palmitoylglycerol 1-monopalmitin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021108
-Label(s): 1-linoleoylglycerol 1-monolinolein measurement 
-+ '1-linoleoylglycerol 1-monolinolein measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021106
-Label(s): pelargonate 9:0 measurement 
-+ 'pelargonate 9:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021105
-Label(s): laurate 12:0 measurement 
-+ 'laurate 12:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021104
-Label(s): heptanoate 7:0 measurement 
-+ 'heptanoate 7:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021102
-Label(s): caproate 6:0 measurement 
-+ 'caproate 6:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021101
-Label(s): caprate 10:0 measurement 
-+ 'caprate 10:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021100
-Label(s): 5-dodecenoate 12:1n7 measurement 
-+ '5-dodecenoate 12:1n7 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021098
-Label(s): 2-stearoylglycerophosphocholine measurement 
-+ '2-stearoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021097
-Label(s): 2-palmitoylglycerophosphocholine measurement 
-+ '2-palmitoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021096
-Label(s): 2-oleoylglycerophosphocholine measurement 
-+ '2-oleoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021095
-Label(s): 2-linoleoylglycerophosphocholine measurement 
-+ '2-linoleoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021094
-Label(s): 1-stearoylglycerophosphoinositol measurement 
-+ '1-stearoylglycerophosphoinositol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021092
-Label(s): 1-stearoylglycerophosphocholine measurement 
-+ '1-stearoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021091
-Label(s): 1-palmitoylglycerophosphoinositol measurement 
-+ '1-palmitoylglycerophosphoinositol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021090
-Label(s): 1-palmitoylglycerophosphoethanolamine measurement 
-+ '1-palmitoylglycerophosphoethanolamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021081
-Label(s): 1-eicosatrienoylglycerophosphocholine measurement 
-+ '1-eicosatrienoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021075
-Label(s): stearidonate 18:4n3 measurement 
-+ 'stearidonate 18:4n3 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021066
-Label(s): margarate 17:0 measurement 
-+ 'margarate 17:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021065
-Label(s): eicosenoate 20:1n9 or 11 measurement 
-+ 'eicosenoate 20:1n9 or 11 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021064
-Label(s): dihomo-linoleate 20:2n6 measurement 
-+ 'dihomo-linoleate 20:2n6 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021063
-Label(s): arachidonate 20:4n6 measurement 
-+ 'arachidonate 20:4n6 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021062
-Label(s): adrenate 22:4n6 measurement 
-+ 'adrenate 22:4n6 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021061
-Label(s): 10-nonadecenoate 19:1n9 measurement 
-+ '10-nonadecenoate 19:1n9 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021210
-Label(s): X-09706 measurement 
-+ 'X-09706 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021059
-Label(s): 2-hydroxystearate measurement 
-+ '2-hydroxystearate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021057
-Label(s): tetradecanedioate measurement 
-+ 'tetradecanedioate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021056
-Label(s): octadecanedioate measurement 
-+ 'octadecanedioate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021055
-Label(s): hexadecanedioate measurement 
-+ 'hexadecanedioate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021054
-Label(s): dodecanedioate measurement 
-+ 'dodecanedioate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021053
-Label(s): 3-carboxy-4-methyl-5-propyl-2-furanpropanoate CMPF measurement 
-+ '3-carboxy-4-methyl-5-propyl-2-furanpropanoate CMPF measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021052
-Label(s): 15-methylpalmitate isobar with 2-methylpalmitate measurement 
-+ '15-methylpalmitate isobar with 2-methylpalmitate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021051
-Label(s): isovalerate measurement 
-+ 'isovalerate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021049
-Label(s): eicosapentaenoate EPA; 20:5n3 measurement 
-+ 'eicosapentaenoate EPA; 20:5n3 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021048
-Label(s): docosapentaenoate n3 DPA; 22:5n3 measurement 
-+ 'docosapentaenoate n3 DPA; 22:5n3 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021047
-Label(s): docosahexaenoate DHA; 22:6n3 measurement 
-+ 'docosahexaenoate DHA; 22:6n3 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021046
-Label(s): dihomo-linolenate 20:3n3 or n6 measurement 
-+ 'dihomo-linolenate 20:3n3 or n6 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021045
-Label(s): stearoylcarnitine measurement 
-+ 'stearoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021044
-Label(s): palmitoylcarnitine measurement 
-+ 'palmitoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021223
-Label(s): X-11315 measurement 
-+ 'X-11315 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021228
-Label(s): X-11381 measurement 
-+ 'X-11381 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021039
-Label(s): decanoylcarnitine measurement 
-+ 'decanoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021038
-Label(s): acetylcarnitine measurement 
-+ 'acetylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021037
-Label(s): 3-dehydrocarnitine measurement 
-+ '3-dehydrocarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021036
-Label(s): taurolithocholate 3-sulfate measurement 
-+ 'taurolithocholate 3-sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021035
-Label(s): acetylphosphate measurement 
-+ 'acetylphosphate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021034
-Label(s): pantothenate measurement 
-+ 'pantothenate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021027
-Label(s): mannitol measurement 
-+ 'mannitol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021026
-Label(s): erythrose measurement 
-+ 'erythrose measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021025
-Label(s): erythronate measurement 
-+ 'erythronate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021024
-Label(s): levulinate 4-oxovalerate measurement 
-+ 'levulinate 4-oxovalerate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021022
-Label(s): 4-methyl-2-oxopentanoate measurement 
-+ '4-methyl-2-oxopentanoate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021021
-Label(s): 3-methyl-2-oxovalerate measurement 
-+ '3-methyl-2-oxovalerate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021019
-Label(s): 2-methylbutyroylcarnitine measurement 
-+ '2-methylbutyroylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021018
-Label(s): homocitrulline measurement 
-+ 'homocitrulline measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021017
-Label(s): tryptophan betaine measurement 
-+ 'tryptophan betaine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021016
-Label(s): indolepropionate measurement 
-+ 'indolepropionate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021015
-Label(s): indoleacetate measurement 
-+ 'indoleacetate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021013
-Label(s): phenylacetylglutamine measurement 
-+ 'phenylacetylglutamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021012
-Label(s): phenylacetate measurement 
-+ 'phenylacetate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021011
-Label(s): phenol sulfate measurement 
-+ 'phenol sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021010
-Label(s): 3-phenylpropionate hydrocinnamate measurement 
-+ '3-phenylpropionate hydrocinnamate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021009
-Label(s): 3-methoxytyrosine measurement 
-+ '3-methoxytyrosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021007
-Label(s): 3-3-hydroxyphenylpropionate measurement 
-+ '3-3-hydroxyphenylpropionate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021006
-Label(s): pipecolate measurement 
-+ 'pipecolate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021004
-Label(s): 3-methylhistidine measurement 
-+ '3-methylhistidine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021000
-Label(s): cysteine measurement 
-+ 'cysteine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021001
-Label(s): cysteine-glutathione disulfide measurement 
-+ 'cysteine-glutathione disulfide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021005
-Label(s): glutaroyl carnitine measurement 
-+ 'glutaroyl carnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021030
-Label(s): arabinose measurement 
-+ 'arabinose measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021031
-Label(s): threitol measurement 
-+ 'threitol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021377
-Label(s): X-14662 measurement 
-+ 'X-14662 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021050
-Label(s): linolenate [alpha or gamma; 18:3n3 or 6] measurement 
-+ 'linolenate [alpha or gamma; 18:3n3 or 6] measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021139
-Label(s): gamma-glutamylisoleucine measurement 
-+ 'gamma-glutamylisoleucine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021060
-Label(s): 10-heptadecenoate 17:1n7 measurement 
-+ '10-heptadecenoate 17:1n7 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021071
-Label(s): palmitate 16:0 measurement 
-+ 'palmitate 16:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021388
-Label(s): X-12038-to-bradykinin, des-arg 9 ratio 
-+ 'X-12038-to-bradykinin, des-arg 9 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021389
-Label(s): docosapentaenoate n3 DPA; 22:5n3-to-X-12627 ratio 
-+ 'docosapentaenoate n3 DPA; 22:5n3-to-X-12627 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021080
-Label(s): 1-eicosadienoylglycerophosphocholine measurement 
-+ '1-eicosadienoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021086
-Label(s): 1-oleoylglycerophosphocholine measurement 
-+ '1-oleoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021087
-Label(s): 1-oleoylglycerophosphoethanolamine measurement 
-+ '1-oleoylglycerophosphoethanolamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021088
-Label(s): 1-palmitoleoylglycerophosphocholine measurement 
-+ '1-palmitoleoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021089
-Label(s): 1-palmitoylglycerophosphocholine measurement 
-+ '1-palmitoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021093
-Label(s): 1-stearoylglycerophosphoethanolamine measurement 
-+ '1-stearoylglycerophosphoethanolamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021099
-Label(s): 10-undecenoate 11:1n1 measurement 
-+ '10-undecenoate 11:1n1 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021398
-Label(s): X-10510-to-palmitoyl sphingomyelin ratio 
-+ 'X-10510-to-palmitoyl sphingomyelin ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021399
-Label(s): X-12095--N1-methyl-3-pyridone-4-carboxamide-to-X-12844 ratio 
-+ 'X-12095--N1-methyl-3-pyridone-4-carboxamide-to-X-12844 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021120
-Label(s): epiandrosterone sulfate measurement 
-+ 'epiandrosterone sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021020
-Label(s): 3-methyl-2-oxobutyrate measurement 
-+ '3-methyl-2-oxobutyrate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021043
-Label(s): oleoylcarnitine measurement 
-+ 'oleoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021195
-Label(s): X-05426 measurement 
-+ 'X-05426 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021103
-Label(s): caprylate 8:0 measurement 
-+ 'caprylate 8:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021107
-Label(s): undecanoate 11:0 measurement 
-+ 'undecanoate 11:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021109
-Label(s): 1-oleoylglycerol 1-monoolein measurement 
-+ '1-oleoylglycerol 1-monoolein measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021115
-Label(s): 5alpha-androstan-3beta,17beta-diol disulfate measurement 
-+ '5alpha-androstan-3beta,17beta-diol disulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021116
-Label(s): 7-alpha-hydroxy-3-oxo-4-cholestenoate 7-Hoca measurement 
-+ '7-alpha-hydroxy-3-oxo-4-cholestenoate 7-Hoca measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020999
-Label(s): 2-hydroxybutyrate measurement 
-+ '2-hydroxybutyrate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021119
-Label(s): dehydroisoandrosterone sulfate DHEA-S measurement 
-+ 'dehydroisoandrosterone sulfate DHEA-S measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020992
-Label(s): alpha-amino-N-butyric acid measurement 
-+ 'alpha-amino-N-butyric acid measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020991
-Label(s): ethanolamine measurement 
-+ 'ethanolamine measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0020990
-Label(s): arginine measurement 
-+ 'arginine measurement' SubClassOf 'amino acid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021122
-Label(s): N1-methyladenosine measurement 
-+ 'N1-methyladenosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021008
-Label(s): 3- 4-hydroxyphenyl lactate measurement 
-+ '3- 4-hydroxyphenyl lactate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021067
-Label(s): myristate 14:0 measurement 
-+ 'myristate 14:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021068
-Label(s): myristoleate 14:1n5 measurement 
-+ 'myristoleate 14:1n5 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021069
-Label(s): nonadecanoate 19:0 measurement 
-+ 'nonadecanoate 19:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021143
-Label(s): gamma-glutamylthreonine measurement 
-+ 'gamma-glutamylthreonine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021145
-Label(s): gamma-glutamylvaline measurement 
-+ 'gamma-glutamylvaline measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021146
-Label(s): bradykinin, des-arg 9 measurement 
-+ 'bradykinin, des-arg 9 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021151
-Label(s): catechol sulfate measurement 
-+ 'catechol sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021156
-Label(s): 4-acetaminophen sulfate measurement 
-+ '4-acetaminophen sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021074
-Label(s): stearate 18:0 measurement 
-+ 'stearate 18:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021076
-Label(s): 1-arachidonoylglycerophosphocholine measurement 
-+ '1-arachidonoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021077
-Label(s): 1-arachidonoylglycerophosphoethanolamine measurement 
-+ '1-arachidonoylglycerophosphoethanolamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021078
-Label(s): 1-arachidonoylglycerophosphoinositol measurement 
-+ '1-arachidonoylglycerophosphoinositol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021014
-Label(s): C-glycosyltryptophan measurement 
-+ 'C-glycosyltryptophan measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021170
-Label(s): thymol sulfate measurement 
-+ 'thymol sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021171
-Label(s): erythritol measurement 
-+ 'erythritol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021301
-Label(s): X-12261 measurement 
-+ 'X-12261 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021180
-Label(s): theophylline measurement 
-+ 'theophylline measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021186
-Label(s): X-03056--N-[3- 2-Oxopyrrolidin-1-yl propyl]acetamide measurement 
-+ 'X-03056--N-[3- 2-Oxopyrrolidin-1-yl propyl]acetamide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021188
-Label(s): X-03094 measurement 
-+ 'X-03094 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021311
-Label(s): X-12456 measurement 
-+ 'X-12456 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021198
-Label(s): X-06226 measurement 
-+ 'X-06226 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021085
-Label(s): 1-myristoylglycerophosphocholine measurement 
-+ '1-myristoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021394
-Label(s): ADSGEGDFXAEGGGVR-to-ADpSGEGDFXAEGGGVR ratio 
-+ 'ADSGEGDFXAEGGGVR-to-ADpSGEGDFXAEGGGVR ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021397
-Label(s): arachidonate 20:4n6-to-1-arachidonoylglycerophosphoinositol ratio 
-+ 'arachidonate 20:4n6-to-1-arachidonoylglycerophosphoinositol ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021200
-Label(s): X-06267 measurement 
-+ 'X-06267 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021201
-Label(s): X-06307 measurement 
-+ 'X-06307 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021203
-Label(s): X-06351 measurement 
-+ 'X-06351 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021209
-Label(s): X-09108 measurement 
-+ 'X-09108 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021211
-Label(s): X-09789 measurement 
-+ 'X-09789 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021213
-Label(s): X-10395 measurement 
-+ 'X-10395 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021216
-Label(s): X-10506 measurement 
-+ 'X-10506 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021221
-Label(s): X-11261 measurement 
-+ 'X-11261 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021225
-Label(s): X-11327 measurement 
-+ 'X-11327 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021230
-Label(s): X-11422--xanthine measurement 
-+ 'X-11422--xanthine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021231
-Label(s): X-11423--O-sulfo-L-tyrosine measurement 
-+ 'X-11423--O-sulfo-L-tyrosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021232
-Label(s): X-11437 measurement 
-+ 'X-11437 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021240
-Label(s): X-11469 measurement 
-+ 'X-11469 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021241
-Label(s): X-11470 measurement 
-+ 'X-11470 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021243
-Label(s): X-11483 measurement 
-+ 'X-11483 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021250
-Label(s): X-11537 measurement 
-+ 'X-11537 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021251
-Label(s): X-11538 measurement 
-+ 'X-11538 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021079
-Label(s): 1-docosahexaenoylglycerophosphocholine measurement 
-+ '1-docosahexaenoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021270
-Label(s): X-11850 measurement 
-+ 'X-11850 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021271
-Label(s): X-11852 measurement 
-+ 'X-11852 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021281
-Label(s): X-12040 measurement 
-+ 'X-12040 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021290
-Label(s): X-12188 measurement 
-+ 'X-12188 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021291
-Label(s): X-12189 measurement 
-+ 'X-12189 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021295
-Label(s): X-12217 measurement 
-+ 'X-12217 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021410
-Label(s): hexanoylcarnitine-to-octanoylcarnitine ratio 
-+ 'hexanoylcarnitine-to-octanoylcarnitine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021417
-Label(s): X-12798-to-phenylalanine ratio 
-+ 'X-12798-to-phenylalanine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021310
-Label(s): X-12450 measurement 
-+ 'X-12450 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021320
-Label(s): X-12680 measurement 
-+ 'X-12680 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021321
-Label(s): X-12696 measurement 
-+ 'X-12696 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021322
-Label(s): X-12704 measurement 
-+ 'X-12704 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021330
-Label(s): X-12740 measurement 
-+ 'X-12740 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021334
-Label(s): X-12786 measurement 
-+ 'X-12786 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021341
-Label(s): X-12850 measurement 
-+ 'X-12850 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021342
-Label(s): X-12851 measurement 
-+ 'X-12851 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021356
-Label(s): X-13619 measurement 
-+ 'X-13619 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021358
-Label(s): X-13671 measurement 
-+ 'X-13671 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021370
-Label(s): X-14473 measurement 
-+ 'X-14473 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021383
-Label(s): X-08402-to-cholesterol ratio 
-+ 'X-08402-to-cholesterol ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021390
-Label(s): lysine-to-glutaroyl carnitine ratio 
-+ 'lysine-to-glutaroyl carnitine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021412
-Label(s): X-11444-to-X-11470 ratio 
-+ 'X-11444-to-X-11470 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021395
-Label(s): DSGEGDFXAEGGGVR-to-ADpSGEGDFXAEGGGVR ratio 
-+ 'DSGEGDFXAEGGGVR-to-ADpSGEGDFXAEGGGVR ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021418
-Label(s): 4-acetamidobutanoate-to-N1-methyladenosine ratio 
-+ '4-acetamidobutanoate-to-N1-methyladenosine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021420
-Label(s): glutamine-to-histidine ratio 
-+ 'glutamine-to-histidine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021403
-Label(s): carnitine-to-X-12798 ratio 
-+ 'carnitine-to-X-12798 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021220
-Label(s): X-11247 measurement 
-+ 'X-11247 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021408
-Label(s): X-13215-to-X-13671 ratio 
-+ 'X-13215-to-X-13671 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021411
-Label(s): DHEA-S-to-4-androsten-3beta,17beta-diol disulfate 2 ratio 
-+ 'DHEA-S-to-4-androsten-3beta,17beta-diol disulfate 2 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021415
-Label(s): X-04499--3,4-dihydroxybutyrate-to-C-glycosyltryptophan ratio 
-+ 'X-04499--3,4-dihydroxybutyrate-to-C-glycosyltryptophan ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021197
-Label(s): X-06126 measurement 
-+ 'X-06126 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021423
-Label(s): family history of uterine fibroids 
-+ 'family history of uterine fibroids' SubClassOf 'family history'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021430
-Label(s): N-acetyl-beta-alanine measurement 
-+ 'N-acetyl-beta-alanine measurement' SubClassOf 'alanine measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021179
-Label(s): theobromine measurement 
-+ 'theobromine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021300
-Label(s): X-12253 measurement 
-+ 'X-12253 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021299
-Label(s): X-12244--N-acetylcarnosine measurement 
-+ 'X-12244--N-acetylcarnosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021023
-Label(s): isobutyrylcarnitine measurement 
-+ 'isobutyrylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021028
-Label(s): 1,6-anhydroglucose measurement 
-+ '1,6-anhydroglucose measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021029
-Label(s): glycerate measurement 
-+ 'glycerate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021429
-Label(s): N-acetylarginine measurement 
-+ 'N-acetylarginine measurement' SubClassOf 'L-arginine measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021428
-Label(s): N6-succinyladenosine measurement 
-+ 'N6-succinyladenosine measurement' SubClassOf 'adenosine measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021427
-Label(s): N-acetylmethionine measurement 
-+ 'N-acetylmethionine measurement' SubClassOf 'methionine measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021426
-Label(s): humanized mouse 
-+ 'humanized mouse' SubClassOf 'Mus musculus'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021421
-Label(s): spleen iron measurement 
-+ 'spleen iron measurement' SubClassOf 'iron biomarker measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021032
-Label(s): threonate measurement 
-+ 'threonate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021033
-Label(s): biliverdin measurement 
-+ 'biliverdin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021419
-Label(s): myristate 14:0-to-myristoleate 14:1n5 ratio 
-+ 'myristate 14:0-to-myristoleate 14:1n5 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021416
-Label(s): C-glycosyltryptophan-to-succinylcarnitine ratio 
-+ 'C-glycosyltryptophan-to-succinylcarnitine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021414
-Label(s): valine-to-proline ratio 
-+ 'valine-to-proline ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021413
-Label(s): androsterone sulfate-to-4-androsten-3beta,17beta-diol disulfate 2 ratio 
-+ 'androsterone sulfate-to-4-androsten-3beta,17beta-diol disulfate 2 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021409
-Label(s): urate-to-histidine ratio 
-+ 'urate-to-histidine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021407
-Label(s): X-11315-to-pyroglutamine ratio 
-+ 'X-11315-to-pyroglutamine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021406
-Label(s): isoleucine-to-X-11529 ratio 
-+ 'isoleucine-to-X-11529 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021405
-Label(s): X-11444-to-X-12844 ratio 
-+ 'X-11444-to-X-12844 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021404
-Label(s): glucose-to-mannose ratio 
-+ 'glucose-to-mannose ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021402
-Label(s): 10-undecenoate 11:1n1-to-X-11438 ratio 
-+ '10-undecenoate 11:1n1-to-X-11438 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021401
-Label(s): ADpSGEGDFXAEGGGVR-to-X-14304--leucylalanine ratio 
-+ 'ADpSGEGDFXAEGGGVR-to-X-14304--leucylalanine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021400
-Label(s): 4-acetamidobutanoate-to-X-03056--N-[3-(2-Oxopyrrolidin-1-yl)propyl]acetamide ratio 
-+ '4-acetamidobutanoate-to-X-03056--N-[3-(2-Oxopyrrolidin-1-yl)propyl]acetamide ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021040
-Label(s): hexanoylcarnitine measurement 
-+ 'hexanoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021042
-Label(s): octanoylcarnitine measurement 
-+ 'octanoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021058
-Label(s): n-Butyl Oleate measurement 
-+ 'n-Butyl Oleate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0030083
-Label(s): clinical data 
-+ 'clinical data' SubClassOf 'data set'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021070
-Label(s): oleate 18:1n9 measurement 
-+ 'oleate 18:1n9 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021072
-Label(s): palmitoleate 16:1n7 measurement 
-+ 'palmitoleate 16:1n7 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021073
-Label(s): pentadecanoate 15:0 measurement 
-+ 'pentadecanoate 15:0 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021082
-Label(s): 1-heptadecanoylglycerophosphocholine measurement 
-+ '1-heptadecanoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021083
-Label(s): 1-linoleoylglycerophosphocholine measurement 
-+ '1-linoleoylglycerophosphocholine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021084
-Label(s): 1-linoleoylglycerophosphoethanolamine measurement 
-+ '1-linoleoylglycerophosphoethanolamine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021002
-Label(s): N-acetylglycine measurement 
-+ 'N-acetylglycine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021003
-Label(s): 4-acetamidobutanoate measurement 
-+ '4-acetamidobutanoate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021229
-Label(s): X-11412 measurement 
-+ 'X-11412 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021396
-Label(s): indoleacetate-to-N2,N2-dimethylguanosine ratio 
-+ 'indoleacetate-to-N2,N2-dimethylguanosine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021393
-Label(s): X-11440-to-4-androsten-3beta,17beta-diol disulfate 2 ratio 
-+ 'X-11440-to-4-androsten-3beta,17beta-diol disulfate 2 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021392
-Label(s): X-11820-to-cholesterol ratio 
-+ 'X-11820-to-cholesterol ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021391
-Label(s): aspartylphenylalanine-to-X-14450--phenylalanylleucine ratio 
-+ 'aspartylphenylalanine-to-X-14450--phenylalanylleucine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021387
-Label(s): valine-to-isovalerylcarnitine ratio 
-+ 'valine-to-isovalerylcarnitine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021386
-Label(s): octanoylcarnitine-to-X-13435 ratio 
-+ 'octanoylcarnitine-to-X-13435 ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021385
-Label(s): propionylcarnitine-to-isovalerylcarnitine ratio 
-+ 'propionylcarnitine-to-isovalerylcarnitine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021384
-Label(s): phosphate-to-erythronate ratio 
-+ 'phosphate-to-erythronate ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021382
-Label(s): N-acetylornithine-to-myo-inositol ratio 
-+ 'N-acetylornithine-to-myo-inositol ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021381
-Label(s): betaine-to-pyroglutamine ratio 
-+ 'betaine-to-pyroglutamine ratio' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021380
-Label(s): X-18601 measurement 
-+ 'X-18601 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021379
-Label(s): X-14977--vanillin measurement 
-+ 'X-14977--vanillin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021378
-Label(s): X-14745 measurement 
-+ 'X-14745 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021376
-Label(s): X-14658 measurement 
-+ 'X-14658 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021375
-Label(s): X-14632 measurement 
-+ 'X-14632 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021374
-Label(s): X-14626 measurement 
-+ 'X-14626 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021373
-Label(s): X-14625 measurement 
-+ 'X-14625 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021372
-Label(s): X-14588 measurement 
-+ 'X-14588 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021371
-Label(s): X-14541 measurement 
-+ 'X-14541 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021369
-Label(s): X-14450--phenylalanylleucine measurement 
-+ 'X-14450--phenylalanylleucine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021368
-Label(s): X-14374 measurement 
-+ 'X-14374 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021367
-Label(s): X-14304--leucylalanine measurement 
-+ 'X-14304--leucylalanine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021366
-Label(s): X-14208--phenylalanylserine measurement 
-+ 'X-14208--phenylalanylserine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021365
-Label(s): X-14205--alpha-glutamyltyrosine measurement 
-+ 'X-14205--alpha-glutamyltyrosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021364
-Label(s): X-14189--leucylalanine measurement 
-+ 'X-14189--leucylalanine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021363
-Label(s): X-14086 measurement 
-+ 'X-14086 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021362
-Label(s): X-14057 measurement 
-+ 'X-14057 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021361
-Label(s): X-14056 measurement 
-+ 'X-14056 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021360
-Label(s): X-13859 measurement 
-+ 'X-13859 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021359
-Label(s): X-13741 measurement 
-+ 'X-13741 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021357
-Label(s): X-13658 measurement 
-+ 'X-13658 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021355
-Label(s): X-13553 measurement 
-+ 'X-13553 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021354
-Label(s): X-13549 measurement 
-+ 'X-13549 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021353
-Label(s): X-13548 measurement 
-+ 'X-13548 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021352
-Label(s): X-13496 measurement 
-+ 'X-13496 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021351
-Label(s): X-13477 measurement 
-+ 'X-13477 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021350
-Label(s): X-13435 measurement 
-+ 'X-13435 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021349
-Label(s): X-13431--nonanoylcarnitine measurement 
-+ 'X-13431--nonanoylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021348
-Label(s): X-13429 measurement 
-+ 'X-13429 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021347
-Label(s): X-13215 measurement 
-+ 'X-13215 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021346
-Label(s): X-13183--stearamide measurement 
-+ 'X-13183--stearamide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021345
-Label(s): X-13069 measurement 
-+ 'X-13069 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021344
-Label(s): X-12990--docosapentaenoic acid n6-DPA measurement 
-+ 'X-12990--docosapentaenoic acid n6-DPA measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021343
-Label(s): X-12855 measurement 
-+ 'X-12855 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021340
-Label(s): X-12847 measurement 
-+ 'X-12847 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021339
-Label(s): X-12844 measurement 
-+ 'X-12844 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021338
-Label(s): X-12833 measurement 
-+ 'X-12833 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021337
-Label(s): X-12830 measurement 
-+ 'X-12830 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021336
-Label(s): X-12816 measurement 
-+ 'X-12816 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021335
-Label(s): X-12798 measurement 
-+ 'X-12798 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021333
-Label(s): X-12776 measurement 
-+ 'X-12776 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021332
-Label(s): X-12771 measurement 
-+ 'X-12771 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021331
-Label(s): X-12749 measurement 
-+ 'X-12749 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021329
-Label(s): X-12734 measurement 
-+ 'X-12734 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021328
-Label(s): X-12729 measurement 
-+ 'X-12729 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021327
-Label(s): X-12728 measurement 
-+ 'X-12728 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021326
-Label(s): X-12726 measurement 
-+ 'X-12726 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021325
-Label(s): X-12719 measurement 
-+ 'X-12719 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021324
-Label(s): X-12717 measurement 
-+ 'X-12717 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021323
-Label(s): X-12712 measurement 
-+ 'X-12712 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021319
-Label(s): X-12645 measurement 
-+ 'X-12645 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021318
-Label(s): X-12644 measurement 
-+ 'X-12644 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021317
-Label(s): X-12627 measurement 
-+ 'X-12627 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021316
-Label(s): X-12556 measurement 
-+ 'X-12556 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021315
-Label(s): X-12544 measurement 
-+ 'X-12544 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021314
-Label(s): X-12524 measurement 
-+ 'X-12524 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021313
-Label(s): X-12510--2-aminooctanoic acid measurement 
-+ 'X-12510--2-aminooctanoic acid measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021312
-Label(s): X-12465 measurement 
-+ 'X-12465 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021309
-Label(s): X-12443 measurement 
-+ 'X-12443 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021308
-Label(s): X12442--5,8-tetradecadienoate measurement 
-+ 'X12442--5,8-tetradecadienoate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021307
-Label(s): X-12441--12-hydroxyeicosatetraenoate 12-HETE measurement 
-+ 'X-12441--12-hydroxyeicosatetraenoate 12-HETE measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021306
-Label(s): X-12435 measurement 
-+ 'X-12435 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021305
-Label(s): X-12428 measurement 
-+ 'X-12428 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021304
-Label(s): X-12407 measurement 
-+ 'X-12407 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021303
-Label(s): X-12405 measurement 
-+ 'X-12405 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021302
-Label(s): X-12329 measurement 
-+ 'X-12329 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021212
-Label(s): X-10346 measurement 
-+ 'X-10346 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021222
-Label(s): X-11299 measurement 
-+ 'X-11299 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021227
-Label(s): X-11374 measurement 
-+ 'X-11374 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021242
-Label(s): X-11478 measurement 
-+ 'X-11478 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021257
-Label(s): X-11786--methylcysteine measurement 
-+ 'X-11786--methylcysteine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021041
-Label(s): laurylcarnitine measurement 
-+ 'laurylcarnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021298
-Label(s): X-12236 measurement 
-+ 'X-12236 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021297
-Label(s): X-12231 measurement 
-+ 'X-12231 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021296
-Label(s): X-12230 measurement 
-+ 'X-12230 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021294
-Label(s): X-12216 measurement 
-+ 'X-12216 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021293
-Label(s): X-12212 measurement 
-+ 'X-12212 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021292
-Label(s): X-12206 measurement 
-+ 'X-12206 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021289
-Label(s): X-12116 measurement 
-+ 'X-12116 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021288
-Label(s): X-12100--hydroxytryptophan measurement 
-+ 'X-12100--hydroxytryptophan measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021287
-Label(s): X-12095--N1-methyl-3-pyridone-4-carboxamide measurement 
-+ 'X-12095--N1-methyl-3-pyridone-4-carboxamide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021286
-Label(s): X-12094 measurement 
-+ 'X-12094 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021285
-Label(s): X-12093 measurement 
-+ 'X-12093 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021284
-Label(s): X-12092 measurement 
-+ 'X-12092 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021283
-Label(s): X-12063 measurement 
-+ 'X-12063 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021282
-Label(s): X-12056 measurement 
-+ 'X-12056 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021280
-Label(s): X-12039 measurement 
-+ 'X-12039 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021279
-Label(s): X-12038 measurement 
-+ 'X-12038 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021278
-Label(s): X-12029 measurement 
-+ 'X-12029 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021277
-Label(s): X-12013 measurement 
-+ 'X-12013 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021276
-Label(s): X-12007 measurement 
-+ 'X-12007 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021275
-Label(s): X-11905 measurement 
-+ 'X-11905 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021274
-Label(s): X-11876 measurement 
-+ 'X-11876 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021273
-Label(s): X-11859 measurement 
-+ 'X-11859 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021272
-Label(s): X-11858 measurement 
-+ 'X-11858 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021269
-Label(s): X-11849 measurement 
-+ 'X-11849 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021268
-Label(s): X-11847 measurement 
-+ 'X-11847 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021267
-Label(s): X-11845 measurement 
-+ 'X-11845 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021266
-Label(s): X-11843 measurement 
-+ 'X-11843 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021265
-Label(s): X-11820 measurement 
-+ 'X-11820 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021264
-Label(s): X-11818 measurement 
-+ 'X-11818 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021263
-Label(s): X-11805 measurement 
-+ 'X-11805 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021262
-Label(s): X-11799 measurement 
-+ 'X-11799 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021261
-Label(s): X-11795 measurement 
-+ 'X-11795 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021260
-Label(s): X-11793--oxidized bilirubin measurement 
-+ 'X-11793--oxidized bilirubin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021117
-Label(s): androsterone sulfate measurement 
-+ 'androsterone sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021259
-Label(s): X-11792 measurement 
-+ 'X-11792 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021258
-Label(s): X-11787 measurement 
-+ 'X-11787 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021256
-Label(s): X-11593--O-methylascorbate measurement 
-+ 'X-11593--O-methylascorbate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021255
-Label(s): X-11552 measurement 
-+ 'X-11552 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021254
-Label(s): X-11550 measurement 
-+ 'X-11550 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021253
-Label(s): X-11546 measurement 
-+ 'X-11546 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021252
-Label(s): X-11540 measurement 
-+ 'X-11540 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021249
-Label(s): X-11530 measurement 
-+ 'X-11530 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021248
-Label(s): X-11529 measurement 
-+ 'X-11529 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021247
-Label(s): X-11521 measurement 
-+ 'X-11521 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021246
-Label(s): X-11497 measurement 
-+ 'X-11497 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021245
-Label(s): X-11491 measurement 
-+ 'X-11491 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021244
-Label(s): X-11485 measurement 
-+ 'X-11485 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021127
-Label(s): aspartylphenylalanine measurement 
-+ 'aspartylphenylalanine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021239
-Label(s): X-11452 measurement 
-+ 'X-11452 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021238
-Label(s): X-11445--5-alpha-pregnan-3beta,20alpha-disulfate measurement 
-+ 'X-11445--5-alpha-pregnan-3beta,20alpha-disulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021237
-Label(s): X-11444 measurement 
-+ 'X-11444 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021236
-Label(s): X-11442 measurement 
-+ 'X-11442 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021235
-Label(s): X-11441 measurement 
-+ 'X-11441 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021234
-Label(s): X-11440 measurement 
-+ 'X-11440 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021233
-Label(s): X-11438 measurement 
-+ 'X-11438 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021226
-Label(s): X-11334 measurement 
-+ 'X-11334 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021224
-Label(s): X-11317 measurement 
-+ 'X-11317 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021137
-Label(s): gamma-glutamylglutamate measurement 
-+ 'gamma-glutamylglutamate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021219
-Label(s): X-11204 measurement 
-+ 'X-11204 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021218
-Label(s): X-10810 measurement 
-+ 'X-10810 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021217
-Label(s): X-10510 measurement 
-+ 'X-10510 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021215
-Label(s): X-10500 measurement 
-+ 'X-10500 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021214
-Label(s): X-10429 measurement 
-+ 'X-10429 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021196
-Label(s): X-05907 measurement 
-+ 'X-05907 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021208
-Label(s): X-09026 measurement 
-+ 'X-09026 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021207
-Label(s): X-08988 measurement 
-+ 'X-08988 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021206
-Label(s): X-08766 measurement 
-+ 'X-08766 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021205
-Label(s): X-08402 measurement 
-+ 'X-08402 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021204
-Label(s): X-07765 measurement 
-+ 'X-07765 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021202
-Label(s): X-06350 measurement 
-+ 'X-06350 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021157
-Label(s): hydroquinone sulfate measurement 
-+ 'hydroquinone sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021158
-Label(s): ibuprofen measurement 
-+ 'ibuprofen measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021159
-Label(s): metoprolol acid metabolite measurement 
-+ 'metoprolol acid metabolite measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021164
-Label(s): homostachydrine measurement 
-+ 'homostachydrine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0021168
-Label(s): saccharin measurement 
-+ 'saccharin measurement' SubClassOf 'metabolite measurement'
-
-
-################
-@Classes deleted from this version
-
-Class: http://purl.obolibrary.org/obo/BTO_0001516
-Label(s): BA/F3 cell 
-+ 'BA/F3 cell' SubClassOf 'interleukin (Mus musculus)'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001740
-Label(s): software manufacturer 
-+ 'software manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001739
-Label(s): investigator 
-+ 'investigator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001738
-Label(s): institution 
-+ 'institution' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001737
-Label(s): hardware manufacturer 
-+ 'hardware manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001733
-Label(s): curator 
-+ 'curator' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001731
-Label(s): consortium member 
-+ 'consortium member' SubClassOf 'organization role'
+Class: http://purl.obolibrary.org/obo/CHEBI_23354
+Label(s): coenzyme 
++ 'coenzyme' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_24432
+Label(s): biological role 
++ 'biological role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35554
+Label(s): cardiovascular drug 
++ 'cardiovascular drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_36047
+Label(s): antibacterial drug 
++ 'antibacterial drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37956
+Label(s): histamine antagonist 
++ 'histamine antagonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38215
+Label(s): calcium channel blocker 
++ 'calcium channel blocker' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_53784
+Label(s): antispasmodic 
++ 'antispasmodic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38877
+Label(s): intravenous anaesthetic 
++ 'intravenous anaesthetic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38870
+Label(s): inhalation anaesthetic 
++ 'inhalation anaesthetic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50919
+Label(s): antiemetic 
++ 'antiemetic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48876
+Label(s): muscarinic antagonist 
++ 'muscarinic antagonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/OBI_0000275
+Label(s): analyte role 
++ 'analyte role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38828
+Label(s): non ionic surfactant role 
++ 'non ionic surfactant role' SubClassOf 'surfactant role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001674
+Label(s): placebo 
++ 'placebo' SubClassOf 'biological role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0001730
 Label(s): biosequence provider 
-+ 'biosequence provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001729
-Label(s): biomaterial provider 
-+ 'biomaterial provider' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001728
-Label(s): array manufacturer 
-+ 'array manufacturer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0004447
-Label(s): peer review quality control role 
-+ 'peer review quality control role' SubClassOf 'organization role'
-
-Class: http://purl.obolibrary.org/obo/OBI_0000018
-Label(s): material supplier role 
-+ 'material supplier role' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0000647
-Label(s): experiment performer 
-+ 'experiment performer' SubClassOf 'organization role'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0009735
-Label(s): co-investigator 
-+ 'co-investigator' SubClassOf 'investigator'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0001732
-Label(s): consultant 
-+ 'consultant' SubClassOf 'organization role'
++ 'biosequence provider' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0001735
 Label(s): data coder 
-+ 'data coder' SubClassOf 'organization role'
++ 'data coder' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50629
+Label(s): cyclooxygenase 2 inhibitor 
++ 'cyclooxygenase 2 inhibitor' SubClassOf 'cyclooxygenase inhibitor'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004457
+Label(s): carcinogen role 
++ 'carcinogen role' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004456
+Label(s): reduce cholesterol levels 
++ 'reduce cholesterol levels' SubClassOf 'drug role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004447
+Label(s): peer review quality control role 
++ 'peer review quality control role' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007024
+Label(s): yeast media 
++ 'yeast media' SubClassOf 'media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007025
+Label(s): YEPD 
++ 'YEPD' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007028
+Label(s): SD minus nitrogen 
++ 'SD minus nitrogen' SubClassOf 'SD'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007029
+Label(s): SC 
++ 'SC' SubClassOf 'yeast media'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_51086
+Label(s): chemical role 
++ 'chemical role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_25212
+Label(s): metabolite role 
++ 'metabolite role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_51065
+Label(s): dopamine agonist 
++ 'dopamine agonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_28001
+Label(s): vancomycin 
++ 'vancomycin' SubClassOf 'antimicrobial agent'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50864
+Label(s): insulin-sensitizing drug 
++ 'insulin-sensitizing drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48358
+Label(s): polar aprotic solvent role 
++ 'polar aprotic solvent role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48354
+Label(s): polar solvent role 
++ 'polar solvent role' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021780
+Label(s): age at initiation of hormone replacement therapy 
++ 'age at initiation of hormone replacement therapy' SubClassOf 'age at initiation of treatment'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021781
+Label(s): age at initiation of corrective lens use 
++ 'age at initiation of corrective lens use' SubClassOf 'age at initiation of treatment'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_22333
+Label(s): alkylating agent role 
++ 'alkylating agent role' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0004367
+Label(s): induces sterile inflammation 
++ 'induces sterile inflammation' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33295
+Label(s): diagnostic agent 
++ 'diagnostic agent' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33287
+Label(s): fertilizer 
++ 'fertilizer' SubClassOf 'agrochemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33286
+Label(s): agrochemical role 
++ 'agrochemical role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33284
+Label(s): nutrient 
++ 'nutrient' SubClassOf 'growth condition'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33281
+Label(s): antimicrobial agent 
++ 'antimicrobial agent' SubClassOf 'toxin'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33232
+Label(s): application 
++ 'application' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_33229
+Label(s): vitamin 
++ 'vitamin' SubClassOf 'biological role'
++ 'vitamin' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_24937
+Label(s): jasmonic acids 
++ 'jasmonic acids' SubClassOf 'phytohormone'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50790
+Label(s): aromatase inhibitor 
++ 'aromatase inhibitor' SubClassOf 'enzyme inhibitor'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_27026
+Label(s): toxin 
++ 'toxin' SubClassOf 'chemical role'
++ 'toxin' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_27027
+Label(s): micronutrient 
++ 'micronutrient' SubClassOf 'biological role'
++ 'micronutrient' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50750
+Label(s): topoisomerase II inhibitor 
++ 'topoisomerase II inhibitor' SubClassOf 'enzyme inhibitor'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009743
 Label(s): administrator 
-+ 'administrator' SubClassOf 'organization role'
++ 'administrator' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009742
 Label(s): computational scientist 
-+ 'computational scientist' SubClassOf 'organization role'
++ 'computational scientist' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009741
 Label(s): experimental scientist 
-+ 'experimental scientist' SubClassOf 'organization role'
++ 'experimental scientist' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009740
 Label(s): clinician 
-+ 'clinician' SubClassOf 'organization role'
++ 'clinician' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009739
 Label(s): technician 
-+ 'technician' SubClassOf 'organization role'
++ 'technician' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009738
 Label(s): pathologist 
-+ 'pathologist' SubClassOf 'organization role'
++ 'pathologist' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0009737
 Label(s): data curator 
@@ -2256,15 +268,646 @@ Class: http://www.ebi.ac.uk/efo/EFO_0009736
 Label(s): principal investigator 
 + 'principal investigator' SubClassOf 'investigator'
 
+Class: http://www.ebi.ac.uk/efo/EFO_0009735
+Label(s): co-investigator 
++ 'co-investigator' SubClassOf 'investigator'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48279
+Label(s): serotonergic antagonist 
++ 'serotonergic antagonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38637
+Label(s): tyrosine kinase inhibitor 
++ 'tyrosine kinase inhibitor' SubClassOf 'biological role'
++ 'tyrosine kinase inhibitor' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48218
+Label(s): antiseptic drug 
++ 'antiseptic drug' SubClassOf 'drug role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001461
+Label(s): control 
++ 'control' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/OBI_0000018
+Label(s): material supplier role 
++ 'material supplier role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_59163
+Label(s): biomarker 
++ 'biomarker' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_18292
+Label(s): jasmonic acid 
++ 'jasmonic acid' SubClassOf 'phytohormone'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021790
+Label(s): subcortical volume measurement 
++ 'subcortical volume measurement' SubClassOf 'brain volume measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007033
+Label(s): SPO 
++ 'SPO' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007032
+Label(s): F1 
++ 'F1' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007031
+Label(s): SL 
++ 'SL' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007030
+Label(s): SCIM 
++ 'SCIM' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021788
+Label(s): descending aortic diameter 
++ 'descending aortic diameter' SubClassOf 'aortic diameter'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021787
+Label(s): ascending aortic diameter 
++ 'ascending aortic diameter' SubClassOf 'aortic diameter'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021786
+Label(s): aortic diameter 
++ 'aortic diameter' SubClassOf 'aortic measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021785
+Label(s): age at initiation of cannabis use 
++ 'age at initiation of cannabis use' SubClassOf 'age'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021784
+Label(s): age at initiation of smoking 
++ 'age at initiation of smoking' SubClassOf 'age'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021783
+Label(s): age at medical procedure 
++ 'age at medical procedure' SubClassOf 'age'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021782
+Label(s): age at initiation of oral contraceptive pill use 
++ 'age at initiation of oral contraceptive pill use' SubClassOf 'age at initiation of treatment'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_24852
+Label(s): insecticide 
++ 'insecticide' SubClassOf 'biological role'
++ 'insecticide' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007027
+Label(s): SD 
++ 'SD' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007026
+Label(s): YEPG 
++ 'YEPG' SubClassOf 'yeast media'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021779
+Label(s): age at initiation of treatment 
++ 'age at initiation of treatment' SubClassOf 'age'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021778
+Label(s): uromodulin measurement 
++ 'uromodulin measurement' SubClassOf 'blood metabolite measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021777
+Label(s): serine:glycine ratio 
++ 'serine:glycine ratio' SubClassOf 'serine measurement'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50683
+Label(s): folic acid reductase inhibitor 
++ 'folic acid reductase inhibitor' SubClassOf 'biological role'
++ 'folic acid reductase inhibitor' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50646
+Label(s): bone density conservation agent 
++ 'bone density conservation agent' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50630
+Label(s): cyclooxygenase 1 inhibitor 
++ 'cyclooxygenase 1 inhibitor' SubClassOf 'cyclooxygenase inhibitor'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009635
+Label(s): blood donor 
++ 'blood donor' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009634
+Label(s): organ donor 
++ 'organ donor' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009633
+Label(s): tissue donor 
++ 'tissue donor' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35718
+Label(s): antifungal drug 
++ 'antifungal drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35717
+Label(s): sedative drug 
++ 'sedative drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_63060
+Label(s): phase-transfer catalyst role 
++ 'phase-transfer catalyst role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35705
+Label(s): immunosuppressive agent 
++ 'immunosuppressive agent' SubClassOf 'biological role'
++ 'immunosuppressive agent' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35703
+Label(s): xenobiotic 
++ 'xenobiotic' SubClassOf 'biological role'
++ 'xenobiotic' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35222
+Label(s): inhibitor role 
++ 'inhibitor role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38068
+Label(s): antimalarial 
++ 'antimalarial' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38070
+Label(s): anti-arrhythmia drug 
++ 'anti-arrhythmia drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35679
+Label(s): antilipemic drug 
++ 'antilipemic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/BTO_0000221
+Label(s): cell suspension culture 
++ 'cell suspension culture' SubClassOf 'growth condition'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001739
+Label(s): investigator 
++ 'investigator' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_22917
+Label(s): phytogenic insecticide 
++ 'phytogenic insecticide' SubClassOf 'insecticide'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38498
+Label(s): mitochondrial NADH:ubiquinone reductase inhibitor 
++ 'mitochondrial NADH:ubiquinone reductase inhibitor' SubClassOf 'mitochondrial respiratory-chain inhibitor'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35640
+Label(s): adrenergic uptake inhibitor 
++ 'adrenergic uptake inhibitor' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50514
+Label(s): vasoconstrictor agent 
++ 'vasoconstrictor agent' SubClassOf 'cardiovascular drug'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35620
+Label(s): vasodilator agent 
++ 'vasodilator agent' SubClassOf 'cardiovascular drug'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040161
+Label(s): age of onset of major depressive disorder 
++ 'age of onset of major depressive disorder' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38462
+Label(s): acetylcholinesterase inhibitor 
++ 'acetylcholinesterase inhibitor' SubClassOf 'enzyme inhibitor'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50505
+Label(s): sweetening agent role 
++ 'sweetening agent role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50504
+Label(s): osmotic diuretic 
++ 'osmotic diuretic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35610
+Label(s): antineoplastic agent 
++ 'antineoplastic agent' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/OBI_0001142
+Label(s): dye swap quality control role 
++ 'dye swap quality control role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/OBI_0001140
+Label(s): spike-in quality control role 
++ 'spike-in quality control role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_64202
+Label(s): methiothepin maleate 
++ 'methiothepin maleate' SubClassOf 'serotonergic antagonist'
++ 'methiothepin maleate' SubClassOf 'dopaminergic antagonist'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_26158
+Label(s): phytohormone 
++ 'phytohormone' SubClassOf 'hormone role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_26155
+Label(s): plant growth regulator 
++ 'plant growth regulator' SubClassOf 'chemical role'
++ 'plant growth regulator' SubClassOf 'biological role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001824
+Label(s): hormone role 
++ 'hormone role' SubClassOf 'biological role'
++ 'hormone role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35821
+Label(s): anticholesteremic drug 
++ 'anticholesteremic drug' SubClassOf 'drug role'
+
 Class: http://www.ebi.ac.uk/efo/EFO_0001741
 Label(s): submitter 
-+ 'submitter' SubClassOf 'organization role'
++ 'submitter' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50249
+Label(s): anticoagulant 
++ 'anticoagulant' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_4836
+Label(s): amphiprotic solvent role 
++ 'amphiprotic solvent role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35526
+Label(s): hypoglycemic drug 
++ 'hypoglycemic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35522
+Label(s): beta-adrenergic agonist 
++ 'beta-adrenergic agonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35444
+Label(s): antinematodal drug 
++ 'antinematodal drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35457
+Label(s): angiotensin-converting enzyme inhibitor 
++ 'angiotensin-converting enzyme inhibitor' SubClassOf 'enzyme inhibitor'
++ 'angiotensin-converting enzyme inhibitor' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35469
+Label(s): antidepressant 
++ 'antidepressant' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35472
+Label(s): anti-inflammatory drug 
++ 'anti-inflammatory drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35475
+Label(s): non-steroidal anti-inflammatory drug 
++ 'non-steroidal anti-inflammatory drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35476
+Label(s): antipsychotic drug 
++ 'antipsychotic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35477
+Label(s): antimanic drug 
++ 'antimanic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35493
+Label(s): antipyretic 
++ 'antipyretic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040160
+Label(s): age of onset of Machado-Joseph disease 
++ 'age of onset of Machado-Joseph disease' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040159
+Label(s): age of onset of hypertensive disorder 
++ 'age of onset of hypertensive disorder' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040158
+Label(s): age of onset of systemic lupus erythematosus 
++ 'age of onset of systemic lupus erythematosus' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040157
+Label(s): age of onset of glioblastoma 
++ 'age of onset of glioblastoma' SubClassOf 'age of onset of cancer'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040156
+Label(s): age of onset of coronary stenosis 
++ 'age of onset of coronary stenosis' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040155
+Label(s): age of onset of stroke disorder 
++ 'age of onset of stroke disorder' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040154
+Label(s): age of onset of glaucoma 
++ 'age of onset of glaucoma' SubClassOf 'Onset'
+
+Class: http://purl.obolibrary.org/obo/OBA_2040153
+Label(s): age of onset of cancer 
++ 'age of onset of cancer' SubClassOf 'Onset'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0003787
+Label(s): cytokine role 
++ 'cytokine role' SubClassOf 'biological role'
++ 'cytokine role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_16522
+Label(s): trans-zeatin 
++ 'trans-zeatin' SubClassOf 'cytokinins'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35482
+Label(s): opioid analgesic 
++ 'opioid analgesic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35481
+Label(s): non-narcotic analgesic 
++ 'non-narcotic analgesic' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50370
+Label(s): parasympatholytic 
++ 'parasympatholytic' SubClassOf 'drug role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021789
+Label(s): cerebral volume measurement 
++ 'cerebral volume measurement' SubClassOf 'brain volume measurement'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35544
+Label(s): cyclooxygenase inhibitor 
++ 'cyclooxygenase inhibitor' SubClassOf 'enzyme inhibitor'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_23366
+Label(s): compatible osmolytes role 
++ 'compatible osmolytes role' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0009171
+Label(s): blood group--lutheran inhibitor 
++ 'blood group--lutheran inhibitor' SubClassOf 'biological role'
++ 'blood group--lutheran inhibitor' SubClassOf 'inhibitor role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50276
+Label(s): topoisomerase I inhibitor 
++ 'topoisomerase I inhibitor' SubClassOf 'enzyme inhibitor'
+
+Class: http://purl.obolibrary.org/obo/BTO_0000332
+Label(s): culture condition:dark-grown cell 
++ 'culture condition:dark-grown cell' SubClassOf 'growth condition'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50266
+Label(s): prodrug role 
++ 'prodrug role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50469
+Label(s): phospholipase A2 inhibitor 
++ 'phospholipase A2 inhibitor' SubClassOf 'chemical role'
++ 'phospholipase A2 inhibitor' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_38147
+Label(s): cardiotonic drug 
++ 'cardiotonic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37960
+Label(s): dye role 
++ 'dye role' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50103
+Label(s): excitatory amino acid agonist 
++ 'excitatory amino acid agonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37930
+Label(s): phenothiazine antipsychotic drug 
++ 'phenothiazine antipsychotic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48873
+Label(s): cholinergic antagonist 
++ 'cholinergic antagonist' SubClassOf 'drug role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000732
+Label(s): vehicle role 
++ 'vehicle role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50177
+Label(s): dermatologic drug 
++ 'dermatologic drug' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50112
+Label(s): sex hormone 
++ 'sex hormone' SubClassOf 'hormone role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35221
+Label(s): antimetabolite role 
++ 'antimetabolite role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35219
+Label(s): plant growth retardant 
++ 'plant growth retardant' SubClassOf 'plant growth regulator'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50739
+Label(s): estrogen receptor modulator 
++ 'estrogen receptor modulator' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37890
+Label(s): alpha-adrenergic antagonist 
++ 'alpha-adrenergic antagonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_23530
+Label(s): cytokinins 
++ 'cytokinins' SubClassOf 'phytohormone'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37887
+Label(s): adrenergic antagonist 
++ 'adrenergic antagonist' SubClassOf 'drug role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0001736
 Label(s): funder 
-+ 'funder' SubClassOf 'organization role'
++ 'funder' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37848
+Label(s): plant growth hormone 
++ 'plant growth hormone' SubClassOf 'phytohormone'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37845
+Label(s): growth hormone 
++ 'growth hormone' SubClassOf 'hormone role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000683
+Label(s): replicate 
++ 'replicate' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50792
+Label(s): estrogen receptor antagonist role 
++ 'estrogen receptor antagonist role' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000647
+Label(s): experiment performer 
++ 'experiment performer' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000643
+Label(s): pathogen 
++ 'pathogen' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_35195
+Label(s): surfactant role 
++ 'surfactant role' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0007589
+Label(s): etiolation 
++ 'etiolation' SubClassOf 'growth condition'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_15929
+Label(s): methyl (-)-jasmonate 
++ 'methyl (-)-jasmonate' SubClassOf 'phytohormone'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_27780
+Label(s): detergent role 
++ 'detergent role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37733
+Label(s): cholinesterase inhibitor 
++ 'cholinesterase inhibitor' SubClassOf 'enzyme inhibitor'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0002092
+Label(s): dye swap replicate 
++ 'dye swap replicate' SubClassOf 'replicate'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0002091
+Label(s): biological replicate 
++ 'biological replicate' SubClassOf 'replicate'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0002090
+Label(s): technical replicate 
++ 'technical replicate' SubClassOf 'replicate'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37700
+Label(s): protein kinase C inhibitor 
++ 'protein kinase C inhibitor' SubClassOf 'protein kinase inhibitor'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000579
+Label(s): media 
++ 'media' SubClassOf 'growth condition'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48278
+Label(s): serotonergic drug 
++ 'serotonergic drug' SubClassOf 'drug role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001899
+Label(s): drug role 
++ 'drug role' SubClassOf 'chemical role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000532
+Label(s): host 
++ 'host' SubClassOf 'biological role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0000523
+Label(s): growth condition 
++ 'growth condition' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_22676
+Label(s): auxin role 
++ 'auxin role' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_24127
+Label(s): fungicide 
++ 'fungicide' SubClassOf 'chemical role'
++ 'fungicide' SubClassOf 'biological role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_59517
+Label(s): DNA synthesis inhibitor 
++ 'DNA synthesis inhibitor' SubClassOf 'biological role'
++ 'DNA synthesis inhibitor' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_25435
+Label(s): mutagen 
++ 'mutagen' SubClassOf 'biological role'
++ 'mutagen' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_23924
+Label(s): enzyme inhibitor 
++ 'enzyme inhibitor' SubClassOf 'biological role'
++ 'enzyme inhibitor' SubClassOf 'inhibitor role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_37699
+Label(s): protein kinase inhibitor 
++ 'protein kinase inhibitor' SubClassOf 'enzyme inhibitor'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50855
+Label(s): antiatherogenic agent 
++ 'antiatherogenic agent' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_63490
+Label(s): explosive role 
++ 'explosive role' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_39116
+Label(s): pyrethroid ester insecticide 
++ 'pyrethroid ester insecticide' SubClassOf 'insecticide'
+
+Class: http://purl.obolibrary.org/obo/BFO_0000023
+Label(s): role 
+
+Class: http://purl.obolibrary.org/obo/CHEBI_48561
+Label(s): dopaminergic antagonist 
++ 'dopaminergic antagonist' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_22587
+Label(s): antiviral 
++ 'antiviral' SubClassOf 'drug role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_22586
+Label(s): antioxidant 
++ 'antioxidant' SubClassOf 'chemical role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_50733
+Label(s): nutraceutical 
++ 'nutraceutical' SubClassOf 'drug role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001740
+Label(s): software manufacturer 
++ 'software manufacturer' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001738
+Label(s): institution 
++ 'institution' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001737
+Label(s): hardware manufacturer 
++ 'hardware manufacturer' SubClassOf 'role'
 
 Class: http://www.ebi.ac.uk/efo/EFO_0001734
 Label(s): data analyst 
-+ 'data analyst' SubClassOf 'organization role'
++ 'data analyst' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001733
+Label(s): curator 
++ 'curator' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001732
+Label(s): consultant 
++ 'consultant' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001731
+Label(s): consortium member 
++ 'consortium member' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001729
+Label(s): biomaterial provider 
++ 'biomaterial provider' SubClassOf 'role'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0001728
+Label(s): array manufacturer 
++ 'array manufacturer' SubClassOf 'role'
+
+Class: http://purl.obolibrary.org/obo/CHEBI_25355
+Label(s): mitochondrial respiratory-chain inhibitor 
++ 'mitochondrial respiratory-chain inhibitor' SubClassOf 'enzyme inhibitor'
+
+
+################
+@Classes deleted from this version
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021673
+Label(s): Theobromine measurement 
++ 'Theobromine measurement' SubClassOf 'metabolite measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021606
+Label(s): Inositol measurement 
++ 'Inositol measurement' SubClassOf 'metabolite measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0021579
+Label(s): Creatine measurement 
++ 'Creatine measurement' SubClassOf 'metabolite measurement'
 

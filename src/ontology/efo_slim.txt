@@ -9,3 +9,4 @@ http://purl.obolibrary.org/obo/PATO_0000461 # normal
 http://www.ebi.ac.uk/efo/EFO_0002012 # organization role
 http://www.ebi.ac.uk/efo/EFO_0010185 # single cell information
 http://purl.obolibrary.org/obo/IAO_0000030 # information entity
+http://purl.obolibrary.org/obo/BFO_0000023 # role
