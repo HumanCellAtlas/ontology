@@ -3,7 +3,7 @@ name: New term request
 about: Create a ticket asking for a new ontology term to be created and added to the HCAO
 title: "[NTR] "
 labels: 'new term request'
-assignees: paolaroncaglia
+assignees: bvarner-ebi, zoependlington
 ---
 
 <!-- For new term requests, please provide the following information: -->
