@@ -90,7 +90,7 @@ ontologies:
     research."
     homepage: http://cellimagelibrary.org/home
     base_uri:
-      - hhttp://purl.obolibrary.org/obo/FBbi_
+      - http://purl.obolibrary.org/obo/FBbi_
     reasoner: None
     oboSlims: false
     ontology_purl: file:///opt/ols/ontologies/fbbi_hcao.owl
