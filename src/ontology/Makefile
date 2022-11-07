@@ -17,6 +17,7 @@ UBERON_IMPORT=mirror/uberon.owl
 #UBERON_IMPORT="http://purl.obolibrary.org/obo/uberon/subsets/euarchontoglires-basic.owl"
 #CL_IMPORT=../imports/cl.owl
 CL_IMPORT=mirror/cl.owl
+NCIT_IMPORT=mirror/ncit.owl
 CLO_IMPORT=mirror/clo.owl
 FBBI=../imports/fbbi.owl
 #EDAM=../imports/edam.owl
@@ -46,7 +47,7 @@ prepare_release: all
 # after that we annotate the ontology with the release versionInfo
 # The main release target needs breaking into separate steps to avoid ROBOT exception
 $(ONT).owl: $(SRC) uberon_human_extended.owl cl_import.owl go_cell_cycle.owl clo_import.owl terms_to_delete.txt
-	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_import.owl --input ../imports/duo.owl --input clo_import.owl -o hcao_merged.owl &&\
+	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_import.owl --input ../imports/duo.owl --input clo_import.owl --input ncit_import.owl -o hcao_merged.owl &&\
 	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt -p false -o hcao_cleaned.owl &&\
 	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
@@ -112,6 +113,9 @@ go_cell_cycle.owl: ../imports/go.owl
 clo_import.owl: clo_manual_import.txt
 	$(ROBOT) extract --method BOT --input $(CLO_IMPORT) --term-file $< remove -t "OBI:0000759" -o $@
 
+ncit_import.owl: ncit_manual_import.txt
+	$(ROBOT) extract --method BOT --input $(NCIT_IMPORT) --term-file $< -o $@
+
 efo_slim.owl: ../imports/efo_inferred.owl efo_import.txt
 	$(ROBOT) extract -i ../imports/efo_inferred.owl --method MIREOT -B efo_import.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/efo -o efo_slim.owl
 
@@ -140,7 +144,7 @@ fbbi_terms.txt: microscopy_seed.txt microscopy_label_seed.txt
 	cat $+ > $@
 
 fbbi_hcao.owl: fbbi_terms.txt
- 	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri http://ontology.data.humancellatlas.org/ontologies/fbbi --output $@
+ 	$(ROBOT) extract --method BOT --input $(FBBI) --term-file fbbi_terms.txt annotate --ontology-iri "http://ontology.data.humancellatlas.org/ontologies/fbbi" --output $@
 
 #generate data branch slim from EDAM
 #data_terms.txt: ../imports/edam.owl

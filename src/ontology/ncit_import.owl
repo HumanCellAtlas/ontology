@@ -1,0 +1,1832 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ncit.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ncit.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ncit.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A24 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A24"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A27 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A27"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A28 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A28"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A31 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A31"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A32 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A32"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A33 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A33"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A35 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A35"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A37 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A37"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_A40 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_A40"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_NHC0 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P106 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P108 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P207 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P208 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P208"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P322 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P325 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P366 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P375 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P375"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P378 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P378"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P383 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P383"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P384 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P384"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P385 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P385"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P386 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P386"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P393 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P393"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P394 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P394"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P395 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P395"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_P396 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P396"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C154419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C154419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who does not subscribe to conventional gender distinctions but identifies with neither, both, or a combination of male and female genders.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C154419</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genderqueer</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL556381</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Non-conforming</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genderqueer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-binary Gender</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Queer</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genderqueer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154419"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who does not subscribe to conventional gender distinctions but identifies with neither, both, or a combination of male and female genders.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154419"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Non-conforming</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154419"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genderqueer</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154419"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-binary Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154419"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Queer</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C154420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C154420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C91106"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A response indicating that an individual identifies with a gender category not included in the existing list of values.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C154420</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Gender</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL556896</obo:NCIT_P208>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Something Else</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Gender</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something Else</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178718"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179027"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Gender</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something Else</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A response indicating that an individual identifies with a gender category not included in the existing list of values.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Something Else</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C154421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C154421">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person whose gender identity or gender expression differs from their assigned sex.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C154421</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C3266856</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154421"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person whose gender identity or gender expression differs from their assigned sex.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154421"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154421"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C160940 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C160940">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who describes their gender identity as fluctuating between male, female, and/or other.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C160940</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Fluid</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL969839</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Fluid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genderfluid</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Fluid</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160940"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who describes their gender identity as fluctuating between male, female, and/or other.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160940"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Fluid</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160940"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genderfluid</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C160941 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C160941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who does not conform to a male/female gender identity.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C160941</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Variant</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL969838</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Variant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonbinary</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonbinary Gender</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Variant</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160941"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who does not conform to a male/female gender identity.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Variant</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Variant</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonbinary</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C160941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nonbinary Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16576">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</obo:IAO_0000115>
+        <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A28 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177622"/>
+        <obo:NCIT_A33 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A35 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C16576</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0015780</obo:NCIT_P207>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIPG/DMG</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NICHD</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P322>
+        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</obo:NCIT_P366>
+        <obo:NCIT_P375 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FEMALE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C113350"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173073"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173230"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174019"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174237"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174243"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177383"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177390"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178115"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178122"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179478"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179533"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C183061"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C186313"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C186341"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19752"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54447"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66731"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66732"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88088"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89506"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both. (NCI)</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</owl:annotatedTarget>
+        <obo:NCIT_P393 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P394>
+        <obo:NCIT_P395 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</obo:NCIT_P395>
+        <obo:NCIT_P396 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</owl:annotatedTarget>
+        <obo:NCIT_P393 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P394>
+        <obo:NCIT_P395 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship_gender</obo:NCIT_P395>
+        <obo:NCIT_P396 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AB</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICSR</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FEMALE</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FEMALE</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIPG/DMG</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICSR-CVM</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NICHD</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AML</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EWS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCT</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C171087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C171087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A word or phrase that imparts a distinctive characteristic or attribute to the word or phrase it is modifying.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C171087</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person/Individual Attribute</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL1405326</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person/Individual Attribute</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person/Individual Attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C171087"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A word or phrase that imparts a distinctive characteristic or attribute to the word or phrase it is modifying.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C171087"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person/Individual Attribute</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19332"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of people that are socially constructed, including norms, behaviors, and roles based on sex. As a social construct, gender varies from society to society and can change over time. (Adapted from WHO.)</obo:IAO_0000115>
+        <obo:NCIT_A27 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <obo:NCIT_A27 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17998"/>
+        <obo:NCIT_A27 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <obo:NCIT_A31 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <obo:NCIT_A31 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17998"/>
+        <obo:NCIT_A31 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <obo:NCIT_A31 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C38046"/>
+        <obo:NCIT_A31 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43234"/>
+        <obo:NCIT_A37 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154420"/>
+        <obo:NCIT_A37 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17998"/>
+        <obo:NCIT_A37 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C43234"/>
+        <obo:NCIT_A37 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <obo:NCIT_A37 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <obo:NCIT_A40 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <obo:NCIT_A40 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17998"/>
+        <obo:NCIT_A40 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C17357</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0079399</obo:NCIT_P207>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC-GLOSS</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIPG/DMG</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P322>
+        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject self-identification re: masculine/feminine. [IOM] See also sex.</obo:NCIT_P325>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173072"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177536"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178718"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179026"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C183061"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C67497"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characteristics of people that are socially constructed, including norms, behaviors, and roles based on sex. As a social construct, gender varies from society to society and can change over time. (Adapted from WHO.)</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject self-identification re: masculine/feminine. [IOM] See also sex.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC-GLOSS</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DN</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIPG/DMG</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC-GLOSS</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P384>
+        <obo:NCIT_P385 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VAR</obo:NCIT_P385>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C180328 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C180328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who is not sure of their gender identity.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C180328</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Questioning</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL1662744</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Questioning</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Questioning</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Questioning</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180328"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who is not sure of their gender identity.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180328"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender Questioning</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180328"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Questioning</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C180329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C180329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who does not identify as having any gender.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C180329</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agender</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL1662746</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agender</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agender</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180329"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who does not identify as having any gender.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180329"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C180988 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C180988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term used by some Indigenous people as a designation for a person who has the combined traits of both male and female.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C180988</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-spirit</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL1663516</obo:NCIT_P208>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-spirit</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-spirit</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term used by some Indigenous people as a designation for a person who has the combined traits of both male and female.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180988"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-spirit</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C180988"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two-spirit</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C19332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C171087"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distinguishing qualities or prominent aspects of an individual person.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19332</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Attribute</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0681884</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal_Attribute</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Attribute</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Characteristics</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19332"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The distinguishing qualities or prominent aspects of an individual person.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19332"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19332"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Personal Attribute</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19332"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject Characteristics</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20189">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinguishing quality or prominent aspect of a person, object, action, process, or substance.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20189</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property or Attribute</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1514495</obo:NCIT_P207>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NICHD</obo:NCIT_P322>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Properties_or_Attributes</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property or Attribute</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property or Attribute</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A distinguishing quality or prominent aspect of a person, object, action, process, or substance.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property or Attribute</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property or Attribute</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NICHD</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</obo:IAO_0000115>
+        <obo:NCIT_A24 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A28 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:NCIT_A32 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177622"/>
+        <obo:NCIT_A33 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_A35 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C28421"/>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20197</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0086582</obo:NCIT_P207>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIPG/DMG</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NICHD</obo:NCIT_P322>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P322>
+        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</obo:NCIT_P366>
+        <obo:NCIT_P375 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</obo:NCIT_P375>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human, Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MALE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C113350"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173073"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C173230"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174019"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174237"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C174243"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177383"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177390"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C177537"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178115"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178122"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179478"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179533"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C183061"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C186313"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C186341"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C19752"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54447"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C54452"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66731"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66732"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C88088"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C89506"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C90259"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P325"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both. (NCI)</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</owl:annotatedTarget>
+        <obo:NCIT_P393 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P394>
+        <obo:NCIT_P395 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</obo:NCIT_P395>
+        <obo:NCIT_P396 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/NCIT_P375"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</owl:annotatedTarget>
+        <obo:NCIT_P393 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Has Synonym</obo:NCIT_P393>
+        <obo:NCIT_P394 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P394>
+        <obo:NCIT_P395 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relationship_gender</obo:NCIT_P395>
+        <obo:NCIT_P396 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P396>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human, Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AB</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICSR</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MALE</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTDC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MALE</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SPL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIPG/DMG</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICSR-CVM</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NICHD</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ALL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AML</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EWS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCT</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HL</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCDC</obo:NCIT_P384>
+        <obo:NCIT_P386 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OS</obo:NCIT_P386>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDC</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C27993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C27993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term that helps define and render another concept unique.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C27993</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Qualifier</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1517500</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General_Modifier</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Modifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Qualifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Qualifiers</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Qualifier</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term that helps define and render another concept unique.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Modifier</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Qualifier</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C27993"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Qualifiers</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C41009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C41009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20189"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term that helps define and render a concept unique.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C41009</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1514623</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modifier</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualifier</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A term that helps define and render a concept unique.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C46109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20197"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who reports belonging to the cultural gender role distinction of male.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C46109</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1706180</obo:NCIT_P207>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P322>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male_Gender</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender, Self Report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender, Self Reported</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178718"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179027"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who reports belonging to the cultural gender role distinction of male.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender, Self Report</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46109"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male Gender, Self Reported</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C46110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16576"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17357"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who reports belonging to the cultural gender role distinction of female.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C46110</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender</obo:NCIT_P108>
+        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL448708</obo:NCIT_P208>
+        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P322>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female_Gender</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender, Self Report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender, Self Reported</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C178718"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/NCIT_C179027"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who reports belonging to the cultural gender role distinction of female.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SeroNet</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender, Self Report</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female Gender, Self Reported</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C46117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C154421"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who was assigned to one gender at birth based on physical characteristics but who self-identifies psychologically and emotionally as the other.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C46117</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0558141</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46117"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who was assigned to one gender at birth based on physical characteristics but who self-identifies psychologically and emotionally as the other.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46117"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C46120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46117"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who was assigned to the male gender at birth based on physical characteristics but who self-identifies psychologically and emotionally as female.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C46120</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1705489</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female_Transsexual</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M-to-F</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M2F</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual, Self-Report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Female</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Woman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender Female</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual Female</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transwoman</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who was assigned to the male gender at birth based on physical characteristics but who self-identifies psychologically and emotionally as female.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M-to-F</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M2F</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTF</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual, Self-Report</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TF</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Woman</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual Female</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46120"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transwoman</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C46121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C46121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46117"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who was assigned to the female gender at birth based on physical characteristics but who self-identifies psychologically and emotionally as male.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C46121</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism Attribute</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1705488</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male_Transsexual</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F-to-M</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F2M</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual, Self-Report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Man</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transman</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual Male</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual Man</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person who was assigned to the female gender at birth based on physical characteristics but who self-identifies psychologically and emotionally as male.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F-to-M</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F2M</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTM</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caDSR</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual, Self-Report</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trans Man</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transgender Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transman</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual Male</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46121"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transsexual Man</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C47837 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C47837">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46117"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who was male at birth based on physical characteristics and has undergone hormonal therapy and/or surgical procedures in order to develop more female physical characteristics.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C47837</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual Phenotype</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1705486</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female_Transsexual_Phenotype</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual Phenotype</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual Phenotype</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47837"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who was male at birth based on physical characteristics and has undergone hormonal therapy and/or surgical procedures in order to develop more female physical characteristics.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47837"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47837"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male-to-Female Transsexual Phenotype</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C47838 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C47838">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C46117"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who was female at birth based on physical characteristics and has undergone hormonal therapy and/or surgical procedures in order to develop more male physical characteristics.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C47838</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual Phenotype</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1705484</obo:NCIT_P207>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male_Transsexual_Phenotype</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual Phenotype</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual Phenotype</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47838"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual who was female at birth based on physical characteristics and has undergone hormonal therapy and/or surgical procedures in order to develop more male physical characteristics.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47838"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C47838"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female-to-Male Transsexual Phenotype</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C91106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C91106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statement (either spoken or written) that is made in reply to a clinical research assessment question.</obo:IAO_0000115>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C91106</obo:NCIT_NHC0>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intellectual Product</obo:NCIT_P106>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Answer</obo:NCIT_P108>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2984043</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Answer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Question Response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Response</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Answer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C91106"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statement (either spoken or written) that is made in reply to a clinical research assessment question.</owl:annotatedTarget>
+        <obo:NCIT_P378 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P378>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C91106"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Answer</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C91106"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Question Response</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCIT_C91106"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical or Research Assessment Response</owl:annotatedTarget>
+        <obo:NCIT_P383 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SY</obo:NCIT_P383>
+        <obo:NCIT_P384 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI</obo:NCIT_P384>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
