@@ -42,5 +42,7 @@ curl -L https://www.ebi.ac.uk/ols/ontologies/edam/download  > ../imports/edam.ow
 echo "DOWNLOADING HPO..."
 curl -L http://purl.obolibrary.org/obo/hp.owl > mirror/hp.owl && echo "HPO DOWNLOADED"
 
+echo "DOWNLOADING NCIT..."
+curl -L http://purl.obolibrary.org/obo/ncit.owl > mirror/ncit.owl && echo "NCIt DOWNLOADED"
 
 
