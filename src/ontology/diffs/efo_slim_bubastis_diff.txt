@@ -1,668 +1,122 @@
 Ontology Diff Summary
-Diff date: 2023/01/17 10:43:56
+Diff date: 2023/02/16 12:00:45
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 0
-Number of classes added: 164
+Number of classes changed: 1
+Number of classes added: 25
 Number of classes deleted: 0
  
 
 ################
+@Classes modified from previous
+
+Class: http://www.ebi.ac.uk/efo/EFO_0010022
+Label(s): Smart-3Seq 
++ 'Smart-3Seq' SubClassOf 'Smart-like'
+
+
+################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0022160
-Label(s): concentration of large LDL particles measurement 
-+ 'concentration of large LDL particles measurement' SubClassOf 'lipoprotein measurement'
-
-Class: http://purl.obolibrary.org/obo/EFO_0700014
-Label(s): ECCITE-seq 
-+ 'ECCITE-seq' SubClassOf 'CITE-seq'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022047
-Label(s): sulcal depth 
-+ 'sulcal depth' SubClassOf 'brain measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022056
-Label(s): cadmium chloride measurement 
-+ 'cadmium chloride measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022057
-Label(s): chlorpyrifos measurement 
-+ 'chlorpyrifos measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022059
-Label(s): diazinon measurement 
-+ 'diazinon measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022066
-Label(s): heptachlor measurement 
-+ 'heptachlor measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022067
-Label(s): heptachlor epoxide measurement 
-+ 'heptachlor epoxide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022068
-Label(s): mercuric chloride measurement 
-+ 'mercuric chloride measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022069
-Label(s): methoxychlor measurement 
-+ 'methoxychlor measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022077
-Label(s): 16-hydroxypalmitate measurement 
-+ '16-hydroxypalmitate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022087
-Label(s): 3-hydroxy-5-cholestenoic acid measurement 
-+ '3-hydroxy-5-cholestenoic acid measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022094
-Label(s): Dopamine sulfate (2) measurement 
-+ 'Dopamine sulfate (2) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022102
-Label(s): O-methylcatechol sulfate measurement 
-+ 'O-methylcatechol sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022118
-Label(s): Succinimide measurement 
-+ 'Succinimide measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022128
-Label(s): X-24020 measurement 
-+ 'X-24020 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022129
-Label(s): X-24027 measurement 
-+ 'X-24027 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022141
-Label(s): X-24813 measurement 
-+ 'X-24813 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022147
-Label(s): concentration of small VLDL particles 
-+ 'concentration of small VLDL particles' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022149
-Label(s): triglycerides in IDL measurement 
-+ 'triglycerides in IDL measurement' SubClassOf 'triglyceride measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022150
-Label(s): phospholipids in very small VLDL measurement 
-+ 'phospholipids in very small VLDL measurement' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022155
-Label(s): triglycerides in medium VLDL measurement 
-+ 'triglycerides in medium VLDL measurement' SubClassOf 'triglyceride measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022158
-Label(s): triglycerides in small HDL measurement 
-+ 'triglycerides in small HDL measurement' SubClassOf 'triglyceride measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022166
-Label(s): concentration of small LDL particles measurement 
-+ 'concentration of small LDL particles measurement' SubClassOf 'lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022169
-Label(s): phospholipids in large VLDL measurement 
-+ 'phospholipids in large VLDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022173
-Label(s): concentration of large VLDL particles measurement 
-+ 'concentration of large VLDL particles measurement' SubClassOf 'lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022174
-Label(s): phospholipids in large LDL measurement 
-+ 'phospholipids in large LDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022179
-Label(s): total cholesterol in small LDL 
-+ 'total cholesterol in small LDL' SubClassOf 'total cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022183
-Label(s): phospholipids in medium LDL measurement 
-+ 'phospholipids in medium LDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022055
-Label(s): azinphos methyl measurement 
-+ 'azinphos methyl measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022190
-Label(s): phospholipids in large HDL measurement 
-+ 'phospholipids in large HDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022154
-Label(s): phospholipids in medium VLDL measurement 
-+ 'phospholipids in medium VLDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022060
-Label(s): dicofol measurement 
-+ 'dicofol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022063
-Label(s): endosulfan measurement 
-+ 'endosulfan measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022065
-Label(s): ethion measurement 
-+ 'ethion measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022080
-Label(s): 1-linoleoyl-2-docosahexaenoyl-GPC (18:2/22:6) measurement 
-+ '1-linoleoyl-2-docosahexaenoyl-GPC (18:2/22:6) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022083
-Label(s): 1-palmitoyl-2-eicosapentaenoyl-GPE (16:0/20:5) measurement 
-+ '1-palmitoyl-2-eicosapentaenoyl-GPE (16:0/20:5) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022090
-Label(s): 4-androsten-3alpha,17alpha-diol monosulfate (3) measurement 
-+ '4-androsten-3alpha,17alpha-diol monosulfate (3) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022092
-Label(s): Cyclo(pro-val) measurement 
-+ 'Cyclo(pro-val) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022071
-Label(s): pentachlorophenol measurement 
-+ 'pentachlorophenol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022073
-Label(s): (S)-a-amino-omega-caprolactam (X-13737) measurement 
-+ '(S)-a-amino-omega-caprolactam (X-13737) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022139
-Label(s): X-24804 measurement 
-+ 'X-24804 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022111
-Label(s): Sphingomyelin (d18:1/21:0, d17:1/22:0, d16:1/23:0) measurement 
-+ 'Sphingomyelin (d18:1/21:0, d17:1/22:0, d16:1/23:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022113
-Label(s): Sphingomyelin (d18:1/24:1, d18:2/24:0) measurement 
-+ 'Sphingomyelin (d18:1/24:1, d18:2/24:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022121
-Label(s): X-21658 measurement 
-+ 'X-21658 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022130
-Label(s): X-24243 measurement 
-+ 'X-24243 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022131
-Label(s): X-24452 measurement 
-+ 'X-24452 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022137
-Label(s): X-24765 measurement 
-+ 'X-24765 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022142
-Label(s): X-24831 measurement 
-+ 'X-24831 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022153
-Label(s): total lipids in medium VLDL 
-+ 'total lipids in medium VLDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022170
-Label(s): cholesterol esters in large VLDL measurement 
-+ 'cholesterol esters in large VLDL measurement' SubClassOf 'very low density lipoprotein cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803338
-Label(s): sphingomyelin 38:3 measurement 
-+ 'sphingomyelin 38:3 measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803336
-Label(s): sphingomyelin 32:0 measurement 
-+ 'sphingomyelin 32:0 measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803335
-Label(s): RS-10-hydroxywarfarin to RS-warfarin ratio measurement 
-+ 'RS-10-hydroxywarfarin to RS-warfarin ratio measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803334
-Label(s): S-7-hydroxywarfarin to S-warfarin ratio measurement 
-+ 'S-7-hydroxywarfarin to S-warfarin ratio measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803333
-Label(s): R-6-hydroxywarfarin to R-warfarin ratio measurement 
-+ 'R-6-hydroxywarfarin to R-warfarin ratio measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803332
-Label(s): S-6-hydroxywarfarin to S-warfarin ratio measurement 
-+ 'S-6-hydroxywarfarin to S-warfarin ratio measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803330
-Label(s): RS-10-hydroxywarfarin measurement 
-+ 'RS-10-hydroxywarfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803327
-Label(s): R-6-hydroxywarfarin measurement 
-+ 'R-6-hydroxywarfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803326
-Label(s): S-6-hydroxywarfarin measurement 
-+ 'S-6-hydroxywarfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803325
-Label(s): RS-warfarin measurement 
-+ 'RS-warfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803324
-Label(s): R-warfarin measurement 
-+ 'R-warfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803323
-Label(s): S-warfarin measurement 
-+ 'S-warfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803322
-Label(s): HLA allele carrier status 
-+ 'HLA allele carrier status' SubClassOf 'carrier status'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803320
-Label(s): abdominal:gluteofemoral adipose tissue ratio measurement 
-+ 'abdominal:gluteofemoral adipose tissue ratio measurement' SubClassOf 'adipose tissue measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803319
-Label(s): visceral:gluteofemoral adipose tissue ratio measurement 
-+ 'visceral:gluteofemoral adipose tissue ratio measurement' SubClassOf 'adipose tissue measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803316
-Label(s): abdominal adipose tissue measurement 
-+ 'abdominal adipose tissue measurement' SubClassOf 'adipose tissue measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803317
-Label(s): gluteofemoral adipose tissue measurement 
-+ 'gluteofemoral adipose tissue measurement' SubClassOf 'adipose tissue measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803318
-Label(s): visceral:abdominal adipose tissue ratio measurement 
-+ 'visceral:abdominal adipose tissue ratio measurement' SubClassOf 'adipose tissue measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803337
-Label(s): sphingomyelin 34:1 measurement 
-+ 'sphingomyelin 34:1 measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803339
-Label(s): sphingomyelin 43:1/ 34:1 ratio measurement 
-+ 'sphingomyelin 43:1/ 34:1 ratio measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022144
-Label(s): triglycerides in very small VLDL measurement 
-+ 'triglycerides in very small VLDL measurement' SubClassOf 'triglyceride measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022138
-Label(s): X-24803 measurement 
-+ 'X-24803 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803329
-Label(s): S-7-hydroxywarfarin measurement 
-+ 'S-7-hydroxywarfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022180
-Label(s): total lipids in medium LDL 
-+ 'total lipids in medium LDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803331
-Label(s): S-warfarin to R-warfarin ratio measurement 
-+ 'S-warfarin to R-warfarin ratio measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022120
-Label(s): X-21358 measurement 
-+ 'X-21358 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022133
-Label(s): X-24513 measurement 
-+ 'X-24513 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803328
-Label(s): RS-6-hydroxywarfarin measurement 
-+ 'RS-6-hydroxywarfarin measurement' SubClassOf 'warfarin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022052
-Label(s): 2,4,5-trichlorophenol measurement 
-+ '2,4,5-trichlorophenol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022061
-Label(s): dieldrin measurement 
-+ 'dieldrin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022070
-Label(s): parathion measurement 
-+ 'parathion measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022072
-Label(s): potassium chromate measurement 
-+ 'potassium chromate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022079
-Label(s): 1-arachidoyl-2-arachidonoyl-GPC (20:0/20:4) measurement 
-+ '1-arachidoyl-2-arachidonoyl-GPC (20:0/20:4) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022081
-Label(s): 1-margaroyl-2-arachidonoyl-GPC (17:0/20:4) measurement 
-+ '1-margaroyl-2-arachidonoyl-GPC (17:0/20:4) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022082
-Label(s): 1-methylimidazoleacetate measurement 
-+ '1-methylimidazoleacetate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022103
-Label(s): Palmitoyl-arachidonoyl-glycerol (16:0/20:4) [2] measurement 
-+ 'Palmitoyl-arachidonoyl-glycerol (16:0/20:4) [2] measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022105
-Label(s): Sphingomyelin (d18:1/14:0, d16:1/16:0) measurement 
-+ 'Sphingomyelin (d18:1/14:0, d16:1/16:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022106
-Label(s): Sphingomyelin (d18:1/15:0, d16:1/17:0) measurement 
-+ 'Sphingomyelin (d18:1/15:0, d16:1/17:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022107
-Label(s): Sphingomyelin (d18:1/17:0, d17:1/18:0, d19:1/16:0) measurement 
-+ 'Sphingomyelin (d18:1/17:0, d17:1/18:0, d19:1/16:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022110
-Label(s): Sphingomyelin (d18:1/20:1, d18:2/20:0) measurement 
-+ 'Sphingomyelin (d18:1/20:1, d18:2/20:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022112
-Label(s): Sphingomyelin (d18:1/22:1, d18:2/22:0, d16:1/24:1) measurement 
-+ 'Sphingomyelin (d18:1/22:1, d18:2/22:0, d16:1/24:1) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022119
-Label(s): X-14568 measurement 
-+ 'X-14568 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022122
-Label(s): X-22775 measurement 
-+ 'X-22775 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022124
-Label(s): X-23652 measurement 
-+ 'X-23652 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022125
-Label(s): X-23749 measurement 
-+ 'X-23749 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022127
-Label(s): X-23765 measurement 
-+ 'X-23765 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022132
-Label(s): X-24512 measurement 
-+ 'X-24512 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022140
-Label(s): X-24806 measurement 
-+ 'X-24806 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022143
-Label(s): X-24870 measurement 
-+ 'X-24870 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022054
-Label(s): aldrin measurement 
-+ 'aldrin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022161
-Label(s): total lipids in IDL 
-+ 'total lipids in IDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022162
-Label(s): total cholesterol in medium VLDL 
-+ 'total cholesterol in medium VLDL' SubClassOf 'very low density lipoprotein cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022171
-Label(s): total cholesterol in small VLDL 
-+ 'total cholesterol in small VLDL' SubClassOf 'very low density lipoprotein cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022172
-Label(s): concentration of medium LDL particles measurement 
-+ 'concentration of medium LDL particles measurement' SubClassOf 'lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022062
-Label(s): disulfoton measurement 
-+ 'disulfoton measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022064
-Label(s): endrin measurement 
-+ 'endrin measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022181
-Label(s): free cholesterol in IDL measurement 
-+ 'free cholesterol in IDL measurement' SubClassOf 'free cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022182
-Label(s): cholesterol esters in medium VLDL measurement 
-+ 'cholesterol esters in medium VLDL measurement' SubClassOf 'very low density lipoprotein cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022184
-Label(s): total cholesterol in IDL 
-+ 'total cholesterol in IDL' SubClassOf 'total cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022189
-Label(s): total lipids in large HDL 
-+ 'total lipids in large HDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022188
-Label(s): concentration of large HDL particles measurement 
-+ 'concentration of large HDL particles measurement' SubClassOf 'lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022187
-Label(s): monounsaturated fatty acids; 16:1, 18:1 measurement 
-+ 'monounsaturated fatty acids; 16:1, 18:1 measurement' SubClassOf 'fatty acid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022186
-Label(s): cholesterol esters in medium LDL measurement 
-+ 'cholesterol esters in medium LDL measurement' SubClassOf 'esterified cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022185
-Label(s): total cholesterol in medium LDL 
-+ 'total cholesterol in medium LDL' SubClassOf 'total cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022178
-Label(s): triglycerides in large VLDL measurement 
-+ 'triglycerides in large VLDL measurement' SubClassOf 'triglyceride measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022177
-Label(s): total cholesterol in large VLDL 
-+ 'total cholesterol in large VLDL' SubClassOf 'very low density lipoprotein cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022176
-Label(s): free cholesterol in large LDL measurement 
-+ 'free cholesterol in large LDL measurement' SubClassOf 'free cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022175
-Label(s): total lipids in large VLDL 
-+ 'total lipids in large VLDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022168
-Label(s): total lipids in small LDL 
-+ 'total lipids in small LDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022167
-Label(s): total cholesterol in large LDL 
-+ 'total cholesterol in large LDL' SubClassOf 'total cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022165
-Label(s): cholesterol esters in large LDL measurement 
-+ 'cholesterol esters in large LDL measurement' SubClassOf 'esterified cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022164
-Label(s): phospholipids in IDL measurement 
-+ 'phospholipids in IDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022163
-Label(s): total lipids in large LDL 
-+ 'total lipids in large LDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022159
-Label(s): cholesterol esters in large HDL measurement 
-+ 'cholesterol esters in large HDL measurement' SubClassOf 'esterified cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022157
-Label(s): free cholesterol in large HDL measurement 
-+ 'free cholesterol in large HDL measurement' SubClassOf 'free cholesterol measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022156
-Label(s): total lipids in very small VLDL measurement 
-+ 'total lipids in very small VLDL measurement' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022152
-Label(s): concentration of medium VLDL particles 
-+ 'concentration of medium VLDL particles' SubClassOf 'lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022151
-Label(s): concentration of very small VLDL particles 
-+ 'concentration of very small VLDL particles' SubClassOf 'lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022148
-Label(s): total lipids in small VLDL 
-+ 'total lipids in small VLDL' SubClassOf 'lipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022146
-Label(s): phospholipids in small VLDL measurement 
-+ 'phospholipids in small VLDL measurement' SubClassOf 'phospholipid measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022145
-Label(s): triglycerides in small VLDL measurement 
-+ 'triglycerides in small VLDL measurement' SubClassOf 'triglyceride measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022136
-Label(s): X-24748 measurement 
-+ 'X-24748 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022135
-Label(s): X-24747 measurement 
-+ 'X-24747 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022134
-Label(s): X-24738 measurement 
-+ 'X-24738 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022126
-Label(s): X-23756 measurement 
-+ 'X-23756 measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022117
-Label(s): Sphingomyelin (d18:2/24:1, d18:1/24:2) measurement 
-+ 'Sphingomyelin (d18:2/24:1, d18:1/24:2) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022116
-Label(s): Sphingomyelin (d18:2/23:0, d18:1/23:1, d17:1/24:1) measurement 
-+ 'Sphingomyelin (d18:2/23:0, d18:1/23:1, d17:1/24:1) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022115
-Label(s): Sphingomyelin (d18:2/16:0, d18:1/16:1) measurement 
-+ 'Sphingomyelin (d18:2/16:0, d18:1/16:1) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022114
-Label(s): Sphingomyelin (d18:2/14:0, d18:1/14:1) measurement 
-+ 'Sphingomyelin (d18:2/14:0, d18:1/14:1) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022108
-Label(s): Sphingomyelin (d18:1/18:1, d18:2/18:0) measurement 
-+ 'Sphingomyelin (d18:1/18:1, d18:2/18:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022104
-Label(s): Pregn steroid monosulfate measurement 
-+ 'Pregn steroid monosulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022101
-Label(s): N-acetylcarnosine measurement 
-+ 'N-acetylcarnosine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022100
-Label(s): Isoleucylleucine/leucylisoleucine measurement 
-+ 'Isoleucylleucine/leucylisoleucine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022091
-Label(s): Cis-4-decenoyl carnitine measurement 
-+ 'Cis-4-decenoyl carnitine measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022099
-Label(s): Hydantoin-5-propionic acid measurement 
-+ 'Hydantoin-5-propionic acid measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022098
-Label(s): Glycodeoxycholate sulfate measurement 
-+ 'Glycodeoxycholate sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022097
-Label(s): Glycochenodeoxycholate sulfate measurement 
-+ 'Glycochenodeoxycholate sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022096
-Label(s): Glutarate (pentanedioate) measurement 
-+ 'Glutarate (pentanedioate) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022095
-Label(s): Eicosanodioate measurement 
-+ 'Eicosanodioate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022089
-Label(s): 4-androsten-3alpha,17alpha-diol monosulfate (2) measurement 
-+ '4-androsten-3alpha,17alpha-diol monosulfate (2) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022088
-Label(s): 3-indoxyl sulfate measurement 
-+ '3-indoxyl sulfate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022086
-Label(s): 2-hydroxybutyrate/2-hydroxyisobutyrate measurement 
-+ '2-hydroxybutyrate/2-hydroxyisobutyrate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022085
-Label(s): 1-stearoyl-2-dihomo-linolenoyl-GPI (18:0/20:3n3 or 6) measurement 
-+ '1-stearoyl-2-dihomo-linolenoyl-GPI (18:0/20:3n3 or 6) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022084
-Label(s): 1-palmitoyl-2-palmitoleoyl-GPC (16:0/16:1) measurement 
-+ '1-palmitoyl-2-palmitoleoyl-GPC (16:0/16:1) measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022078
-Label(s): 17-methylstearate measurement 
-+ '17-methylstearate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022076
-Label(s): 15-methylpalmitate measurement 
-+ '15-methylpalmitate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022058
-Label(s): dibutyl phthalate measurement 
-+ 'dibutyl phthalate measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022053
-Label(s): 4,6-dinitro-o-cresol measurement 
-+ '4,6-dinitro-o-cresol measurement' SubClassOf 'metabolite measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022048
-Label(s): eosinophil-derived neurotoxin measurement 
-+ 'eosinophil-derived neurotoxin measurement' SubClassOf 'blood protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022046
-Label(s): sulcal opening distance 
-+ 'sulcal opening distance' SubClassOf 'brain measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022045
-Label(s): sci-ATAC-seq3 
-+ 'sci-ATAC-seq3' SubClassOf 'scATAC-seq'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022109
-Label(s): Sphingomyelin (d18:1/20:0, d16:1/22:0) measurement 
-+ 'Sphingomyelin (d18:1/20:0, d16:1/22:0) measurement' SubClassOf 'sphingomyelin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022123
-Label(s): X-23637 measurement 
-+ 'X-23637 measurement' SubClassOf 'metabolite measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0803365
+Label(s): dietary approaches to stop hypertension diet 
++ 'dietary approaches to stop hypertension diet' SubClassOf 'diet'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803364
+Label(s): sleep efficiency 
++ 'sleep efficiency' SubClassOf 'sleep measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803363
+Label(s): wake after sleep onset 
++ 'wake after sleep onset' SubClassOf 'sleep measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803359
+Label(s): SARS-CoV-2 neutralizing antibody measurement 
++ 'SARS-CoV-2 neutralizing antibody measurement' SubClassOf 'antibody measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803358
+Label(s): anti-SARS-CoV-2 IgG measurement 
++ 'anti-SARS-CoV-2 IgG measurement' SubClassOf 'serum IgG measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803356
+Label(s): 25-hydroxyvitamin D2 measurement 
++ '25-hydroxyvitamin D2 measurement' SubClassOf 'vitamin D measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803355
+Label(s): calcitriol measurement 
++ 'calcitriol measurement' SubClassOf 'vitamin D measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803354
+Label(s): tissue transglutaminase IgA antibody measurement 
++ 'tissue transglutaminase IgA antibody measurement' SubClassOf 'serum IgA measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803353
+Label(s): anti-topoisomerase I antibody positivity 
++ 'anti-topoisomerase I antibody positivity' SubClassOf 'autoantibody measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803352
+Label(s): prealbumin measurement 
++ 'prealbumin measurement' SubClassOf 'protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803350
+Label(s): intact parathyroid hormone measurement 
++ 'intact parathyroid hormone measurement' SubClassOf 'parathyroid hormone measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803349
+Label(s): lipemic index 
++ 'lipemic index' SubClassOf 'lipid or lipoprotein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803348
+Label(s): icteric index 
++ 'icteric index' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803347
+Label(s): nucleated cell count 
++ 'nucleated cell count' SubClassOf 'hematological measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803346
+Label(s): carboxyhemoglobin measurement 
++ 'carboxyhemoglobin measurement' SubClassOf 'hemoglobin measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803345
+Label(s): carbon dioxide measurement 
++ 'carbon dioxide measurement' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803344
+Label(s): anion gap measurement 
++ 'anion gap measurement' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803342
+Label(s): ammonia measurement 
++ 'ammonia measurement' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803341
+Label(s): cardiolipin IgM antibody measurement 
++ 'cardiolipin IgM antibody measurement' SubClassOf 'serum IgM measurement'
++ 'cardiolipin IgM antibody measurement' SubClassOf 'antiphospholipid antibody measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803340
+Label(s): cardiolipin IgA antibody measurement 
++ 'cardiolipin IgA antibody measurement' SubClassOf 'serum IgA measurement'
++ 'cardiolipin IgA antibody measurement' SubClassOf 'antiphospholipid antibody measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803343
+Label(s): amylase measurement 
++ 'amylase measurement' SubClassOf 'protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803351
+Label(s): partial pressure of oxygen measurement 
++ 'partial pressure of oxygen measurement' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803357
+Label(s): 25-hydroxyvitamin D3 measurement 
++ '25-hydroxyvitamin D3 measurement' SubClassOf 'vitamin D measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0803360
+Label(s): SARS-CoV-2 antibody measurement 
++ 'SARS-CoV-2 antibody measurement' SubClassOf 'antibody measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0022196
+Label(s): body surface area 
++ 'body surface area' SubClassOf 'anthropometric measurement'
 
