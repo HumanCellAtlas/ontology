@@ -1,122 +1,43 @@
 Ontology Diff Summary
-Diff date: 2023/02/16 12:00:45
+Diff date: 2023/03/16 09:17:05
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 1
-Number of classes added: 25
+Number of classes changed: 2
+Number of classes added: 4
 Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://www.ebi.ac.uk/efo/EFO_0010022
-Label(s): Smart-3Seq 
-+ 'Smart-3Seq' SubClassOf 'Smart-like'
+Class: http://purl.obolibrary.org/obo/EFO_0700003
+Label(s): BD Rhapsody Whole Transcriptome Analysis 
+- 'BD Rhapsody Whole Transcriptome Analysis' SubClassOf 'single-cell RNA sequencing'
++ 'BD Rhapsody Whole Transcriptome Analysis' SubClassOf 'single cell library construction'
+
+Class: http://purl.obolibrary.org/obo/EFO_0700004
+Label(s): BD Rhapsody Targeted mRNA 
+- 'BD Rhapsody Targeted mRNA' SubClassOf 'single-cell RNA sequencing'
++ 'BD Rhapsody Targeted mRNA' SubClassOf 'single cell library construction'
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0803365
-Label(s): dietary approaches to stop hypertension diet 
-+ 'dietary approaches to stop hypertension diet' SubClassOf 'diet'
+Class: http://www.ebi.ac.uk/efo/EFO_0020072
+Label(s): soluble CD163 measurement 
++ 'soluble CD163 measurement' SubClassOf 'blood protein measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0803364
-Label(s): sleep efficiency 
-+ 'sleep efficiency' SubClassOf 'sleep measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020071
+Label(s): alpha angle measurement 
++ 'alpha angle measurement' SubClassOf 'anthropometric measurement'
++ 'alpha angle measurement' SubClassOf 'osteoarthritis biomarker measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0803363
-Label(s): wake after sleep onset 
-+ 'wake after sleep onset' SubClassOf 'sleep measurement'
+Class: http://purl.obolibrary.org/obo/OBA_2050099
+Label(s): age of onset of anorexia nervosa 
++ 'age of onset of anorexia nervosa' SubClassOf 'Onset'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0803359
-Label(s): SARS-CoV-2 neutralizing antibody measurement 
-+ 'SARS-CoV-2 neutralizing antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803358
-Label(s): anti-SARS-CoV-2 IgG measurement 
-+ 'anti-SARS-CoV-2 IgG measurement' SubClassOf 'serum IgG measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803356
-Label(s): 25-hydroxyvitamin D2 measurement 
-+ '25-hydroxyvitamin D2 measurement' SubClassOf 'vitamin D measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803355
-Label(s): calcitriol measurement 
-+ 'calcitriol measurement' SubClassOf 'vitamin D measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803354
-Label(s): tissue transglutaminase IgA antibody measurement 
-+ 'tissue transglutaminase IgA antibody measurement' SubClassOf 'serum IgA measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803353
-Label(s): anti-topoisomerase I antibody positivity 
-+ 'anti-topoisomerase I antibody positivity' SubClassOf 'autoantibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803352
-Label(s): prealbumin measurement 
-+ 'prealbumin measurement' SubClassOf 'protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803350
-Label(s): intact parathyroid hormone measurement 
-+ 'intact parathyroid hormone measurement' SubClassOf 'parathyroid hormone measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803349
-Label(s): lipemic index 
-+ 'lipemic index' SubClassOf 'lipid or lipoprotein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803348
-Label(s): icteric index 
-+ 'icteric index' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803347
-Label(s): nucleated cell count 
-+ 'nucleated cell count' SubClassOf 'hematological measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803346
-Label(s): carboxyhemoglobin measurement 
-+ 'carboxyhemoglobin measurement' SubClassOf 'hemoglobin measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803345
-Label(s): carbon dioxide measurement 
-+ 'carbon dioxide measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803344
-Label(s): anion gap measurement 
-+ 'anion gap measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803342
-Label(s): ammonia measurement 
-+ 'ammonia measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803341
-Label(s): cardiolipin IgM antibody measurement 
-+ 'cardiolipin IgM antibody measurement' SubClassOf 'serum IgM measurement'
-+ 'cardiolipin IgM antibody measurement' SubClassOf 'antiphospholipid antibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803340
-Label(s): cardiolipin IgA antibody measurement 
-+ 'cardiolipin IgA antibody measurement' SubClassOf 'serum IgA measurement'
-+ 'cardiolipin IgA antibody measurement' SubClassOf 'antiphospholipid antibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803343
-Label(s): amylase measurement 
-+ 'amylase measurement' SubClassOf 'protein measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803351
-Label(s): partial pressure of oxygen measurement 
-+ 'partial pressure of oxygen measurement' SubClassOf 'measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803357
-Label(s): 25-hydroxyvitamin D3 measurement 
-+ '25-hydroxyvitamin D3 measurement' SubClassOf 'vitamin D measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803360
-Label(s): SARS-CoV-2 antibody measurement 
-+ 'SARS-CoV-2 antibody measurement' SubClassOf 'antibody measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0022196
-Label(s): body surface area 
-+ 'body surface area' SubClassOf 'anthropometric measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0803367
+Label(s): antihyperlipidemic drug use measurement 
++ 'antihyperlipidemic drug use measurement' SubClassOf 'drug use measurement'
 
