@@ -1,43 +1,153 @@
 Ontology Diff Summary
-Diff date: 2023/03/16 09:17:05
+Diff date: 2023/04/18 10:55:40
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
-Number of classes changed: 2
-Number of classes added: 4
+Number of classes changed: 1
+Number of classes added: 33
 Number of classes deleted: 0
  
 
 ################
 @Classes modified from previous
 
-Class: http://purl.obolibrary.org/obo/EFO_0700003
-Label(s): BD Rhapsody Whole Transcriptome Analysis 
-- 'BD Rhapsody Whole Transcriptome Analysis' SubClassOf 'single-cell RNA sequencing'
-+ 'BD Rhapsody Whole Transcriptome Analysis' SubClassOf 'single cell library construction'
-
-Class: http://purl.obolibrary.org/obo/EFO_0700004
-Label(s): BD Rhapsody Targeted mRNA 
-- 'BD Rhapsody Targeted mRNA' SubClassOf 'single-cell RNA sequencing'
-+ 'BD Rhapsody Targeted mRNA' SubClassOf 'single cell library construction'
+Class: http://www.ebi.ac.uk/efo/EFO_0030069
+Label(s): complete genomic deletion 
+- 'complete genomic deletion' SubClassOf 'copy number loss'
++ 'complete genomic deletion' SubClassOf http://www.ebi.ac.uk/efo/EFO_0020073
 
 
 ################
 @Classes new to this version
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020072
-Label(s): soluble CD163 measurement 
-+ 'soluble CD163 measurement' SubClassOf 'blood protein measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0700015
+Label(s): PacBio Sequel II system 
++ 'PacBio Sequel II system' SubClassOf 'high throughput sequencer'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0020071
-Label(s): alpha angle measurement 
-+ 'alpha angle measurement' SubClassOf 'anthropometric measurement'
-+ 'alpha angle measurement' SubClassOf 'osteoarthritis biomarker measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020936
+Label(s): anterior thigh muscle fat infiltration measurement 
++ 'anterior thigh muscle fat infiltration measurement' SubClassOf 'thigh muscle fat infiltration measurement'
 
-Class: http://purl.obolibrary.org/obo/OBA_2050099
-Label(s): age of onset of anorexia nervosa 
-+ 'age of onset of anorexia nervosa' SubClassOf 'Onset'
+Class: http://www.ebi.ac.uk/efo/EFO_0020107
+Label(s): thigh muscle volume 
++ 'thigh muscle volume' SubClassOf 'thigh muscle measurement'
 
-Class: http://www.ebi.ac.uk/efo/EFO_0803367
-Label(s): antihyperlipidemic drug use measurement 
-+ 'antihyperlipidemic drug use measurement' SubClassOf 'drug use measurement'
+Class: http://www.ebi.ac.uk/efo/EFO_0020100
+Label(s): thigh muscle measurement 
++ 'thigh muscle measurement' SubClassOf 'muscle measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020099
+Label(s): weight-to-muscle ratio 
++ 'weight-to-muscle ratio' SubClassOf 'body ratio measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020098
+Label(s): abdominal fat ratio 
++ 'abdominal fat ratio' SubClassOf 'body ratio measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020097
+Label(s): QRS-T angle 
++ 'QRS-T angle' SubClassOf 'electrocardiography'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020096
+Label(s): mitral valve annular diameter 
++ 'mitral valve annular diameter' SubClassOf 'cardiovascular measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020095
+Label(s): trochanter bone mineral density 
++ 'trochanter bone mineral density' SubClassOf 'hip bone mineral density'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020093
+Label(s): C57BL/6NTac 
++ 'C57BL/6NTac' SubClassOf 'C57BL'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020091
+Label(s): dietary phosphorus intake measurement 
++ 'dietary phosphorus intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020090
+Label(s): dietary cholesterol intake measurement 
++ 'dietary cholesterol intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020088
+Label(s): dietary fiber intake measurement 
++ 'dietary fiber intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020087
+Label(s): dietary ash intake measurement 
++ 'dietary ash intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020086
+Label(s): dietary carotene intake measurement 
++ 'dietary carotene intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020085
+Label(s): dietary retinol intake measurement 
++ 'dietary retinol intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020084
+Label(s): dietary vitamin B6 intake measurement 
++ 'dietary vitamin B6 intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020083
+Label(s): dietary zinc intake measurement 
++ 'dietary zinc intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020082
+Label(s): dietary vitamin C intake measurement 
++ 'dietary vitamin C intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020081
+Label(s): dietary niacin intake measurement 
++ 'dietary niacin intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020080
+Label(s): dietary sodium intake measurement 
++ 'dietary sodium intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020079
+Label(s): dietary vitamin B2 intake measurement 
++ 'dietary vitamin B2 intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020077
+Label(s): dietary vitamin A intake measurement 
++ 'dietary vitamin A intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020075
+Label(s): urine glucose measurement 
++ 'urine glucose measurement' SubClassOf 'glucose measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020074
+Label(s): urine protein measurement 
++ 'urine protein measurement' SubClassOf 'protein measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020073
+Label(s): high-level copy number loss 
++ 'high-level copy number loss' SubClassOf 'copy number loss'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020076
+Label(s): urine blood measurement 
++ 'urine blood measurement' SubClassOf 'measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020078
+Label(s): dietary vitamin B1 intake measurement 
++ 'dietary vitamin B1 intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020089
+Label(s): dietary vitamin E intake measurement 
++ 'dietary vitamin E intake measurement' SubClassOf 'diet measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020935
+Label(s): anterior thigh muscle volume 
++ 'anterior thigh muscle volume' SubClassOf 'thigh muscle volume'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020934
+Label(s): posterior thigh muscle fat infiltration measurement 
++ 'posterior thigh muscle fat infiltration measurement' SubClassOf 'thigh muscle fat infiltration measurement'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020931
+Label(s): posterior thigh muscle volume 
++ 'posterior thigh muscle volume' SubClassOf 'thigh muscle volume'
+
+Class: http://www.ebi.ac.uk/efo/EFO_0020900
+Label(s): thigh muscle fat infiltration measurement 
++ 'thigh muscle fat infiltration measurement' SubClassOf 'thigh muscle measurement'
 
