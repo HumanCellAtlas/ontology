@@ -49,7 +49,8 @@ prepare_release: all
 $(ONT).owl: $(SRC) uberon_human_extended.owl cl_import.owl go_cell_cycle.owl clo_import.owl terms_to_delete.txt
 	$(ROBOT) merge --input $(SRC) --input go_cell_cycle.owl --input uberon_human_extended.owl --input cl_import.owl --input ../imports/duo.owl --input clo_import.owl --input ncit_import.owl -o hcao_merged.owl &&\
 	$(ROBOT) remove --input hcao_merged.owl -T terms_to_delete.txt -p false -o hcao_cleaned.owl &&\
-	$(ROBOT) reason --input hcao_cleaned.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
+	$(ROBOT) remove --input hcao_cleaned.owl --axioms "DisjointClasses" -o hcao_cleaned_temp.owl &&\
+	$(ROBOT) reason --input hcao_cleaned_temp.owl -r ELK reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 
 debug.md:
 	$(ROBOT) explain -i hcao_cleaned.owl --reasoner ELK -M unsatisfiability --unsatisfiable random:10 --explanation $@

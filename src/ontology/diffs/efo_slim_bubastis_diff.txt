@@ -1,61 +1,8 @@
 Ontology Diff Summary
-Diff date: 2023/05/16 13:09:24
+Diff date: 2023/05/16 16:32:41
 First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/efo_slim.owl
 Second ontology URI: efo_slim.owl
 Number of classes changed: 0
-Number of classes added: 12
+Number of classes added: 0
 Number of classes deleted: 0
  
-
-################
-@Classes new to this version
-
-Class: http://www.ebi.ac.uk/efo/EFO_0700016
-Label(s): Smart-seq v4 
-+ 'Smart-seq v4' SubClassOf 'Smart-like'
-+ 'Smart-seq v4' SubClassOf 'assay'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803375
-Label(s): erythrocyte aggregation 
-+ 'erythrocyte aggregation' SubClassOf 'hemorheological measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803371
-Label(s): outer nuclear layer thickness measurement 
-+ 'outer nuclear layer thickness measurement' SubClassOf 'photoreceptor cell layer thickness measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803376
-Label(s): erythrocyte deformability 
-+ 'erythrocyte deformability' SubClassOf 'hemorheological measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803381
-Label(s): fornix volume measurement 
-+ 'fornix volume measurement' SubClassOf 'hippocampal volume'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803380
-Label(s): cardiovascular age measurement 
-+ 'cardiovascular age measurement' SubClassOf 'cardiovascular measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803374
-Label(s): hemorheological measurement 
-+ 'hemorheological measurement' SubClassOf 'hematological measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803373
-Label(s): outer segment thickness measurement 
-+ 'outer segment thickness measurement' SubClassOf 'photoreceptor cell layer thickness measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803372
-Label(s): inner segment thickness measurement 
-+ 'inner segment thickness measurement' SubClassOf 'photoreceptor cell layer thickness measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803370
-Label(s): photoreceptor cell layer thickness measurement 
-+ 'photoreceptor cell layer thickness measurement' SubClassOf 'retinal layer thickness measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803369
-Label(s): vascular endothelial function measurement 
-+ 'vascular endothelial function measurement' SubClassOf 'cardiovascular measurement'
-
-Class: http://www.ebi.ac.uk/efo/EFO_0803378
-Label(s): visual masking mesurement 
-+ 'visual masking mesurement' SubClassOf 'visual perception measurement'
-
