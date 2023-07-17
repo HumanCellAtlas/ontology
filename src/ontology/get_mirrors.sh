@@ -3,24 +3,46 @@
 mkdir -p mirror
 
 mkdir -p ../imports
+echo "DOWNLOADING MONDO..."
+curl -L http://purl.obolibrary.org/obo/mondo.obo > mirror/mondo.obo && ../../bin/robot convert -i mirror/mondo.obo -f owl -o mirror/mondo.owl && echo "MONDO DOWNLOADED"
+curl -L http://purl.obolibrary.org/obo/mondo.owl > mirror/mondo-full.owl && echo "MONDO DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/mondo/download > mirror/mondo.owl
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/uberon/download > mirror/uberon.owl
+echo "DOWNLOADING UBERON..."
+curl -L http://purl.obolibrary.org/obo/uberon.owl > mirror/uberon.owl && echo "UBERON DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/fma/download > ../imports/fma.owl
+echo "DOWNLOADING FMA..."
+curl -L http://purl.obolibrary.org/obo/fma.owl > ../imports/fma.owl && echo "FMA DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/fbbi/download > ../imports/fbbi.owl
+echo "DOWNLOADING DUO..."
+curl -L http://purl.obolibrary.org/obo/duo.owl > ../imports/duo.owl && echo "DUO DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/hsapdv/download > ../imports/hsapdv.owl
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/go/download > ../imports/go.owl
+echo "DOWNLOADING FBBI..."
+curl -L http://purl.obolibrary.org/obo/fbbi.owl > ../imports/fbbi.owl && echo "FBBI DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/cl/download > mirror/cl.owl
+echo "DOWNLOADING HSAPDV..."
+curl -L http://purl.obolibrary.org/obo/hsapdv.owl > ../imports/hsapdv.owl && echo "HSAPDV DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/efo/download  > mirror/efo.owl
+echo "DOWNLOADING GO..."
+curl -L http://purl.obolibrary.org/obo/go.owl > ../imports/go.owl && echo "GO DOWNLOADED"
 
-curl -L https://www.ebi.ac.uk/ols/ontologies/edam/download  > ../imports/edam.owl
+echo "DOWNLOADING CL..."
+curl -L http://purl.obolibrary.org/obo/cl.owl > mirror/cl.owl && echo "CL DOWNLOADED"
 
+echo "DOWNLOADING CLO..."
+curl -L http://purl.obolibrary.org/obo/clo.owl > mirror/clo.owl && echo "CLO DOWNLOADED"
+
+echo "DOWNLOADING EFO..."
+curl -L http://www.ebi.ac.uk/efo/efo.owl  > mirror/efo.owl && echo "EFO DOWNLOADED"
+
+echo "DOWNLOADING EDAM..."
+curl -L https://www.ebi.ac.uk/ols/ontologies/edam/download  > ../imports/edam.owl && echo "EDAM DOWNLOADED"
+
+echo "DOWNLOADING HPO..."
+curl -L http://purl.obolibrary.org/obo/hp.owl > mirror/hp.owl && echo "HPO DOWNLOADED"
+
+echo "DOWNLOADING NCIT..."
+curl -L http://purl.obolibrary.org/obo/ncit.owl > mirror/ncit.owl && echo "NCIt DOWNLOADED"
 
 

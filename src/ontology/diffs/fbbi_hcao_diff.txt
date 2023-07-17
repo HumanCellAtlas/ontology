@@ -1,26 +1,8 @@
 Ontology Diff Summary
-Diff date: 2020/12/03 16:10:30
-First ontology URI: https://raw.githubusercontent.com/HumanCellAtlas/ontology/master/fbbi_hcao.owl
+Diff date: 2022/08/16 10:47:16
+First ontology URI: https://raw.githubusercontent.com/ebi-ait/ontology/master/fbbi_hcao.owl
 Second ontology URI: fbbi_hcao.owl
 Number of classes changed: 0
-Number of classes added: 1
-Number of classes deleted: 2
+Number of classes added: 0
+Number of classes deleted: 0
  
-
-################
-@Classes new to this version
-
-Class: http://purl.obolibrary.org/obo/FBbi_00050000
-Label(s): focussed ion beam scanning electron microscopy (FIB-SEM) 
-+ 'focussed ion beam scanning electron microscopy (FIB-SEM)' SubClassOf 'back-scattered_electron imaging'
-
-
-################
-@Classes deleted from this version
-
-Class: http://purl.obolibrary.org/obo/GO_0048018
-Label(s): 
-
-Class: http://purl.obolibrary.org/obo/GO_0004872
-Label(s): 
-

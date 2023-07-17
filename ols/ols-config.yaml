@@ -57,10 +57,26 @@ ontologies:
     homepage: https://monarchinitiative.org
     mailing_list: https://github.com/monarch-initiative/monarch-disease-ontology/issues
     base_uri:
-      - hhttp://purl.obolibrary.org/obo/MONDO_
+      - http://purl.obolibrary.org/obo/MONDO_
     reasoner: None
     oboSlims: false
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
+
+## HPO
+
+  - id: hp
+    preferredPrefix: HP
+    title: Human Phenotype Ontology
+    uri: http://purl.obolibrary.org/obo/hp.owl
+    description: "An ontology of phenotypic abnormalities."
+    homepage: https://hpo.jax.org/
+    mailing_list: https://github.com/monarch-initiative/monarch-disease-ontology/issues
+    base_uri:
+      - http://purl.obolibrary.org/obo/HP_
+    reasoner: None
+    oboSlims: false
+    ontology_purl: file:///opt/ols/ontologies/hpo_slim.owl
+
 
 
 ## FBBI
@@ -74,7 +90,7 @@ ontologies:
     research."
     homepage: http://cellimagelibrary.org/home
     base_uri:
-      - hhttp://purl.obolibrary.org/obo/FBbi_
+      - http://purl.obolibrary.org/obo/FBbi_
     reasoner: None
     oboSlims: false
     ontology_purl: file:///opt/ols/ontologies/fbbi_hcao.owl

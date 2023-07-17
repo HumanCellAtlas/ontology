@@ -1,0 +1,10 @@
+http://www.ebi.ac.uk/efo/EFO_0010741
+http://www.ebi.ac.uk/efo/EFO_0010892
+http://www.ebi.ac.uk/efo/EFO_0010935
+http://www.ebi.ac.uk/efo/EFO_0010936
+http://www.ebi.ac.uk/efo/EFO_0010945
+http://www.ebi.ac.uk/efo/EFO_0010946
+http://www.ebi.ac.uk/efo/EFO_0010960
+http://www.ebi.ac.uk/efo/EFO_0010961
+http://www.ebi.ac.uk/efo/EFO_0010964
+http://www.ebi.ac.uk/efo/EFO_0010965

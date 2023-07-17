@@ -19,3 +19,7 @@ http://purl.obolibrary.org/obo/CARO_0000007 # immaterial anatomical entity
 http://purl.obolibrary.org/obo/BFO_0000030 # object
 http://purl.obolibrary.org/obo/NCBITaxon_1 # root
 http://purl.obolibrary.org/obo/BFO_0000006 # spatial region
+http://purl.obolibrary.org/obo/OBI_0000759 # Illumina
+http://purl.obolibrary.org/obo/UBERON_0000965 # lens of camera-type eye
+http://purl.obolibrary.org/obo/UBERON_0003902 # retinal neural layer
+http://purl.obolibrary.org/obo/CL_0000745 # retina horizontal cell

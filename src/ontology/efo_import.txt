@@ -1,0 +1,22 @@
+http://www.ebi.ac.uk/efo/EFO_0002694 # experimental process
+http://www.ebi.ac.uk/efo/EFO_0000548 # instrument 
+http://purl.obolibrary.org/obo/OBI_0000272 # protocol
+http://purl.obolibrary.org/obo/OBI_0100026 # organism
+http://purl.obolibrary.org/obo/UO_0000000 # unit
+http://www.ebi.ac.uk/efo/EFO_0004446 # biological macromolecule
+http://www.ebi.ac.uk/efo/EFO_0000399 # developmental stage
+http://purl.obolibrary.org/obo/PATO_0000461 # normal
+http://www.ebi.ac.uk/efo/EFO_0002012 # organization role
+http://www.ebi.ac.uk/efo/EFO_0010185 # single cell information
+http://purl.obolibrary.org/obo/IAO_0000030 # information entity
+http://purl.obolibrary.org/obo/BFO_0000023 # role
+http://www.ebi.ac.uk/efo/EFO_0010741
+http://www.ebi.ac.uk/efo/EFO_0010892
+http://www.ebi.ac.uk/efo/EFO_0010935
+http://www.ebi.ac.uk/efo/EFO_0010936
+http://www.ebi.ac.uk/efo/EFO_0010945
+http://www.ebi.ac.uk/efo/EFO_0010946
+http://www.ebi.ac.uk/efo/EFO_0010960
+http://www.ebi.ac.uk/efo/EFO_0010961
+http://www.ebi.ac.uk/efo/EFO_0010964
+http://www.ebi.ac.uk/efo/EFO_0010965
